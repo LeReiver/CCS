@@ -83,18 +83,18 @@ const ACCOUNT_DATA_SESSION_FIELD = 'session';
 
 /* localhost */
 
-const HOME_PAGE = '/CCS/home.php';
-const REGISTER_PAGE = '/CCS/register.php';
-const LOGIN_PAGE = '/CCS/index.php';
-const LOGOUT_PAGE = '/CCS/logout.php';
-const LOGGED_OUT_PAGE = '/CCS/logged_out.php';
-const NO_ACCESS_PAGE = '/CCS/no_access.php';
-const EF_PAGE = '/CCS/essential_functions.php';
-const FUNC_PROCESS_PAGE = '/CCS/function_processes.php';
-const FUNC_CATEGORY_PAGE = '/CCS/function_categories.php';
-const IMPACT_CATEGORY_PAGE = '/CCS/impact_categories.php';
-const FUNC_DETAILS_PAGE = '/CCS/function_details.php';
-const IMPACT_CATEGORY_SCORING_PAGE = '/CCS/impact_category_scoring_2.php';
+const HOME_PAGE = '/Git_htdocs/ccs_git/home.php';
+const REGISTER_PAGE = '/Git_htdocs/ccs_git/register.php';
+const LOGIN_PAGE = '/Git_htdocs/ccs_git/index.php';
+const LOGOUT_PAGE = '/Git_htdocs/ccs_git/logout.php';
+const LOGGED_OUT_PAGE = '/Git_htdocs/ccs_git/logged_out.php';
+const NO_ACCESS_PAGE = '/Git_htdocs/ccs_git/no_access.php';
+const EF_PAGE = '/Git_htdocs/ccs_git/essential_functions.php';
+const FUNC_PROCESS_PAGE = '/Git_htdocs/ccs_git/function_processes.php';
+const FUNC_CATEGORY_PAGE = '/Git_htdocs/ccs_git/function_categories.php';
+const IMPACT_CATEGORY_PAGE = '/Git_htdocs/ccs_git/impact_categories.php';
+const FUNC_DETAILS_PAGE = '/Git_htdocs/ccs_git/function_details.php';
+const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring_2.php';
 
 
 

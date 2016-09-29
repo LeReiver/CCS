@@ -21,7 +21,6 @@ function next_page() {
 
 // Creates function_detail object with supplied parameters
 function function_detail(
-    $func_detail_efid,
     $func_detail_interviewer,
     $func_detail_responsibilities,
     $func_detail_internal_dep,
@@ -32,13 +31,11 @@ function function_detail(
     $func_detail_rto,
     $func_detail_it_support,
     $func_detail_backup_process,
-    $func_detail_factors
+    $func_detail_factors,
+    $func_detail_efid
     )
 {
     // If user field is left blank, give corresponding error
-    if (empty($func_detail_efid)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
-    }
     if (empty($func_detail_interviewer)) {
         return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
     }
@@ -72,6 +69,9 @@ function function_detail(
     if (empty($func_detail_factors)) {
         return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
     }
+    if (empty($func_detail_efid)) {
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
+    }
 
 
 
@@ -79,7 +79,6 @@ function function_detail(
 
     // Calls add_function_detail and passes in user defined parameters to be uploaded to database
     add_function_detail(
-        $func_detail_efid,
         $func_detail_interviewer,
         $func_detail_responsibilities,
         $func_detail_internal_dep,
@@ -90,7 +89,8 @@ function function_detail(
         $func_detail_rto,
         $func_detail_it_support,
         $func_detail_backup_process,
-        $func_detail_factors
+        $func_detail_factors,
+        $func_detail_efid
     );
     // Calls next_page function
     next_page();
@@ -98,7 +98,6 @@ function function_detail(
 
 // Creates ef_submit object for submit button
 function func_detail_submit(
-    $func_detail_efid,
     $func_detail_interviewer,
     $func_detail_responsibilities,
     $func_detail_internal_dep,
@@ -110,13 +109,13 @@ function func_detail_submit(
     $func_detail_it_support,
     $func_detail_backup_process,
     $func_detail_factors,
+    $func_detail_efid,
     $func_detail_submit_pressed
     )
 {
     // If no user field is left empty upon submit button pressed, call function_detail()
     if (!empty($func_detail_submit_pressed)) {
         return function_detail(
-            $func_detail_efid,
             $func_detail_interviewer,
             $func_detail_responsibilities,
             $func_detail_internal_dep,
@@ -127,7 +126,8 @@ function func_detail_submit(
             $func_detail_rto,
             $func_detail_it_support,
             $func_detail_backup_process,
-            $func_detail_factors
+            $func_detail_factors,
+            $func_detail_efid
         );
     }
     // Clear user fields

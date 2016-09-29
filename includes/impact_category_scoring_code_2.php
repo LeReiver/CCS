@@ -19,7 +19,7 @@ function impact_category_scoring_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . IMPACT_CATEGORY_PAGE);
+    header('Location: ' . IMPACT_CATEGORY_SCORING_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters
@@ -173,7 +173,9 @@ function get_rating()
     $conn->close();
 }
 
-function score_impact_categories ()
+
+
+function score_impact_categories()
 {
     // Get connection
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
@@ -182,7 +184,7 @@ function score_impact_categories ()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+  //  $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql2 = "SELECT Rating, RatingID FROM RATING ";
     $sql3 = "SELECT Rating, RatingID FROM RATING ";
@@ -193,7 +195,7 @@ function score_impact_categories ()
     $sql8 = "SELECT Rating, RatingID FROM RATING ";
 
     // Create result from connection and query
-    $result = $conn->query($sql);
+ //   $result = $conn->query($sql);
     $result1 = $conn->query($sql1);
     $result2 = $conn->query($sql2);
     $result3 = $conn->query($sql3);
@@ -203,15 +205,14 @@ function score_impact_categories ()
     $result7 = $conn->query($sql7);
     $result8 = $conn->query($sql8);
 
-
-    if ($result->num_rows > 0) {
-        echo "<div class='scoring_grid'><tr>";
-        while ($row = $result->fetch_assoc()) {
-
-
+//
+//    if ($result->num_rows > 0) {
+//        echo "<div class='scoring_grid'><tr>";
+//        while ($row = $result->fetch_assoc()) {
+//
 
             echo "    <tr><td colspan='2'><div id='select_dept'  >\n";
-            echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em; float: right'>\n";
+            echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
             // User input selector
             echo "                <select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
             // While loop to retrieve every row in table that matches query
@@ -293,16 +294,35 @@ function score_impact_categories ()
             } else {
                 echo "0 results";
             }
-        echo "        </form>\n";
-        echo "    </div></td></tr>\n";
-        }
-//
-//        echo "</div></tr>";
-//    } else {
-//        echo "0 results";
-    }
+            echo "        </form>\n";
+            echo "    </div></td></tr>\n";
 
+//
+//        }
+//    }
     // Close connection
+    $conn->close();
+
+}
+
+
+function scoring_grid()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>" . $row [score_impact_categories()] . "</tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
     $conn->close();
 }
 
@@ -351,7 +371,7 @@ function get_rto_2()
             // Create result from connection and query
             $result2 = $conn2->query($sql2);
             echo "    <div id='select_dept'  >\n";
-            echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em; float: right'>\n";
+            echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
             // User input selector
             echo "                <select type='select' name='RtoID' style='font-size: .75em;'>\n";
             // While loop to retrieve every row in table that matches query
@@ -401,7 +421,7 @@ function get_rating_2()
             // Create result from connection and query
             $result2 = $conn2->query($sql2);
             echo "    <div id='select_dept'  >\n";
-            echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em; float: right'>\n";
+            echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
             // User input selector
             echo "                <select type='select' name='RatingID' style='font-size: .75em;'>\n";
             // While loop to retrieve every row in table that matches query

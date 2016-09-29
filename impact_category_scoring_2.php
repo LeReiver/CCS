@@ -78,8 +78,6 @@ include_once ('includes/nav.php');
         <form method="POST" action="impact_category_scoring_2.php">
             <!-- User form-->
             <table class="form_table">
-
-
                 <tr>
                     <th colspan='11' class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                        </th>
@@ -95,7 +93,7 @@ include_once ('includes/nav.php');
                     <th  colspan="1" class="form_label" style="text-align: center">16 to 30 days</th>   
                 </tr> <tr>
                     <th class="form_label" style="text-align: start" colspan="2">If this function were disrupted, to what degree ... </th>    <!--  Input label-->
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 1</th>    <!--  Input label-->
+                    <th  colspan="1" class="form_label" style="text-align: center">Tier 1</th>
                     <th  colspan="1" class="form_label" style="text-align: center">Tier 2</th>   
                     <th  colspan="1" class="form_label" style="text-align: center">Tier 3</th>   
                     <th  colspan="1" class="form_label" style="text-align: center">Tier 4</th>  
@@ -104,17 +102,8 @@ include_once ('includes/nav.php');
                     <th  colspan="1" class="form_label" style="text-align: center">Tier 7</th>  
                 </tr>
                 <tr>
-                   <?php score_impact_categories()?>  <!--<td> <?php// get_rating() ?>
-       <!--             <td colspan="1"  style="text-align: center"> <?php /*get_rating_2() */?></td>
-                    <td colspan="1"  style="text-align: center"> <?php /*get_rating_2() */?></td>
-                    <td colspan="1"  style="text-align: center"> <?php /*get_rating_2() */?></td>
-                    <td colspan="1"  style="text-align: center"> <?php /*get_rating_2() */?></td>
-                    <td colspan="1"  style="text-align: center"> <?php /*get_rating_2() */?></td>
-<!--                    <td colspan="1"  style="text-align: center"> --><?php ///*get_rating_2() */?><!--</td>-->
-<!--                   <td colspan="1"  style="text-align: center"> --><?php //get_rating_2() ?><!--</td>-->
-
+                   <?php score_impact_categories()?>
                 </tr>
-
                     <!-- Submit form-->
                 <div class="submit_table">
                     <tr>

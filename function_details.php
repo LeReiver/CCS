@@ -26,7 +26,6 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 }
 
 // Creates variables using the get_post_value function and passes in constants for each entered field
-$func_detail_efid = get_post_value(FUNC_DETAILS_EFID_FIELD);
 $func_detail_interviewer = get_post_value(FUNC_DETAILS_INTERVIEWER_FIELD);
 $func_detail_responsibilities = get_post_value(FUNC_DETAILS_RESPONSIBILITIES_FIELD);
 $func_detail_internal_dep = get_post_value(FUNC_DETAIL_INTERNAL_DEP_FIELD);
@@ -38,11 +37,11 @@ $func_detail_rto = get_post_value(FUNC_DETAILS_RTO_ID_FIELD);
 $func_detail_it_support = get_post_value(FUNC_DETAILS_IT_SUPPORT_FIELD);
 $func_detail_backup_process = get_post_value(FUNC_DETAILS_BACKUP_PROCESS_FIELD);
 $func_detail_factors = get_post_value(FUNC_DETAILS_FACTORS_FIELD);
+$func_detail_efid = get_post_value(FUNC_DETAILS_EFID_FIELD);
 $func_detail_submit_pressed = get_post_value(FUNC_DETAILS_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
 $func_detail_error_message = func_detail_submit(
-    $func_detail_efid,
     $func_detail_interviewer,
     $func_detail_responsibilities,
     $func_detail_internal_dep,
@@ -54,6 +53,7 @@ $func_detail_error_message = func_detail_submit(
     $func_detail_it_support,
     $func_detail_backup_process,
     $func_detail_factors,
+    $func_detail_efid,
     $func_detail_submit_pressed
 );
 
