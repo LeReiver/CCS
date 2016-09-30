@@ -22,6 +22,7 @@ function next_page() {
 // Creates function_detail object with supplied parameters
 function function_detail(
     $func_detail_interviewer,
+    $func_detail_efid,
     $func_detail_responsibilities,
     $func_detail_internal_dep,
     $func_detail_external_dep,
@@ -31,8 +32,7 @@ function function_detail(
     $func_detail_rto,
     $func_detail_it_support,
     $func_detail_backup_process,
-    $func_detail_factors,
-    $func_detail_efid
+    $func_detail_factors
     )
 {
     // If user field is left blank, give corresponding error
@@ -40,34 +40,34 @@ function function_detail(
         return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
     }
     if (empty($func_detail_responsibilities)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_RESPONSIBILITIES);
     }
     if (empty($func_detail_internal_dep)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERNAL_DEP);
     }
     if (empty($func_detail_external_dep)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_EXTERNAL_DEP);
     }
     if (empty($func_detail_peak_times)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_PEAK_TIMES);
     }
     if (empty($func_detail_considerations)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_CONSIDERATIONS);
     }
     if (empty($func_detail_reg_loss)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_REG_LOSS);
     }
     if (empty($func_detail_rto)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_RTO);
     }
     if (empty($func_detail_it_support)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_IT_SUPPORT);
     }
     if (empty($func_detail_backup_process)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_INTERVIEWER);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_BACKUP_PROCESS);
     }
     if (empty($func_detail_factors)) {
-        return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
+        return func_detail_error_message(E_FUNC_PROCESS, E_NO_FUNC_DETAILS_FACTORS);
     }
     if (empty($func_detail_efid)) {
         return func_detail_error_message(E_FUNC_PROCESS, E_NO_EFID);
@@ -80,6 +80,7 @@ function function_detail(
     // Calls add_function_detail and passes in user defined parameters to be uploaded to database
     add_function_detail(
         $func_detail_interviewer,
+        $func_detail_efid,
         $func_detail_responsibilities,
         $func_detail_internal_dep,
         $func_detail_external_dep,
@@ -89,8 +90,7 @@ function function_detail(
         $func_detail_rto,
         $func_detail_it_support,
         $func_detail_backup_process,
-        $func_detail_factors,
-        $func_detail_efid
+        $func_detail_factors
     );
     // Calls next_page function
     next_page();
@@ -99,6 +99,7 @@ function function_detail(
 // Creates ef_submit object for submit button
 function func_detail_submit(
     $func_detail_interviewer,
+    $func_detail_efid,
     $func_detail_responsibilities,
     $func_detail_internal_dep,
     $func_detail_external_dep,
@@ -109,7 +110,6 @@ function func_detail_submit(
     $func_detail_it_support,
     $func_detail_backup_process,
     $func_detail_factors,
-    $func_detail_efid,
     $func_detail_submit_pressed
     )
 {
@@ -117,6 +117,7 @@ function func_detail_submit(
     if (!empty($func_detail_submit_pressed)) {
         return function_detail(
             $func_detail_interviewer,
+            $func_detail_efid,
             $func_detail_responsibilities,
             $func_detail_internal_dep,
             $func_detail_external_dep,
@@ -126,8 +127,7 @@ function func_detail_submit(
             $func_detail_rto,
             $func_detail_it_support,
             $func_detail_backup_process,
-            $func_detail_factors,
-            $func_detail_efid
+            $func_detail_factors
         );
     }
     // Clear user fields

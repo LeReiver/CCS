@@ -239,20 +239,20 @@ const E_NO_FUNC_CATEGORY_DESCRIPTION = 'Essential Function Category description 
 
 //Essential  Function Details constants
 
-const FUNC_DETAILS_TABLE = 'EF_DETAILS';
+const FUNC_DETAILS_TABLE = 'EF_DETAIL';
 const FUNC_DETAILS_INTERVIEWER_FIELD = 'Interviewer';
 const FUNC_DETAILS_RESPONSIBILITIES_FIELD = 'Responsibilities';
-const FUNC_DETAIL_INTERNAL_DEP_FIELD = 'InternalDep';
+const FUNC_DETAILS_INTERNAL_DEP_FIELD = 'InternalDep';
 const FUNC_DETAILS_EXTERNAL_DEP_FIELD = 'ExternalDep';
 const FUNC_DETAILS_PEAK_TIMES_FIELD = 'PeakTimes';
 const FUNC_DETAILS_CONSIDERATIONS_FIELD = 'Considerations';
 const FUNC_DETAILS_REG_LOSS_FIELD = 'RegLoss';
-const FUNC_DETAILS_RTO_ID_FIELD = 'RtoID';
+const FUNC_DETAILS_RTO_FIELD = 'Rto';
 const FUNC_DETAILS_IT_SUPPORT_FIELD = 'ITSupport';
 const FUNC_DETAILS_BACKUP_PROCESS_FIELD = 'BackupProc';
 const FUNC_DETAILS_FACTORS_FIELD = 'Factors';
 const FUNC_DETAILS_EFID_FIELD = 'EFID';
-const FUNC_DETAILS_SUBMIT_BUTTON_VALUE = 'function_details_submit_pressed';
+const FUNC_DETAILS_SUBMIT_BUTTON_VALUE = 'function_detail_submit_pressed';
 
 
 //Essential  Function Details errors

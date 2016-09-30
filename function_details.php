@@ -27,22 +27,23 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 
 // Creates variables using the get_post_value function and passes in constants for each entered field
 $func_detail_interviewer = get_post_value(FUNC_DETAILS_INTERVIEWER_FIELD);
+$func_detail_efid = get_post_value(FUNC_DETAILS_EFID_FIELD);
 $func_detail_responsibilities = get_post_value(FUNC_DETAILS_RESPONSIBILITIES_FIELD);
-$func_detail_internal_dep = get_post_value(FUNC_DETAIL_INTERNAL_DEP_FIELD);
+$func_detail_internal_dep = get_post_value(FUNC_DETAILS_INTERNAL_DEP_FIELD);
 $func_detail_external_dep = get_post_value(FUNC_DETAILS_EXTERNAL_DEP_FIELD);
 $func_detail_peak_times = get_post_value(FUNC_DETAILS_PEAK_TIMES_FIELD);
 $func_detail_considerations = get_post_value(FUNC_DETAILS_CONSIDERATIONS_FIELD);
 $func_detail_reg_loss = get_post_value(FUNC_DETAILS_REG_LOSS_FIELD);
-$func_detail_rto = get_post_value(FUNC_DETAILS_RTO_ID_FIELD);
+$func_detail_rto = get_post_value(FUNC_DETAILS_RTO_FIELD);
 $func_detail_it_support = get_post_value(FUNC_DETAILS_IT_SUPPORT_FIELD);
 $func_detail_backup_process = get_post_value(FUNC_DETAILS_BACKUP_PROCESS_FIELD);
 $func_detail_factors = get_post_value(FUNC_DETAILS_FACTORS_FIELD);
-$func_detail_efid = get_post_value(FUNC_DETAILS_EFID_FIELD);
 $func_detail_submit_pressed = get_post_value(FUNC_DETAILS_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
 $func_detail_error_message = func_detail_submit(
     $func_detail_interviewer,
+    $func_detail_efid,
     $func_detail_responsibilities,
     $func_detail_internal_dep,
     $func_detail_external_dep,
@@ -53,7 +54,6 @@ $func_detail_error_message = func_detail_submit(
     $func_detail_it_support,
     $func_detail_backup_process,
     $func_detail_factors,
-    $func_detail_efid,
     $func_detail_submit_pressed
 );
 
@@ -84,7 +84,7 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Essential Function Details</h2>
-        <form method="POST" action="essential_functions.php">
+        <form method="POST" action="function_details.php">
             <!-- User form-->
             <table class="form_table">
                 <tr>
@@ -103,7 +103,7 @@ include_once ('includes/nav.php');
                 </tr>
                 <tr>
                     <th class="form_label">List other internal departments that depend on this function (Internal Dependencies):</th>
-                    <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAIL_INTERNAL_DEP_FIELD; ?>"
+                    <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_INTERNAL_DEP_FIELD; ?>"
                                                                  value="<?php echo $func_detail_internal_dep ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <tr>
@@ -131,7 +131,8 @@ include_once ('includes/nav.php');
                 <tr>
                     <th class="form_label">How long can this function continue without its usual information systems support? Assume that loss of support occurs
                                             during your busiest, or peak, season or period.  Select only one.</th>
-                    <td colspan="2" class="form_input"> <?php get_rto() ?></td>
+                    <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_RTO_FIELD; ?>"
+                                                              value="<?php echo $func_detail_rto ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <tr>
                     <th class="form_label">List the information systems/applications required to support this essential function:</th>

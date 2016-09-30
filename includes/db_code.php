@@ -118,20 +118,20 @@ function add_impact_category($impact_category_name, $impact_category_description
 
 // Adds Essential Function Details
 
-function add_function_detail($func_detail_interviewer, $func_detail_responsibilities, $func_detail_internal_dep,
+function add_function_detail($func_detail_interviewer,  $func_detail_efid, $func_detail_responsibilities, $func_detail_internal_dep,
     $func_detail_external_dep, $func_detail_peak_times, $func_detail_considerations, $func_detail_reg_loss, $func_detail_rto,
-    $func_detail_it_support, $func_detail_backup_process, $func_detail_factors, $func_detail_efid)
+    $func_detail_it_support, $func_detail_backup_process, $func_detail_factors)
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . FUNC_DETAILS_TABLE . " (" . FUNC_DETAILS_INTERVIEWER_FIELD . ", " . FUNC_DETAILS_RESPONSIBILITIES_FIELD . " , " . FUNC_DETAIL_INTERNAL_DEP_FIELD . " , "
-        . EF_LEAD_EMAIL_FIELD . " , " . EF_LEAD_PHONE_FIELD . " , " . DEPARTMENT_ID_FIELD . ", " . EF_LEAD_EMAIL_FIELD . " , " . FUNC_DETAILS_EXTERNAL_DEP_FIELD
-        . " , " . FUNC_DETAILS_PEAK_TIMES_FIELD . " , " . FUNC_DETAILS_CONSIDERATIONS_FIELD . " , " . FUNC_DETAILS_REG_LOSS_FIELD
-        . " , " . FUNC_DETAILS_RTO_ID_FIELD . " , " . FUNC_DETAILS_IT_SUPPORT_FIELD . " , " . FUNC_DETAILS_BACKUP_PROCESS_FIELD
-        . " , " . FUNC_DETAILS_FACTORS_FIELD . " , " . FUNC_DETAILS_EFID_FIELD . ", " . ")";
-    $query .= " VALUES ('$func_detail_interviewer', '$func_detail_responsibilities', '$func_detail_internal_dep',
+    $query .= " " . FUNC_DETAILS_TABLE . " (" . FUNC_DETAILS_INTERVIEWER_FIELD . ", " . FUNC_DETAILS_EFID_FIELD . ", "
+        . FUNC_DETAILS_RESPONSIBILITIES_FIELD . " , " . FUNC_DETAILS_INTERNAL_DEP_FIELD . " , " . FUNC_DETAILS_EXTERNAL_DEP_FIELD . " , "
+        . FUNC_DETAILS_PEAK_TIMES_FIELD . " , " . FUNC_DETAILS_CONSIDERATIONS_FIELD . " , " . FUNC_DETAILS_REG_LOSS_FIELD . " , "
+        . FUNC_DETAILS_RTO_FIELD . " , " . FUNC_DETAILS_IT_SUPPORT_FIELD . " , "
+        . FUNC_DETAILS_BACKUP_PROCESS_FIELD . "," . FUNC_DETAILS_FACTORS_FIELD . ")";
+    $query .= " VALUES ('$func_detail_interviewer', '$func_detail_efid', '$func_detail_responsibilities', '$func_detail_internal_dep',
     '$func_detail_external_dep', '$func_detail_peak_times', '$func_detail_considerations', '$func_detail_reg_loss', '$func_detail_rto',
-    '$func_detail_it_support', '$func_detail_backup_process', '$func_detail_factors', '$func_detail_efid');";
+    '$func_detail_it_support', '$func_detail_backup_process', '$func_detail_factors' );";
     $db->query($query);
 }
 

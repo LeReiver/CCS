@@ -184,7 +184,7 @@ function score_impact_categories()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-  //  $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql2 = "SELECT Rating, RatingID FROM RATING ";
     $sql3 = "SELECT Rating, RatingID FROM RATING ";
@@ -195,7 +195,7 @@ function score_impact_categories()
     $sql8 = "SELECT Rating, RatingID FROM RATING ";
 
     // Create result from connection and query
- //   $result = $conn->query($sql);
+    $result = $conn->query($sql);
     $result1 = $conn->query($sql1);
     $result2 = $conn->query($sql2);
     $result3 = $conn->query($sql3);
@@ -205,11 +205,11 @@ function score_impact_categories()
     $result7 = $conn->query($sql7);
     $result8 = $conn->query($sql8);
 
-//
-//    if ($result->num_rows > 0) {
-//        echo "<div class='scoring_grid'><tr>";
-//        while ($row = $result->fetch_assoc()) {
-//
+
+    if ($result->num_rows > 0) {
+        echo "<div class='scoring_grid'><tr>";
+        while ($row = $result->fetch_assoc()) {
+
 
             echo "    <tr><td colspan='2'><div id='select_dept'  >\n";
             echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
@@ -298,8 +298,8 @@ function score_impact_categories()
             echo "    </div></td></tr>\n";
 
 //
-//        }
-//    }
+        }
+    }
     // Close connection
     $conn->close();
 

@@ -72,7 +72,7 @@ include_once ('includes/nav.php');
                     <!-- User selector gets essential functions -->
                     <td colspan="2" class="form_input"> <?php get_essential_functions() ?></td>
                 </tr>
-                <tr><th class="form_label">Function Processes Description: </th>
+                <tr><th class="form_label">Function Processes: </th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_PROCESS_DESCRIPTION_FIELD; ?>"
                                            value="<?php echo $func_process_description ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
