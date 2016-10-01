@@ -31,7 +31,8 @@ function impact_category_scoring(
     $impact_category_scoring_tier_5,
     $impact_category_scoring_tier_6,
     $impact_category_scoring_tier_7,
-    $impact_category_scoring_imp_cat_id
+    $impact_category_scoring_imp_cat_id,
+    $impact_category_scoring_efid
     )
 {
     // If user field is left blank, give corresponding error
@@ -69,7 +70,8 @@ function impact_category_scoring(
         $impact_category_scoring_tier_5,
         $impact_category_scoring_tier_6,
         $impact_category_scoring_tier_7,
-        $impact_category_scoring_imp_cat_id
+        $impact_category_scoring_imp_cat_id,
+        $impact_category_scoring_efid
     );
     // Calls next_page function
     next_page();
@@ -85,6 +87,7 @@ function impact_category_scoring_submit(
     $impact_category_scoring_tier_6,
     $impact_category_scoring_tier_7,
     $impact_category_scoring_imp_cat_id,
+    $impact_category_scoring_efid,
     $impact_category_scoring_submit_pressed
     )
 {
@@ -98,7 +101,8 @@ function impact_category_scoring_submit(
             $impact_category_scoring_tier_5,
             $impact_category_scoring_tier_6,
             $impact_category_scoring_tier_7,
-            $impact_category_scoring_imp_cat_id
+            $impact_category_scoring_imp_cat_id,
+            $impact_category_scoring_efid
         );
     }
     // Clear user fields
@@ -205,12 +209,21 @@ function score_impact_categories()
     $result7 = $conn->query($sql7);
     $result8 = $conn->query($sql8);
 
-
+/*
     if ($result->num_rows > 0) {
         echo "<div class='scoring_grid'><tr>";
-        while ($row = $result->fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) {*/
 
-
+            echo " <tr><td>"; get_essential_functions();
+            echo "</td></tr>";
+            echo " <tr><td colspan='2'> to what degree ...</td>
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 1</th>
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 2</th>   
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 3</th>   
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 4</th>  
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 5</th>  
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 6</th> 
+                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">Tier 7</th>  </tr>";
             echo "    <tr><td colspan='2'><div id='select_dept'  >\n";
             echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
             // User input selector
@@ -297,9 +310,9 @@ function score_impact_categories()
             echo "        </form>\n";
             echo "    </div></td></tr>\n";
 
-//
-        }
-    }
+////
+//        }
+//    }
     // Close connection
     $conn->close();
 
@@ -445,3 +458,39 @@ function get_rating_2()
     }
     $conn->close();
 }
+
+
+// Fetches from database using SQL query and returns data into user input selector
+function get_essential_functions()
+{
+    // Get connection
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    // SQL query
+    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
+    // Create result from connection and query
+    $result = $conn->query($sql);
+    echo "    <div id='select_dept'  >\n";
+    echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em; float: right'>\n";
+    // User input selector
+    echo "                <select type='select' name='EFID' style='font-size: .75em;'>\n";
+    // While loop to retrieve every row in table that matches query
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
+                . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
+        }
+        echo "                </select>\n";
+    } else {
+        echo "0 results";
+    }
+    echo "        </form>\n";
+    echo "    </div>\n";
+    // Close connection
+    $conn->close();
+}
+                        

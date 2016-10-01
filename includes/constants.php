@@ -288,6 +288,7 @@ const IMPACT_CATEGORY_SCORING_TIER_5_FIELD = 'TierFive';
 const IMPACT_CATEGORY_SCORING_TIER_6_FIELD = 'TierSix';
 const IMPACT_CATEGORY_SCORING_TIER_7_FIELD = 'TierSeven';
 const IMPACT_CATEGORY_SCORING_IMP_CAT_ID = 'ImpCatID';
+const IMPACT_CATEGORY_SCORING_EFID = 'EFID';
 const IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE = 'impact_category_scoring_submit_pressed';
 
 
@@ -303,6 +304,8 @@ const E_NO_IMPACT_CATEGORY_SCORING_TIER_FIVE = 'Impact Category Tier Five must b
 const E_NO_IMPACT_CATEGORY_SCORING_TIER_SIX = 'Impact Category Tier Six must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN = 'Impact Category Tier Seven must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID = 'Impact Category Impact Category ID must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_EFID = 'Impact Category EF ID must be supplied.';
+
  
 
 

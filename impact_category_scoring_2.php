@@ -32,6 +32,7 @@ $impact_category_scoring_tier_5 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_5_
 $impact_category_scoring_tier_6 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_6_FIELD);
 $impact_category_scoring_tier_7 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_7_FIELD);
 $impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
+$impact_category_scoring_efid = get_post_value(IMPACT_CATEGORY_SCORING_EFID);
 $impact_category_scoring_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
@@ -44,6 +45,7 @@ $impact_category_scoring_error_message = impact_category_scoring_submit(
     $impact_category_scoring_tier_6,
     $impact_category_scoring_tier_7,
     $impact_category_scoring_imp_cat_id,
+    $impact_category_scoring_efid,
     $impact_category_scoring_submit_pressed
 );
 
@@ -91,15 +93,10 @@ include_once ('includes/nav.php');
                     <th  colspan="1" class="form_label" style="text-align: center">4 to 7 days</th>  
                     <th  colspan="1" class="form_label" style="text-align: center">8 to 15 days</th>   
                     <th  colspan="1" class="form_label" style="text-align: center">16 to 30 days</th>   
-                </tr> <tr>
-                    <th class="form_label" style="text-align: start" colspan="2">If this function were disrupted, to what degree ... </th>    <!--  Input label-->
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 1</th>
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 2</th>   
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 3</th>   
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 4</th>  
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 5</th>  
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 6</th> 
-                    <th  colspan="1" class="form_label" style="text-align: center">Tier 7</th>  
+                </tr>
+                <tr>
+                    <th class="form_label" style="text-align: start" colspan="2">If this function were disrupted, </th>    <!--  Input label-->
+                   
                 </tr>
                 <tr>
                    <?php score_impact_categories()?>
