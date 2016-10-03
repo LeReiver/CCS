@@ -61,8 +61,9 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
+
+    <h2>Function Processes</h2>
     <div id="form_content">
-        <h2>Function Processes</h2>
         <form method="POST" action="function_processes.php">
             <!-- User form-->
             <table class="form_table">
@@ -74,24 +75,30 @@ include_once ('includes/nav.php');
                 </tr>
                 <tr><th class="form_label">Function Processes: </th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_PROCESS_DESCRIPTION_FIELD; ?>"
-                                           value="<?php echo $func_process_description ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                           value="<?php echo $func_process_description ?>" rows="10" cols="50" class="form_label_textarea"></textarea></td>
                 </tr>
+
+
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
                         <td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
+                                name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px; margin-left: 400px;'></div></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
+                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px; margin-left: 400px;'></div></td>
                     </tr>
                 </div>
             </table>
         </form>
+        <div class="input_reference">
+            <?php echo show_function_processes()?>
+        </div>
+
         <div>
             <!-- Error message -->
             <p id="submit_error"><?php echo $func_process_error_message ; ?></p>

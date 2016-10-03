@@ -79,38 +79,46 @@ include_once ('includes/nav.php');
         <h2>Impact Category Scoring</h2>
         <form method="POST" action="impact_category_scoring_2.php">
             <!-- User form-->
-            <table class="form_table">
+            <table class="form_table" style="margin-top: -200px; float:left;">
                 <tr>
-                    <th colspan='11' class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
+                    <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                        </th>
-                </tr> <tr>
-                    <th class="form_label" style="text-align: start" colspan="2"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
-                        </th>    <!--  Input label-->
-                    <th  colspan="1" class="form_label" style="text-align: center">1 hour</th>    <!--  Input label-->
-                    <th  colspan="1" class="form_label" style="text-align: center">2 to 8 hours</th>   
-                    <th  colspan="1" class="form_label" style="text-align: center">9 to 24 hours</th>  
-                    <th  colspan="1" class="form_label" style="text-align: center">1 to 3 days</th>    
-                    <th  colspan="1" class="form_label" style="text-align: center">4 to 7 days</th>  
-                    <th  colspan="1" class="form_label" style="text-align: center">8 to 15 days</th>   
-                    <th  colspan="1" class="form_label" style="text-align: center">16 to 30 days</th>   
                 </tr>
                 <tr>
-                    <th class="form_label" style="text-align: start" colspan="2">If this function were disrupted, </th>    <!--  Input label-->
-                   
+                    <th class="form_label" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
+                        </th>
                 </tr>
+                <tr>
+                    <th class="form_label" style="text-align: start" colspan="1">If this function were disrupted,</th>
+                    <td> <?php get_essential_functions() ?></td>
+                </tr>
+                <tr>
+                    <th class="form_label" style="text-align: start" colspan="1"> to what degree ...</th>
+                    <td> <?php get_impact_category() ?></td>
+                </tr>
+            </table>
+            <table class="form_table" style="margin-top: 250px;">
+                <tr>
+                    <th  colspan=1 class="form_label" style="text-align: center">1 hour<br>Tier 1</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">2 to 8 hours<br>Tier 2</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">9 to 24 hours<br>Tier 3</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">1 to 3 days<br>Tier 4</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">4 to 7 days<br>Tier 5</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">8 to 15 days<br>Tier 6</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">16 to 30 days<br>Tier 7</th>  </tr>
                 <tr>
                    <?php score_impact_categories()?>
                 </tr>
                     <!-- Submit form-->
                 <div class="submit_table">
-                    <tr>
-                        <td></td><td></td><td></td>
+                    <tr></tr><tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
                                 name="<?php echo IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
                     </tr>
                     <tr>
-                        <td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
                         <!-- Reset button -->
                         <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
                     </tr>
@@ -119,7 +127,7 @@ include_once ('includes/nav.php');
         </form>
         <div>
             <!-- Error message -->
-            <p id="submit_error"><?php echo $impact_category_scoring_error_message ; ?></p>
+            <p id="submit_error" style="clear:both;"><?php echo $impact_category_scoring_error_message ; ?></p>
         </div>
     </div>
 </body>

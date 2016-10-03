@@ -108,12 +108,12 @@ include_once ('includes/nav.php');
                     <td></td>
                         <!-- Submit button -->
                     <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                            name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
+                                            name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 180px;'></div></td>
                     </tr>
                     <tr>
                         <!-- Reset button -->
                         <td></td>
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
+                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 180px;'></div></td>
                     </tr>
 
                 </div>

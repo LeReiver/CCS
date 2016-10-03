@@ -108,8 +108,8 @@ li a:hover {
 /* -----------------------------------------------------------------------------*/
 
 /*  borders for table alignment testing  */
-
 /*
+
 table td  {
     border: solid 1px black;
 }
@@ -170,7 +170,6 @@ table th  {
     margin: 0 auto 20px auto;
 }
 #select_department {
-    line-height: .5em;
     float: right;
     font-size: 3em;
  }
@@ -215,6 +214,23 @@ table th  {
     margin-left: 130px;
     margin-top: 10px;
     padding-right: 160px;
+}
+#data_submit {
+    width: 10%;
+}
+#reference_table {
+    border-bottom: solid 1px black;
+    line-height: 20px;
+
+}
+.input_reference {
+    float:left;
+    clear: both;
+    width: 450px;
+    font-size: 75%;
+    margin-top: -50px;
+    margin-left: 110px;
+    padding-bottom: 100px;
 }
 .top {
     color: #7ea142;
@@ -277,9 +293,6 @@ border: solid black 1px;
     text-align: left;
     padding-left: 15px;
 }
-#data_submit {
-    width: 10%;
-}
 .dept_select {
     width: 60px;
     text-align: center;
@@ -330,3 +343,4 @@ border: solid black 1px;
 .cat_scoring {
     padding-left:5px;
 }
+

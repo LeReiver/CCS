@@ -109,16 +109,19 @@ include_once ('includes/nav.php');
                         <td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo EF_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
+                                name="<?php echo EF_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 250px;'></div></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
+                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 250px;'></div></td>
                     </tr>
                 </div>
             </table>
         </form>
+        <div class="input_reference">
+            <?php echo show_essential_functions()?>
+        </div>
         <div>
             <!-- Error message -->
             <p id="submit_error"><?php echo $ef_error_message ; ?></p>

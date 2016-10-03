@@ -93,4 +93,31 @@ function get_essential_functions()
     // Close connection
     $conn->close();
 }
+
+
+function show_function_processes()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table >";
+        echo "<tr><th><h4>Existing Function Processes</h4></th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "                <tr><td  id='reference_table'>" . "<strong>" . $row ["EFName"] . "</strong>" . ": "
+                . $row["DeptName"] . ", ". $row["Organization"] ."<br>"
+                . $row ["ProcDesc"] . "</td></tr>\n";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+}
+
+
+
                         

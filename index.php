@@ -74,7 +74,7 @@ $error_message = login_or_register(
 
                     <!-- Submit button -->
                     <td><div class="login_submit"><input type="submit" value="LOGIN"
-                       name="<?php echo LOGIN_BUTTON_VALUE ?>" style="width:80px; margin-right: 170px;" ></div> </td><td></td>
+                       name="<?php echo LOGIN_BUTTON_VALUE ?>" style="width:80px; margin-right: 170px;margin-left: 250px;" ></div> </td><td></td>
                 </tr>
                 <tr>
 

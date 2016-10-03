@@ -93,3 +93,29 @@ function get_rto()
     // Close connection
     $conn->close();
 }
+
+
+
+function show_impact_categories()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT CatName, CatDesc FROM I_CAT";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table >";
+        echo "<tr><th><h4>Impact Categories</h4></th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "                <tr><td  id='reference_table'>" . $row ["CatName"] . ": "
+                . $row["CatDesc"] . "</td></tr>\n";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+}
+
+

@@ -120,3 +120,28 @@ function get_departments()
     // Close connection
     $conn->close();
 }
+
+
+
+function show_essential_functions()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table >";
+        echo "<tr><th><h4>Existing Essential Functions</h4></th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "                <tr><td  id='reference_table'>" . $row ["EFName"] . ": "
+                . $row["DeptName"] . "<br>-  " . $row ["Organization"] . "</td></tr>\n";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+}
+
