@@ -136,7 +136,7 @@ function add_function_detail($func_detail_interviewer,  $func_detail_efid, $func
 }
 
 // Adds Impact Category Scoring
-function add_impact_category_scoring( $impact_category_scoring_tier_1, $impact_category_scoring_tier_2, $impact_category_scoring_tier_3,
+function add_impact_category_scoring($impact_category_scoring_tier_1, $impact_category_scoring_tier_2, $impact_category_scoring_tier_3,
     $impact_category_scoring_tier_4, $impact_category_scoring_tier_5, $impact_category_scoring_tier_6, $impact_category_scoring_tier_7,
     $impact_category_scoring_imp_cat_id, $impact_category_scoring_efid)
 {
@@ -145,8 +145,9 @@ function add_impact_category_scoring( $impact_category_scoring_tier_1, $impact_c
     $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (" . IMPACT_CATEGORY_SCORING_TIER_1_FIELD . ", " . IMPACT_CATEGORY_SCORING_TIER_2_FIELD . " , " . IMPACT_CATEGORY_SCORING_TIER_3_FIELD . " , "
         . IMPACT_CATEGORY_SCORING_TIER_4_FIELD . " , " . IMPACT_CATEGORY_SCORING_TIER_5_FIELD . " , " . IMPACT_CATEGORY_SCORING_TIER_6_FIELD . ", " . IMPACT_CATEGORY_SCORING_TIER_7_FIELD . ", "
         . IMPACT_CATEGORY_SCORING_IMP_CAT_ID . ", " . IMPACT_CATEGORY_SCORING_EFID . ")";
-    $query .= " VALUES ('$impact_category_scoring_tier_1','$impact_category_scoring_tier_2', '$impact_category_scoring_tier_3', 
-                '$impact_category_scoring_tier_4', '$impact_category_scoring_tier_5', '$impact_category_scoring_tier_6', '$impact_category_scoring_tier_7', '$impact_category_scoring_imp_cat_id' , '$impact_category_scoring_efid');";
+    $query .= " VALUES ('$impact_category_scoring_tier_1', '$impact_category_scoring_tier_2', '$impact_category_scoring_tier_3', 
+                '$impact_category_scoring_tier_4', '$impact_category_scoring_tier_5', '$impact_category_scoring_tier_6', '$impact_category_scoring_tier_7',
+                 '$impact_category_scoring_imp_cat_id', '$impact_category_scoring_efid');";
     $db->query($query);
 }
 

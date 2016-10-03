@@ -60,6 +60,9 @@ function impact_category_scoring(
     if (empty($impact_category_scoring_imp_cat_id)) {
         return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
     }
+    if (empty($impact_category_scoring_efid)) {
+        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
+    }
 
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
     add_impact_category_scoring(
@@ -236,7 +239,7 @@ function score_impact_categories()
 //                }
 //                echo "                </select>\n";
 //            }
-                echo "                <td><select type='select' name='TierOne' style='font-size: 1.75em;'>\n";
+            echo "                <td><select type='select' name='TierOne' style='font-size: 1.75em;'>\n";
 
             // While loop to retrieve every row in table that matches query
             if ($result2->num_rows > 0) {
@@ -341,18 +344,21 @@ function scoring_grid()
 }
 
 
-function show_impact_categories()
+function show_impact_scoring()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+    $sql = "SELECT ic.CatName, ic.CatDesc, ics.TierOne, ics.TierTwo, ics.TierThree, ics.TierFour, ics.TierFive, ics.TierSix, ics.TierSeven FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table>";
+        echo "<table >";
+        echo "<tr><th><h4>Existing Impact Categories</h4></th></tr>";
+//        echo "                  <tr><th>Desc Tier 1 Tier 2 Tier 3 Tier 4 Tier 5 Tier 6 Tier 7</th>\n";
         while ($row = $result->fetch_assoc()) {
-            echo "<tr><td class='form_label' style='text-align: start' colspan='2'>" . $row["CatName"] . ":</td><td colspan='2'>" . $row["CatDesc"] . "</td></tr>";
+            echo "                <tr><td  id='reference_table'>" . $row ["CatName"] . ": " . $row["TierOne"] . ", " . $row["TierTwo"] . ", "
+                . $row ["TierThree"] . ": " . $row["TierFour"] . ", " . $row["TierFive"] . ", " . $row ["TierSix"] . ": " . $row["TierSeven"] . "</td></tr>\n";
         }
         echo "</table>";
     } else {
@@ -360,6 +366,7 @@ function show_impact_categories()
     }
     $conn->close();
 }
+
 
 function get_rto_2()
 {
@@ -515,7 +522,7 @@ function get_impact_category()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatName"] . ': ' . $row ["CatDesc"] . "</option>\n";
+            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . ' (' . $row ["CatName"] . ")" . "</option>\n";
         }
         echo "                </select>\n";
     } else {

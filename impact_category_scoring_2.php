@@ -125,6 +125,10 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
+        <div class="input_reference">
+            <?php echo show_impact_scoring()?>
+        </div>
+
         <div>
             <!-- Error message -->
             <p id="submit_error" style="clear:both;"><?php echo $impact_category_scoring_error_message ; ?></p>
