@@ -221,7 +221,14 @@ table th  {
 #reference_table {
     border-bottom: solid 1px black;
     line-height: 20px;
-
+}
+#reference_table td {
+    border-bottom: solid 1px black;
+    font-size: 12px;
+    padding: 0 15px;
+}
+#table_header {
+    border-bottom: solid black 2px;
 }
 .input_reference {
     float:left;

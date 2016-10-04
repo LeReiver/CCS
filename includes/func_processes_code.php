@@ -113,7 +113,7 @@ function show_function_processes()
         }
         echo "</table>";
     } else {
-        echo "0 results";
+        echo " <h4>You have no existing Essential Function Processes</h4>";
     }
     $conn->close();
 }

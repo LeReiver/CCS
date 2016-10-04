@@ -19,7 +19,7 @@ function impact_category_scoring_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . HOME_PAGE);
+    header('Location: ' . IMPACT_CATEGORY_SCORING_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters
@@ -57,12 +57,12 @@ function impact_category_scoring(
     if (empty($impact_category_scoring_tier_7)) {
         return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN);
     }
-    if (empty($impact_category_scoring_imp_cat_id)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
-    }
-    if (empty($impact_category_scoring_efid)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
-    }
+//    if (empty($impact_category_scoring_imp_cat_id)) {
+//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
+//    }
+//    if (empty($impact_category_scoring_efid)) {
+//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
+//    }
 
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
     add_impact_category_scoring(
@@ -163,12 +163,12 @@ function get_rating()
     echo "    <div id='select_dept'  >\n";
     echo "                <form style='font-size: 1.75em; font-weight: bold; align-content: center'>\n";
     // User input selector
-    echo "                <select type='select' name='RatingID' style='font-size: 1.75em; padding: 0;'>\n";
+    echo "                <select type='select' name='Rating' style='font-size: 1.75em; padding: 0;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." ". $row ["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -245,7 +245,7 @@ function score_impact_categories()
             if ($result2->num_rows > 0) {
                 // output data of each row
                 while ($row = $result2->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
 
@@ -255,7 +255,7 @@ function score_impact_categories()
             if ($result3->num_rows > 0) {
                 // output data of each row
                 while ($row = $result3->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
 
@@ -265,7 +265,7 @@ function score_impact_categories()
             if ($result4->num_rows > 0) {
                 // output data of each row
                 while ($row = $result4->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
 
@@ -275,7 +275,7 @@ function score_impact_categories()
             if ($result5->num_rows > 0) {
                 // output data of each row
                 while ($row = $result5->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
 
@@ -285,7 +285,7 @@ function score_impact_categories()
             if ($result6->num_rows > 0) {
                 // output data of each row
                 while ($row = $result6->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
 
@@ -295,7 +295,7 @@ function score_impact_categories()
             if ($result7->num_rows > 0) {
                 // output data of each row
                 while ($row = $result7->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
 
@@ -305,7 +305,7 @@ function score_impact_categories()
             if ($result8->num_rows > 0) {
                 // output data of each row
                 while ($row = $result8->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
             } else {
@@ -353,16 +353,16 @@ function show_impact_scoring()
     $sql = "SELECT ic.CatName, ic.CatDesc, ics.TierOne, ics.TierTwo, ics.TierThree, ics.TierFour, ics.TierFive, ics.TierSix, ics.TierSeven FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table >";
-        echo "<tr><th><h4>Existing Impact Categories</h4></th></tr>";
-//        echo "                  <tr><th>Desc Tier 1 Tier 2 Tier 3 Tier 4 Tier 5 Tier 6 Tier 7</th>\n";
+        echo "<table>";
+        echo "<tr><th colspan='8'><h4>Existing Impact Categories</h4></th></tr>";
+        echo "                  <tr><th id='table_header'>Category</th><th id='table_header'> Tier 1 </th><th id='table_header'> Tier 2 </th><th id='table_header'> Tier 3 </th><th id='table_header'> Tier 4 </th><th id='table_header'> Tier 5 </th><th id='table_header'> Tier 6 </th><th id='table_header'> Tier 7</th></th>\n";
         while ($row = $result->fetch_assoc()) {
-            echo "                <tr><td  id='reference_table'>" . $row ["CatName"] . ": " . $row["TierOne"] . ", " . $row["TierTwo"] . ", "
-                . $row ["TierThree"] . ": " . $row["TierFour"] . ", " . $row["TierFive"] . ", " . $row ["TierSix"] . ": " . $row["TierSeven"] . "</td></tr>\n";
+            echo "                <tr id='reference_table'><td  >" . $row ["CatName"] . "</td><td>" . $row["TierOne"] . "</td><td>" . $row["TierTwo"] . "</td><td>"
+                . $row ["TierThree"] . "</td><td>" . $row["TierFour"] . "</td><td>" . $row["TierFive"] . "</td><td>" . $row ["TierSix"] . "</td><td>" . $row["TierSeven"] . "</td></tr>\n";
         }
         echo "</table>";
     } else {
-        echo "0 results";
+        echo " <h4>You have no existing Impact Category Scores</h4>";
     }
     $conn->close();
 }

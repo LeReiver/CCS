@@ -140,7 +140,7 @@ function show_essential_functions()
         }
         echo "</table>";
     } else {
-        echo "0 results";
+        echo " <h4>You have no existing Essential Functions</h4>";
     }
     $conn->close();
 }

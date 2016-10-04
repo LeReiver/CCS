@@ -79,7 +79,7 @@ include_once ('includes/nav.php');
         <h2>Impact Category Scoring</h2>
         <form method="POST" action="impact_category_scoring_2.php">
             <!-- User form-->
-            <table class="form_table" style="margin-top: -200px; float:left;">
+            <table class="form_table" style="margin-top: 20px; float:left;">
                 <tr>
                     <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                        </th>

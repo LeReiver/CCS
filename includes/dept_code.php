@@ -87,3 +87,25 @@ function department_submit(
     // Clear user fields
     return '';
 }
+
+function show_departments()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT Organization, DeptName FROM DEPT as DEPT";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table >";
+        echo "<tr><th><h4>Existing Departments</h4></th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "                <tr><td  id='reference_table'>" . $row ["DeptName"] . ": "
+                . $row["Organization"] . "</td></tr>\n";
+        }
+        echo "</table>";
+    } else {
+        echo " <h4>You have no existing Departments</h4>";
+    }
+    $conn->close();
+}

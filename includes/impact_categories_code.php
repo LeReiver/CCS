@@ -113,7 +113,7 @@ function show_impact_categories()
         }
         echo "</table>";
     } else {
-        echo "0 results";
+        echo " <h4>You have no existing Impact Categories</h4>";
     }
     $conn->close();
 }

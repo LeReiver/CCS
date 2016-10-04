@@ -118,8 +118,10 @@ include_once ('includes/nav.php');
 
                 </div>
             </table>
-
         </form>
+        <div class="input_reference">
+            <?php echo show_departments()?>
+        </div>
         <div>
             <!-- Error message -->
             <p id="submit_error"><?php echo $company_error_message ; ?></p>
