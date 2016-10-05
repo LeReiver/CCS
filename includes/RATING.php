@@ -11,7 +11,7 @@ include_once ('includes/constants.php');
 include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
-include_once('includes/impact_category_scoring_code_2.php');
+include_once('includes/impact_category_scoring_code.php');
 
 class RATING {
 

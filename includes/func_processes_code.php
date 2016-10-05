@@ -104,11 +104,11 @@ function show_function_processes()
     $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table >";
+        echo "<table width='550px'>";
         echo "<tr><th><h4>Existing Function Processes</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
-            echo "                <tr><td  id='reference_table'>" . "<strong>" . $row ["EFName"] . "</strong>" . ": "
-                . $row["DeptName"] . ", ". $row["Organization"] ."<br>"
+            echo "                <tr><td  id='reference_table'>" . "<strong>" . $row ["EFName"] . "</strong>" . ": <strong>"
+                . $row["DeptName"] ."</strong>" . ", <strong>".  $row["Organization"] ."</strong><br>"
                 . $row ["ProcDesc"] . "</td></tr>\n";
         }
         echo "</table>";

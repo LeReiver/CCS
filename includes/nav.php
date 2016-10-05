@@ -19,6 +19,6 @@ include_once ('utilities.php');
         <li><a href="function_processes.php">Add EF Process</a></li>
         <li><a href="impact_categories.php">Add Impact Category</a></li>
         <li><a href="function_details.php">Add EF Detail</a></li>
-        <li><a href="impact_category_scoring_2.php">Add Impact Category Scores</a></li>
+        <li><a href="impact_category_scoring.php">Add Impact Category Scores</a></li>
     </ul>
 </nav>

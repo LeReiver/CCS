@@ -233,7 +233,7 @@ table th  {
 .input_reference {
     float:left;
     clear: both;
-    width: 450px;
+    width: 500px;
     font-size: 75%;
     margin-top: -50px;
     margin-left: 110px;

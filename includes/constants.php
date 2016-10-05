@@ -94,7 +94,7 @@ const FUNC_PROCESS_PAGE = '/Git_htdocs/ccs_git/function_processes.php';
 const FUNC_CATEGORY_PAGE = '/Git_htdocs/ccs_git/function_categories.php';
 const IMPACT_CATEGORY_PAGE = '/Git_htdocs/ccs_git/impact_categories.php';
 const FUNC_DETAILS_PAGE = '/Git_htdocs/ccs_git/function_details.php';
-const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring_2.php';
+const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring.php';
 
 
 
@@ -112,7 +112,7 @@ const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scorin
 //const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/function_categories.php';
 //const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_categories.php';
 //const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/function_details.php';
-//const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_category_scoring_2.php';
+//const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_category_scoring.php';
 
 
 
@@ -280,13 +280,13 @@ const E_NO_FUNC_DETAILS_EFID = 'Essential Function must be supplied.';
 // Impact Category Scoring constants
 
 const IMPACT_CATEGORY_SCORING_TABLE = 'I_CAT_SCORING';
-const IMPACT_CATEGORY_SCORING_TIER_1_FIELD = 'TierOne';
-const IMPACT_CATEGORY_SCORING_TIER_2_FIELD = 'TierTwo';
-const IMPACT_CATEGORY_SCORING_TIER_3_FIELD = 'TierThree';
-const IMPACT_CATEGORY_SCORING_TIER_4_FIELD = 'TierFour';
-const IMPACT_CATEGORY_SCORING_TIER_5_FIELD = 'TierFive';
-const IMPACT_CATEGORY_SCORING_TIER_6_FIELD = 'TierSix';
-const IMPACT_CATEGORY_SCORING_TIER_7_FIELD = 'TierSeven';
+const IMPACT_CATEGORY_SCORING_TIER_1_FIELD = '1Hour';
+const IMPACT_CATEGORY_SCORING_TIER_2_FIELD = '2to8Hours';
+const IMPACT_CATEGORY_SCORING_TIER_3_FIELD = '9to24Hours';
+const IMPACT_CATEGORY_SCORING_TIER_4_FIELD = '1to3Days';
+const IMPACT_CATEGORY_SCORING_TIER_5_FIELD = '4to7Days';
+const IMPACT_CATEGORY_SCORING_TIER_6_FIELD = '8to15Days';
+const IMPACT_CATEGORY_SCORING_TIER_7_FIELD = '16to31Days';
 const IMPACT_CATEGORY_SCORING_IMP_CAT_ID = 'ImpCatID';
 const IMPACT_CATEGORY_SCORING_EFID = 'EFID';
 const IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE = 'impact_category_scoring_submit_pressed';
