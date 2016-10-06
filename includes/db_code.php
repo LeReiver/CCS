@@ -138,7 +138,7 @@ function add_function_detail($func_detail_interviewer,  $func_detail_efid, $func
 // Adds Impact Category Scoring
 function add_impact_category_scoring($impact_category_scoring_tier_1, $impact_category_scoring_tier_2, $impact_category_scoring_tier_3,
     $impact_category_scoring_tier_4, $impact_category_scoring_tier_5, $impact_category_scoring_tier_6, $impact_category_scoring_tier_7,
-    $impact_category_scoring_imp_cat_id, $impact_category_scoring_efid)
+    $impact_category_scoring_imp_cat_id, $impact_category_scoring_efid )
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";

@@ -9,6 +9,9 @@
  *
  */
 
+// Require the following files
+require_once ('constants.php');
+
 
 // Creates error_message object of type and detail
 function impact_category_scoring_error_message($type, $detail)
@@ -56,12 +59,12 @@ function impact_category_scoring(
     if (empty($impact_category_scoring_tier_7)) {
         return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN);
     }
-    if (empty($impact_category_scoring_imp_cat_id)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
-    }
-//    if (empty($impact_category_scoring_efid)) {
-//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
+//    if (empty($impact_category_scoring_imp_cat_id)) {
+//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
 //    }
+    if (empty($impact_category_scoring_efid)) {
+        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
+    }
 
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
     add_impact_category_scoring(
@@ -93,7 +96,7 @@ function impact_category_scoring_submit(
     $impact_category_scoring_submit_pressed
     )
 {
-    // If no user field is left empty upon submit button pressed, call essential_function()
+    // If no user field is left empty upon submit button pressed, call impact_category_scoring()
     if (!empty($impact_category_scoring_submit_pressed)) {
         return impact_category_scoring(
             $impact_category_scoring_tier_1,
@@ -353,7 +356,7 @@ function show_impact_scoring()
     $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table>";
+        echo "<table style='width:300px'>";
         echo "<tr><th colspan='8'><h4>Existing Impact Category Scores</h4></th></tr>";
         echo "                  <tr><th id='table_header'>Category</th><th id='table_header'> Tier 1 </th><th id='table_header'> Tier 2 </th><th id='table_header'> Tier 3 </th><th id='table_header'> Tier 4 </th><th id='table_header'> Tier 5 </th><th id='table_header'> Tier 6 </th><th id='table_header'> Tier 7</th></th>\n";
         while ($row = $result->fetch_assoc()) {
@@ -370,8 +373,6 @@ function show_impact_scoring()
 
 function get_rto_2()
 {
-
-
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -420,8 +421,6 @@ function get_rto_2()
 
 function get_rating_2()
 {
-
-
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -523,7 +522,7 @@ function get_impact_category()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . ' (' . $row ["CatName"] . ")" . "</option>\n";
+            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
         }
         echo "                </select>\n";
     } else {

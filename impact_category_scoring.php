@@ -31,7 +31,7 @@ $impact_category_scoring_tier_4 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_4_
 $impact_category_scoring_tier_5 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_5_FIELD);
 $impact_category_scoring_tier_6 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_6_FIELD);
 $impact_category_scoring_tier_7 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_7_FIELD);
-$impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
+$impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);   // Not reading !!!!!!!!!!! ++++++++++++++++++++++++++++++++++++++++
 $impact_category_scoring_efid = get_post_value(IMPACT_CATEGORY_SCORING_EFID);
 $impact_category_scoring_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE);
 
@@ -97,11 +97,9 @@ include_once ('includes/nav.php');
                     <td> <?php get_impact_category() ?></td>
                 </tr>
                 </table>
-            <table class="form_table" style="margin-top: 20px; float:left;">
 
-            </table>
             <table class="form_table" style="margin-top: 250px;">
-                <tr>
+                <tr><td></td>
                     <th  colspan=1 class="form_label" style="text-align: center">1 hour<br>Tier 1</th>
                     <th  colspan=1 class="form_label" style="text-align: center">2 to 8 hours<br>Tier 2</th>
                     <th  colspan=1 class="form_label" style="text-align: center">9 to 24 hours<br>Tier 3</th>
@@ -110,7 +108,7 @@ include_once ('includes/nav.php');
                     <th  colspan=1 class="form_label" style="text-align: center">8 to 15 days<br>Tier 6</th>
                     <th  colspan=1 class="form_label" style="text-align: center">16 to 30 days<br>Tier 7</th>  </tr>
                 <tr>
-                   <?php score_impact_categories()?>
+                   <td><?php score_impact_categories()?></td>
                 </tr>
                     <!-- Submit form-->
                 <div class="submit_table">

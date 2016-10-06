@@ -119,7 +119,7 @@ const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scorin
 // -----------------------------------------------------------------------------------------------------------------------
 
 
-// Department constants
+// Department database constants
 
 const DEPARTMENT_TABLE = 'DEPT';
 const DEPT_NAME_FIELD = 'DeptName';
@@ -147,7 +147,7 @@ const E_NO_CONT_PHONE = 'Contact phone must be supplied.';
 
 
 
-// Essential Function constants
+// Essential Function database constants
 
 const EF_TABLE = 'EF';
 const EF_NAME_FIELD = 'EFName';
@@ -177,7 +177,7 @@ const E_NO_DEPT_ID = 'Corresponding Department ID must be supplied.';
 
 
 
-// Essential Function Process constants
+// Essential Function Process database constants
 
 const FUNC_PROCESS_TABLE = 'EF_PROC';
 const FUNC_PROCESS_DESCRIPTION_FIELD = 'ProcDesc';
@@ -196,7 +196,7 @@ const E_NO_EFID = 'Essential Function must be supplied.';
 
 
 
-// Impact Category constants
+// Impact Category database constants
 
 const IMPACT_CATEGORY_TABLE = 'I_CAT';
 const IMPACT_CATEGORY_NAME_FIELD = 'CatName';
@@ -237,7 +237,7 @@ const E_NO_FUNC_CATEGORY_DESCRIPTION = 'Essential Function Category description 
 
 
 
-//Essential  Function Details constants
+//Essential  Function Details database constants
 
 const FUNC_DETAILS_TABLE = 'EF_DETAIL';
 const FUNC_DETAILS_INTERVIEWER_FIELD = 'Interviewer';
@@ -277,7 +277,7 @@ const E_NO_FUNC_DETAILS_EFID = 'Essential Function must be supplied.';
 
 
 
-// Impact Category Scoring constants
+// Impact Category Scoring database constants
 
 const IMPACT_CATEGORY_SCORING_TABLE = 'I_CAT_SCORING';
 const IMPACT_CATEGORY_SCORING_TIER_1_FIELD = '1Hour';
