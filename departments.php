@@ -71,10 +71,14 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <form method="POST" action="departments.php">
             <h2>DEPARTMENTS</h2>
+            <div class="input_reference" id="reports">
+                <!-- Reference Table -->
+                <?php echo show_departments()?>
+            </div>
+            <form method="POST" action="departments.php">
             <!-- User form-->
-            <table class="form_table">
+            <table class="form_table" style="margin:-280px 100px 0 0;">
                 <tr><th class="form_label">Department Name: </th> <!--  Input label-->
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo DEPT_NAME_FIELD; ?>"
                                            value="<?php echo $dept_name ?>" autofocus></td> <!-- User input -->
@@ -119,9 +123,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div class="input_reference" id="reports">
-            <?php echo show_departments()?>
-        </div>
         <div>
             <!-- Error message -->
             <p id="submit_error"><?php echo $company_error_message ; ?></p>

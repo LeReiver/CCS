@@ -11,7 +11,7 @@
 // Creates error_message object of type and detail
 function impact_category_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
@@ -27,7 +27,7 @@ function impact_category(
 {
     // If user field is left blank, give corresponding error
     if (empty($impact_category_name)) {
-        return impact_category_error_message(E_IMPACT_CATEGORY, E_NO_EFID);
+        return impact_category_error_message(E_IMPACT_CATEGORY, E_NO_IMPACT_CATEGORY_NAME);
     }
     if (empty($impact_category_description)) {
         return impact_category_error_message(E_IMPACT_CATEGORY, E_NO_IMPACT_CATEGORY_DESCRIPTION);
@@ -105,7 +105,7 @@ function show_impact_categories()
     $sql = "SELECT CatName, CatDesc FROM I_CAT";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table >";
+        echo "<table>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'><h4>Impact Categories</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {

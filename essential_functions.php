@@ -73,6 +73,9 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Essential Functions</h2>
+        <div class="input_reference" id="reports">
+            <?php echo show_essential_functions()?>
+        </div>
         <form method="POST" action="essential_functions.php">
             <!-- User form-->
             <table class="form_table">
@@ -119,9 +122,7 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div class="input_reference" id="reports">
-            <?php echo show_essential_functions()?>
-        </div>
+
         <div>
             <!-- Error message -->
             <p id="submit_error"><?php echo $ef_error_message ; ?></p>

@@ -79,7 +79,7 @@ include_once ('includes/nav.php');
         <h2>Impact Category Scoring</h2>
         <form method="POST" action="impact_category_scoring.php">
             <!-- User form-->
-            <table class="form_table" style="margin-top: 20px; float:left;">
+            <table class="form_table" style="margin: 20px 0 0 -200px;">
                 <tr>
                     <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                        </th>
@@ -90,7 +90,7 @@ include_once ('includes/nav.php');
                 </tr>
                 <tr>
                     <th class="form_label" style="text-align: start" colspan="1">If this function were disrupted,</th>
-                    <td> <?php get_essential_functions() ?></td>
+<!--                    <td> --><?php //get_essential_functions() ?><!--</td>-->
                 </tr>
                 <tr>
                     <th class="form_label" style="text-align: start" colspan="1"> to what degree ...</th>
@@ -98,7 +98,7 @@ include_once ('includes/nav.php');
                 </tr>
                 </table>
 
-            <table class="form_table" style="margin-top: 250px;">
+            <table class="form_table" style="margin: 10px 0 0 -200px;">
                 <tr><td></td>
                     <th  colspan=1 class="form_label" style="text-align: center">1 hour<br>Tier 1</th>
                     <th  colspan=1 class="form_label" style="text-align: center">2 to 8 hours<br>Tier 2</th>
@@ -126,13 +126,13 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div class="input_reference" id="reports">
+        <div id="reports" style="margin: 0 0 0 -200px;">
             <?php echo show_impact_scoring()?>
         </div>
 
         <div>
             <!-- Error message -->
-            <p id="submit_error" style="clear:both;"><?php echo $impact_category_scoring_error_message ; ?></p>
+            <p id="submit_error"><?php echo $impact_category_scoring_error_message ; ?></p>
         </div>
     </div>
 </body>

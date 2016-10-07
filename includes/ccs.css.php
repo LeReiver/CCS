@@ -70,6 +70,15 @@ input [type=select] {
 /*    margin: 20px;*/
 }
 
+
+form {
+    width: 50%;
+    float: right;
+    clear: left;
+    margin-right: 15%;
+}
+
+
 /* -------------- Nav --------------------------------------------------------*/
 
 nav {
@@ -116,8 +125,8 @@ table td  {
 table th  {
     border: solid 1px black;
 }
-*/
 
+*/
 #reports table {
     border-collapse: collapse;
 }
@@ -146,28 +155,29 @@ table th  {
     font-size: 125%;
     margin-top: 20px;
     font-weight: 100;
-    align-content: center;
+    
 }
 #error_header {
-    text-align: center;
+    text-align: start;
     color: red;
     text-shadow:  0 0 white;
     font-weight: bold;
-    width: 500px;
-    margin: 0 auto;
+    width: 300px;
     font-size: 150%;
+    float: right;
+    margin-right: 150px;
 }
 #error_detail {
-    text-align: center;
+    text-align: start;
     color: red;
     text-shadow:  .5px 0 white;
     font-size: 100%;
-    width: 500px;
-    margin: 0 auto 20px auto;
+    width: 300px;
+    float: right;
+    margin-right: 250px;
 }
 #submit_error {
     padding-left: 60px;
-
 }
 #submit_error_header {
     text-align: center;
@@ -218,20 +228,7 @@ table th  {
 #user_pane :hover {
      color: #4f005a;
  }
-#next {
-    text-align: right;
-    font-family: Charcoal, Geneva, sans-serif;
-    margin-right: 15px;
-    margin-top: 10px;
-    padding-left: 160px;
-}
-#back {
-    text-align: left;
-    font-family: Charcoal, Geneva, sans-serif;
-    margin-left: 130px;
-    margin-top: 10px;
-    padding-right: 160px;
-}
+
 #data_submit {
     width: 10%;
 }
@@ -249,11 +246,10 @@ table th  {
 }
 .input_reference {
     float:left;
-    clear: both;
-    width: 500px;
+    clear: right;
     font-size: 75%;
-    margin-top: -50px;
-    margin-left: 110px;
+    margin-top: -200px;
+    margin-left: 80px;
     padding-bottom: 100px;
 }
 .table_reference {
@@ -269,8 +265,10 @@ table th  {
     color: #7ea142;
     text-decoration: none;
     font-size: 85%;
-    padding: 0 5px;
+    padding: 0 25px 50px 0;
+    margin-right: 250px;
     text-align: end;
+    float: right;
 }
 .tint {
     background-color: rgba(119, 238, 170, 0.42);
@@ -348,7 +346,7 @@ border: solid black 1px;
 .form_label {
     text-align: end;
     padding-right: 20px;
-/*    width: 100px;*/
+    width: 300px;
     font-size: 90% ;
 }
 .form_label_2 {
@@ -370,10 +368,72 @@ border: solid black 1px;
     border-radius: 5px;
 }
 .form_table {
-    align-content: center;
-    margin auto;
+    margin-top: -480px;
 }
 .cat_scoring {
     padding-left:5px;
 }
+/* --------------- Text Editor --------------------*/
 
+
+.rte_box {
+    border: solid black 1px;
+/*    position: relative;*/
+}
+.edit_button {
+    float: right;
+    font-size: small;
+    color: Green;
+    background-color: WhiteSmoke;
+    z-index: 2;
+    margin-right: 20px;
+    position: relative;
+    margin-top: -10px;
+}
+.edit_button:hover {
+    background-color: LightGray;
+    cursor: pointer;
+}
+.edit_box {
+/*    position: absolute;*/
+    overflow-y: auto;
+    word-wrap: break-word;
+    background-color: WhiteSmoke;
+    z-index: 1;
+}
+.edit_tools {
+    width: 100%;
+    background-color: LightGray;
+    position: relative;
+}
+.dummy_button {
+    display: inline-block;
+    background-color: LightGray;
+}
+.tool_button {
+    display: inline-block;
+    background-color: LightGray;
+}
+.right_tool_button {
+    float: right;
+    background-color: LightGray;
+}
+.tool_button:hover, .right_tool_button:hover {
+    background-color: Gray;
+    cursor: pointer;
+}
+.tool_button_image {
+    margin: 2px;
+    border: 0px;
+    vertical-align: top;
+}
+.active_tool_button_image {
+    margin: 1px;
+    border: 1px solid black;
+    vertical-align: top;
+    background-color: DarkGray;
+}
+.html_text {
+    margin: 20px;
+    word-wrap: break-word;
+}

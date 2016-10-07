@@ -133,7 +133,7 @@ const COMPANY_SUBMIT_BUTTON_VALUE = 'company_submit_pressed';
 
 // Department errors
 
-const E_DEPARTMENT = 'Error uploading Department to database!';
+const E_DEPARTMENT = 'Error!';
 
 const E_NO_ORG_NAME = 'Organization name must be supplied.';
 const E_NO_DEPT_NAME = 'Department name must be supplied.';
@@ -163,7 +163,7 @@ const EF_ADD_FUNCTION_BUTTON_VALUE = 'add_new_function';
 
 // Essential Function errors
 
-const E_EF = 'Error uploading Essential Functions to database!';
+const E_EF = 'Error!';
 
 const E_NO_EF_NAME = 'Essential Function name must be supplied.';
 const E_NO_EF_LEAD_NAME = 'Essential Function lead name must be supplied.';
@@ -187,7 +187,7 @@ const FUNC_PROCESS_SUBMIT_BUTTON_VALUE = 'func_process_submit_pressed';
 
 // Essential Function Process errors
 
-const E_FUNC_PROCESS = 'Error uploading Essential Function Process to database!';
+const E_FUNC_PROCESS = 'Error!';
 
 const E_NO_FUNC_PROCESS_DESCRIPTION = 'Essential Function Process description must be supplied.';
 const E_NO_EFID = 'Essential Function must be supplied.';
@@ -206,7 +206,7 @@ const IMPACT_CATEGORY_SUBMIT_BUTTON_VALUE = 'impact_category_submit_pressed';
 
 // Impact Category errors
 
-const E_IMPACT_CATEGORY = 'Error uploading Impact Category to database!';
+const E_IMPACT_CATEGORY = 'Error!';
 
 const E_NO_IMPACT_CATEGORY_NAME = 'Impact Category name must be supplied.';
 const E_NO_IMPACT_CATEGORY_DESCRIPTION = 'Impact Category description must be supplied.';
@@ -227,7 +227,7 @@ const FUNC_CATEGORY_SUBMIT_BUTTON_VALUE = 'function_category_submit_pressed';
 
 //Essential  Function Category errors
 
-const E_FUNC_CATEGORY = 'Error uploading Function Category to database!';
+const E_FUNC_CATEGORY = 'Error!';
 
 const E_NO_FUNC_CATEGORY_NAME = 'Essential Function Category name must be supplied.';
 const E_NO_FUNC_CATEGORY_DESCRIPTION = 'Essential Function Category description must be supplied.';
@@ -257,7 +257,7 @@ const FUNC_DETAILS_SUBMIT_BUTTON_VALUE = 'function_detail_submit_pressed';
 
 //Essential  Function Details errors
 
-const E_FUNC_DETAILS = 'Error uploading Function Details to database!';
+const E_FUNC_DETAILS = 'Error!';
 
 const E_NO_FUNC_DETAILS_INTERVIEWER = 'Essential Function Details Interviewer\'s name must be supplied.';
 const E_NO_FUNC_DETAILS_RESPONSIBILITIES = 'Essential Function Details Responsibilities must be supplied.';
@@ -294,7 +294,7 @@ const IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE = 'impact_category_scoring_sub
 
 // Impact Category Scoring  errors
 
-const E_IMPACT_CATEGORY_SCORING = 'Error uploading Function Details to database!';
+const E_IMPACT_CATEGORY_SCORING = 'Error!';
 
 const E_NO_IMPACT_CATEGORY_SCORING_TIER_ONE = 'Impact Category Tier One must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORING_TIER_TWO = 'Impact Category Tier Two must be supplied.';

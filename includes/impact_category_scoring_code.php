@@ -16,7 +16,7 @@ require_once ('constants.php');
 // Creates error_message object of type and detail
 function impact_category_scoring_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 

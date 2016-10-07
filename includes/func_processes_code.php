@@ -11,7 +11,7 @@
 // Creates error_message object of type and detail
 function func_process_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
@@ -104,12 +104,12 @@ function show_function_processes()
     $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='550px'>";
+        echo "<table width='400px'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'><h4>Existing Function Processes</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
             echo "                <tr><td  id='reference_table'>" . "<strong>" . $row ["EFName"] . "</strong>" . ": <strong>"
-                . $row["DeptName"] ."</strong>" . ", <strong>".  $row["Organization"] ."</strong><br>"
+                . $row["DeptName"] ."</strong>" . ", <strong><br>".  $row["Organization"] ."</strong><br>"
                 . $row ["ProcDesc"] . "</td></tr>\n";
         }
         echo "</table>";

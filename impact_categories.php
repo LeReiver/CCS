@@ -63,9 +63,13 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Impact Categories</h2>
+        <div class="input_reference"  id="reports" style="width:400px;">
+            <?php echo show_impact_categories()?>
+        </div>
+
         <form method="POST" action="impact_categories.php">
             <!-- User form-->
-            <table class="form_table">
+            <table class="form_table" style="margin-top: -340px;">
                 <tr>
                     <th class="form_label">Impact Categories Name: </th>
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo IMPACT_CATEGORY_NAME_FIELD; ?>"
@@ -93,9 +97,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div class="input_reference"  id="reports">
-            <?php echo show_impact_categories()?>
-        </div>
 
         <div>
             <!-- Error message -->

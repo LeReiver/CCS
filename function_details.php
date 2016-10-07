@@ -86,7 +86,7 @@ include_once ('includes/nav.php');
         <h2>Essential Function Details</h2>
         <form method="POST" action="function_details.php">
             <!-- User form-->
-            <table class="form_table">
+            <table class="form_table" style="margin: 0 100px 0 -300px; width:1200px">
                 <tr>
                     <th class="form_label">Interviewer Name: </th>
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo FUNC_DETAILS_INTERVIEWER_FIELD; ?>"
