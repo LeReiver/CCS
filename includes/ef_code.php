@@ -133,7 +133,8 @@ function show_essential_functions()
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table >";
-        echo "<tr><th><h4>Existing Essential Functions</h4></th></tr>";
+        echo "<tr><th colspan='4'><h4></h4></th></tr>";
+        echo "<tr><th id='table_header'><h4>Existing Essential Functions</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
             echo "                <tr><td  id='reference_table'>" . $row ["EFName"] . ": "
                 . $row["DeptName"] . "<br>-  " . $row ["Organization"] . "</td></tr>\n";

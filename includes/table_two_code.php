@@ -94,23 +94,53 @@ function get_essential_functions()
     $conn->close();
 }
 
+// Fetches from database using SQL query and returns data into user input selector
+function get_departments()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    // SQL query
+    $sql = "SELECT Organization, DeptName, DeptID FROM DEPT";
+    // Create result from connection and query
+    $result = $conn->query($sql);
+    echo "    <div >\n";
+    echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em;'>\n";
+    // User input selector
+    echo "                <select type='select' name='DeptID' style='font-size: .75em;' >\n";
+    // While loop to retrieve every row in table that matches query
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "                <option value='" . $row["DeptID"] . "'>" . $row["DeptName"]
+                . " Department, " . $row ["Organization"] . "</option>\n";
+        }
+        echo "                </select>\n";
+    } else {
+        echo "0 results";
+    }
+    echo "        </form>\n";
+    echo "    </div>\n";
+    // Close connection
+    $conn->close();
+}
 
-function show_function_processes()
+function show_table_two()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID";
+    $sql = "SELECT e.EFName, ep.ProcDesc, d.DeptName, d.Organization FROM EF e, EF_PROC ep, DEPT d WHERE e.EFID = ep.EFID AND e.DeptID = d.DeptID ORDER BY d.DeptID LIMIT 0, 30 ";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='550px'>";
+        echo "<table width='100%'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
-        echo "<tr><th id='table_header'><h4>Existing Function Processes</h4></th></tr>";
+        echo "<tr><th id='table_header'>Organization</th><th id='table_header'>Department</th><th id='table_header'>Essential Function Name</th><th id='table_header'>Processes</th></tr>";
         while ($row = $result->fetch_assoc()) {
-            echo "                <tr><td  id='reference_table'>" . "<strong>" . $row ["EFName"] . "</strong>" . ": <strong>"
-                . $row["DeptName"] ."</strong>" . ", <strong>".  $row["Organization"] ."</strong><br>"
-                . $row ["ProcDesc"] . "</td></tr>\n";
+            echo "                <tr><td  id='table_reference'>" . $row ["Organization"] . "</td><td> " . $row ["DeptName"] . "</td><td> " . $row ["EFName"] . "</td><td> " .  $row["ProcDesc"] . "</td></tr>\n";
         }
         echo "</table>";
     } else {

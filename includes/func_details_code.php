@@ -211,6 +211,7 @@ function show_impact_categories()
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table>";
+        echo "<tr><th colspan='4'><h4></h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
             echo "<tr><td>" . $row["CatName"] . ":</td><td>" . $row["CatDesc"] . "</td></tr>";
         }

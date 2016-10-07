@@ -108,16 +108,33 @@ li a:hover {
 /* -----------------------------------------------------------------------------*/
 
 /*  borders for table alignment testing  */
-/*
 
+/*
 table td  {
     border: solid 1px black;
 }
 table th  {
     border: solid 1px black;
 }
-
 */
+
+#reports table {
+    border-collapse: collapse;
+}
+
+#reports th {
+    background: rgba(126, 161, 66, 0.41);
+}
+
+#reports tr:nth-child(even) {
+    background: #FFF;
+}
+
+#reports tr:nth-child(odd) {
+    background-color: rgba(19, 107, 151, 0.23)
+}
+
+
 #login_content {
     font-family: Charcoal, Geneva, sans-serif;
     font-size: 125%;
@@ -238,6 +255,15 @@ table th  {
     margin-top: -50px;
     margin-left: 110px;
     padding-bottom: 100px;
+}
+.table_reference {
+    width: 800px;
+    font-size: 75%;
+    margin: 50px auto;
+    padding-bottom: 100px;
+}
+.table_reference td {
+    padding: 10px 20px;
 }
 .top {
     color: #7ea142;
