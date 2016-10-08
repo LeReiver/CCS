@@ -15,27 +15,27 @@ body {
 }
 h1 {
     text-align: center;
-    font-family: Charcoal,"Trebuchet MS", sans-serif;
+    font-family: Charcoal, Geneva, sans-serif;
     color: #162110;
     font-size: 250%;
     text-transform: uppercase;
 }
 h2 {
     text-align: center;
-    font-family: Charcoal,"Trebuchet MS", sans-serif;
+    font-family: Charcoal, Geneva, sans-serif;
     color: #162110;
     font-size: 175%;
     text-transform: uppercase;
 }
 h3 {
     text-align: center;
-    font-family: Charcoal,"Trebuchet MS", sans-serif;
+    font-family: Charcoal, Geneva, sans-serif;
     font-size: 100%;
     text-transform: lowercase;
 }
 h4  {
     text-align: center;
-    font-family: Charcoal,"Trebuchet MS", sans-serif;
+    font-family: Charcoal, Geneva, sans-serif;
     color: #76317f;
     font-size: 80%;
     text-transform: uppercase;
@@ -345,6 +345,13 @@ border: solid black 1px;
 }
 .form_label {
     text-align: end;
+    padding-right: 20px;
+    width: 300px;
+    font-size: 90% ;
+}
+
+.form_label.details {
+    text-align: justify;
     padding-right: 20px;
     width: 300px;
     font-size: 90% ;

@@ -100,26 +100,26 @@ include_once ('includes/nav.php');
 
             <table class="form_table" style="margin: 10px 0 0 -200px;">
                 <tr><td></td>
-                    <th  colspan=1 class="form_label" style="text-align: center">1 hour<br>Tier 1</th>
-                    <th  colspan=1 class="form_label" style="text-align: center">2 to 8 hours<br>Tier 2</th>
-                    <th  colspan=1 class="form_label" style="text-align: center">9 to 24 hours<br>Tier 3</th>
-                    <th  colspan=1 class="form_label" style="text-align: center">1 to 3 days<br>Tier 4</th>
-                    <th  colspan=1 class="form_label" style="text-align: center">4 to 7 days<br>Tier 5</th>
-                    <th  colspan=1 class="form_label" style="text-align: center">8 to 15 days<br>Tier 6</th>
-                    <th  colspan=1 class="form_label" style="text-align: center">16 to 30 days<br>Tier 7</th>  </tr>
+                    <th  colspan=1 class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
+                    <th  colspan=1 class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
                 <tr>
                    <td><?php score_impact_categories()?></td>
                 </tr>
                     <!-- Submit form-->
                 <div class="submit_table">
                     <tr></tr><tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
                                 name="<?php echo IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
                     </tr>
                     <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                         <!-- Reset button -->
                         <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
                     </tr>

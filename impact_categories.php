@@ -69,7 +69,7 @@ include_once ('includes/nav.php');
 
         <form method="POST" action="impact_categories.php">
             <!-- User form-->
-            <table class="form_table" style="margin-top: -340px;">
+            <table class="form_table" style="margin: -340px 0 0 -300px;">
                 <tr>
                     <th class="form_label">Impact Categories Name: </th>
                     <td colspan="2" class="form_input" style="padding-right: 25px;"><input type="text" name="<?php echo IMPACT_CATEGORY_NAME_FIELD; ?>"

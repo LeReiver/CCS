@@ -360,7 +360,7 @@ function show_impact_scoring()
         echo "<tr><th colspan='8'><h4>Existing Impact Category Scores</h4></th></tr>";
         echo "                  <tr><th id='table_header'>Category</th><th id='table_header'> Tier 1 </th><th id='table_header'> Tier 2 </th><th id='table_header'> Tier 3 </th><th id='table_header'> Tier 4 </th><th id='table_header'> Tier 5 </th><th id='table_header'> Tier 6 </th><th id='table_header'> Tier 7</th></th>\n";
         while ($row = $result->fetch_assoc()) {
-            echo "                <tr id='reference_table'><td  >"  . $row ["CatName"] . "</td><td>" . $row["1Hour"] . "</td><td>" . $row["2to8Hours"] . "</td><td>"
+            echo "                <tr id='reference_table'><td > <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["1Hour"] . "</td><td>" . $row["2to8Hours"] . "</td><td>"
                 . $row ["9to24Hours"] . "</td><td>" . $row["1to3Days"] . "</td><td>" . $row["4to7Days"] . "</td><td>" . $row ["8to15Days"] . "</td><td>" . $row["16to31Days"] . "</td></tr>\n";
         }
         echo "</table>";
