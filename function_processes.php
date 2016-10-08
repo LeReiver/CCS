@@ -12,9 +12,6 @@ include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
 include_once('includes/func_processes_code.php');
-//include_once ('includes/text_editor.js.php');
-//include_once ('includes/text_editor_tools.js.php');
-
 
 // Requires secure connection
 require_secure();
@@ -53,23 +50,9 @@ header("Pragma: no-cache");
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <script src="includes/text_editor.js.php"></script>
-    <script src="includes/text_editor_tools.js.php"></script>
-    <script>
-        function init () {
-            var boxes = document.getElementsByClassName("rte_box")
-            for(var i = 0; i < boxes.length; i++) {
-                new RichTextEditor(boxes[i], function() {
-                    return function(html) {
-                        document.getElementById("results").innerHTML += html +"<br>";
-                    }
-                } (boxes[i]));
-            }
-        }
-    </script>
 </head>
 
-<body onload="init();">
+<body>
 <?php
 // Shows logo
 show_logo();
@@ -80,28 +63,23 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
     <h2>Function Processes</h2>
-    <div class="input_reference" id="reports" style="width:300px; ">
+    <div class="input_reference" id="reports" style="margin-left: 30px;">
         <?php echo show_function_processes()?>
     </div>
 
         <form method="POST" action="function_processes.php">
             <!-- User form-->
-            <table class="form_table" style="margin-top: -710px;">
+            <table class="form_table" style="margin: -710px 0 0 -100px;">
                 <tr>
                     <!--  Input label -->
                     <th class="form_label">Essential Function: </th>
                     <!-- User selector gets essential functions -->
                     <td colspan="2" class="form_input"> <?php get_essential_functions() ?></td>
                 </tr>
-                <tr><th class="form_label">Function Processes: </th>
-                    <!-- Text Editor-->
-                    <td id="1" class="rte_box"  style="width:550px; height:200px;"></td>
-
-<!--                    <td colspan="2" class="form_input"><textarea name="--><?php //echo FUNC_PROCESS_DESCRIPTION_FIELD; ?><!--" -->
-<!--                                                                 value="--><?php //echo $func_process_description ?><!--" rows="10" cols="50" class="form_label_textarea"></textarea></td>-->
-                </tr>
-                <tr><td></td>
-                   <td> <div id="results" value ="<?php echo $func_process_description ?>" name="<?php echo FUNC_PROCESS_DESCRIPTION_FIELD; ?>"></div></td>
+                <tr>
+                    <th class="form_label">Function Processes: </th>
+                    <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_PROCESS_DESCRIPTION_FIELD; ?>"
+                                                                 value="<?php echo $func_process_description ?>" rows="10" cols="50" class="form_label_textarea"></textarea></td>
                 </tr>
 
 

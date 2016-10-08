@@ -140,7 +140,7 @@ function show_table_two()
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'>Organization</th><th id='table_header'>Department</th><th id='table_header'>Essential Function Name</th><th id='table_header'>Processes</th></tr>";
         while ($row = $result->fetch_assoc()) {
-            echo "                <tr><td  id='table_reference'>" . $row ["Organization"] . "</td><td> " . $row ["DeptName"] . "</td><td> " . $row ["EFName"] . "</td><td> " .  $row["ProcDesc"] . "</td></tr>\n";
+            echo "                <tr><td  id='table_reference'>" . $row ["Organization"] . "</td><td> " . $row ["DeptName"] . "</td><td> " . $row ["EFName"] . "</td><td> " .  nl2br($row["ProcDesc"]) . "</td></tr>\n";
         }
         echo "</table>";
     } else {

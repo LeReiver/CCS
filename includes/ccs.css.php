@@ -117,8 +117,8 @@ li a:hover {
 /* -----------------------------------------------------------------------------*/
 
 /*  borders for table alignment testing  */
-
 /*
+
 table td  {
     border: solid 1px black;
 }
@@ -136,7 +136,7 @@ table th  {
 }
 
 #reports tr:nth-child(even) {
-    background: #FFF;
+    background: rgba(156, 228, 255, 0.41);
 }
 
 #reports tr:nth-child(odd) {

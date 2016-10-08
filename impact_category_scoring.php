@@ -89,7 +89,7 @@ include_once ('includes/nav.php');
                         </th>
                 </tr>
                 <tr>
-                    <th class="form_label" style="text-align: start" colspan="1">If this function were disrupted,</th>
+                    <th class="form_label" style="text-align: start" colspan="2">If this function were disrupted,</th>
 <!--                    <td> --><?php //get_essential_functions() ?><!--</td>-->
                 </tr>
                 <tr>
