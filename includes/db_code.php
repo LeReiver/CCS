@@ -151,3 +151,17 @@ function add_impact_category_scoring($impact_category_scoring_tier_1, $impact_ca
     $db->query($query);
 }
 
+
+
+// Adds Impact Category Scoring
+function add_impact_category_score( $impact_category_scoring_rto_id, $impact_category_scoring_ef_id, $impact_category_scoring_imp_cat_id,
+     $impact_category_scoring_rating_id)
+{
+    $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    $query = "INSERT INTO";
+    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_RTO_ID . ", " . IMPACT_CATEGORY_SCORE_EF_ID . ", "
+        . IMPACT_CATEGORY_SCORE_IMP_CAT_ID . ", " . IMPACT_CATEGORY_SCORE_RATING_ID . ")";
+    $query .= " VALUES (' $impact_category_scoring_rto_id' , '$impact_category_scoring_ef_id', '$impact_category_scoring_imp_cat_id',
+     '$impact_category_scoring_rating_id');";
+    $db->query($query);
+}

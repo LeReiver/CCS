@@ -14,100 +14,65 @@ require_once ('constants.php');
 
 
 // Creates error_message object of type and detail
-function impact_category_scoring_error_message($type, $detail)
+function impact_category_score_error_message($type, $detail)
 {
     return '<div id="error_header">' . $type . '</div><br><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . IMPACT_CATEGORY_SCORING_PAGE);
+    header('Location: ' . IMPACT_CATEGORY_SCORE_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters
-function impact_category_scoring(
-    $impact_category_scoring_tier_1,
-    $impact_category_scoring_tier_2,
-    $impact_category_scoring_tier_3,
-    $impact_category_scoring_tier_4,
-    $impact_category_scoring_tier_5,
-    $impact_category_scoring_tier_6,
-    $impact_category_scoring_tier_7,
-    $impact_category_scoring_imp_cat_id,
-    $impact_category_scoring_efid
+function impact_category_score(
+    $impact_category_score_rating_id,
+    $impact_category_score_rto_id,
+    $impact_category_score_imp_cat_id,
+    $impact_category_score_ef_id
     )
 {
     // If user field is left blank, give corresponding error
-    if (empty($impact_category_scoring_tier_1)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_ONE);
+    if (empty($impact_category_score_rating_id)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RATING_ID);
     }
-    if (empty($impact_category_scoring_tier_2)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_TWO);
+    if (empty($impact_category_score_rto_id)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RTO_ID);
     }
-    if (empty($impact_category_scoring_tier_3)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_THREE);
+    if (empty($impact_category_score_imp_cat_id)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID);
     }
-    if (empty($impact_category_scoring_tier_4)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_FOUR);
+    if (empty($impact_category_score_ef_id)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_EF_ID);
     }
-    if (empty($impact_category_scoring_tier_5)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_FIVE);
-    }
-    if (empty($impact_category_scoring_tier_6)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_SIX);
-    }
-    if (empty($impact_category_scoring_tier_7)) {
-        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN);
-    }
-//    if (empty($impact_category_scoring_imp_cat_id)) {
-//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
-//    }
-//    if (empty($impact_category_scoring_efid)) {
-//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
-//    }
 
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
-    add_impact_category_scoring(
-        $impact_category_scoring_tier_1,
-        $impact_category_scoring_tier_2,
-        $impact_category_scoring_tier_3,
-        $impact_category_scoring_tier_4,
-        $impact_category_scoring_tier_5,
-        $impact_category_scoring_tier_6,
-        $impact_category_scoring_tier_7,
-        $impact_category_scoring_imp_cat_id,
-        $impact_category_scoring_efid
+    add_impact_category_score(
+        $impact_category_score_rating_id,
+        $impact_category_score_rto_id,
+        $impact_category_score_imp_cat_id,
+        $impact_category_score_ef_id
     );
     // Calls next_page function
     next_page();
 }
 
 // Creates ef_submit object for submit button
-function impact_category_scoring_submit(
-    $impact_category_scoring_tier_1,
-    $impact_category_scoring_tier_2,
-    $impact_category_scoring_tier_3,
-    $impact_category_scoring_tier_4,
-    $impact_category_scoring_tier_5,
-    $impact_category_scoring_tier_6,
-    $impact_category_scoring_tier_7,
-    $impact_category_scoring_imp_cat_id,
-    $impact_category_scoring_efid,
-    $impact_category_scoring_submit_pressed
+function impact_category_score_submit(
+    $impact_category_score_rating_id,
+    $impact_category_score_rto_id,
+    $impact_category_score_imp_cat_id,
+    $impact_category_score_ef_id,
+    $impact_category_score_submit_pressed
     )
 {
-    // If no user field is left empty upon submit button pressed, call impact_category_scoring()
-    if (!empty($impact_category_scoring_submit_pressed)) {
-        return impact_category_scoring(
-            $impact_category_scoring_tier_1,
-            $impact_category_scoring_tier_2,
-            $impact_category_scoring_tier_3,
-            $impact_category_scoring_tier_4,
-            $impact_category_scoring_tier_5,
-            $impact_category_scoring_tier_6,
-            $impact_category_scoring_tier_7,
-            $impact_category_scoring_imp_cat_id,
-            $impact_category_scoring_efid
+    // If no user field is left empty upon submit button pressed, call impact_category_score()
+    if (!empty($impact_category_score_submit_pressed)) {
+        return impact_category_score(
+        $impact_category_score_rating_id,
+        $impact_category_score_rto_id,
+        $impact_category_score_imp_cat_id,
+        $impact_category_score_ef_id
         );
     }
     // Clear user fields
@@ -196,27 +161,27 @@ function score_impact_categories()
 //    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
 //    $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql2 = "SELECT Rating, RatingID FROM RATING ";
-    $sql3 = "SELECT Rating, RatingID FROM RATING ";
-    $sql4 = "SELECT Rating, RatingID FROM RATING ";
-    $sql5 = "SELECT Rating, RatingID FROM RATING ";
-    $sql6 = "SELECT Rating, RatingID FROM RATING ";
-    $sql7 = "SELECT Rating, RatingID FROM RATING ";
-    $sql8 = "SELECT Rating, RatingID FROM RATING ";
+//    $sql3 = "SELECT Rating, RatingID FROM RATING ";
+//    $sql4 = "SELECT Rating, RatingID FROM RATING ";
+//    $sql5 = "SELECT Rating, RatingID FROM RATING ";
+//    $sql6 = "SELECT Rating, RatingID FROM RATING ";
+//    $sql7 = "SELECT Rating, RatingID FROM RATING ";
+//    $sql8 = "SELECT Rating, RatingID FROM RATING ";
 
     // Create result from connection and query
 //    $result = $conn->query($sql);
 //    $result1 = $conn->query($sql1);
     $result2 = $conn->query($sql2);
-    $result3 = $conn->query($sql3);
-    $result4 = $conn->query($sql4);
-    $result5 = $conn->query($sql5);
-    $result6 = $conn->query($sql6);
-    $result7 = $conn->query($sql7);
-    $result8 = $conn->query($sql8);
+//    $result3 = $conn->query($sql3);
+//    $result4 = $conn->query($sql4);
+//    $result5 = $conn->query($sql5);
+//    $result6 = $conn->query($sql6);
+//    $result7 = $conn->query($sql7);
+//    $result8 = $conn->query($sql8);
 
 /*
     if ($result->num_rows > 0) {
-        echo "<div class='scoring_grid'><tr>";
+        echo "<div class='score_grid'><tr>";
         while ($row = $result->fetch_assoc()) {*/
 
 //            echo " <tr><td>"; get_essential_functions();
@@ -241,17 +206,19 @@ function score_impact_categories()
 //                }
 //                echo "                </select>\n";
 //            }
-            echo "                <td><select type='select' name='1Hour' style='font-size: 1.75em;'>\n";
+
+
+            echo "                <td><select type='select' name='RatingID' style='font-size: 1.75em;'>\n";
 
             // While loop to retrieve every row in table that matches query
             if ($result2->num_rows > 0) {
                 // output data of each row
                 while ($row = $result2->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] . " - " . $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
-                echo "                <td><select type='select' name='2to8Hours' style='font-size: 1.75em;'>\n";
+  /*
+                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
             if ($result3->num_rows > 0) {
@@ -261,7 +228,7 @@ function score_impact_categories()
                 }
                 echo "                </select>\n";
 
-                echo "                <td><select type='select' name='9to24Hours' style='font-size: 1.75em;'>\n";
+                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
             if ($result4->num_rows > 0) {
@@ -271,7 +238,7 @@ function score_impact_categories()
                 }
                 echo "                </select>\n";
 
-                echo "                <td><select type='select' name='1to3Days' style='font-size: 1.75em;'>\n";
+                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
             if ($result5->num_rows > 0) {
@@ -281,7 +248,7 @@ function score_impact_categories()
                 }
                 echo "                </select>\n";
 
-                echo "                <td><select type='select' name='4to7Days' style='font-size: 1.75em;'>\n";
+                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
             if ($result6->num_rows > 0) {
@@ -291,7 +258,7 @@ function score_impact_categories()
                 }
                 echo "                </select>\n";
 
-                echo "                <td><select type='select' name='8to15Days' style='font-size: 1.75em;'>\n";
+                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
             if ($result7->num_rows > 0) {
@@ -301,7 +268,7 @@ function score_impact_categories()
                 }
                 echo "                </select>\n";
 
-                echo "                <td><select type='select' name='16to31Days' style='font-size: 1.75em;'>\n";
+                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
             if ($result8->num_rows > 0) {
@@ -310,11 +277,12 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-            } else {
+ */           } else {
                 echo "0 results";
             }
             echo "        </form>\n";
             echo "    </div></td></tr>\n";
+
 
 ////
 //        }
@@ -325,7 +293,7 @@ function score_impact_categories()
 }
 
 
-function scoring_grid()
+function score_grid()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
@@ -346,14 +314,16 @@ function scoring_grid()
 }
 
 
-function show_impact_scoring()
+function show_impact_score()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-//    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days, ef.EFName FROM I_CAT ic, I_CAT_SCORING ics, EF ef WHERE ic.ImpCatID = ics.ImpcatID AND ics.EFID = ef.EFID ORDER BY ef.EFID";
-    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
+//    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days, ef.EFName
+//              FROM I_CAT ic, I_CAT_SCORE ics, EF ef WHERE ic.ImpCatID = ics.ImpcatID AND ics.EFID = ef.EFID ORDER BY ef.EFID";
+    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days 
+              FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table style='width:300px'>";

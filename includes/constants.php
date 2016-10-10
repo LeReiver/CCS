@@ -95,6 +95,7 @@ const FUNC_CATEGORY_PAGE = '/Git_htdocs/ccs_git/function_categories.php';
 const IMPACT_CATEGORY_PAGE = '/Git_htdocs/ccs_git/impact_categories.php';
 const FUNC_DETAILS_PAGE = '/Git_htdocs/ccs_git/function_details.php';
 const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring.php';
+const IMPACT_CATEGORY_SCORE_PAGE = '/Git_htdocs/ccs_git/impact_category_score.php';
 
 
 
@@ -113,7 +114,7 @@ const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scorin
 //const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_categories.php';
 //const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/function_details.php';
 //const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_category_scoring.php';
-
+//const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_category_score.php';
 
 
 // -----------------------------------------------------------------------------------------------------------------------
@@ -308,8 +309,26 @@ const E_NO_IMPACT_CATEGORY_SCORING_EFID = 'Impact Category EF ID must be supplie
 
  
 
+// ------------------------------------------
+
+// Impact Category Score database constants
+
+const IMPACT_CATEGORY_SCORE_TABLE = 'I_CAT_SCORE';
+const IMPACT_CATEGORY_SCORE_RATING_ID = 'RatingID';
+const IMPACT_CATEGORY_SCORE_RTO_ID = 'RtoID';
+const IMPACT_CATEGORY_SCORE_IMP_CAT_ID = 'ImpCatID';
+const IMPACT_CATEGORY_SCORE_EF_ID = 'EFID';
+const IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE = 'impact_category_score_submit_pressed';
 
 
+// Impact Category Score  errors
+
+const E_IMPACT_CATEGORY_SCORE = 'Error!';
+
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID = 'Impact Category Rating must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID  = 'Impact Category RTO must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID = 'Impact Category Impact Category must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID = 'Impact Category Essential Function must be supplied.';
 
 
 
