@@ -115,9 +115,8 @@ function impact_category_scoring_submit(
 }
 
 
-
-// Fetches from database using SQL query and returns data into user input selector
-function get_rto()
+// Fetches essential functions from database and returns data into user input selector
+function get_essential_functions()
 {
     // Get connection
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
@@ -126,18 +125,54 @@ function get_rto()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql = "SELECT RtoID, Duration FROM RTO";
+    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
     echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector
-    echo "                <select type='select' name='RtoID' style='font-size: 1.75em;'>\n";
+    echo "                <select type='select' name='EFID' style='font-size: 1.75em;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
+            echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
+                . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
+        }
+        echo "                </select>\n";
+    } else {
+        echo "0 results";
+    }
+    echo "        </form>\n";
+    echo "    </div>\n";
+    // Close connection
+    $conn->close();
+
+}
+
+
+// Fetches impact categories from database and returns data into user input selector
+function get_impact_category()
+{
+    // Get connection
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    // SQL query
+    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+    // Create result from connection and query
+    $result = $conn->query($sql);
+    echo "    <div id='select_dept' style='margin-left: -290px;' >\n";
+    echo "                <form>\n";
+    // User input selector
+    echo "                <select type='select' name='ImpCatID' style='font-size: 1em;'>\n";
+    // While loop to retrieve every row in table that matches query
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -149,7 +184,7 @@ function get_rto()
     $conn->close();
 }
 
-
+// gets rating from db and provides an input selector for users
 function get_rating()
 {
     // Get connection
@@ -183,6 +218,7 @@ function get_rating()
 }
 
 
+// gets rating from db and provides multiple input selectors for users
 
 function score_impact_categories()
 {
@@ -193,8 +229,6 @@ function score_impact_categories()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-//    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
-//    $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql2 = "SELECT Rating, RatingID FROM RATING ";
     $sql3 = "SELECT Rating, RatingID FROM RATING ";
     $sql4 = "SELECT Rating, RatingID FROM RATING ";
@@ -204,8 +238,6 @@ function score_impact_categories()
     $sql8 = "SELECT Rating, RatingID FROM RATING ";
 
     // Create result from connection and query
-//    $result = $conn->query($sql);
-//    $result1 = $conn->query($sql1);
     $result2 = $conn->query($sql2);
     $result3 = $conn->query($sql3);
     $result4 = $conn->query($sql4);
@@ -213,12 +245,6 @@ function score_impact_categories()
     $result6 = $conn->query($sql6);
     $result7 = $conn->query($sql7);
     $result8 = $conn->query($sql8);
-
-/*
-    if ($result->num_rows > 0) {
-        echo "<div class='scoring_grid'><tr>";
-        while ($row = $result->fetch_assoc()) {*/
-
 
             echo "                <td><select type='select' name='1Hour' style='font-size: 1.75em;'>\n";
 
@@ -295,36 +321,12 @@ function score_impact_categories()
             echo "        </form>\n";
             echo "    </div></td></tr>\n";
 
-////
-//        }
-//    }
-    // Close connection
     $conn->close();
 
 }
 
 
-function scoring_grid()
-{
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        echo "<table>";
-        while ($row = $result->fetch_assoc()) {
-            echo "<tr>" . $row [score_impact_categories()] . "</tr>";
-        }
-        echo "</table>";
-    } else {
-        echo "0 results";
-    }
-    $conn->close();
-}
-
-
+// outputs a data table with existing scores
 function show_impact_scoring()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
@@ -350,6 +352,75 @@ function show_impact_scoring()
 }
 
 
+
+
+/* Not being used  -----------------------------------
+
+// Fetches from database using SQL query and returns data into user input selector
+function get_rto()
+{
+    // Get connection
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    // SQL query
+    $sql = "SELECT RtoID, Duration FROM RTO";
+    // Create result from connection and query
+    $result = $conn->query($sql);
+    echo "    <div id='select_dept'  >\n";
+    echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
+    // User input selector
+    echo "                <select type='select' name='RtoID' style='font-size: 1.75em;'>\n";
+    // While loop to retrieve every row in table that matches query
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
+        }
+        echo "                </select>\n";
+    } else {
+        echo "0 results";
+    }
+    echo "        </form>\n";
+    echo "    </div>\n";
+    // Close connection
+    $conn->close();
+}
+*/
+
+
+
+
+//    Not being used  -----------------------------
+/*
+function scoring_grid()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>" . $row [score_impact_categories()] . "</tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+}
+*/
+
+
+
+
+//   Not being used  -----------------------------
+/*
 function get_rto_2()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
@@ -396,179 +467,117 @@ function get_rto_2()
     }
     $conn->close();
 }
+*/
 
 
+// Not being used  -----------------------------
+/*
 function get_rating_2()
 {
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    $sql = "SELECT Organization, DeptName, DeptID FROM DEPT";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        echo "<table>";
-        echo "<tr><td>";
-        while ($row2 = $result->fetch_assoc()) {
-            $conn2 = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-            // Check connection
-            if ($conn2->connect_error) {
-                die("Connection failed: " . $conn2->connect_error);
-            }
-            // SQL query
-            $sql2 = "SELECT Rating, RatingID FROM RATING";
-            // Create result from connection and query
-            $result2 = $conn2->query($sql2);
-            echo "    <div id='select_dept'  >\n";
-            echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
-            // User input selector
-            echo "                <select type='select' name='RatingID' style='font-size: 1.75em;'>\n";
-            // While loop to retrieve every row in table that matches query
-            if ($result2->num_rows > 0) {
-                // output data of each row
-                while ($row2 = $result2->fetch_assoc()) {
-                    echo "                <option value='" . $row2["RatingID"] . "'>" . $row2 ["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
-            } else {
-                echo "0 results";
-            }
-            echo "        </form>\n";
-            echo "    </div>\n";
+   $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+   if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+   }
+   $sql = "SELECT Organization, DeptName, DeptID FROM DEPT";
+   $result = $conn->query($sql);
+   if ($result->num_rows > 0) {
+       echo "<table>";
+       echo "<tr><td>";
+       while ($row2 = $result->fetch_assoc()) {
+           $conn2 = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+           // Check connection
+           if ($conn2->connect_error) {
+               die("Connection failed: " . $conn2->connect_error);
+           }
+           // SQL query
+           $sql2 = "SELECT Rating, RatingID FROM RATING";
+           // Create result from connection and query
+           $result2 = $conn2->query($sql2);
+           echo "    <div id='select_dept'  >\n";
+           echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
+           // User input selector
+           echo "                <select type='select' name='RatingID' style='font-size: 1.75em;'>\n";
+           // While loop to retrieve every row in table that matches query
+           if ($result2->num_rows > 0) {
+               // output data of each row
+               while ($row2 = $result2->fetch_assoc()) {
+                   echo "                <option value='" . $row2["RatingID"] . "'>" . $row2 ["Rating"] . "</option>\n";
+               }
+               echo "                </select>\n";
+           } else {
+               echo "0 results";
+           }
+           echo "        </form>\n";
+           echo "    </div>\n";
 
-            echo "</td></tr>";
-        }
-        echo "</table>";
-    } else {
-        echo "0 results";
-    }
-    $conn->close();
+           echo "</td></tr>";
+       }
+       echo "</table>";
+   } else {
+       echo "0 results";
+   }
+   $conn->close();
 }
+*/
 
 
-// Fetches from database using SQL query and returns data into user input selector
-function get_essential_functions()
-{
-    // Get connection
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    // SQL query
-    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
-    // Create result from connection and query
-    $result = $conn->query($sql);
-    echo "    <div id='select_dept'  >\n";
-    echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
-    // User input selector
-    echo "                <select type='select' name='EFID' style='font-size: 1.75em;'>\n";
-    // While loop to retrieve every row in table that matches query
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
-                . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
-        }
-        echo "                </select>\n";
-    } else {
-        echo "0 results";
-    }
-    echo "        </form>\n";
-    echo "    </div>\n";
-    // Close connection
-    $conn->close();
-
-}
-
-function get_impact_category()
-{
-    // Get connection
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    // SQL query
-    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
-    // Create result from connection and query
-    $result = $conn->query($sql);
-    echo "    <div id='select_dept' style='margin-left: -290px;' >\n";
-    echo "                <form>\n";
-    // User input selector
-    echo "                <select type='select' name='ImpCatID' style='font-size: 1em;'>\n";
-    // While loop to retrieve every row in table that matches query
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
-        }
-        echo "                </select>\n";
-    } else {
-        echo "0 results";
-    }
-    echo "        </form>\n";
-    echo "    </div>\n";
-    // Close connection
-    $conn->close();
-}
-
-
+// Not being used  -----------------------------
+/*
 function get_ic_and_ef()
 {
-    // Get connection
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    // SQL query
-    $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
-    $sql2 = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
-    
-    // Create result from connection and query
-    $result1 = $conn->query($sql1);
-    $result2 = $conn->query($sql2);
+   // Get connection
+   $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+   // Check connection
+   if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+   }
+   // SQL query
+   $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
+   $sql2 = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
 
-    
-    echo "    <div id='select_dept'  >\n";
-    echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
-    // User input selector
-    echo "                <select type='select' name='EFID' style='font-size: 1.75em;'>\n";
-    // While loop to retrieve every row in table that matches query
-    if ($result2->num_rows > 0) {
-        // output data of each row
-        while ($row = $result2->fetch_assoc()) {
-            echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
-                . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
-        }
-        echo "                </select>\n";
+   // Create result from connection and query
+   $result1 = $conn->query($sql1);
+   $result2 = $conn->query($sql2);
 
 
-    }
-    echo "        </form>\n";
-    echo "    </div>\n";
+   echo "    <div id='select_dept'  >\n";
+   echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
+   // User input selector
+   echo "                <select type='select' name='EFID' style='font-size: 1.75em;'>\n";
+   // While loop to retrieve every row in table that matches query
+   if ($result2->num_rows > 0) {
+       // output data of each row
+       while ($row = $result2->fetch_assoc()) {
+           echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
+               . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
+       }
+       echo "                </select>\n";
 
-    echo "    <div id='select_dept'  >\n";
-    echo "                <form>\n";
-    // User input selector
-    echo "                <select type='select' name='ImpCatID' style='font-size: 1em;'>\n";
-    // While loop to retrieve every row in table that matches query
-    if ($result1->num_rows > 0) {
-        // output data of each row
-        while ($row = $result1->fetch_assoc()) {
-            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . ' (' . $row ["CatName"] . ")" . "</option>\n";
-        }
-        echo "                </select>\n";
-    } else {
-        echo "0 results";
-    }
-    echo "        </form>\n";
-    echo "    </div>\n";
 
-    // Close connection
-    $conn->close();
-    
+   }
+   echo "        </form>\n";
+   echo "    </div>\n";
+
+   echo "    <div id='select_dept'  >\n";
+   echo "                <form>\n";
+   // User input selector
+   echo "                <select type='select' name='ImpCatID' style='font-size: 1em;'>\n";
+   // While loop to retrieve every row in table that matches query
+   if ($result1->num_rows > 0) {
+       // output data of each row
+       while ($row = $result1->fetch_assoc()) {
+           echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . ' (' . $row ["CatName"] . ")" . "</option>\n";
+       }
+       echo "                </select>\n";
+   } else {
+       echo "0 results";
+   }
+   echo "        </form>\n";
+   echo "    </div>\n";
+
+   // Close connection
+   $conn->close();
+
 }
 
-
+*/
