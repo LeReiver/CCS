@@ -31,7 +31,7 @@ $impact_category_scoring_tier_4 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_4_
 $impact_category_scoring_tier_5 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_5_FIELD);
 $impact_category_scoring_tier_6 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_6_FIELD);
 $impact_category_scoring_tier_7 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_7_FIELD);
-$impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);   // Not reading !!!!!!!!!!! ++++++++++++++++++++++++++++++++++++++++
+$impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);   //----------------  *** !!!  Not reading !!! ++++++++++++++++++++++++++++++++++++++++
 $impact_category_scoring_efid = get_post_value(IMPACT_CATEGORY_SCORING_EFID);
 $impact_category_scoring_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE);
 
@@ -89,17 +89,17 @@ include_once ('includes/nav.php');
                         </th>
                 </tr>
                 <tr>
-                    <th class="form_label" style="text-align: start" colspan="2">If this function were disrupted,</th>
-<!--                    <td> --><?php //get_essential_functions() ?><!--</td>-->
+                    <th class="form_label" style="text-align: start">If this function were disrupted,</th>
+                    <td> <?php get_essential_functions() ?></td>
                 </tr>
                 <tr>
-                    <th class="form_label" style="text-align: start" colspan="1"> to what degree ...</th>
-                    <td> <?php get_impact_category() ?></td>
+                    <th class="form_label" style="text-align: start"> to what degree ...</th>
+                    <td> <?php get_impact_category() ?></td>   <!-- ----------------------------------   *** !!!   Not Reading   !!! ***   +++++++++++++++++++++++++++++++++++ -->
                 </tr>
                 </table>
 
             <table class="form_table" style="margin: 10px 0 0 -200px;">
-                <tr><td></td>
+                <tr>
                     <th  colspan=1 class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
                     <th  colspan=1 class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
                     <th  colspan=1 class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
@@ -108,18 +108,18 @@ include_once ('includes/nav.php');
                     <th  colspan=1 class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
                     <th  colspan=1 class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
                 <tr>
-                   <td><?php score_impact_categories()?></td>
+                   <?php score_impact_categories()?>
                 </tr>
                     <!-- Submit form-->
                 <div class="submit_table">
                     <tr></tr><tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
                                 name="<?php echo IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
                     </tr>
                     <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td>
                         <!-- Reset button -->
                         <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
                     </tr>

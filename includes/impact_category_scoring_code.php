@@ -5,7 +5,7 @@
  * Date: 4/5/16
  * Time: 12:16 AM
  * 
- * Holds multiple form functions
+ * Holds multiple form functions for impact_category_scoring.php
  *
  */
 
@@ -219,28 +219,7 @@ function score_impact_categories()
         echo "<div class='scoring_grid'><tr>";
         while ($row = $result->fetch_assoc()) {*/
 
-//            echo " <tr><td>"; get_essential_functions();
-//            echo "</td></tr>";
-//            echo " <tr><td colspan='2'> to what degree ...</td>
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">1 hour<br>- Tier 1</th>
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">2 to 8 hours<br>- Tier 2</th>   
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">9 to 24 hours<br>- Tier 3</th>   
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">1 to 3 days<br>- Tier 4</th>  
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">4 to 7 days<br>- Tier 5</th>  
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">8 to 15 days<br>- Tier 6</th> 
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">16 to 30 days<br>- Tier 7</th>  </tr>";
-//            echo "    <tr><td colspan='2'><div id='select_dept'  >\n";
-//            echo "                <form style='font-size: 1.75em; font-weight: bold; float: left'>\n";
-//            // User input selector
-//            echo "                <select type='select' name='ImpCatID' style='font-size: 1.75em;'>\n";
-//            // While loop to retrieve every row in table that matches query
-//            if ($result1->num_rows > 0) {
-//                // output data of each row
-//                while ($row = $result1->fetch_assoc()) {
-//                    echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . ' (' . $row ["CatName"] . ')' . "</option>\n";
-//                }
-//                echo "                </select>\n";
-//            }
+
             echo "                <td><select type='select' name='1Hour' style='font-size: 1.75em;'>\n";
 
             // While loop to retrieve every row in table that matches query
@@ -514,7 +493,7 @@ function get_impact_category()
     $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     // Create result from connection and query
     $result = $conn->query($sql);
-    echo "    <div id='select_dept'  >\n";
+    echo "    <div id='select_dept' style='margin-left: -290px;' >\n";
     echo "                <form>\n";
     // User input selector
     echo "                <select type='select' name='ImpCatID' style='font-size: 1em;'>\n";

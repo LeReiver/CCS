@@ -85,14 +85,14 @@ include_once ('includes/nav.php');
 
         </table>
 
-<!--        <table class="form_table" style="margin: 10px 0 0 -200px;">-->
-<!--            <tr>-->
-<!--                <th class="form_label" style="text-align: start"> to what degree ...</th>-->
-<!--                <td> --><?php //get_impact_category() ?><!--</td>-->
-<!---->
-<!--            </tr>-->
-<!---->
-<!--        </table>-->
+        <table class="form_table" style="margin: 10px 0 0 -200px;">
+            <tr>
+                <th class="form_label" style="text-align: start"> to what degree ...</th>
+                <td> <?php get_impact_category() ?></td>
+
+            </tr>
+
+        </table>
 
         <table class="form_table" style="margin: 10px 0 0 -200px;">
             <tr>

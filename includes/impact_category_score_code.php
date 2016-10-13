@@ -5,7 +5,7 @@
  * Date: 4/5/16
  * Time: 12:16 AM
  * 
- * Holds multiple form functions
+ * Holds multiple form functions for impact_category_score.php
  *
  */
 
@@ -157,55 +157,13 @@ function score_impact_categories()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    // SQL query
-//    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
-//    $sql1 = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $sql2 = "SELECT Rating, RatingID FROM RATING ";
-//    $sql3 = "SELECT Rating, RatingID FROM RATING ";
-//    $sql4 = "SELECT Rating, RatingID FROM RATING ";
-//    $sql5 = "SELECT Rating, RatingID FROM RATING ";
-//    $sql6 = "SELECT Rating, RatingID FROM RATING ";
-//    $sql7 = "SELECT Rating, RatingID FROM RATING ";
-//    $sql8 = "SELECT Rating, RatingID FROM RATING ";
-
     // Create result from connection and query
-//    $result = $conn->query($sql);
-//    $result1 = $conn->query($sql1);
     $result2 = $conn->query($sql2);
-//    $result3 = $conn->query($sql3);
-//    $result4 = $conn->query($sql4);
-//    $result5 = $conn->query($sql5);
-//    $result6 = $conn->query($sql6);
-//    $result7 = $conn->query($sql7);
-//    $result8 = $conn->query($sql8);
-
 /*
     if ($result->num_rows > 0) {
         echo "<div class='score_grid'><tr>";
         while ($row = $result->fetch_assoc()) {*/
-
-//            echo " <tr><td>"; get_essential_functions();
-//            echo "</td></tr>";
-//            echo " <tr><td colspan='2'> to what degree ...</td>
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">1 hour<br>- Tier 1</th>
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">2 to 8 hours<br>- Tier 2</th>   
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">9 to 24 hours<br>- Tier 3</th>   
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">1 to 3 days<br>- Tier 4</th>  
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">4 to 7 days<br>- Tier 5</th>  
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">8 to 15 days<br>- Tier 6</th> 
-//                    <th  colspan=\"1\" class=\"form_label\" style=\"text-align: center\">16 to 30 days<br>- Tier 7</th>  </tr>";
-//            echo "    <tr><td colspan='2'><div id='select_dept'  >\n";
-//            echo "                <form style='font-size: 1.75em; font-weight: bold; float: left'>\n";
-//            // User input selector
-//            echo "                <select type='select' name='ImpCatID' style='font-size: 1.75em;'>\n";
-//            // While loop to retrieve every row in table that matches query
-//            if ($result1->num_rows > 0) {
-//                // output data of each row
-//                while ($row = $result1->fetch_assoc()) {
-//                    echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . ' (' . $row ["CatName"] . ')' . "</option>\n";
-//                }
-//                echo "                </select>\n";
-//            }
 
 
             echo "                <td><select type='select' name='RatingID' style='font-size: 1.75em;'>\n";
@@ -217,76 +175,12 @@ function score_impact_categories()
                     echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] . " - " . $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-  /*
-                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
-            }
-            // While loop to retrieve every row in table that matches query
-            if ($result3->num_rows > 0) {
-                // output data of each row
-                while ($row = $result3->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
-
-                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
-            }
-            // While loop to retrieve every row in table that matches query
-            if ($result4->num_rows > 0) {
-                // output data of each row
-                while ($row = $result4->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
-
-                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
-            }
-            // While loop to retrieve every row in table that matches query
-            if ($result5->num_rows > 0) {
-                // output data of each row
-                while ($row = $result5->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
-
-                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
-            }
-            // While loop to retrieve every row in table that matches query
-            if ($result6->num_rows > 0) {
-                // output data of each row
-                while ($row = $result6->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
-
-                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
-            }
-            // While loop to retrieve every row in table that matches query
-            if ($result7->num_rows > 0) {
-                // output data of each row
-                while ($row = $result7->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
-
-                echo "                <td><select type='select' name='Rating' style='font-size: 1.75em;'>\n";
-            }
-            // While loop to retrieve every row in table that matches query
-            if ($result8->num_rows > 0) {
-                // output data of each row
-                while ($row = $result8->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
-                }
-                echo "                </select>\n";
- */           } else {
+            } else {
                 echo "0 results";
             }
             echo "        </form>\n";
             echo "    </div></td></tr>\n";
-
-
-////
-//        }
-//    }
+    
     // Close connection
     $conn->close();
 
