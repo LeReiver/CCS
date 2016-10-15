@@ -247,7 +247,7 @@ function score_impact_categories()
     $result8 = $conn->query($sql8);
 
             echo "                <td><select type='select' name='1Hour' style='font-size: 1.75em;'>\n";
-
+    
             // While loop to retrieve every row in table that matches query
             if ($result2->num_rows > 0) {
                 // output data of each row
@@ -255,7 +255,6 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
                 echo "                <td><select type='select' name='2to8Hours' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
@@ -265,7 +264,6 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
                 echo "                <td><select type='select' name='9to24Hours' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
@@ -275,7 +273,6 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
                 echo "                <td><select type='select' name='1to3Days' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
@@ -285,7 +282,6 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
                 echo "                <td><select type='select' name='4to7Days' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
@@ -295,7 +291,6 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
                 echo "                <td><select type='select' name='8to15Days' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query
@@ -305,7 +300,6 @@ function score_impact_categories()
                     echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
-
                 echo "                <td><select type='select' name='16to31Days' style='font-size: 1.75em;'>\n";
             }
             // While loop to retrieve every row in table that matches query

@@ -94,10 +94,11 @@ include_once ('includes/nav.php');
                 </tr>
                 <tr>
                     <th class="form_label" style="text-align: start"> to what degree ...</th>
-                    <td> <?php get_impact_category() ?></td>   <!-- ----------------------------------   *** !!!   Not Reading   !!! ***   +++++++++++++++++++++++++++++++++++ -->
+                    <td> <?php get_impact_category() ?></td>   <!-- ----------------------------------   *** !!!   Not Reading User Input  !!! ***   +++++++++++++++++++++++++++++++++++ -->
                 </tr>
                 </table>
 
+            
             <table class="form_table" style="margin: 10px 0 0 -200px;">
                 <tr>
                     <th  colspan=1 class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>

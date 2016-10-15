@@ -67,7 +67,7 @@ const DB_DATABASE = 'CCS_01';
 /* hostpond */
 //const DB_SERVER = 'plum.hostpond.com';
 //const DB_USER = 'lereive2';
-//const DB_PASSWORD = 'redBrick@45';
+//const DB_PASSWORD = '*****';
 //const DB_DATABASE = 'lereive2_CCS_TEST';
 
 const USERS_TABLE = 'Users';
