@@ -23,19 +23,6 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
     header('Location: ' . NO_ACCESS_PAGE);
 }
 
-// Creates variables using the get_post_value function and passes in constants for each entered field
-$func_process_description = get_post_value(FUNC_PROCESS_DESCRIPTION_FIELD);
-$ef_id = get_post_value(FUNC_PROCESS_EFID_FIELD);
-$func_process_submit_pressed = get_post_value(FUNC_PROCESS_SUBMIT_BUTTON_VALUE);
-
-// Creates error message corresponding with the submit button
-$func_process_error_message = func_process_submit(
-    $ef_id,
-    $func_process_description,
-    $func_process_submit_pressed
-);
-
-
 // Disables Cache-Control on browsers for testing
 header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");

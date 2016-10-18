@@ -119,37 +119,37 @@ include_once ('includes/nav.php');
                 <tr>
                     <th class="form_label">Are there any other peak load or stress considerations to note (things that may increase demand for the function)?</th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_CONSIDERATIONS_FIELD; ?>"
-                                     value="<?php echo $func_detail_considerations ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                     value="<?php echo $func_detail_considerations ?>" rows="6" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
 
                 <tr>
                     <th class="form_label">The loss of this function would have the following  ramifications due to regulatory statutes, contractual agreements
                                             and/or law: (Specify the agreement/law/statute, any specific time requirements and associated fines):</th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_REG_LOSS_FIELD; ?>"
-                                      value="<?php echo $func_detail_reg_loss ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                      value="<?php echo $func_detail_reg_loss ?>" rows="6" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <tr>
                     <th class="form_label">How long can this function continue without its usual information systems support? Assume that loss of support occurs
                                             during your busiest, or peak, season or period.  Select only one.</th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_RTO_FIELD; ?>"
-                                     value="<?php echo $func_detail_rto ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                     value="<?php echo $func_detail_rto ?>" rows="1" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <tr>
                     <th class="form_label">List the information systems/applications required to support this essential function:</th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_IT_SUPPORT_FIELD; ?>"
-                                     value="<?php echo $func_detail_it_support ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                     value="<?php echo $func_detail_it_support ?>" rows="4" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <tr>
                     <th class="form_label">Have you developed or established any work around/backup procedures (manual or otherwise) that can be employed to continue
                                             this function in the event the associated applications are not available?  IF YES, how often are these procedures tested?</th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_BACKUP_PROCESS_FIELD; ?>"
-                                     value="<?php echo $func_detail_backup_process ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                     value="<?php echo $func_detail_backup_process ?>" rows="4" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <tr>
                     <th class="form_label">Specify any other factors that should be considered when evaluating the impact of the loss of this function: (also to explain any scoring
                                             issues from the chart above):</th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_DETAILS_FACTORS_FIELD; ?>"
-                                      value="<?php echo $func_detail_factors ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
+                                      value="<?php echo $func_detail_factors ?>" rows="6" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
 
 
