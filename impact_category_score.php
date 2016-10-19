@@ -110,7 +110,9 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
                 <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
                 <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
-            <tr>
+            <tr><td></td>
+                <td><?php score_impact_categories() ?></td><td><?php score_impact_categories() ?></td><td><?php score_impact_categories() ?></td>
+                <td><?php score_impact_categories() ?></td><td><?php score_impact_categories() ?></td><td><?php score_impact_categories() ?></td>
                 <td><?php score_impact_categories() ?></td>
             </tr>
             <!-- Submit form-->

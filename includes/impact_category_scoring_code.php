@@ -143,7 +143,7 @@ function get_essential_functions()
     } else {
         echo "0 results";
     }
-    echo "        </form>\n";
+//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();
@@ -164,7 +164,7 @@ function get_impact_category()
     $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     // Create result from connection and query
     $result = $conn->query($sql);
-    echo "    <div id='select_dept' style='margin-left: -290px;' >\n";
+    echo "    <div id='select_dept' >\n";
     echo "                <form>\n";
     // User input selector
     echo "                <select type='select' name='ImpCatID' style='font-size: 1em;'>\n";
@@ -178,7 +178,7 @@ function get_impact_category()
     } else {
         echo "0 results";
     }
-    echo "        </form>\n";
+//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();
@@ -312,7 +312,7 @@ function score_impact_categories()
             } else {
                 echo "0 results";
             }
-            echo "        </form>\n";
+//            echo "        </form>\n";
             echo "    </div></td></tr>\n";
 
     $conn->close();
@@ -327,16 +327,18 @@ function show_impact_scoring()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-//    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days, ef.EFName FROM I_CAT ic, I_CAT_SCORING ics, EF ef WHERE ic.ImpCatID = ics.ImpcatID AND ics.EFID = ef.EFID ORDER BY ef.EFID";
-    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
+    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days, ef.EFName 
+            FROM I_CAT ic, I_CAT_SCORING ics, EF ef WHERE ic.ImpCatID = ics.ImpcatID AND ics.EFID = ef.EFID ORDER BY ef.EFID";
+//    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table style='width:300px'>";
-        echo "<tr><th colspan='8'><h4>Existing Impact Category Scores</h4></th></tr>";
-        echo "                  <tr><th id='table_header'>Category</th><th id='table_header'> Tier 1 </th><th id='table_header'> Tier 2 </th><th id='table_header'> Tier 3 </th><th id='table_header'> Tier 4 </th><th id='table_header'> Tier 5 </th><th id='table_header'> Tier 6 </th><th id='table_header'> Tier 7</th></th>\n";
+        echo "<table>";
+        echo "<td colspan='9' style='line-height: .1; background: none;'><h4>Existing Impact Category Scores</h4></td>";
+        echo "                  <tr><th id='table_header'>Essential Function</th><th id='table_header'>Category</th><th id='table_header'>1 Hr</th><th id='table_header'>2-8 Hrs</th>
+                  <th id='table_header'>9-24 Hrs</th><th id='table_header'>1-3Day</th><th id='table_header'>4-7Day</th><th id='table_header'>8-15Day</th><th id='table_header'>16-31Day</th></th>\n";
         while ($row = $result->fetch_assoc()) {
-            echo "                <tr id='reference_table'><td > <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["1Hour"] . "</td><td>" . $row["2to8Hours"] . "</td><td>"
-                . $row ["9to24Hours"] . "</td><td>" . $row["1to3Days"] . "</td><td>" . $row["4to7Days"] . "</td><td>" . $row ["8to15Days"] . "</td><td>" . $row["16to31Days"] . "</td></tr>\n";
+            echo "                <tr id='reference_table'><td> <strong>"  . $row ["EFName"] . "</strong></td><td> <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["1Hour"] . "</td>
+            <td>" . $row["2to8Hours"] . "</td><td>" . $row ["9to24Hours"] . "</td><td>" . $row["1to3Days"] . "</td><td>" . $row["4to7Days"] . "</td><td>" . $row ["8to15Days"] . "</td><td>" . $row["16to31Days"] . "</td></tr>\n";
         }
         echo "</table>";
     } else {

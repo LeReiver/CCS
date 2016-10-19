@@ -21,6 +21,7 @@ include_once ('utilities.php');
         <li><a href="function_details.php">Add EF Detail</a></li>
         <li><a href="impact_category_scoring.php">Add Impact Category Scoring</a></li>
         <li><a href="table_two.php">Table Two</a></li>
+        <li><a href="table_three.php">Table Three</a></li>
         <li><a href="table_four.php">Table Four</a></li>
     </ul>
 </nav>

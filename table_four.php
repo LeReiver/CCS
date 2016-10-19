@@ -4,6 +4,8 @@
  * User: mike
  * Date: 3/22/16
  * Time: 3:06 PM
+ * 
+ * 
  */
 
 // Includes the following files
@@ -48,7 +50,7 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
-    <h2>Table Four</h2>
+    <h1>Table Four</h1>
     <div id="form_content">
         <div class="table_reference" id="reports">
             <?php echo show_table_four()?>

@@ -49,7 +49,7 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
-    <h2>Table Two</h2>
+    <h1>Table Two</h1>
     <div id="form_content">
         <div class="table_reference" id="reports">
             <?php echo show_table_two()?>

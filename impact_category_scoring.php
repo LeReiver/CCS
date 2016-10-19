@@ -127,7 +127,7 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div id="reports" style="margin: 0 0 0 -200px;">
+        <div id="reports" style="margin: 0 0 100px 100px;">
             <?php echo show_impact_scoring()?>
         </div>
 

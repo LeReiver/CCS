@@ -37,7 +37,7 @@ h4  {
     text-align: center;
     font-family: Charcoal, Geneva, sans-serif;
     color: #76317f;
-    font-size: 80%;
+    font-size: 90%;
     text-transform: uppercase;
 }
 h4  a {
@@ -253,7 +253,7 @@ table th  {
     padding-bottom: 100px;
 }
 .table_reference {
-    width: 800px;
+    width: 900px;
     font-size: 75%;
     margin: 50px auto;
     padding-bottom: 100px;
@@ -379,68 +379,4 @@ border: solid black 1px;
 }
 .cat_scoring {
     padding-left:5px;
-}
-/* --------------- Text Editor --------------------*/
-
-
-.rte_box {
-    border: solid black 1px;
-/*    position: relative;*/
-}
-.edit_button {
-    float: right;
-    font-size: small;
-    color: Green;
-    background-color: WhiteSmoke;
-    z-index: 2;
-    margin-right: 20px;
-    position: relative;
-    margin-top: -10px;
-}
-.edit_button:hover {
-    background-color: LightGray;
-    cursor: pointer;
-}
-.edit_box {
-/*    position: absolute;*/
-    overflow-y: auto;
-    word-wrap: break-word;
-    background-color: WhiteSmoke;
-    z-index: 1;
-}
-.edit_tools {
-    width: 100%;
-    background-color: LightGray;
-    position: relative;
-}
-.dummy_button {
-    display: inline-block;
-    background-color: LightGray;
-}
-.tool_button {
-    display: inline-block;
-    background-color: LightGray;
-}
-.right_tool_button {
-    float: right;
-    background-color: LightGray;
-}
-.tool_button:hover, .right_tool_button:hover {
-    background-color: Gray;
-    cursor: pointer;
-}
-.tool_button_image {
-    margin: 2px;
-    border: 0px;
-    vertical-align: top;
-}
-.active_tool_button_image {
-    margin: 1px;
-    border: 1px solid black;
-    vertical-align: top;
-    background-color: DarkGray;
-}
-.html_text {
-    margin: 20px;
-    word-wrap: break-word;
 }
