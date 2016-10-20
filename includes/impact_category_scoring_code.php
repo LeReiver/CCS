@@ -342,7 +342,7 @@ function show_impact_scoring()
         }
         echo "</table>";
     } else {
-        echo " <h4>You have no existing Impact Category Scores</h4>";
+        echo " <h4 id='empty_table'>You have no existing Impact Category Scores</h4>";
     }
     $conn->close();
 }

@@ -31,7 +31,7 @@ $impact_category_scoring_tier_4 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_4_
 $impact_category_scoring_tier_5 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_5_FIELD);
 $impact_category_scoring_tier_6 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_6_FIELD);
 $impact_category_scoring_tier_7 = get_post_value(IMPACT_CATEGORY_SCORING_TIER_7_FIELD);
-$impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);   //----------------  *** !!!  Not reading !!! ++++++++++++++++++++++++++++++++++++++++
+$impact_category_scoring_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORING_IMP_CAT_ID);  
 $impact_category_scoring_efid = get_post_value(IMPACT_CATEGORY_SCORING_EFID);
 $impact_category_scoring_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE);
 
@@ -94,7 +94,7 @@ include_once ('includes/nav.php');
                 </tr>
                 <tr>
                     <th class="form_label" style="text-align: start"> to what degree ...</th>
-                    <td> <?php get_impact_category() ?></td>   <!-- ----------------------------------   *** !!!   Not Reading User Input  !!! ***   +++++++++++++++++++++++++++++++++++ -->
+                    <td> <?php get_impact_category() ?></td>   
                 </tr>
                 </table>
 

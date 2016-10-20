@@ -244,6 +244,10 @@ table th  {
 #table_header {
     border-bottom: solid black 2px;
 }
+#empty_table {
+    margin: 400px 0 0 300px;
+    width: 500px;
+}
 .input_reference {
     float:left;
     clear: right;
