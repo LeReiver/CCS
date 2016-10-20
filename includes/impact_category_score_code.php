@@ -26,34 +26,34 @@ function next_page() {
 
 // Creates impact_categories object with supplied parameters
 function impact_category_score(
-    $impact_category_score_rating_id1,
     $impact_category_score_rto_id1,
-    $impact_category_score_imp_cat_id1,
     $impact_category_score_ef_id1,
-    $impact_category_score_rating_id2,
+    $impact_category_score_imp_cat_id1,
+    $impact_category_score_rating_id1,
     $impact_category_score_rto_id2,
-    $impact_category_score_imp_cat_id2,
     $impact_category_score_ef_id2,
-    $impact_category_score_rating_id3,
+    $impact_category_score_imp_cat_id2,
+    $impact_category_score_rating_id2,
     $impact_category_score_rto_id3,
-    $impact_category_score_imp_cat_id3,
     $impact_category_score_ef_id3,
-    $impact_category_score_rating_id4,
+    $impact_category_score_imp_cat_id3,
+    $impact_category_score_rating_id3,
     $impact_category_score_rto_id4,
-    $impact_category_score_imp_cat_id4,
     $impact_category_score_ef_id4,
-    $impact_category_score_rating_id5,
+    $impact_category_score_rating_id4,
+    $impact_category_score_imp_cat_id4,
     $impact_category_score_rto_id5,
-    $impact_category_score_imp_cat_id5,
     $impact_category_score_ef_id5,
-    $impact_category_score_rating_id6,
+    $impact_category_score_imp_cat_id5,
+    $impact_category_score_rating_id5,
     $impact_category_score_rto_id6,
-    $impact_category_score_imp_cat_id6,
     $impact_category_score_ef_id6,
-    $impact_category_score_rating_id7,
+    $impact_category_score_imp_cat_id6,
+    $impact_category_score_rating_id6,
     $impact_category_score_rto_id7,
+    $impact_category_score_ef_id7,
     $impact_category_score_imp_cat_id7,
-    $impact_category_score_ef_id7
+    $impact_category_score_rating_id7
 
     // If user field is left blank, give corresponding error
     )
@@ -157,46 +157,46 @@ function impact_category_score(
 
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
     add_impact_category_score_tier1(
-        $impact_category_score_rating_id1,
         $impact_category_score_rto_id1,
+        $impact_category_score_ef_id1,
         $impact_category_score_imp_cat_id1,
-        $impact_category_score_ef_id1
+        $impact_category_score_rating_id1
     );
     add_impact_category_score_tier2(
-        $impact_category_score_rating_id2,
         $impact_category_score_rto_id2,
+        $impact_category_score_ef_id2,
         $impact_category_score_imp_cat_id2,
-        $impact_category_score_ef_id2
+        $impact_category_score_rating_id2
     );
     add_impact_category_score_tier3(
-        $impact_category_score_rating_id3,
         $impact_category_score_rto_id3,
+        $impact_category_score_ef_id3,
         $impact_category_score_imp_cat_id3,
-        $impact_category_score_ef_id3
+        $impact_category_score_rating_id3
     );
     add_impact_category_score_tier4(
-        $impact_category_score_rating_id4,
         $impact_category_score_rto_id4,
+        $impact_category_score_ef_id4,
         $impact_category_score_imp_cat_id4,
-        $impact_category_score_ef_id4
+        $impact_category_score_rating_id4
     );
     add_impact_category_score_tier5(
-        $impact_category_score_rating_id5,
         $impact_category_score_rto_id5,
+        $impact_category_score_ef_id5,
         $impact_category_score_imp_cat_id5,
-        $impact_category_score_ef_id5
+        $impact_category_score_rating_id5
     );
     add_impact_category_score_tier6(
-        $impact_category_score_rating_id6,
         $impact_category_score_rto_id6,
+        $impact_category_score_ef_id6,
         $impact_category_score_imp_cat_id6,
-        $impact_category_score_ef_id6
+        $impact_category_score_rating_id6
     );
     add_impact_category_score_tier7(
-        $impact_category_score_rating_id7,
         $impact_category_score_rto_id7,
+        $impact_category_score_ef_id7,
         $impact_category_score_imp_cat_id7,
-        $impact_category_score_ef_id7
+        $impact_category_score_rating_id7
     );
     // Calls next_page function
     next_page();
@@ -204,68 +204,68 @@ function impact_category_score(
 
 // Creates ef_submit object for submit button
 function impact_category_score_submit(
-    $impact_category_score_rating_id1,
     $impact_category_score_rto_id1,
-    $impact_category_score_imp_cat_id1,
     $impact_category_score_ef_id1,
-    $impact_category_score_rating_id2,
+    $impact_category_score_imp_cat_id1,
+    $impact_category_score_rating_id1,
     $impact_category_score_rto_id2,
-    $impact_category_score_imp_cat_id2,
     $impact_category_score_ef_id2,
-    $impact_category_score_rating_id3,
+    $impact_category_score_imp_cat_id2,
+    $impact_category_score_rating_id2,
     $impact_category_score_rto_id3,
-    $impact_category_score_imp_cat_id3,
     $impact_category_score_ef_id3,
-    $impact_category_score_rating_id4,
+    $impact_category_score_imp_cat_id3,
+    $impact_category_score_rating_id3,
     $impact_category_score_rto_id4,
-    $impact_category_score_imp_cat_id4,
     $impact_category_score_ef_id4,
-    $impact_category_score_rating_id5,
+    $impact_category_score_rating_id4,
+    $impact_category_score_imp_cat_id4,
     $impact_category_score_rto_id5,
-    $impact_category_score_imp_cat_id5,
     $impact_category_score_ef_id5,
-    $impact_category_score_rating_id6,
+    $impact_category_score_imp_cat_id5,
+    $impact_category_score_rating_id5,
     $impact_category_score_rto_id6,
-    $impact_category_score_imp_cat_id6,
     $impact_category_score_ef_id6,
-    $impact_category_score_rating_id7,
+    $impact_category_score_imp_cat_id6,
+    $impact_category_score_rating_id6,
     $impact_category_score_rto_id7,
-    $impact_category_score_imp_cat_id7,
     $impact_category_score_ef_id7,
+    $impact_category_score_imp_cat_id7,
+    $impact_category_score_rating_id7,
     $impact_category_score_submit_pressed
     // If no user field is left empty upon submit button pressed, call impact_category_score()
     )
 {
     if (!empty($impact_category_score_submit_pressed)) {
         return impact_category_score(
-            $impact_category_score_rating_id1,
             $impact_category_score_rto_id1,
-            $impact_category_score_imp_cat_id1,
             $impact_category_score_ef_id1,
-            $impact_category_score_rating_id2,
+            $impact_category_score_imp_cat_id1,
+            $impact_category_score_rating_id1,
             $impact_category_score_rto_id2,
-            $impact_category_score_imp_cat_id2,
             $impact_category_score_ef_id2,
-            $impact_category_score_rating_id3,
+            $impact_category_score_imp_cat_id2,
+            $impact_category_score_rating_id2,
             $impact_category_score_rto_id3,
-            $impact_category_score_imp_cat_id3,
             $impact_category_score_ef_id3,
-            $impact_category_score_rating_id4,
+            $impact_category_score_imp_cat_id3,
+            $impact_category_score_rating_id3,
             $impact_category_score_rto_id4,
-            $impact_category_score_imp_cat_id4,
             $impact_category_score_ef_id4,
-            $impact_category_score_rating_id5,
+            $impact_category_score_rating_id4,
+            $impact_category_score_imp_cat_id4,
             $impact_category_score_rto_id5,
-            $impact_category_score_imp_cat_id5,
             $impact_category_score_ef_id5,
-            $impact_category_score_rating_id6,
+            $impact_category_score_imp_cat_id5,
+            $impact_category_score_rating_id5,
             $impact_category_score_rto_id6,
-            $impact_category_score_imp_cat_id6,
             $impact_category_score_ef_id6,
-            $impact_category_score_rating_id7,
+            $impact_category_score_imp_cat_id6,
+            $impact_category_score_rating_id6,
             $impact_category_score_rto_id7,
+            $impact_category_score_ef_id7,
             $impact_category_score_imp_cat_id7,
-            $impact_category_score_ef_id7
+            $impact_category_score_rating_id7
         );
     }
     // Clear user fields
