@@ -117,7 +117,7 @@ li a:hover {
 /* -----------------------------------------------------------------------------*/
 
 /*  borders for table alignment testing  */
-/*
+
 
 table td  {
     border: solid 1px black;
