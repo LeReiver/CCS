@@ -78,7 +78,7 @@ include_once ('includes/nav.php');
             </div>
             <form method="POST" action="departments.php">
             <!-- User form-->
-            <table class="form_table" style="margin:-280px 100px 0 0;">
+            <table class="form_table" style="margin:-320px 50px 0 0;">
                 <tr><th class="form_label">Department Name: </th> <!--  Input label-->
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo DEPT_NAME_FIELD; ?>"
                                            value="<?php echo $dept_name ?>" autofocus></td> <!-- User input -->

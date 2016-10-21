@@ -66,9 +66,9 @@ const DB_DATABASE = 'CCS_01';
 
 /* hostpond */
 //const DB_SERVER = 'plum.hostpond.com';
-//const DB_USER = 'lereive2';
-//const DB_PASSWORD = '*****';
-//const DB_DATABASE = 'lereive2_CCS_TEST';
+//const DB_USER = 'lereive2_admin';
+//const DB_PASSWORD = '******';
+//const DB_DATABASE = 'lereive2_ccs';
 
 const USERS_TABLE = 'Users';
 const USERS_USERNAME_FIELD = 'Username';
@@ -96,25 +96,31 @@ const IMPACT_CATEGORY_PAGE = '/Git_htdocs/ccs_git/impact_categories.php';
 const FUNC_DETAILS_PAGE = '/Git_htdocs/ccs_git/function_details.php';
 const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring.php';
 const IMPACT_CATEGORY_SCORE_PAGE = '/Git_htdocs/ccs_git/impact_category_score.php';
+const TABLE_TWO_PAGE = '/Git_htdocs/ccs_git/table_two.php';
+const TABLE_THREE_PAGE = '/Git_htdocs/ccs_git/table_three.php';
+const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
 
 
 
 
 /* hostpond */
 
-//const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/home.php';
-//const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/register.php';
-//const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/CCS//index.php';
-//const LOGOUT_PAGE = 'https://plum.hostpond.com/~lereive2/CCS//logout.php';
-//const LOGGED_OUT_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/logged_out.php';
-//const NO_ACCESS_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/no_access.php';
-//const EF_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/essential_functions.php';
-//const FUNC_PROCESS_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/function_processes.php';
-//const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/function_categories.php';
-//const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_categories.php';
-//const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/function_details.php';
-//const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_category_scoring.php';
-//const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/CCS/impact_category_score.php';
+//const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
+//const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
+//const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
+//const LOGOUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//logout.php';
+//const LOGGED_OUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/logged_out.php';
+//const NO_ACCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/no_access.php';
+//const EF_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/essential_functions.php';
+//const FUNC_PROCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_processes.php';
+//const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_categories.php';
+//const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_categories.php';
+//const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_details.php';
+//const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_scoring.php';
+//const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score.php';
+//const TABLE_TWO_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_two.php';
+//const TABLE_THREE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_three.php';
+//const TABLE_FOUR_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_four.php';
 
 
 // -----------------------------------------------------------------------------------------------------------------------

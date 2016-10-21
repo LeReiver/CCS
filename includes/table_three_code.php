@@ -31,7 +31,7 @@ FROM EF ef, RTO rt, I_CAT ic, RATING ra, I_CAT_SCORE ics
 WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND rt.Duration = 2";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='100%'>";
+        echo "<table width='100%' style='margin-left: 200px;'>";
         echo "<tr><th><h4>RTO</h4></th><th><h4>Essential Function</h4></th><th><h4>Impact Category</h4></th><th><h4>Rating</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
 

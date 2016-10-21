@@ -97,7 +97,7 @@ function show_departments()
     $sql = "SELECT Organization, DeptName FROM DEPT as DEPT";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table >";
+        echo "<table style='margin-top: -100px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'><h4>Existing Departments</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {

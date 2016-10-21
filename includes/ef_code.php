@@ -132,7 +132,7 @@ function show_essential_functions()
     $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName FROM DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table >";
+        echo "<table style='margin-top: -100px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'><h4>Existing Essential Functions</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {

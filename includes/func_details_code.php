@@ -148,9 +148,9 @@ function get_essential_functions()
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
-    echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em; float: right'>\n";
+    echo "                <form style='font-size: .75em; font-weight: bold; margin-top: 1em; float: right'>\n";
     // User input selector
-    echo "                <select type='select' name='EFID' style='font-size: 1em;'>\n";
+    echo "                <select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row

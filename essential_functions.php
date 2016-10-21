@@ -78,10 +78,10 @@ include_once ('includes/nav.php');
         </div>
         <form method="POST" action="essential_functions.php">
             <!-- User form-->
-            <table class="form_table">
+            <table class="form_table" style="margin:-320px 50px 0 0;">
                 <tr>
                   <th class="form_label">Department: </th>    <!--  Input label-->
-                    <td colspan="2" class="form_input"> <?php get_departments() ?></td> <!-- User selector gets departments -->
+                  <td colspan="2" class="form_input"> <?php get_departments() ?></td> <!-- User selector gets departments -->
                 </tr>
                 <tr><th class="form_label">Essential Function Name: </th>
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo EF_NAME_FIELD; ?>"
@@ -122,7 +122,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-
         <div>
             <!-- Error message -->
             <p id="submit_error"><?php echo $ef_error_message ; ?></p>

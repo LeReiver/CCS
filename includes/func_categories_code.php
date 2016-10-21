@@ -88,7 +88,7 @@ function get_essential_functions()
     } else {
         echo "0 results";
     }
-    echo "        </form>\n";
+//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();

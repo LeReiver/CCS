@@ -63,13 +63,13 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
     <h2>Function Processes</h2>
-    <div class="input_reference" id="reports" style="margin-left: 30px;">
+    <div class="input_reference" id="reports">
         <?php echo show_function_processes()?>
     </div>
 
         <form method="POST" action="function_processes.php">
             <!-- User form-->
-            <table class="form_table" style="margin: -710px 0 0 -100px;">
+            <table class="form_table" style="margin:-320px 50px 0 0;">
                 <tr>
                     <!--  Input label -->
                     <th class="form_label">Essential Function: </th>

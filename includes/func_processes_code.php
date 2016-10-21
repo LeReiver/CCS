@@ -104,7 +104,7 @@ function show_function_processes()
     $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID ORDER BY ProcID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='320px'>";
+        echo "<table width='320px'style='margin-top: -100px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'><h4>Existing Function Processes</h4></th></tr>";
         while ($row = $result->fetch_assoc()) {

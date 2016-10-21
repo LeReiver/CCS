@@ -137,31 +137,6 @@ include_once ('includes/nav.php');
             <tr>
                 <th class="form_label" style="text-align: start">If this function were disrupted,</th>
                 <td> <?php get_essential_functions() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
-                <td> <?php get_essential_functions() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
-                <td> <?php get_essential_functions() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
-                <td> <?php get_essential_functions() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
-                <td> <?php get_essential_functions() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
-                <td> <?php get_essential_functions() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
-                <td> <?php get_essential_functions() ?></td>
-            </tr>
 
         </table>
 
@@ -170,31 +145,6 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: start"> to what degree ...</th>
                 <td> <?php get_impact_category() ?></td>
             </tr>
-            <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
-                <td> <?php get_impact_category() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
-                <td> <?php get_impact_category() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
-                <td> <?php get_impact_category() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
-                <td> <?php get_impact_category() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
-                <td> <?php get_impact_category() ?></td>
-            </tr>
-            <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
-                <td> <?php get_impact_category() ?></td>
-            </tr>
-
         </table>
 
 <!--        <table class="form_table" style="margin: 10px 0 0 -200px;">-->

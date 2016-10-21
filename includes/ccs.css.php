@@ -74,7 +74,6 @@ input [type=select] {
 form {
     width: 50%;
     float: right;
-    clear: left;
     margin-right: 15%;
 }
 
@@ -83,9 +82,10 @@ form {
 
 nav {
     float: right;
-    clear: both;
-    margin:90px 8px 0 0;
+/*    clear: both;*/
+    margin:120px 8px 0 0;
     display: block;
+    position: relative;
 }
 
 ul {
@@ -127,6 +127,13 @@ table th  {
 }
 
 */
+
+#reports {
+    position: relative;
+    float:left;
+}
+
+
 #reports table {
     border-collapse: collapse;
 }
@@ -379,7 +386,7 @@ border: solid black 1px;
     border-radius: 5px;
 }
 .form_table {
-    margin-top: -480px;
+    margin-bottom: 580px;
 }
 .cat_scoring {
     padding-left:5px;

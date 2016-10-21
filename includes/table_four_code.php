@@ -29,7 +29,7 @@ function show_table_four()
             ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors FROM EF_DETAIL ed, EF ef WHERE ef.EFID = ed.EFID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='100%'>";
+        echo "<table width='100%' style='margin-left: 200px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
 
