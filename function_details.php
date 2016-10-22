@@ -84,6 +84,8 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Essential Function Details</h2>
+        <!-- Error message -->
+        <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
         <form method="POST" action="function_details.php">
             <!-- User form-->
             <table class="form_table" style="margin: 0 100px 0 -200px; width:1000px;">
@@ -170,10 +172,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div>
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
-         </div>
         <a href="#top" class="top">Back to top</a>
     </div>
 </body>

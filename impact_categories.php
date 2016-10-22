@@ -63,6 +63,8 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Impact Categories</h2>
+        <!-- Error message -->
+        <p id="submit_error"><?php echo $impact_category_error_message ; ?></p>
         <div class="input_reference"  id="reports">
             <?php echo show_impact_categories()?>
         </div>
@@ -97,11 +99,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-
-        <div>
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $impact_category_error_message ; ?></p>
-        </div>
     </div>
 </body>
 </html>

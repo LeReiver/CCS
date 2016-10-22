@@ -118,7 +118,7 @@ li a:hover {
 
 /*  borders for table alignment testing  */
 
-
+/*
 table td  {
     border: solid 1px black;
 }
@@ -165,26 +165,26 @@ table th  {
     
 }
 #error_header {
-    text-align: start;
+    text-align: end;
+    float: right;
     color: red;
     text-shadow:  0 0 white;
     font-weight: bold;
     width: 300px;
-    font-size: 150%;
-    float: right;
-    margin-right: 150px;
+    font-size: 120%;
+    margin: -30px 770px 0 0 ;
 }
 #error_detail {
-    text-align: start;
+    text-align: end;
+    float: right;
     color: red;
     text-shadow:  .5px 0 white;
-    font-size: 100%;
-    width: 300px;
-    float: right;
-    margin-right: 250px;
+    font-size: 90%;
+    width: 600px;
+    margin: -23px 370px 0 0;
 }
 #submit_error {
-    padding-left: 60px;
+    margin-left: 600px;
 }
 #submit_error_header {
     text-align: center;

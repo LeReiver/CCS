@@ -3,7 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="260b683e-b79f-4c2f-8227-f7e1175514c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/departments.php" afterPath="$PROJECT_DIR$/departments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essential_functions.php" afterPath="$PROJECT_DIR$/essential_functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function_categories.php" afterPath="$PROJECT_DIR$/function_categories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function_details.php" afterPath="$PROJECT_DIR$/function_details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function_processes.php" afterPath="$PROJECT_DIR$/function_processes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function_profiles.php" afterPath="$PROJECT_DIR$/function_profiles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_categories.php" afterPath="$PROJECT_DIR$/impact_categories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score.php" afterPath="$PROJECT_DIR$/impact_category_score.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_scoring.php" afterPath="$PROJECT_DIR$/impact_category_scoring.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/ccs.css.php" afterPath="$PROJECT_DIR$/includes/ccs.css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/constants.php" afterPath="$PROJECT_DIR$/includes/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/db_code.php" afterPath="$PROJECT_DIR$/includes/db_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/dept_code.php" afterPath="$PROJECT_DIR$/includes/dept_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/ef_code.php" afterPath="$PROJECT_DIR$/includes/ef_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/func_categories_code.php" afterPath="$PROJECT_DIR$/includes/func_categories_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/func_details_code.php" afterPath="$PROJECT_DIR$/includes/func_details_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/func_processes_code.php" afterPath="$PROJECT_DIR$/includes/func_processes_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/impact_categories_code.php" afterPath="$PROJECT_DIR$/includes/impact_categories_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/impact_category_score_code.php" afterPath="$PROJECT_DIR$/includes/impact_category_score_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/nav.php" afterPath="$PROJECT_DIR$/includes/nav.php" />
     </list>
     <ignored path="CCS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,92 +51,301 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="impact_category_score2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/impact_category_score2.php">
+      <file leaf-file-name="impact_category_score1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/impact_category_score1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="155" column="56" selection-start-line="155" selection-start-column="56" selection-end-line="155" selection-end-column="56" />
+            <state relative-caret-position="1695">
+              <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="impact_categories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/impact_categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="impact_category_scoring.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/impact_category_scoring.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1245">
+              <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="impact_category_score.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/impact_category_score.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
               <folding>
-                <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1477111877000" expanded="false" signature="6941:6958" placeholder="..." />
+                <marker date="1477111877000" expanded="false" signature="7336:7354" placeholder="..." />
+                <marker date="1477111877000" expanded="false" signature="7437:7455" placeholder="..." />
+                <marker date="1477111877000" expanded="false" signature="7539:7557" placeholder="..." />
+                <marker date="1477111877000" expanded="false" signature="7639:7657" placeholder="..." />
+                <marker date="1477111877000" expanded="false" signature="7739:7757" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="impact_category_score_code2.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="impact_category_scoring_code.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/impact_category_scoring_code.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+              <folding>
+                <marker date="1477018038000" expanded="true" signature="4727:4844" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477018038000" expanded="true" signature="5010:5060" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="5161:5178" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="6126:6170" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477018038000" expanded="true" signature="6431:6448" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="7317:7352" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="7518:7577" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="7680:7709" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="8588:8623" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="8640:8675" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="8692:8727" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="8744:8779" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="8796:8831" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="8848:8883" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="8900:8935" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477018038000" expanded="true" signature="9320:9337" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="9868:9885" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="10426:10443" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="10982:10999" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="11538:11555" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="12095:12112" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="12653:12670" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="13557:13824" placeholder="SELECT ic.Ca... " />
+                <marker date="1477018038000" expanded="true" signature="13841:14037" placeholder="SELECT ic.Ca... " />
+                <marker date="1477018038000" expanded="true" signature="14168:14202" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="14287:14628" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="14738:15095" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="15670:15701" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477018038000" expanded="true" signature="15867:15917" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="16019:16037" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="17427:17474" placeholder="SELECT Organ... DEPT" />
+                <marker date="1477018038000" expanded="true" signature="17922:17953" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477018038000" expanded="true" signature="18154:18204" placeholder="..." />
+                <marker date="1477018038000" expanded="true" signature="18322:18340" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="impact_category_score_code.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/impact_category_score_code.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="e#6#155#0#PHP" expanded="true" />
+                <marker date="1477111997000" expanded="true" signature="11264:11381" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477111997000" expanded="true" signature="11547:11597" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="11698:11715" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="12577:12621" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477111997000" expanded="true" signature="12883:12900" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="13787:13818" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="13984:14034" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="14136:14153" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="14925:14960" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="15126:15185" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="15288:15317" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="16110:16145" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="16312:16329" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="17190:17457" placeholder="SELECT ic.Ca... " />
+                <marker date="1477111997000" expanded="true" signature="17801:17835" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="17920:18261" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="18371:18728" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="19191:19226" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19250:19285" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19309:19344" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19368:19403" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19427:19462" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19486:19521" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19545:19580" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477111997000" expanded="true" signature="19601:19632" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19601:19648" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19668:19699" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19668:19715" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19735:19766" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19735:19782" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19802:19833" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19802:19849" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19869:19900" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19869:19916" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19936:19967" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="19936:19983" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="20003:20034" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="20003:20050" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477111997000" expanded="true" signature="20954:20971" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="21409:21426" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="21798:21815" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="22187:22204" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="22576:22593" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="22965:22982" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="23354:23371" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="23845:23862" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="24332:24349" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="24824:24841" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="25316:25333" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="25808:25825" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="26300:26317" placeholder="..." />
+                <marker date="1477111997000" expanded="true" signature="26792:26809" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="impact_category_score_code2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/impact_category_score_code2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="616" column="2" selection-start-line="616" selection-start-column="2" selection-end-line="616" selection-end-column="2" />
+            <state relative-caret-position="2130">
+              <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
               <folding>
-                <marker date="1477090718000" expanded="true" signature="11891:12008" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="12174:12224" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="12325:12342" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="13204:13248" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="13510:13527" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="14414:14445" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="14611:14661" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="14763:14780" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="15552:15587" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="15753:15812" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="15915:15944" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="16737:16772" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="16939:16956" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="17817:18084" placeholder="SELECT ic.Ca... " />
-                <marker date="1477090718000" expanded="true" signature="18428:18462" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="18547:18888" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="18998:19355" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="19818:19853" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="19877:19912" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="19936:19971" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="19995:20030" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="20054:20089" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="20113:20148" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="20172:20207" placeholder="SELECT Ratin... RATING" />
-                <marker date="1477090718000" expanded="true" signature="20229:20276" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20296:20343" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20363:20410" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20430:20477" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20497:20544" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20564:20611" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20631:20678" placeholder="SELECT RtoID... RTO" />
-                <marker date="1477090718000" expanded="true" signature="20702:20746" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="20769:20813" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="20836:20880" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="20903:20947" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="20970:21014" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="21037:21081" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="21104:21148" placeholder="SELECT CatNa... I_CAT" />
-                <marker date="1477090718000" expanded="true" signature="21168:21285" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="21304:21421" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="21440:21557" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="21576:21693" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="21712:21829" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="21848:21965" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="21984:22101" placeholder="SELECT DEPT.... DEPT" />
-                <marker date="1477090718000" expanded="true" signature="23445:23462" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="23587:23604" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="24105:24122" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="24162:24171" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="24238:24255" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="24872:24896" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="24897:24909" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="24957:24972" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="25077:25094" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="25519:25536" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="25634:25651" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="26431:26448" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="26848:26865" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="27262:27279" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="27679:27696" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="28096:28113" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="28643:28660" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="29148:29165" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="29667:29684" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="30186:30203" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="30705:30722" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="31224:31241" placeholder="..." />
-                <marker date="1477090718000" expanded="true" signature="31743:31760" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="11266:11383" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="11549:11599" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="11700:11717" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="12579:12623" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="12885:12902" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="13789:13820" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="13986:14036" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="14138:14155" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="14927:14962" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="15128:15187" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="15290:15319" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="16112:16147" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="16314:16331" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="17192:17459" placeholder="SELECT ic.Ca... " />
+                <marker date="1477108273000" expanded="true" signature="17803:17837" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="17922:18263" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="18373:18730" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="19193:19228" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19252:19287" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19311:19346" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19370:19405" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19429:19464" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19488:19523" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19547:19582" placeholder="SELECT Ratin... RATING" />
+                <marker date="1477108273000" expanded="true" signature="19604:19651" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="19671:19718" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="19738:19785" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="19805:19852" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="19872:19919" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="19939:19986" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="20006:20053" placeholder="SELECT RtoID... RTO" />
+                <marker date="1477108273000" expanded="true" signature="20077:20121" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20144:20188" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20211:20255" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20278:20322" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20345:20389" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20412:20456" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20479:20523" placeholder="SELECT CatNa... I_CAT" />
+                <marker date="1477108273000" expanded="true" signature="20543:20660" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="20679:20796" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="20815:20932" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="20951:21068" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="21087:21204" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="21223:21340" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="21359:21476" placeholder="SELECT DEPT.... DEPT" />
+                <marker date="1477108273000" expanded="true" signature="22820:22837" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="22962:22979" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="23464:23481" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="23521:23530" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="23597:23614" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="24191:24212" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="24213:24225" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="24273:24288" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="24273:24319" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="24412:24429" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="24865:24910" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="25008:25025" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="25632:25670" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="25752:25769" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="25992:26013" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="26060:26096" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="26117:26134" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="26271:26288" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="26769:26786" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="26914:26931" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="27529:27550" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="27611:27626" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="27611:27657" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="27750:27767" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="28161:28173" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="28161:28191" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="28161:28210" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="28308:28325" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="28865:28903" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="28985:29002" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="29225:29246" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="29350:29367" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="29504:29521" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="30002:30019" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="30147:30164" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="30762:30783" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="30844:30890" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="30983:31000" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="31394:31443" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="31541:31558" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="32099:32137" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="32219:32236" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="32459:32480" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="32584:32601" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="32738:32755" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="33236:33253" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="33381:33398" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="33996:34017" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="34078:34124" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="34217:34234" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="34628:34677" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="34775:34792" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="35335:35373" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="35455:35472" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="35695:35716" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="35820:35837" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="35974:35991" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="36472:36489" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="36617:36634" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="37232:37253" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="37314:37360" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="37453:37470" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="37864:37913" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="38011:38028" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="38570:38608" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="38690:38707" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="38930:38951" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="39055:39072" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="39209:39226" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="39707:39724" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="39852:39869" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="40467:40488" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="40549:40595" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="40688:40705" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="41099:41148" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="41246:41263" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="41807:41845" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="41927:41944" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="42167:42188" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="42292:42309" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="42446:42463" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="42944:42961" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="43089:43106" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="43704:43725" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="43786:43832" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="43925:43942" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="44336:44385" placeholder="..." />
+                <marker date="1477108273000" expanded="true" signature="44483:44500" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -138,8 +366,6 @@
         <option value="$PROJECT_DIR$/includes/Score_Impact_Categories.php" />
         <option value="$PROJECT_DIR$/includes/score_impact_categories.php" />
         <option value="$PROJECT_DIR$/includes/impact_score.code.php" />
-        <option value="$PROJECT_DIR$/function_profiles.php" />
-        <option value="$PROJECT_DIR$/function_categories.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/impact_score.php" />
@@ -154,34 +380,36 @@
         <option value="$PROJECT_DIR$/includes/text_editor.js.php" />
         <option value="$PROJECT_DIR$/includes/utilities.php" />
         <option value="$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/constants.php" />
-        <option value="$PROJECT_DIR$/function_details.php" />
         <option value="$PROJECT_DIR$/table_four.php" />
         <option value="$PROJECT_DIR$/table_two.php" />
         <option value="$PROJECT_DIR$/table_three.php" />
-        <option value="$PROJECT_DIR$/impact_category_scoring.php" />
-        <option value="$PROJECT_DIR$/includes/db_code.php" />
-        <option value="$PROJECT_DIR$/impact_category_score.php" />
-        <option value="$PROJECT_DIR$/includes/nav.php" />
-        <option value="$PROJECT_DIR$/includes/ef_code.php" />
-        <option value="$PROJECT_DIR$/includes/dept_code.php" />
-        <option value="$PROJECT_DIR$/includes/func_processes_code.php" />
-        <option value="$PROJECT_DIR$/includes/impact_categories_code.php" />
-        <option value="$PROJECT_DIR$/impact_categories.php" />
-        <option value="$PROJECT_DIR$/essential_functions.php" />
-        <option value="$PROJECT_DIR$/departments.php" />
-        <option value="$PROJECT_DIR$/function_processes.php" />
         <option value="$PROJECT_DIR$/includes/table_two_code.php" />
         <option value="$PROJECT_DIR$/includes/table_four_code.php" />
         <option value="$PROJECT_DIR$/includes/table_three_code.php" />
-        <option value="$PROJECT_DIR$/includes/impact_category_score_code.php" />
-        <option value="$PROJECT_DIR$/includes/func_categories_code.php" />
         <option value="$PROJECT_DIR$/includes/impact_category_scoring_code.php" />
-        <option value="$PROJECT_DIR$/includes/func_details_code.php" />
         <option value="$PROJECT_DIR$/includes/constants.php" />
-        <option value="$PROJECT_DIR$/impact_category_score1.php" />
-        <option value="$PROJECT_DIR$/includes/ccs.css.php" />
+        <option value="$PROJECT_DIR$/includes/db_code.php" />
         <option value="$PROJECT_DIR$/includes/impact_category_score_code2.php" />
         <option value="$PROJECT_DIR$/impact_category_score2.php" />
+        <option value="$PROJECT_DIR$/includes/ccs.css.php" />
+        <option value="$PROJECT_DIR$/function_categories.php" />
+        <option value="$PROJECT_DIR$/departments.php" />
+        <option value="$PROJECT_DIR$/function_profiles.php" />
+        <option value="$PROJECT_DIR$/includes/ef_code.php" />
+        <option value="$PROJECT_DIR$/includes/func_categories_code.php" />
+        <option value="$PROJECT_DIR$/essential_functions.php" />
+        <option value="$PROJECT_DIR$/function_processes.php" />
+        <option value="$PROJECT_DIR$/includes/func_processes_code.php" />
+        <option value="$PROJECT_DIR$/impact_category_scoring.php" />
+        <option value="$PROJECT_DIR$/impact_categories.php" />
+        <option value="$PROJECT_DIR$/includes/impact_categories_code.php" />
+        <option value="$PROJECT_DIR$/function_details.php" />
+        <option value="$PROJECT_DIR$/includes/func_details_code.php" />
+        <option value="$PROJECT_DIR$/includes/dept_code.php" />
+        <option value="$PROJECT_DIR$/impact_category_score.php" />
+        <option value="$PROJECT_DIR$/includes/impact_category_score_code.php" />
+        <option value="$PROJECT_DIR$/includes/nav.php" />
+        <option value="$PROJECT_DIR$/impact_category_score1.php" />
       </list>
     </option>
   </component>
@@ -199,10 +427,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="117" />
-    <option name="y" value="51" />
-    <option name="width" value="1670" />
-    <option name="height" value="1073" />
+    <option name="x" value="375" />
+    <option name="y" value="154" />
+    <option name="width" value="1447" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -400,7 +628,7 @@
       <workItem from="1476395396817" duration="5136000" />
       <workItem from="1476490956392" duration="1208000" />
       <workItem from="1476830119640" duration="45881000" />
-      <workItem from="1477082134836" duration="6351000" />
+      <workItem from="1477082134836" duration="20826000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1475107775054</created>
@@ -549,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477020929536</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Created impact_category_score_2.php  Trying something else...&#10;">
+      <created>1477091368227</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1477091368227</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="355438000" />
+    <option name="totallyTimeSpent" value="369913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,29 +800,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="117" y="51" width="1670" height="1073" extended-state="0" />
+    <frame x="375" y="154" width="1447" height="1046" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17137592" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19857651" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18543047" sideWeight="0.5031905" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975113" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19277108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33680227" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24004193" sideWeight="0.49680948" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32355723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29074073" sideWeight="0.49680948" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -644,7 +879,8 @@
     <MESSAGE value="Working on data issues. Experimenting with impact_category_score.php&#10;" />
     <MESSAGE value="Still experimenting with impact_category_score.php&#10;" />
     <MESSAGE value="Cleaned up UI. Fixed table alignment. Still working with impact_category_score.php&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up UI. Fixed table alignment. Still working with impact_category_score.php&#10;" />
+    <MESSAGE value="Created impact_category_score_2.php  Trying something else...&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created impact_category_score_2.php  Trying something else...&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,55 +892,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/utilities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/impact_category_score_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="340" column="0" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/impact_category_score.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/phpmyadmin/libraries/StringType.int.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/phpmyadmin/libraries/StringByte.int.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/phpmyadmin/libraries/StringAbstractType.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../xamppfiles/phpmyadmin/libraries/StringCType.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -754,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/ccs.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../xamppfiles/phpmyadmin/sql.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2386">
@@ -797,66 +977,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/dept_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="99" column="48" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/func_processes_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="107" column="55" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/essential_functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="80" column="56" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/departments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="80" column="56" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function_profiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function_categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function_processes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/table_two_code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <marker date="1477009577000" expanded="true" signature="640:803" placeholder="SELECT e.EFN... EF" />
+            <marker date="1477009577000" expanded="true" signature="915:934" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -864,6 +992,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="31" column="61" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="61" />
+          <folding>
+            <element signature="e#6#128#0#PHP" expanded="false" />
+            <marker date="1477009603000" expanded="true" signature="647:655" placeholder="SELECT e.EFN... EF" />
+            <marker date="1477009603000" expanded="true" signature="647:883" placeholder="SELECT ef.EF... EF_DETAIL" />
+            <marker date="1477009603000" expanded="true" signature="994:1013" placeholder="..." />
+            <marker date="1477009603000" expanded="true" signature="2710:2739" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -871,6 +1006,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <marker date="1477009622000" expanded="true" signature="643:885" placeholder="SELECT rt.Du... EF" />
+            <marker date="1477009622000" expanded="true" signature="643:886" placeholder="SELECT rt.Du... EF" />
+            <marker date="1477009622000" expanded="true" signature="997:1016" placeholder="..." />
+            <marker date="1477009622000" expanded="true" signature="1539:1568" placeholder="..." />
+            <marker date="1477009622000" expanded="true" signature="1779:1780" placeholder="SELECT rt.Du... EF" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,34 +1023,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/db_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-          <folding>
-            <marker date="1476937902000" expanded="true" signature="536:623" placeholder="SELECT * FRO... ${USERS_TABLE}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/ef_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="134" column="48" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="48" />
-          <folding>
-            <marker date="1477005886000" expanded="true" signature="2499:2546" placeholder="SELECT Organ... DEPT" />
-            <marker date="1477005886000" expanded="true" signature="2694:2748" placeholder="..." />
-            <marker date="1477005886000" expanded="true" signature="2851:2868" placeholder="..." />
-            <marker date="1477005886000" expanded="true" signature="3649:3766" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477005886000" expanded="true" signature="3864:3883" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/func_profiles_code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-347">
           <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding>
+            <marker date="1475866891000" expanded="true" signature="1926:2043" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1475866891000" expanded="true" signature="2209:2276" placeholder="..." />
+            <marker date="1475866891000" expanded="true" signature="2377:2394" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -916,40 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/func_categories_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
-          <folding>
-            <marker date="1477017862000" expanded="true" signature="1902:2019" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477017862000" expanded="true" signature="2185:2252" placeholder="..." />
-            <marker date="1477017862000" expanded="true" signature="2353:2370" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="134" column="75" selection-start-line="134" selection-start-column="75" selection-end-line="134" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/func_details_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2235">
-          <caret line="156" column="47" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -961,72 +1050,605 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/ccs.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/login_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/db_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <marker date="1476937902000" expanded="true" signature="536:623" placeholder="SELECT * FRO... ${USERS_TABLE}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/utilities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/impact_category_score_code2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5040">
+          <caret line="459" column="0" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
+          <folding>
+            <marker date="1477103268000" expanded="true" signature="11274:11391" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477103268000" expanded="true" signature="11557:11607" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="11708:11725" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="12587:12631" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="12893:12910" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="13797:13828" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="13994:14044" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="14146:14163" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="14935:14970" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="15136:15195" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="15298:15327" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="16120:16155" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="16322:16339" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="17200:17467" placeholder="SELECT ic.Ca... " />
+            <marker date="1477103268000" expanded="true" signature="17811:17845" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="17930:18271" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="18381:18738" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="19201:19236" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19260:19295" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19319:19354" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19378:19413" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19437:19472" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19496:19531" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19555:19590" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477103268000" expanded="true" signature="19612:19659" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="19679:19726" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="19746:19793" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="19813:19860" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="19880:19927" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="19947:19994" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="20014:20061" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477103268000" expanded="true" signature="20085:20129" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20152:20196" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20219:20263" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20286:20330" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20353:20397" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20420:20464" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20487:20531" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477103268000" expanded="true" signature="20551:20668" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477103268000" expanded="true" signature="20687:20804" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477103268000" expanded="true" signature="20823:20940" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477103268000" expanded="true" signature="21095:21212" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477103268000" expanded="true" signature="21367:21484" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477103268000" expanded="true" signature="22828:22845" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="23472:23489" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="23605:23622" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="24199:24220" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="24281:24327" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="24420:24437" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="24831:24876" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="24974:24991" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="25714:25731" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="25954:25975" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="26079:26096" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="26233:26250" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="26731:26748" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="26876:26893" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="27491:27512" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="27573:27619" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="27712:27729" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="29187:29208" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="29312:29329" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="29466:29483" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="30109:30126" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="30724:30745" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="30806:30852" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="30945:30962" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="31356:31405" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="31503:31520" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="32061:32099" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="32181:32198" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="32421:32442" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="32546:32563" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="33343:33360" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="33958:33979" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="34179:34196" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="34590:34639" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="35417:35434" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="35657:35678" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="35782:35799" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="35936:35953" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="36434:36451" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="36579:36596" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="37194:37215" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="37276:37322" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="37415:37432" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="37826:37875" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="37973:37990" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="38532:38570" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="38652:38669" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="38892:38913" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="39017:39034" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="39171:39188" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="39669:39686" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="39814:39831" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="40429:40450" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="40511:40557" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="41061:41110" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="41208:41225" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="41769:41807" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="41889:41906" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="42129:42150" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="42254:42271" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="42408:42425" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="43666:43687" placeholder="..." />
+            <marker date="1477103268000" expanded="true" signature="43887:43904" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/impact_category_score2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/db_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="167" column="37" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+          <folding>
+            <marker date="1477106828000" expanded="true" signature="536:623" placeholder="SELECT * FRO... ${USERS_TABLE}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816">
+          <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="183" column="15" selection-start-line="183" selection-start-column="15" selection-end-line="183" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function_categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="97" column="15" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function_profiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impact_category_score2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="125" column="75" selection-start-line="125" selection-start-column="75" selection-end-line="125" selection-end-column="75" />
+          <folding>
+            <marker date="1477109850000" expanded="false" signature="6192:6213" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essential_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function_processes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/impact_categories_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <marker date="1477111354000" expanded="true" signature="2033:2150" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477111354000" expanded="true" signature="2316:2383" placeholder="..." />
+            <marker date="1477111354000" expanded="true" signature="2484:2502" placeholder="..." />
+            <marker date="1477111354000" expanded="true" signature="3303:3337" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477111354000" expanded="true" signature="3448:3467" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/ef_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <marker date="1477110854000" expanded="true" signature="2491:2538" placeholder="SELECT Organ... DEPT" />
+            <marker date="1477110854000" expanded="true" signature="2686:2740" placeholder="..." />
+            <marker date="1477110854000" expanded="true" signature="2843:2860" placeholder="..." />
+            <marker date="1477110854000" expanded="true" signature="3641:3758" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477110854000" expanded="true" signature="3856:3875" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/func_categories_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <marker date="1477110854000" expanded="true" signature="1894:2011" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477110854000" expanded="true" signature="2177:2244" placeholder="..." />
+            <marker date="1477110854000" expanded="true" signature="2345:2362" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/func_processes_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="110" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="110" />
+          <folding>
+            <marker date="1477111240000" expanded="true" signature="314:338" placeholder="..." />
+            <marker date="1477111240000" expanded="true" signature="1951:2068" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477111240000" expanded="true" signature="2234:2301" placeholder="..." />
+            <marker date="1477111240000" expanded="true" signature="2402:2419" placeholder="..." />
+            <marker date="1477111240000" expanded="true" signature="3220:3400" placeholder="SELECT DEPT.... EF_PROC" />
+            <marker date="1477111240000" expanded="true" signature="3511:3530" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/departments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="126" column="15" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/dept_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <marker date="1477111791000" expanded="true" signature="2547:2594" placeholder="SELECT Organ... DEPT" />
+            <marker date="1477111791000" expanded="true" signature="2692:2711" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/func_details_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <marker date="1477111522000" expanded="true" signature="313:337" placeholder="..." />
+            <marker date="1477111522000" expanded="true" signature="4669:4786" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477111522000" expanded="true" signature="4952:5018" placeholder="..." />
+            <marker date="1477111522000" expanded="true" signature="5119:5136" placeholder="..." />
+            <marker date="1477111522000" expanded="true" signature="6066:6097" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111522000" expanded="true" signature="6263:6329" placeholder="..." />
+            <marker date="1477111522000" expanded="true" signature="6431:6448" placeholder="..." />
+            <marker date="1477111522000" expanded="true" signature="7166:7200" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477111522000" expanded="true" signature="7817:7864" placeholder="SELECT Organ... DEPT" />
+            <marker date="1477111522000" expanded="true" signature="8311:8425" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477111522000" expanded="true" signature="8626:8693" placeholder="..." />
+            <marker date="1477111522000" expanded="true" signature="8810:8827" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/impact_category_score_code.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        <state relative-caret-position="405">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="e#6#155#0#PHP" expanded="true" />
-            <marker date="1477015331000" expanded="true" signature="11891:12008" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477015331000" expanded="true" signature="12174:12224" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="12325:12342" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="13204:13248" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477015331000" expanded="true" signature="13510:13527" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="14414:14445" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="14611:14661" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="14763:14780" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="15552:15587" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="15753:15812" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="15915:15944" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="16737:16772" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="16939:16956" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="17817:18084" placeholder="SELECT ic.Ca... " />
-            <marker date="1477015331000" expanded="true" signature="18428:18462" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="18547:18888" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="18998:19355" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="19818:19853" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="19877:19912" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="19936:19971" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="19995:20030" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="20054:20089" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="20113:20148" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="20172:20207" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477015331000" expanded="true" signature="20228:20259" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20228:20275" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20295:20326" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20295:20342" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20362:20393" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20362:20409" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20429:20460" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20429:20476" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20496:20527" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20496:20543" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20563:20594" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20563:20610" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20630:20661" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="20630:20677" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477015331000" expanded="true" signature="21581:21598" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="22036:22053" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="22425:22442" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="22814:22831" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="23203:23220" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="23592:23609" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="23981:23998" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="24472:24489" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="24959:24976" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="25451:25468" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="25943:25960" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="26435:26452" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="26927:26944" placeholder="..." />
-            <marker date="1477015331000" expanded="true" signature="27419:27436" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="11264:11381" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477111997000" expanded="true" signature="11547:11597" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="11698:11715" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="12577:12621" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477111997000" expanded="true" signature="12883:12900" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="13787:13818" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="13984:14034" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="14136:14153" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="14925:14960" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="15126:15185" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="15288:15317" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="16110:16145" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="16312:16329" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="17190:17457" placeholder="SELECT ic.Ca... " />
+            <marker date="1477111997000" expanded="true" signature="17801:17835" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="17920:18261" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="18371:18728" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="19191:19226" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19250:19285" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19309:19344" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19368:19403" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19427:19462" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19486:19521" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19545:19580" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477111997000" expanded="true" signature="19601:19632" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19601:19648" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19668:19699" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19668:19715" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19735:19766" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19735:19782" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19802:19833" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19802:19849" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19869:19900" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19869:19916" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19936:19967" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="19936:19983" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="20003:20034" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="20003:20050" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477111997000" expanded="true" signature="20954:20971" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="21409:21426" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="21798:21815" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="22187:22204" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="22576:22593" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="22965:22982" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="23354:23371" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="23845:23862" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="24332:24349" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="24824:24841" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="25316:25333" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="25808:25825" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="26300:26317" placeholder="..." />
+            <marker date="1477111997000" expanded="true" signature="26792:26809" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/impact_category_score_code2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+          <folding>
+            <marker date="1477108273000" expanded="true" signature="11266:11383" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="11549:11599" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="11700:11717" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="12579:12623" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="12885:12902" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="13789:13820" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="13986:14036" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="14138:14155" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="14927:14962" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="15128:15187" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="15290:15319" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="16112:16147" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="16314:16331" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="17192:17459" placeholder="SELECT ic.Ca... " />
+            <marker date="1477108273000" expanded="true" signature="17803:17837" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="17922:18263" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="18373:18730" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="19193:19228" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19252:19287" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19311:19346" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19370:19405" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19429:19464" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19488:19523" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19547:19582" placeholder="SELECT Ratin... RATING" />
+            <marker date="1477108273000" expanded="true" signature="19604:19651" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="19671:19718" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="19738:19785" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="19805:19852" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="19872:19919" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="19939:19986" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="20006:20053" placeholder="SELECT RtoID... RTO" />
+            <marker date="1477108273000" expanded="true" signature="20077:20121" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20144:20188" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20211:20255" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20278:20322" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20345:20389" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20412:20456" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20479:20523" placeholder="SELECT CatNa... I_CAT" />
+            <marker date="1477108273000" expanded="true" signature="20543:20660" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="20679:20796" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="20815:20932" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="20951:21068" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="21087:21204" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="21223:21340" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="21359:21476" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477108273000" expanded="true" signature="22820:22837" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="22962:22979" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="23464:23481" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="23521:23530" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="23597:23614" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="24191:24212" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="24213:24225" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="24273:24288" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="24273:24319" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="24412:24429" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="24865:24910" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="25008:25025" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="25632:25670" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="25752:25769" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="25992:26013" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="26060:26096" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="26117:26134" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="26271:26288" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="26769:26786" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="26914:26931" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="27529:27550" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="27611:27626" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="27611:27657" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="27750:27767" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="28161:28173" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="28161:28191" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="28161:28210" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="28308:28325" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="28865:28903" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="28985:29002" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="29225:29246" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="29350:29367" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="29504:29521" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="30002:30019" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="30147:30164" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="30762:30783" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="30844:30890" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="30983:31000" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="31394:31443" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="31541:31558" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="32099:32137" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="32219:32236" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="32459:32480" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="32584:32601" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="32738:32755" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="33236:33253" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="33381:33398" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="33996:34017" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="34078:34124" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="34217:34234" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="34628:34677" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="34775:34792" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="35335:35373" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="35455:35472" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="35695:35716" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="35820:35837" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="35974:35991" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="36472:36489" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="36617:36634" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="37232:37253" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="37314:37360" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="37453:37470" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="37864:37913" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="38011:38028" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="38570:38608" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="38690:38707" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="38930:38951" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="39055:39072" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="39209:39226" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="39707:39724" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="39852:39869" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="40467:40488" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="40549:40595" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="40688:40705" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="41099:41148" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="41246:41263" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="41807:41845" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="41927:41944" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="42167:42188" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="42292:42309" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="42446:42463" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="42944:42961" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="43089:43106" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="43704:43725" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="43786:43832" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="43925:43942" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="44336:44385" placeholder="..." />
+            <marker date="1477108273000" expanded="true" signature="44483:44500" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impact_category_score1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="118" column="44" selection-start-line="118" selection-start-column="44" selection-end-line="118" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impact_category_score.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
+          <folding>
+            <marker date="1477111877000" expanded="false" signature="6941:6958" placeholder="..." />
+            <marker date="1477111877000" expanded="false" signature="7336:7354" placeholder="..." />
+            <marker date="1477111877000" expanded="false" signature="7437:7455" placeholder="..." />
+            <marker date="1477111877000" expanded="false" signature="7539:7557" placeholder="..." />
+            <marker date="1477111877000" expanded="false" signature="7639:7657" placeholder="..." />
+            <marker date="1477111877000" expanded="false" signature="7739:7757" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impact_categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impact_category_scoring.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/impact_category_scoring_code.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="251" column="41" selection-start-line="251" selection-start-column="41" selection-end-line="251" selection-end-column="41" />
+        <state relative-caret-position="270">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
             <marker date="1477018038000" expanded="true" signature="4727:4844" placeholder="SELECT DEPT.... DEPT" />
             <marker date="1477018038000" expanded="true" signature="5010:5060" placeholder="..." />
@@ -1062,154 +1684,6 @@
             <marker date="1477018038000" expanded="true" signature="17922:17953" placeholder="SELECT RtoID... RTO" />
             <marker date="1477018038000" expanded="true" signature="18154:18204" placeholder="..." />
             <marker date="1477018038000" expanded="true" signature="18322:18340" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impact_categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/impact_categories_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <marker date="1477009329000" expanded="true" signature="2041:2158" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477009329000" expanded="true" signature="2324:2391" placeholder="..." />
-            <marker date="1477009329000" expanded="true" signature="2492:2510" placeholder="..." />
-            <marker date="1477009329000" expanded="true" signature="3311:3345" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477009329000" expanded="true" signature="3456:3475" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impact_category_scoring.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impact_category_score.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
-          <folding>
-            <marker date="1476982805000" expanded="false" signature="6832:6849" placeholder="..." />
-            <marker date="1476982805000" expanded="false" signature="7227:7245" placeholder="..." />
-            <marker date="1476982805000" expanded="false" signature="7328:7346" placeholder="..." />
-            <marker date="1476982805000" expanded="false" signature="7430:7448" placeholder="..." />
-            <marker date="1476982805000" expanded="false" signature="7530:7548" placeholder="..." />
-            <marker date="1476982805000" expanded="false" signature="7630:7648" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impact_category_score1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="126" column="1" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impact_category_score2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="155" column="56" selection-start-line="155" selection-start-column="56" selection-end-line="155" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/impact_category_score_code2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="616" column="2" selection-start-line="616" selection-start-column="2" selection-end-line="616" selection-end-column="2" />
-          <folding>
-            <marker date="1477090718000" expanded="true" signature="11891:12008" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="12174:12224" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="12325:12342" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="13204:13248" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="13510:13527" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="14414:14445" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="14611:14661" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="14763:14780" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="15552:15587" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="15753:15812" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="15915:15944" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="16737:16772" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="16939:16956" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="17817:18084" placeholder="SELECT ic.Ca... " />
-            <marker date="1477090718000" expanded="true" signature="18428:18462" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="18547:18888" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="18998:19355" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="19818:19853" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="19877:19912" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="19936:19971" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="19995:20030" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="20054:20089" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="20113:20148" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="20172:20207" placeholder="SELECT Ratin... RATING" />
-            <marker date="1477090718000" expanded="true" signature="20229:20276" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20296:20343" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20363:20410" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20430:20477" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20497:20544" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20564:20611" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20631:20678" placeholder="SELECT RtoID... RTO" />
-            <marker date="1477090718000" expanded="true" signature="20702:20746" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="20769:20813" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="20836:20880" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="20903:20947" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="20970:21014" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="21037:21081" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="21104:21148" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1477090718000" expanded="true" signature="21168:21285" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="21304:21421" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="21440:21557" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="21576:21693" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="21712:21829" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="21848:21965" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="21984:22101" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1477090718000" expanded="true" signature="23445:23462" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="23587:23604" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="24105:24122" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="24162:24171" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="24238:24255" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="24872:24896" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="24897:24909" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="24957:24972" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="25077:25094" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="25519:25536" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="25634:25651" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="26431:26448" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="26848:26865" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="27262:27279" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="27679:27696" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="28096:28113" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="28643:28660" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="29148:29165" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="29667:29684" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="30186:30203" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="30705:30722" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="31224:31241" placeholder="..." />
-            <marker date="1477090718000" expanded="true" signature="31743:31760" placeholder="..." />
           </folding>
         </state>
       </provider>

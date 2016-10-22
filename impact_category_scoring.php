@@ -77,6 +77,8 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Impact Category Scoring</h2>
+        <!-- Error message -->
+        <p id="submit_error"><?php echo $impact_category_scoring_error_message ; ?></p>
         <form method="POST" action="impact_category_scoring.php">
             <!-- User form-->
             <table class="form_table" style="margin: 20px 0 0 -200px;">
@@ -129,11 +131,6 @@ include_once ('includes/nav.php');
         </form>
         <div id="reports" style="margin: 0 0 100px 100px;">
             <?php echo show_impact_scoring()?>
-        </div>
-
-        <div>
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $impact_category_scoring_error_message ; ?></p>
         </div>
     </div>
 </body>

@@ -96,6 +96,7 @@ const IMPACT_CATEGORY_PAGE = '/Git_htdocs/ccs_git/impact_categories.php';
 const FUNC_DETAILS_PAGE = '/Git_htdocs/ccs_git/function_details.php';
 const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring.php';
 const IMPACT_CATEGORY_SCORE_PAGE = '/Git_htdocs/ccs_git/impact_category_score.php';
+const IMPACT_CATEGORY_SCORE_2_PAGE = '/Git_htdocs/ccs_git/impact_category_score2.php';
 const TABLE_TWO_PAGE = '/Git_htdocs/ccs_git/table_two.php';
 const TABLE_THREE_PAGE = '/Git_htdocs/ccs_git/table_three.php';
 const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
@@ -118,6 +119,7 @@ const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
 //const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_details.php';
 //const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_scoring.php';
 //const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score.php';
+//const IMPACT_CATEGORY_SCORE_2_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score2.php';
 //const TABLE_TWO_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_two.php';
 //const TABLE_THREE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_three.php';
 //const TABLE_FOUR_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_four.php';
@@ -359,10 +361,34 @@ const IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE = 'impact_category_score_submit_
 
 const E_IMPACT_CATEGORY_SCORE = 'Error!';
 
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID = 'Impact Category Rating must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID  = 'Impact Category RTO must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID = 'Impact Category Impact Category must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID = 'Impact Category Essential Function must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_1 = 'Impact Category Rating 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_1  = 'Impact Category RTO 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1 = 'Impact Category Impact Category 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_1 = 'Impact Category Essential Function 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_2 = 'Impact Category Rating 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_2  = 'Impact Category RTO 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2 = 'Impact Category Impact Category 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_2 = 'Impact Category Essential Function 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_3 = 'Impact Category Rating 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_3  = 'Impact Category RTO 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_3 = 'Impact Category Impact Category 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_3 = 'Impact Category Essential Function 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_4 = 'Impact Category Rating 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_4  = 'Impact Category RTO 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_4 = 'Impact Category Impact Category 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_4 = 'Impact Category Essential Function 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_5 = 'Impact Category Rating 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_5  = 'Impact Category RTO 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_5 = 'Impact Category Impact Category 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_5 = 'Impact Category Essential Function 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_6 = 'Impact Category Rating 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_6  = 'Impact Category RTO 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6 = 'Impact Category Impact Category 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_6 = 'Impact Category Essential Function 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_7 = 'Impact Category Rating 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_7  = 'Impact Category RTO 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7 = 'Impact Category Impact Category 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_7 = 'Impact Category Essential Function 7 must be supplied.';
 
 
 

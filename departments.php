@@ -72,6 +72,8 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
             <h2>DEPARTMENTS</h2>
+            <!-- Error message -->
+            <p id="submit_error"><?php echo $company_error_message ; ?></p>
             <div class="input_reference" id="reports">
                 <!-- Reference Table -->
                 <?php echo show_departments()?>
@@ -123,10 +125,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div>
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $company_error_message ; ?></p>
-        </div>
     </div>
 </body>
 </html>

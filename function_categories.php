@@ -65,6 +65,8 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Function Categories</h2>
+        <!-- Error message -->
+        <p id="submit_error"><?php echo $company_error_message ; ?></p>
         <form method="POST" action="function_categories.php">
             <!-- User form-->
             <table class="form_table">
@@ -94,10 +96,6 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-        <div>
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $func_category_error_message ; ?></p>
-        </div>
     </div>
 </body>
 </html>
