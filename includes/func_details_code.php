@@ -16,7 +16,7 @@ function func_detail_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . FUNC_DETAILS_PAGE);
+    header('Location: ' . TABLE_FOUR_PAGE);
 }
 
 // Creates function_detail object with supplied parameters

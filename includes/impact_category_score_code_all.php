@@ -984,6 +984,33 @@ function score_all_impact_categories()
 
 }
 
+
+
+function show_table_three()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID 
+FROM EF ef, RTO rt, I_CAT ic, RATING ra, I_CAT_SCORE ics
+WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY Duration";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table width='100%' style='margin-left: 200px;'>";
+        echo "<tr><th><h4>RTO</h4></th><th><h4>Essential Function</h4></th><th><h4>Impact Category</h4></th><th><h4>Rating</h4></th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "                <tr><td  id='table_reference'>" . $row ["Duration"] . "</td><td> " . $row ["EFName"]
+                . "</td><td> " . $row ["CatName"] . "</td><td> " . $row ["RatingID"] . "</td></tr>\n";
+
+            echo "<tr style='background-color: transparent'><td></td></tr>";
+        }
+        echo "</table>";
+    } else {
+        echo " <h4>You have no existing Recovery Time Objectives with Corresponding Essential Functions</h4>";
+    }
+    $conn->close();
+}
 //
 //
 //

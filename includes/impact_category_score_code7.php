@@ -21,7 +21,7 @@ function impact_category_score_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . TABLE_TWO_PAGE);
+    header('Location: ' . TABLE_THREE_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters

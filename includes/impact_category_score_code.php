@@ -344,7 +344,6 @@ function get_rto()
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
-    echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector
     echo "                <select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve every row in table that matches query
@@ -501,7 +500,7 @@ function score_all_impact_categories()
     echo "    <div id='select_dept'  >\n";
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($rs_rto1->num_rows > 0) {
         // output data of each row
@@ -509,7 +508,7 @@ function score_all_impact_categories()
             echo "                <option value='" . $row["RtoID"] . "'>" . $row["Duration"] . "</option>\n";
         }
         echo "                </select></td>\n";
-        echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+        echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     }
     if ($rs_rto2->num_rows > 0) {
         // output data of each row
@@ -517,7 +516,7 @@ function score_all_impact_categories()
             echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
         }
         echo "                </select>\n";
-        echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+        echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     }
     if ($rs_rto3->num_rows > 0) {
         // output data of each row
@@ -525,7 +524,7 @@ function score_all_impact_categories()
             echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
         }
         echo "                </select>\n";
-        echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+        echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     }
     if ($rs_rto4->num_rows > 0) {
         // output data of each row
@@ -533,7 +532,7 @@ function score_all_impact_categories()
             echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
         }
         echo "                </select>\n";
-        echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+        echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     }
     if ($rs_rto5->num_rows > 0) {
         // output data of each row
@@ -541,7 +540,7 @@ function score_all_impact_categories()
             echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
         }
         echo "                </select>\n";
-        echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+        echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     }
     if ($rs_rto6->num_rows > 0) {
         // output data of each row
@@ -549,7 +548,7 @@ function score_all_impact_categories()
             echo "                <option value='" . $row["RtoID"] . "'>" . $row ["Duration"] . "</option>\n";
         }
         echo "                </select>\n";
-        echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+        echo "                <td><select hidden type='select' name='RtoID' style='font-size: .75em;'>\n";
     }
     if ($rs_rto7->num_rows > 0) {
         // output data of each row

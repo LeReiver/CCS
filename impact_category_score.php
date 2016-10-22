@@ -157,14 +157,14 @@ include_once ('includes/nav.php');
 <!--        </table>-->
 
         <table class="form_table" style="margin: 10px 0 0 -200px;">
-<!--            <tr><td></td>-->
-<!--                <th class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>-->
-<!--                <th class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>-->
-<!--                <th class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>-->
-<!--                <th class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>-->
-<!--                <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>-->
-<!--                <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>-->
-<!--                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>-->
+            <tr>
+                <th class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
+                <th class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
+                <th class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
+                <th class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>
+                <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
+                <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
+                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
             <tr>
                 <?php score_all_impact_categories() ?>
             </tr>

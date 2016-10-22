@@ -69,7 +69,7 @@ include_once ('includes/nav.php');
     <h2>Impact Category Score 7</h2>
     <!-- Error message -->
     <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
-    <form method="POST" action="impact_category_score1.php">
+    <form method="POST" action="impact_category_score7.php">
         <!-- User form-->
         <table class="form_table" style="margin: 20px 0 0 -200px;">
             <tr>
