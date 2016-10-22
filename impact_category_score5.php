@@ -11,7 +11,7 @@ include_once ('includes/constants.php');
 include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
-include_once('includes/impact_category_score_code1.php');
+include_once('includes/impact_category_score_code5.php');
 
 // Requires secure connection
 require_secure();
@@ -66,7 +66,7 @@ show_user();
 include_once ('includes/nav.php');
 ?>
 <div id="form_content">
-    <h2>Impact Category Score 1</h2>
+    <h2>Impact Category Score 5</h2>
     <!-- Error message -->
     <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
     <form method="POST" action="impact_category_score1.php">
@@ -100,9 +100,9 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
                 <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
                 <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
-            <tr><td></td>
+            <tr><td></td><td></td><td></td><td></td><td></td>
                 <td hidden > <?php get_rto() ?></td>
-            <tr><td></td>
+            <tr><td></td><td></td><td></td><td></td><td></td>
                 <td><?php get_rating() ?></td>
             </tr>
         </table>

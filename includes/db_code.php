@@ -151,7 +151,7 @@ function add_impact_category_scoring($impact_category_scoring_tier_1, $impact_ca
     $db->query($query);
 }
 
-// Adds Impact Category Scoring
+// Adds Impact Category Score
 function add_impact_category_score($impact_category_scoring_ef_id, $impact_category_scoring_imp_cat_id, $impact_category_scoring_rto_id,
                                    $impact_category_scoring_rating_id)
 {
@@ -165,7 +165,7 @@ function add_impact_category_score($impact_category_scoring_ef_id, $impact_categ
 }
 
 
-// Adds Impact Category Scoring Tier1
+// Adds Impact Category Score Tier1
 function add_impact_category_score_tier1($impact_category_scoring_ef_id1, $impact_category_scoring_imp_cat_id1, $impact_category_scoring_rto_id1,
                                          $impact_category_scoring_rating_id1)
 {
@@ -178,7 +178,7 @@ function add_impact_category_score_tier1($impact_category_scoring_ef_id1, $impac
     $db->query($query);
 }
 
-// Adds Impact Category Scoring Tier2
+// Adds Impact Category Score Tier2
 function add_impact_category_score_tier2( $impact_category_scoring_ef_id2, $impact_category_scoring_imp_cat_id2,$impact_category_scoring_rto_id2,
                                           $impact_category_scoring_rating_id2)
 {
@@ -191,7 +191,7 @@ function add_impact_category_score_tier2( $impact_category_scoring_ef_id2, $impa
     $db->query($query);
 }
 
-// Adds Impact Category Scoring Tier3
+// Adds Impact Category Score Tier3
 function add_impact_category_score_tier3(  $impact_category_scoring_ef_id3, $impact_category_scoring_imp_cat_id3,$impact_category_scoring_rto_id3,
                                           $impact_category_scoring_rating_id3)
 {
@@ -204,7 +204,7 @@ function add_impact_category_score_tier3(  $impact_category_scoring_ef_id3, $imp
     $db->query($query);
 }
 
-// Adds Impact Category Scoring Tier4
+// Adds Impact Category Score Tier4
 function add_impact_category_score_tier4($impact_category_scoring_ef_id4, $impact_category_scoring_imp_cat_id4, $impact_category_scoring_rto_id4,
                                          $impact_category_scoring_rating_id4)
 {
@@ -217,7 +217,7 @@ function add_impact_category_score_tier4($impact_category_scoring_ef_id4, $impac
     $db->query($query);
 }
 
-// Adds Impact Category Scoring Tier5
+// Adds Impact Category Score Tier5
 function add_impact_category_score_tier5(  $impact_category_scoring_ef_id5, $impact_category_scoring_imp_cat_id5,$impact_category_scoring_rto_id5,
                                           $impact_category_scoring_rating_id5)
 {
@@ -230,7 +230,7 @@ function add_impact_category_score_tier5(  $impact_category_scoring_ef_id5, $imp
     $db->query($query);
 }
 
-// Adds Impact Category Scoring Tier6
+// Adds Impact Category Score Tier6
 function add_impact_category_score_tier6(  $impact_category_scoring_ef_id6, $impact_category_scoring_imp_cat_id6,$impact_category_scoring_rto_id6,
                                           $impact_category_scoring_rating_id6)
 {
@@ -243,7 +243,7 @@ function add_impact_category_score_tier6(  $impact_category_scoring_ef_id6, $imp
     $db->query($query);
 }
 
-// Adds Impact Category Scoring Tier7
+// Adds Impact Category Score Tier7
 function add_impact_category_score_tier7( $impact_category_scoring_ef_id7, $impact_category_scoring_imp_cat_id7,$impact_category_scoring_rto_id7,
                                           $impact_category_scoring_rating_id7)
 {

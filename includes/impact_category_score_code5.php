@@ -21,7 +21,7 @@ function impact_category_score_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . IMPACT_CATEGORY_SCORE_3_PAGE);
+    header('Location: ' . IMPACT_CATEGORY_SCORE_6_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters
@@ -159,7 +159,7 @@ function get_rto()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql = "SELECT RtoID, Duration FROM RTO WHERE RtoID = 3";
+    $sql = "SELECT RtoID, Duration FROM RTO WHERE RtoID = 5";
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";

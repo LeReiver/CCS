@@ -21,38 +21,38 @@ function impact_category_score_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . IMPACT_CATEGORY_SCORE_1_PAGE);
+    header('Location: ' . IMPACT_CATEGORY_SCORE_2_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters
 function impact_category_score(
-    $impact_category_score_ef_id,
-    $impact_category_score_imp_cat_id,
-    $impact_category_score_rto_id,
-    $impact_category_score_rating_id
+    $impact_category_score_ef_id1,
+    $impact_category_score_imp_cat_id1,
+    $impact_category_score_rto_id1,
+    $impact_category_score_rating_id1
 
     // If user field is left blank, give corresponding error
     )
 {
 
-    if (empty($impact_category_score_ef_id)) {
-        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_EF_ID);
+    if (empty($impact_category_score_ef_id1)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_EF_ID_1);
     }
-    if (empty($impact_category_score_imp_cat_id)) {
-        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID);
+    if (empty($impact_category_score_imp_cat_id1)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1);
     }
-    if (empty($impact_category_score_rto_id)) {
-        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RTO_ID);
+    if (empty($impact_category_score_rto_id1)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_1);
     }
-    if (empty($impact_category_score_rating_id)) {
-        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RATING_ID);
+    if (empty($impact_category_score_rating_id1)) {
+        return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_1);
     }
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
     add_impact_category_score(
-        $impact_category_score_ef_id,
-        $impact_category_score_imp_cat_id,
-        $impact_category_score_rto_id,
-        $impact_category_score_rating_id
+        $impact_category_score_ef_id1,
+        $impact_category_score_imp_cat_id1,
+        $impact_category_score_rto_id1,
+        $impact_category_score_rating_id1
     );
     // Calls next_page function
     next_page();
@@ -60,20 +60,20 @@ function impact_category_score(
 
 // Creates ef_submit object for submit button
 function impact_category_score_submit(
-    $impact_category_score_ef_id,
-    $impact_category_score_imp_cat_id,
-    $impact_category_score_rto_id,
-    $impact_category_score_rating_id,
+    $impact_category_score_ef_id1,
+    $impact_category_score_imp_cat_id1,
+    $impact_category_score_rto_id1,
+    $impact_category_score_rating_id1,
     $impact_category_score_submit_pressed
     // If no user field is left empty upon submit button pressed, call impact_category_score()
     )
 {
     if (!empty($impact_category_score_submit_pressed)) {
         return impact_category_score(
-            $impact_category_score_ef_id,
-            $impact_category_score_imp_cat_id,
-            $impact_category_score_rto_id,
-            $impact_category_score_rating_id
+            $impact_category_score_ef_id1,
+            $impact_category_score_imp_cat_id1,
+            $impact_category_score_rto_id1,
+            $impact_category_score_rating_id1
         );
     }
     // Clear user fields
@@ -159,7 +159,7 @@ function get_rto()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql = "SELECT RtoID, Duration FROM RTO";
+    $sql = "SELECT RtoID, Duration FROM RTO WHERE RtoID = 1";
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
@@ -197,12 +197,12 @@ function get_rating()
     echo "    <div id='select_dept'  >\n";
     echo "                <form style='font-size: 1.75em; font-weight: bold; align-content: center'>\n";
     // User input selector
-    echo "                <select type='select' name='Rating' style='font-size: .75em; padding: 0;'>\n";
+    echo "                <select type='select' name='RatingID' style='font-size: .75em; padding: 0;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["Rating"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row ["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row ["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
     } else {
