@@ -151,18 +151,18 @@ function add_impact_category_scoring($impact_category_scoring_tier_1, $impact_ca
     $db->query($query);
 }
 
-/*// Adds Impact Category Scoring
-function add_impact_category_score( $impact_category_scoring_rto_id, $impact_category_scoring_ef_id, $impact_category_scoring_imp_cat_id,
-                                          $impact_category_scoring_rating_id)
+// Adds Impact Category Scoring
+function add_impact_category_score($impact_category_scoring_ef_id, $impact_category_scoring_imp_cat_id, $impact_category_scoring_rto_id,
+                                   $impact_category_scoring_rating_id)
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_RTO_ID . ", " . IMPACT_CATEGORY_SCORE_EF_ID . ", "
-        . IMPACT_CATEGORY_SCORE_IMP_CAT_ID . ", " . IMPACT_CATEGORY_SCORE_RATING_ID . ")";
-    $query .= " VALUES (' $impact_category_scoring_rto_id' , '$impact_category_scoring_ef_id', '$impact_category_scoring_imp_cat_id',
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID . ", "
+        . IMPACT_CATEGORY_SCORE_IMP_CAT_ID . ", " . IMPACT_CATEGORY_SCORE_RTO_ID . ", " . IMPACT_CATEGORY_SCORE_RATING_ID . ")";
+    $query .= " VALUES ( '$impact_category_scoring_ef_id', '$impact_category_scoring_imp_cat_id',' $impact_category_scoring_rto_id' ,
      '$impact_category_scoring_rating_id');";
     $db->query($query);
-}*/
+}
 
 
 // Adds Impact Category Scoring Tier1
@@ -171,7 +171,7 @@ function add_impact_category_score_tier1($impact_category_scoring_ef_id1, $impac
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_1 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_1 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_1 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_1 . ")";
     $query .= " VALUES ( '$impact_category_scoring_ef_id1', '$impact_category_scoring_imp_cat_id1',' $impact_category_scoring_rto_id1' ,
      '$impact_category_scoring_rating_id1');";
@@ -184,7 +184,7 @@ function add_impact_category_score_tier2( $impact_category_scoring_ef_id2, $impa
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_2 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_2 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_2 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_2 . ")";
     $query .= " VALUES ('$impact_category_scoring_ef_id2', '$impact_category_scoring_imp_cat_id2',' $impact_category_scoring_rto_id2' , 
      '$impact_category_scoring_rating_id2');";
@@ -197,7 +197,7 @@ function add_impact_category_score_tier3(  $impact_category_scoring_ef_id3, $imp
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_3 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_3 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_3 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_3 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_3 . ")";
     $query .= " VALUES ( '$impact_category_scoring_ef_id3', '$impact_category_scoring_imp_cat_id3',' $impact_category_scoring_rto_id3' ,
      '$impact_category_scoring_rating_id3');";
@@ -210,7 +210,7 @@ function add_impact_category_score_tier4($impact_category_scoring_ef_id4, $impac
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_4 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_4 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_4 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_4 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_4 . ")";
     $query .= " VALUES ( '$impact_category_scoring_ef_id4', '$impact_category_scoring_imp_cat_id4',' $impact_category_scoring_rto_id4' ,
      '$impact_category_scoring_rating_id4');";
@@ -223,7 +223,7 @@ function add_impact_category_score_tier5(  $impact_category_scoring_ef_id5, $imp
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_5 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_5 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_5 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_5 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_5 . ")";
     $query .= " VALUES ( '$impact_category_scoring_ef_id5', '$impact_category_scoring_imp_cat_id5',' $impact_category_scoring_rto_id5' ,
      '$impact_category_scoring_rating_id5');";
@@ -236,7 +236,7 @@ function add_impact_category_score_tier6(  $impact_category_scoring_ef_id6, $imp
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_6 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_6 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_6 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_6 . ")";
     $query .= " VALUES ( '$impact_category_scoring_ef_id6', '$impact_category_scoring_imp_cat_id6',' $impact_category_scoring_rto_id6' ,
      '$impact_category_scoring_rating_id6');";
@@ -249,7 +249,7 @@ function add_impact_category_score_tier7( $impact_category_scoring_ef_id7, $impa
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
-    $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_7 . ", "
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_7 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_7 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_6 . ")";
     $query .= " VALUES ( '$impact_category_scoring_ef_id7', '$impact_category_scoring_imp_cat_id7',' $impact_category_scoring_rto_id7' ,
      '$impact_category_scoring_rating_id7');";

@@ -291,7 +291,6 @@ function get_essential_functions()
     } else {
         echo "0 results";
     }
-//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();
@@ -324,7 +323,6 @@ function get_impact_category()
     } else {
         echo "0 results";
     }
-//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();
@@ -359,7 +357,6 @@ function get_rto()
     } else {
         echo "0 results";
     }
-//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();
@@ -386,13 +383,12 @@ function get_rating()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." ". $row ["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["Rating"] . "'>" . ($row ["RatingID"] - 1) ." ". $row ["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
     } else {
         echo "0 results";
     }
-//    echo "        </form>\n";
     echo "    </div>\n";
     // Close connection
     $conn->close();
@@ -418,7 +414,7 @@ function score_impact_categories()
             if ($result2->num_rows > 0) {
                 // output data of each row
                 while ($row = $result2->fetch_assoc()) {
-                    echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] . " - " . $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) . " - " . $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
             } else {
@@ -574,7 +570,7 @@ function score_all_impact_categories()
     if ($rs_rating1->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating1->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
         echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
@@ -583,7 +579,7 @@ function score_all_impact_categories()
     if ($rs_rating2->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating2->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
         echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
@@ -592,7 +588,7 @@ function score_all_impact_categories()
     if ($rs_rating3->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating3->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
         echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
@@ -601,7 +597,7 @@ function score_all_impact_categories()
     if ($rs_rating4->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating4->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
         echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
@@ -610,7 +606,7 @@ function score_all_impact_categories()
     if ($rs_rating5->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating5->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
         echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
@@ -619,7 +615,7 @@ function score_all_impact_categories()
     if ($rs_rating6->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating6->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
         echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
@@ -628,7 +624,7 @@ function score_all_impact_categories()
     if ($rs_rating7->num_rows > 0) {
         // output data of each row
         while ($row = $rs_rating7->fetch_assoc()) {
-            echo "                <option value='" . $row["RatingID"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["RatingID"] . "'>" . ($row ["RatingID"] - 1) ." - ". $row["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
     }

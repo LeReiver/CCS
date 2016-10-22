@@ -96,6 +96,7 @@ const IMPACT_CATEGORY_PAGE = '/Git_htdocs/ccs_git/impact_categories.php';
 const FUNC_DETAILS_PAGE = '/Git_htdocs/ccs_git/function_details.php';
 const IMPACT_CATEGORY_SCORING_PAGE = '/Git_htdocs/ccs_git/impact_category_scoring.php';
 const IMPACT_CATEGORY_SCORE_PAGE = '/Git_htdocs/ccs_git/impact_category_score.php';
+const IMPACT_CATEGORY_SCORE_1_PAGE = '/Git_htdocs/ccs_git/impact_category_score1.php';
 const IMPACT_CATEGORY_SCORE_2_PAGE = '/Git_htdocs/ccs_git/impact_category_score2.php';
 const TABLE_TWO_PAGE = '/Git_htdocs/ccs_git/table_two.php';
 const TABLE_THREE_PAGE = '/Git_htdocs/ccs_git/table_three.php';
@@ -361,6 +362,10 @@ const IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE = 'impact_category_score_submit_
 
 const E_IMPACT_CATEGORY_SCORE = 'Error!';
 
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID = 'Impact Category Rating must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID  = 'Impact Category RTO must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID = 'Impact Category Impact Category must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID = 'Impact Category Essential Function must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_1 = 'Impact Category Rating 1 must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_1  = 'Impact Category RTO 1 must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1 = 'Impact Category Impact Category 1 must be supplied.';
