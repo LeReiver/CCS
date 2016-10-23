@@ -459,3 +459,40 @@ function score_all_impact_categories()
     $conn->close();
 
 }
+
+
+// outputs a data table with existing scores
+function show_impact_scores()
+{
+    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+//    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days, ef.EFName
+//            FROM I_CAT ic, I_CAT_SCORING ics, EF ef WHERE ic.ImpCatID = ics.ImpcatID AND ics.EFID = ef.EFID ORDER BY ef.EFName";
+//    $sql = "SELECT ic.CatName, ic.CatDesc, ics.1Hour, ics.2to8Hours, ics.9to24Hours, ics.1to3Days, ics.4to7Days, ics.8to15Days, ics.16to31Days FROM I_CAT ic, I_CAT_SCORING ics WHERE ic.ImpCatID = ics.ImpcatID";
+
+
+    $sql ="SELECT 	EFName, CatName, Rating, Duration
+            FROM	RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
+            WHERE	ra.RatingID = ics.RatingID
+            AND		rt.RtoID = ics.RtoID
+            AND		ic.ImpCatID = ics.ImpCatID
+            AND		ef.EFID = ics.EFID
+            GROUP BY EFName, CatName, Duration, Rating
+            ORDER BY EFName, CatName, rt.RtoID, Duration";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        echo "<td colspan='9' style='line-height: .1; background: none;'><h4>Existing Impact Category Scores</h4></td>";
+        echo "                  <tr><th id='table_header'>Essential Function</th><th id='table_header'>Category</th><th id='table_header'>Rating</th><th id='table_header'>Duration</th>\n";
+        while ($row = $result->fetch_assoc()) {
+            echo "                <tr id='reference_table'><td> <strong>"  . $row ["EFName"] . "</strong></td><td> <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["Rating"] . "</td>
+            <td>" . $row["Duration"] . "</td></tr>\n";
+        }
+        echo "</table>";
+    } else {
+        echo " <h4 id='empty_table'>You have no existing Impact Category Scores</h4>";
+    }
+    $conn->close();
+}

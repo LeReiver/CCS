@@ -59,12 +59,12 @@ function impact_category_scoring(
     if (empty($impact_category_scoring_tier_7)) {
         return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN);
     }
-//    if (empty($impact_category_scoring_imp_cat_id)) {
-//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
-//    }
-//    if (empty($impact_category_scoring_efid)) {
-//        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
-//    }
+    if (empty($impact_category_scoring_imp_cat_id)) {
+        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID);
+    }
+    if (empty($impact_category_scoring_efid)) {
+        return impact_category_scoring_error_message(E_IMPACT_CATEGORY_SCORING, E_NO_IMPACT_CATEGORY_SCORING_EFID);
+    }
 
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
     add_impact_category_scoring(
@@ -205,7 +205,7 @@ function get_rating()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." ". $row ["Rating"] . "</option>\n";
+            echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." ". $row ["Rating"] . "</option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -252,7 +252,7 @@ function score_impact_categories()
             if ($result2->num_rows > 0) {
                 // output data of each row
                 while ($row = $result2->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
                 echo "                <td><select type='select' name='2to8Hours' style='font-size: .75em;'>\n";
@@ -261,7 +261,7 @@ function score_impact_categories()
             if ($result3->num_rows > 0) {
                 // output data of each row
                 while ($row = $result3->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
                 echo "                <td><select type='select' name='9to24Hours' style='font-size: .75em;'>\n";
@@ -270,7 +270,7 @@ function score_impact_categories()
             if ($result4->num_rows > 0) {
                 // output data of each row
                 while ($row = $result4->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
                 echo "                <td><select type='select' name='1to3Days' style='font-size: .75em;'>\n";
@@ -279,7 +279,7 @@ function score_impact_categories()
             if ($result5->num_rows > 0) {
                 // output data of each row
                 while ($row = $result5->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
                 echo "                <td><select type='select' name='4to7Days' style='font-size: .75em;'>\n";
@@ -288,7 +288,7 @@ function score_impact_categories()
             if ($result6->num_rows > 0) {
                 // output data of each row
                 while ($row = $result6->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
                 echo "                <td><select type='select' name='8to15Days' style='font-size: .75em;'>\n";
@@ -297,7 +297,7 @@ function score_impact_categories()
             if ($result7->num_rows > 0) {
                 // output data of each row
                 while ($row = $result7->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
                 echo "                <td><select type='select' name='16to31Days' style='font-size: .75em;'>\n";
@@ -306,7 +306,7 @@ function score_impact_categories()
             if ($result8->num_rows > 0) {
                 // output data of each row
                 while ($row = $result8->fetch_assoc()) {
-                    echo "                <option value='" . $row["Rating"] . "'>" . $row ["RatingID"] ." - ". $row["Rating"] . "</option>\n";
+                    echo "                <option value='" . $row["Rating"] . "'>" .($row ["RatingID"] - 1)." - ". $row["Rating"] . "</option>\n";
                 }
                 echo "                </select>\n";
             } else {

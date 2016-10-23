@@ -26,9 +26,9 @@ function show_table_three()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID 
+    $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID ,rt.RtoID
 FROM EF ef, RTO rt, I_CAT ic, RATING ra, I_CAT_SCORE ics
-WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY Duration";
+WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY RtoID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table width='100%' style='margin-left: 200px;'>";
@@ -37,7 +37,7 @@ WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID
             echo "                <tr><td  id='table_reference'>" . $row ["Duration"] . "</td><td> " . $row ["EFName"] 
                 . "</td><td> " . $row ["CatName"] . "</td><td> " . $row ["RatingID"] . "</td></tr>\n";
 
-            echo "<tr style='background-color: transparent'><td></td></tr>";
+//            echo "<tr style='background-color: transparent'><td></td></tr>";
         }
         echo "</table>";
     } else {

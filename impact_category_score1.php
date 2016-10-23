@@ -99,7 +99,8 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>
                 <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
                 <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
-                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
+                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>
+            </tr>
             <tr><td></td>
                 <td hidden > <?php get_rto() ?></td>
             <tr><td></td>
@@ -115,7 +116,8 @@ include_once ('includes/nav.php');
         </div>
     </form>
     <div  id="reports" style="margin: 0 0 100px 100px;">
-        <?php echo show_table_three() ?>
+        <?php echo show_impact_scores() ?>
+<!--        --><?php //echo show_table_three() ?>
     </div>
 </div>
 </body>

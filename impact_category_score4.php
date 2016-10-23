@@ -101,8 +101,9 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
                 <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
             <tr><td></td><td></td><td></td><td></td>
-                <td hidden > <?php get_rto() ?></td>
-            <tr><td></td><td></td><td></td><td></td>
+                <td  hidden > <?php get_rto() ?></td>
+            <tr style="color: #fb543d"><td></td><td><?php echo "*retreive tier1 table entry" ?></td>
+                <td><?php echo "*retreive tier2 table entry" ?></td><td><?php echo "*retreive tier3 table entry" ?></td>
                 <td><?php get_rating() ?></td>
             </tr>
         </table>
@@ -115,7 +116,7 @@ include_once ('includes/nav.php');
         </div>
     </form>
     <div  id="reports" style="margin: 0 0 100px 100px;">
-        <?php echo show_impact_score() ?>
+        <?php echo show_impact_scores() ?>
     </div>
 </div>
 </body>

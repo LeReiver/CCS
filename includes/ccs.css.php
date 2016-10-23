@@ -31,7 +31,7 @@ h3 {
     text-align: center;
     font-family: Charcoal, Geneva, sans-serif;
     font-size: 100%;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 h4  {
     text-align: center;
