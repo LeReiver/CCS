@@ -67,7 +67,7 @@ const E_WRONG_DATA_TYPE = 'Data!';
 /* hostpond */
 const DB_SERVER = 'plum.hostpond.com';
 const DB_USER = 'lereive2_admin';
-const DB_PASSWORD = 'xuck7-m()1,u';
+const DB_PASSWORD = '**';
 const DB_DATABASE = 'lereive2_ccs';
 
 const USERS_TABLE = 'Users';

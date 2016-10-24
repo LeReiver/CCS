@@ -3,31 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="260b683e-b79f-4c2f-8227-f7e1175514c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/essential_functions.php" afterPath="$PROJECT_DIR$/essential_functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function_details.php" afterPath="$PROJECT_DIR$/function_details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function_processes.php" afterPath="$PROJECT_DIR$/function_processes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_categories.php" afterPath="$PROJECT_DIR$/impact_categories.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score.php" afterPath="$PROJECT_DIR$/impact_category_score.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score1.php" afterPath="$PROJECT_DIR$/impact_category_score1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score2.php" afterPath="$PROJECT_DIR$/impact_category_score2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score3.php" afterPath="$PROJECT_DIR$/impact_category_score3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score4.php" afterPath="$PROJECT_DIR$/impact_category_score4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score5.php" afterPath="$PROJECT_DIR$/impact_category_score5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score6.php" afterPath="$PROJECT_DIR$/impact_category_score6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score7.php" afterPath="$PROJECT_DIR$/impact_category_score7.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_score_all.php" afterPath="$PROJECT_DIR$/impact_category_score_all.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impact_category_scoring.php" afterPath="$PROJECT_DIR$/impact_category_scoring.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/RATING.php" afterPath="$PROJECT_DIR$/includes/RATING.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/ccs.css.php" afterPath="$PROJECT_DIR$/includes/ccs.css.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/constants.php" afterPath="$PROJECT_DIR$/includes/constants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/func_details_code.php" afterPath="$PROJECT_DIR$/includes/func_details_code.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/impact_category_score_code1.php" afterPath="$PROJECT_DIR$/includes/impact_category_score_code1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/impact_category_score_code_all.php" afterPath="$PROJECT_DIR$/includes/impact_category_score_code_all.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/nav.php" afterPath="$PROJECT_DIR$/includes/nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/utilities.php" afterPath="$PROJECT_DIR$/includes/utilities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_four.php" afterPath="$PROJECT_DIR$/table_four.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_three.php" afterPath="$PROJECT_DIR$/table_three.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table_two.php" afterPath="$PROJECT_DIR$/table_two.php" />
     </list>
     <ignored path="CCS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -236,11 +212,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="387">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -328,7 +304,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="impact_category_score1.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="impact_category_score1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/impact_category_score1.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -403,10 +379,10 @@
         <option value="$PROJECT_DIR$/includes/func_details_code.php" />
         <option value="$PROJECT_DIR$/impact_category_score_all.php" />
         <option value="$PROJECT_DIR$/includes/impact_category_score_code_all.php" />
-        <option value="$PROJECT_DIR$/includes/constants.php" />
         <option value="$PROJECT_DIR$/includes/nav.php" />
         <option value="$PROJECT_DIR$/includes/ccs.css.php" />
         <option value="$PROJECT_DIR$/function_details.php" />
+        <option value="$PROJECT_DIR$/includes/constants.php" />
       </list>
     </option>
   </component>
@@ -628,7 +604,7 @@
       <workItem from="1477082134836" duration="34200000" />
       <workItem from="1477162895170" duration="2821000" />
       <workItem from="1477180422192" duration="8217000" />
-      <workItem from="1477334490582" duration="9472000" />
+      <workItem from="1477334490582" duration="9548000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1475107775054</created>
@@ -819,11 +795,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477201704184</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Modified  impact_category_score 1-7... and some UI styling">
+      <created>1477345373405</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1477345373405</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="403797000" />
+    <option name="totallyTimeSpent" value="403873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,6 +823,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23558216" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18543047" sideWeight="0.5031905" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975113" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32279694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -848,7 +832,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20038168" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -894,7 +877,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modified function_details, and impact_category scoring" />
     <MESSAGE value="Add Function Details completed and tested" />
     <MESSAGE value="Adding get_essential_functions() to impact_category_scoring.php  - still needs work" />
     <MESSAGE value="Getting closer with impact_category_scoring.php  - Layout and style complete, not reading ImpCatID" />
@@ -919,7 +901,8 @@
     <MESSAGE value="Created imp_cat_score_all and imp_cat_score1-7&#10;" />
     <MESSAGE value="Cleaned up links and file paths. Improved UI&#10;" />
     <MESSAGE value="Created impact_category_score1-7. Modified score tables and queries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created impact_category_score1-7. Modified score tables and queries." />
+    <MESSAGE value="Modified  impact_category_score 1-7... and some UI styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified  impact_category_score 1-7... and some UI styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -963,6 +946,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="13" column="110" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="110" />
+          <folding>
+            <marker date="1477111240000" expanded="true" signature="314:338" placeholder="..." />
+            <marker date="1477111240000" expanded="true" signature="1951:2068" placeholder="SELECT DEPT.... DEPT" />
+            <marker date="1477111240000" expanded="true" signature="2234:2301" placeholder="..." />
+            <marker date="1477111240000" expanded="true" signature="2402:2419" placeholder="..." />
+            <marker date="1477111240000" expanded="true" signature="3220:3400" placeholder="SELECT DEPT.... EF_PROC" />
+            <marker date="1477111240000" expanded="true" signature="3511:3530" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1858,14 +1849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -1956,6 +1939,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
