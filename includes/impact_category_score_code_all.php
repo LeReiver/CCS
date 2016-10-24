@@ -21,7 +21,7 @@ function impact_category_score_error_message($type, $detail)
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . IMPACT_CATEGORY_SCORE_2_PAGE);
+    header('Location: ' . TABLE_THREE_PAGE);
 }
 
 // Creates impact_categories object with supplied parameters
@@ -539,10 +539,8 @@ function score_all_impact_categories()
     $rs_rating7 = $conn->query($sql_rating7);
 
 
-
-    echo "    <div id='select_dept'  >\n";
     echo "        <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select  type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef1->num_rows > 0) {
         // output data of each row
@@ -553,7 +551,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
         echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat1->num_rows > 0) {
         // output data of each row
@@ -565,9 +563,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
 
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 1 Hour</th>";
+    echo "                <td hidden ><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto1->num_rows > 0) {
         // output data of each row
@@ -579,7 +577,7 @@ function score_all_impact_categories()
     }
     echo "       <div id='select_dept'  >\n";
     echo "            <th class='form_label' style='text-align: end; width: 90px; padding: 0 2px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating1->num_rows > 0) {
@@ -609,7 +607,7 @@ function score_all_impact_categories()
     echo "    <div id='select_dept'  >\n";
     echo "         <tr>";
     echo "            <th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td colspan='2'><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef2->num_rows > 0) {
         // output data of each row
@@ -620,7 +618,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
     echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td colspan='2'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat2->num_rows > 0) {
         // output data of each row
@@ -632,9 +630,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
     echo " </table>";
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 2 to 8 Hours</th>";
+    echo "                <td hidden ><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto2->num_rows > 0) {
         // output data of each row
@@ -645,7 +643,7 @@ function score_all_impact_categories()
 
     }
     echo "                <th class='form_label' style='text-align: end; width: 90px; padding-right: 1px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating2->num_rows > 0) {
@@ -671,7 +669,7 @@ function score_all_impact_categories()
     echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
     echo "    <div id='select_dept'  >\n";
     echo "            <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td colspan='2'><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef3->num_rows > 0) {
         // output data of each row
@@ -682,7 +680,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
     echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td colspan='2'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat3->num_rows > 0) {
         // output data of each row
@@ -694,9 +692,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
     echo " </table>";
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 9 - 24 Hours</th>";
+    echo "                <td hidden ><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto3->num_rows > 0) {
         // output data of each row
@@ -707,7 +705,7 @@ function score_all_impact_categories()
 
     }
     echo "                <th class='form_label' style='text-align: end; width: 90px; padding-right: 1px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating3->num_rows > 0) {
@@ -734,7 +732,7 @@ function score_all_impact_categories()
     echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
     echo "    <div id='select_dept'  >\n";
     echo "            <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td colspan='2'><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef4->num_rows > 0) {
         // output data of each row
@@ -745,7 +743,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
     echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td colspan='2'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat4->num_rows > 0) {
         // output data of each row
@@ -757,9 +755,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
     echo " </table>";
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 1 to 3 Days</th>";
+    echo "                <td hidden  class='styled-select slate'><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto4->num_rows > 0) {
         // output data of each row
@@ -770,7 +768,7 @@ function score_all_impact_categories()
 
     }
     echo "                <th class='form_label' style='text-align: end; width: 90px; padding-right: 1px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate' class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating4->num_rows > 0) {
@@ -799,7 +797,7 @@ function score_all_impact_categories()
     echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
     echo "    <div id='select_dept'  >\n";
     echo "            <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td colspan='2'><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate' class='styled-select slate'><select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef5->num_rows > 0) {
         // output data of each row
@@ -810,7 +808,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
     echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td colspan='2'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat5->num_rows > 0) {
         // output data of each row
@@ -822,9 +820,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
     echo " </table>";
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 4 to 7 Days</th>";
+    echo "                <td hidden  class='styled-select slate'><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto5->num_rows > 0) {
         // output data of each row
@@ -835,7 +833,7 @@ function score_all_impact_categories()
 
     }
     echo "                <th class='form_label' style='text-align: end; width: 90px; padding-right: 1px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating5->num_rows > 0) {
@@ -863,7 +861,7 @@ function score_all_impact_categories()
     echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
     echo "    <div id='select_dept'  >\n";
     echo "            <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td colspan='2'><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef6->num_rows > 0) {
         // output data of each row
@@ -874,7 +872,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
     echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td colspan='2'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat6->num_rows > 0) {
         // output data of each row
@@ -886,9 +884,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
     echo " </table>";
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 8 to 15 Days</th>";
+    echo "                <td hidden  class='styled-select slate'><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto6->num_rows > 0) {
         // output data of each row
@@ -899,7 +897,7 @@ function score_all_impact_categories()
 
     }
     echo "                <th class='form_label' style='text-align: end; width: 90px; padding-right: 1px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating6->num_rows > 0) {
@@ -929,7 +927,7 @@ function score_all_impact_categories()
     echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
     echo "    <div id='select_dept'  >\n";
     echo "            <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
-    echo "                <td colspan='2'><select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef7->num_rows > 0) {
         // output data of each row
@@ -940,7 +938,7 @@ function score_all_impact_categories()
         echo "                </select></td></tr>\n";
     }
     echo "<tr><th class='form_label' style='text-align: start' colspan='2'> to what degree ...</th>";
-    echo "                <td colspan='2'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <td colspan='2' class='styled-select slate'><select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
     // While loop to retrieve impact category id
     if ($rs_impcat7->num_rows > 0) {
         // output data of each row
@@ -952,9 +950,9 @@ function score_all_impact_categories()
     echo "               <tr><style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector - Select RTO
     echo " </table>";
-    echo "    <table class='form_table' style='margin: 0 0 0 -200px;'>";
-    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of </th>";
-    echo "                <td><select type='select' name='RtoID' style='font-size: .75em;'>\n";
+    echo "    <table class='form_table' style='margin: 0 0 0 -350px;'>";
+    echo "                <th class='form_label' style='text-align: end; width: 375px; padding: 0 2px;'> A loss of 16 to 31 Days</th>";
+    echo "                <td hidden  class='styled-select slate'><select type='select' name='RtoID' style='font-size: .75em;'>\n";
     // While loop to retrieve rto id
     if ($rs_rto7->num_rows > 0) {
         // output data of each row
@@ -965,7 +963,7 @@ function score_all_impact_categories()
 
     }
     echo "                <th class='form_label' style='text-align: end; width: 90px; padding-right: 1px;'> will create </th>";
-    echo "                <td><select type='select' name='RatingID' style='font-size: .75em;'>\n";
+    echo "                <td class='styled-select slate'><select type='select' name='RatingID' style='font-size: .75em;'>\n";
 
     // While loop to retrieve rating id
     if ($rs_rating7->num_rows > 0) {
@@ -985,16 +983,15 @@ function score_all_impact_categories()
 }
 
 
-
 function show_table_three()
 {
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID 
+    $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID ,rt.RtoID
 FROM EF ef, RTO rt, I_CAT ic, RATING ra, I_CAT_SCORE ics
-WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY Duration";
+WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY RtoID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table width='100%' style='margin-left: 200px;'>";
@@ -1003,7 +1000,7 @@ WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID
             echo "                <tr><td  id='table_reference'>" . $row ["Duration"] . "</td><td> " . $row ["EFName"]
                 . "</td><td> " . $row ["CatName"] . "</td><td> " . $row ["RatingID"] . "</td></tr>\n";
 
-            echo "<tr style='background-color: transparent'><td></td></tr>";
+//            echo "<tr style='background-color: transparent'><td></td></tr>";
         }
         echo "</table>";
     } else {
@@ -1011,7 +1008,8 @@ WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID
     }
     $conn->close();
 }
-//
+
+
 //
 //
 //    if ($rs_rto2->num_rows > 0) {

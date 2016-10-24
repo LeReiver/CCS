@@ -76,7 +76,7 @@ include_once ('includes/nav.php');
         <!-- Error message -->
         <p id="submit_error"><?php echo $ef_error_message ; ?></p>
         <div class="input_reference" id="reports">
-            <?php echo show_essential_functions()?>
+            <?php show_essential_functions()?>
         </div>
         <form method="POST" action="essential_functions.php">
             <!-- User form-->

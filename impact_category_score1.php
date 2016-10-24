@@ -12,6 +12,7 @@ include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
 include_once('includes/impact_category_score_code1.php');
+include_once ('includes/RATING.php');
 
 // Requires secure connection
 require_secure();

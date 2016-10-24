@@ -52,7 +52,7 @@ include_once ('includes/nav.php');
     <h1>Table Two</h1>
     <div id="form_content">
         <div class="table_reference" id="reports">
-            <?php echo show_table_two()?>
+            <?php show_table_two()?>
         </div>
     </div>
 </body>

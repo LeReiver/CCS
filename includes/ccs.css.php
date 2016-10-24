@@ -77,6 +77,12 @@ form {
     margin-right: 15%;
 }
 
+select {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    height: 28px;
+}
+
 
 /* -------------- Nav --------------------------------------------------------*/
 
@@ -279,7 +285,6 @@ table th  {
     padding: 0 25px 50px 0;
     margin-right: 250px;
     text-align: end;
-    float: right;
 }
 .tint {
     background-color: rgba(119, 238, 170, 0.42);

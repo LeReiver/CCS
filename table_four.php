@@ -53,7 +53,7 @@ include_once ('includes/nav.php');
     <h1>Table Four</h1>
     <div id="form_content">
         <div class="table_reference" id="reports">
-            <?php echo show_table_four()?>
+            <?php show_table_four()?>
         </div>
     </div>
 </body>

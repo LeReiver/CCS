@@ -58,17 +58,17 @@ const E_WRONG_DATA_TYPE = 'Data!';
 
 // Database constants
 
-/* localhost */
-const DB_SERVER = '127.0.0.1';
-const DB_USER = 'ccs_admin';
-const DB_PASSWORD = 'ccs_admin';
-const DB_DATABASE = 'CCS_01';
+///* localhost */
+//const DB_SERVER = '127.0.0.1';
+//const DB_USER = 'ccs_admin';
+//const DB_PASSWORD = 'ccs_admin';
+//const DB_DATABASE = 'CCS_01';
 
 /* hostpond */
-//const DB_SERVER = 'plum.hostpond.com';
-//const DB_USER = 'lereive2_admin';
-//const DB_PASSWORD = '******';
-//const DB_DATABASE = 'lereive2_ccs';
+const DB_SERVER = 'plum.hostpond.com';
+const DB_USER = 'lereive2_admin';
+const DB_PASSWORD = 'xuck7-m()1,u';
+const DB_DATABASE = 'lereive2_ccs';
 
 const USERS_TABLE = 'Users';
 const USERS_USERNAME_FIELD = 'Username';
@@ -82,7 +82,7 @@ const ACCOUNT_DATA_SESSION_FIELD = 'session';
 // Page constants
 
 /* localhost */
-
+/*
 const HOME_PAGE = '/Git_htdocs/ccs_git/home.php';
 const REGISTER_PAGE = '/Git_htdocs/ccs_git/register.php';
 const LOGIN_PAGE = '/Git_htdocs/ccs_git/index.php';
@@ -106,36 +106,36 @@ const IMPACT_CATEGORY_SCORE_7_PAGE = '/Git_htdocs/ccs_git/impact_category_score7
 const TABLE_TWO_PAGE = '/Git_htdocs/ccs_git/table_two.php';
 const TABLE_THREE_PAGE = '/Git_htdocs/ccs_git/table_three.php';
 const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
-
+*/
 
 
 
 /* hostpond */
 
-//const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
-//const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
-//const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
-//const LOGOUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//logout.php';
-//const LOGGED_OUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/logged_out.php';
-//const NO_ACCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/no_access.php';
-//const EF_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/essential_functions.php';
-//const FUNC_PROCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_processes.php';
-//const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_categories.php';
-//const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_categories.php';
-//const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_details.php';
-//const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_scoring.php';
-//const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score.php';
-//const IMPACT_CATEGORY_SCORE_ALL_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score_all.php';
-//const IMPACT_CATEGORY_SCORE_1_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score1.php';
-//const IMPACT_CATEGORY_SCORE_2_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score2.php';
-//const IMPACT_CATEGORY_SCORE_3_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score3.php';
-//const IMPACT_CATEGORY_SCORE_4_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score4.php';
-//const IMPACT_CATEGORY_SCORE_5_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score5.php';
-//const IMPACT_CATEGORY_SCORE_6_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score6.php';
-//const IMPACT_CATEGORY_SCORE_7_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score7.php';
-//const TABLE_TWO_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_two.php';
-//const TABLE_THREE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_three.php';
-//const TABLE_FOUR_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_four.php';
+const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
+const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
+const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
+const LOGOUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//logout.php';
+const LOGGED_OUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/logged_out.php';
+const NO_ACCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/no_access.php';
+const EF_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/essential_functions.php';
+const FUNC_PROCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_processes.php';
+const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_categories.php';
+const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_categories.php';
+const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_details.php';
+const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_scoring.php';
+const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score.php';
+const IMPACT_CATEGORY_SCORE_ALL_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score_all.php';
+const IMPACT_CATEGORY_SCORE_1_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score1.php';
+const IMPACT_CATEGORY_SCORE_2_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score2.php';
+const IMPACT_CATEGORY_SCORE_3_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score3.php';
+const IMPACT_CATEGORY_SCORE_4_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score4.php';
+const IMPACT_CATEGORY_SCORE_5_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score5.php';
+const IMPACT_CATEGORY_SCORE_6_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score6.php';
+const IMPACT_CATEGORY_SCORE_7_PAGE = 'https://plum.hostpond.com/~lereive2/Git_htdocs/ccs_git/impact_category_score7.php';
+const TABLE_TWO_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_two.php';
+const TABLE_THREE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_three.php';
+const TABLE_FOUR_PAGE = 'https://plum.hostpond.com/~lereive2/ccs_git/table_four.php';
 
 
 // -----------------------------------------------------------------------------------------------------------------------

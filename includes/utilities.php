@@ -57,6 +57,14 @@ function get_post_value($key)
     }
     return'';
 }
+// Gets $_GET value
+function get_get_value($key)
+{
+    if (isset($_GET[$key])) {
+        return htmlentities($_GET[$key]);
+    }
+    return'';
+}
 
 // Gets $_SESSION value
 function get_session_value($key)

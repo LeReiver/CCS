@@ -143,8 +143,8 @@ include_once ('includes/nav.php');
             </div>
     </form>
 
-    <div  id="reports" style="margin: 0 0 100px -100px;">
-        <?php echo show_table_three()?>
+    <div  id="reports" style="margin: 0 0 100px -425px; width: 800px">
+        <?php show_table_three()?>
     </div>
 
 </div>

@@ -486,6 +486,7 @@ WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID
         echo " <h4>You have no existing Recovery Time Objectives with Corresponding Essential Functions</h4>";
     }
     $conn->close();
+    
 }
 
 
@@ -502,37 +503,13 @@ function show_impact_scores()
 
 
     $sql ="SELECT 	EFName, CatName, Rating, Duration
-            FROM	(SELECT ef.EFName as 'Essential Function'
-                        FROM  I_CAT ic, I_CAT_SCORE ics, EF ef, RATING ra, RTO rt WHERE ic.ImpCatID = ics.ImpCatID
-            AND ics.EFID = ef.EFID AND ics.ImpCatID = ic.ImpCatID AND ics.RatingID = ra.RatingID
-            AND ics.RtoID = rt.RtoID
-                        ORDER BY ef.EFName, ic.CatName) as EFName,	
-                    (SELECT ic.CatName as 'Category' 
-                        FROM  I_CAT ic, I_CAT_SCORE ics, EF ef, RATING ra, RTO rt
-                        WHERE ic.ImpCatID = ics.ImpCatID AND ics.EFID = ef.EFID AND ics.ImpCatID = ic.ImpCatID
-            AND ics.RatingID = ra.RatingID AND ics.RtoID = rt.RtoID
-                        ORDER BY ef.EFName, ic.CatName) as CatName,
-                    RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef,
-                    (SELECT ra.Rating as '2to8Hrs'
-                        FROM RTO rt, RATING ra ) AS Duration
-            -- 		(SELECT ra.Rating as '2to8Hrs'
-            -- 			FROM RTO rt, RATING ra  WHERE rt.RtoID = 2) AS Tier2,
-            -- 		(SELECT ra.Rating as '9to24Hrs'
-            --  			FROM RTO rt, RATING ra  WHERE rt.RtoID = 3) AS Tier3,
-                -- 	(SELECT ra.Rating as '1to3Days'
-            --  			FROM RTO rt, RATING ra  WHERE rt.RtoID = 4) AS Tier4,
-            --  		(SELECT ra.Rating as '4to7Days'
-            --  			FROM RTO rt, RATING ra  WHERE rt.RtoID = 5) AS Tier5,
-            --  		(SELECT ra.Rating as '8-15Days'
-            --  			FROM RTO rt, RATING ra  WHERE rt.RtoID = 6) AS Tier6,
-            -- 		(SELECT ra.Rating as '16-31Days'
-            -- 			FROM RTO rt, RATING ra  WHERE rt.RtoID = 7) AS Tier7
+            FROM	RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
             WHERE	ra.RatingID = ics.RatingID
             AND		rt.RtoID = ics.RtoID
             AND		ic.ImpCatID = ics.ImpCatID
             AND		ef.EFID = ics.EFID
             GROUP BY EFName, CatName, Duration, Rating
-            ORDER BY EFName, CatName, Duration";
+            ORDER BY EFName, CatName, rt.RtoID, Duration";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table>";

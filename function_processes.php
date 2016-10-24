@@ -66,7 +66,7 @@ include_once ('includes/nav.php');
         <!-- Error message -->
         <p id="submit_error"><?php echo $func_process_error_message ; ?></p>
     <div class="input_reference" id="reports">
-        <?php echo show_function_processes()?>
+        <?php show_function_processes()?>
     </div>
 
         <form method="POST" action="function_processes.php">

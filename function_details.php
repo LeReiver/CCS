@@ -88,7 +88,7 @@ include_once ('includes/nav.php');
         <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
         <form method="POST" action="function_details.php">
             <!-- User form-->
-            <table class="form_table" style="margin: 0 100px 0 -200px; width:1000px;">
+            <table class="form_table" style="margin: 0 0 0 -200px; width:1000px;">
                 <tr>
                     <th class="form_label">Interviewer Name: </th>
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo FUNC_DETAILS_INTERVIEWER_FIELD; ?>"

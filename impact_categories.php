@@ -66,7 +66,7 @@ include_once ('includes/nav.php');
         <!-- Error message -->
         <p id="submit_error"><?php echo $impact_category_error_message ; ?></p>
         <div class="input_reference"  id="reports">
-            <?php echo show_impact_categories()?>
+            <?php show_impact_categories()?>
         </div>
 
         <form method="POST" action="impact_categories.php">

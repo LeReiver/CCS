@@ -12,6 +12,7 @@ include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
 include_once('includes/impact_category_score_code2.php');
+include_once ('includes/RATING.php');
 
 // Requires secure connection
 require_secure();
@@ -23,7 +24,7 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
     header('Location: ' . NO_ACCESS_PAGE);
 }
 
-// Creates variables using the get_post_value function and passes in constants for each entered field
+// Creates variables using the get_get_value function and passes in constants for each entered field
 $impact_category_score_rating_id1 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_1);
 $impact_category_score_rto_id1 = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_1);
 $impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1);
@@ -102,8 +103,8 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
             <tr><td></td><td></td>
                 <td hidden > <?php get_rto() ?></td>
-            <tr style="color: #fb543d"><td></td><td><?php echo "*retreive last table entry" ?></td>
-                <td><?php get_rating() ?></td>
+            <tr style="color: #fb543d"><td></td><td><?php echo "*" ?></td>
+                <td><?php RATING::get_rating() ?></td>
             </tr>
         </table>
         <!-- Submit form-->
@@ -115,7 +116,7 @@ include_once ('includes/nav.php');
         </div>
     </form>
     <div  id="reports" style="margin: 0 0 100px 100px;">
-        <?php echo show_impact_scores() ?>
+        <?php show_impact_scores() ?>
     </div>
 </div>
 </body>
