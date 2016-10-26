@@ -74,14 +74,14 @@ include_once ('includes/nav.php');
             <table class="form_table" style="margin:-320px 50px 0 0;">
                 <tr>
                     <th class="form_label">Impact Categories Name: </th>
-                    <td colspan="2" class="form_input" style="padding-right: 25px;"><input type="text" name="<?php echo IMPACT_CATEGORY_NAME_FIELD; ?>"
+                    <td colspan="2" class="form_input" style="padding-right: 25px; width: 400px;"><input type="text" name="<?php echo IMPACT_CATEGORY_NAME_FIELD; ?>"
                                                                  value="<?php echo $impact_category_name ?>" ></td>
                 </tr>
                 <tr>
                     <th class="form_label">Impact Categories Description: </th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo IMPACT_CATEGORY_DESCRIPTION_FIELD; ?>"
                                            value="<?php echo $impact_category_description ?>"
-                                           rows="3" cols="20" class="form_label_textarea"></textarea></td>
+                                           rows="3" cols="30" class="form_label_textarea"></textarea></td>
                 </tr>
                 <!-- Submit form-->
                 <div class="submit_table">
@@ -89,12 +89,12 @@ include_once ('includes/nav.php');
                         <td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo IMPACT_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 150px;'></div></td>
+                                name="<?php echo IMPACT_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 250px;'></div></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 150px;'></div></td>
+                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 250px;'></div></td>
                     </tr>
                 </div>
             </table>

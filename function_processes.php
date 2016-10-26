@@ -76,12 +76,12 @@ include_once ('includes/nav.php');
                     <!--  Input label -->
                     <th class="form_label">Essential Function: </th>
                     <!-- User selector gets essential functions -->
-                    <td colspan="2" class="form_input"> <?php get_essential_functions() ?></td>
+                    <td colspan="2" class="form_input" > <?php get_essential_functions() ?></td>
                 </tr>
                 <tr>
                     <th class="form_label">Function Processes: </th>
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_PROCESS_DESCRIPTION_FIELD; ?>"
-                                                                 value="<?php echo $func_process_description ?>" rows="10" cols="50" class="form_label_textarea"></textarea></td>
+                                                                 value="<?php echo $func_process_description ?>" rows="10" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
 
 
@@ -91,12 +91,12 @@ include_once ('includes/nav.php');
                         <td></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px; margin-left: 400px;'></div></td>
+                                name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px; margin-left: 360px;'></div></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px; margin-left: 400px;'></div></td>
+                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px; margin-left: 360px;'></div></td>
                     </tr>
                 </div>
             </table>
