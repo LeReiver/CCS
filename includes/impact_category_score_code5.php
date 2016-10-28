@@ -98,7 +98,7 @@ function get_essential_functions()
     echo "    <div id='select_dept'  >\n";
     echo "                <form style='font-size: 1.75em; font-weight: bold; float: right'>\n";
     // User input selector
-    echo "                <select type='select' name='EFID' style='font-size: .75em;'>\n";
+    echo "                <select type='select' name='EFID' style='font-size: .75em;width:520px; overflow=hidden;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row
@@ -131,7 +131,7 @@ function get_impact_category()
     echo "    <div id='select_dept'  >\n";
     echo "                <form>\n";
     // User input selector
-    echo "                <select type='select' name='ImpCatID' style='font-size: .75em;'>\n";
+    echo "                <select type='select' name='ImpCatID' style='font-size: .75em;width:520px; overflow=hidden;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row

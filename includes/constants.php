@@ -188,10 +188,10 @@ const EF_ADD_FUNCTION_BUTTON_VALUE = 'add_new_function';
 const E_EF = 'Error!';
 
 const E_NO_EF_NAME = 'Essential Function name must be supplied.';
-const E_NO_EF_LEAD_NAME = 'Essential Function lead name must be supplied.';
-const E_NO_EF_LEAD_TITLE = 'Essential Function lead title must be supplied.';
-const E_NO_EF_LEAD_EMAIL = 'Essential Function lead email must be supplied.';
-const E_NO_EF_LEAD_PHONE = 'Essential Function lead phone number must be supplied.';
+const E_NO_EF_LEAD_NAME = 'Lead name must be supplied.';
+const E_NO_EF_LEAD_TITLE = 'Lead title must be supplied.';
+const E_NO_EF_LEAD_EMAIL = 'Lead email must be supplied.';
+const E_NO_EF_LEAD_PHONE = 'Lead phone number must be supplied.';
 const E_NO_IMPACT_SCORE = 'Impact Score must be supplied.';
 const E_NO_DEPT_ID = 'Corresponding Department ID must be supplied.';
 
@@ -211,7 +211,7 @@ const FUNC_PROCESS_SUBMIT_BUTTON_VALUE = 'func_process_submit_pressed';
 
 const E_FUNC_PROCESS = 'Error!';
 
-const E_NO_FUNC_PROCESS_DESCRIPTION = 'Essential Function Process description must be supplied.';
+const E_NO_FUNC_PROCESS_DESCRIPTION = 'Process description must be supplied.';
 const E_NO_EFID = 'Essential Function must be supplied.';
 
 // -----------------------------------------------------------------------------------------------------------------------
@@ -251,8 +251,8 @@ const FUNC_CATEGORY_SUBMIT_BUTTON_VALUE = 'function_category_submit_pressed';
 
 const E_FUNC_CATEGORY = 'Error!';
 
-const E_NO_FUNC_CATEGORY_NAME = 'Essential Function Category name must be supplied.';
-const E_NO_FUNC_CATEGORY_DESCRIPTION = 'Essential Function Category description must be supplied.';
+const E_NO_FUNC_CATEGORY_NAME = 'Category name must be supplied.';
+const E_NO_FUNC_CATEGORY_DESCRIPTION = 'Category description must be supplied.';
 
 
 // -----------------------------------------------------------------------------------------------------------------------
@@ -281,17 +281,17 @@ const FUNC_DETAILS_SUBMIT_BUTTON_VALUE = 'function_detail_submit_pressed';
 
 const E_FUNC_DETAILS = 'Error!';
 
-const E_NO_FUNC_DETAILS_INTERVIEWER = 'Essential Function Details Interviewer\'s name must be supplied.';
-const E_NO_FUNC_DETAILS_RESPONSIBILITIES = 'Essential Function Details Responsibilities must be supplied.';
-const E_NO_FUNC_DETAILS_INTERNAL_DEP = 'Essential Function Details Internal Dependencies must be supplied.';
-const E_NO_FUNC_DETAILS_EXTERNAL_DEP = 'Essential Function Details External Dependencies must be supplied.';
-const E_NO_FUNC_DETAILS_PEAK_TIMES = 'Essential Function Details Peak Times must be supplied.';
-const E_NO_FUNC_DETAILS_CONSIDERATIONS = 'Essential Function Details Considerations must be supplied.';
-const E_NO_FUNC_DETAILS_REG_LOSS = 'Essential Function Details Regulatory Loss must be supplied.';
-const E_NO_FUNC_DETAILS_RTO = 'Essential Function Details RTO must be supplied.';
-const E_NO_FUNC_DETAILS_IT_SUPPORT = 'Essential Function DetailsIT Support must be supplied.';
-const E_NO_FUNC_DETAILS_BACKUP_PROCESS = 'Essential Function Details Backup Process must be supplied.';
-const E_NO_FUNC_DETAILS_FACTORS = 'Essential Function Details Factors must be supplied.';
+const E_NO_FUNC_DETAILS_INTERVIEWER = 'Interviewer\'s name must be supplied.';
+const E_NO_FUNC_DETAILS_RESPONSIBILITIES = 'Responsibilities must be supplied.';
+const E_NO_FUNC_DETAILS_INTERNAL_DEP = 'Internal Dependencies must be supplied.';
+const E_NO_FUNC_DETAILS_EXTERNAL_DEP = 'External Dependencies must be supplied.';
+const E_NO_FUNC_DETAILS_PEAK_TIMES = 'Peak Times must be supplied.';
+const E_NO_FUNC_DETAILS_CONSIDERATIONS = 'Considerations must be supplied.';
+const E_NO_FUNC_DETAILS_REG_LOSS = 'Regulatory Loss must be supplied.';
+const E_NO_FUNC_DETAILS_RTO = 'RTO must be supplied.';
+const E_NO_FUNC_DETAILS_IT_SUPPORT = 'IT Support must be supplied.';
+const E_NO_FUNC_DETAILS_BACKUP_PROCESS = 'Backup Process must be supplied.';
+const E_NO_FUNC_DETAILS_FACTORS = 'Factors must be supplied.';
 const E_NO_FUNC_DETAILS_EFID = 'Essential Function must be supplied.';
 
 
@@ -318,15 +318,15 @@ const IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE = 'impact_category_scoring_sub
 
 const E_IMPACT_CATEGORY_SCORING = 'Error!';
 
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_ONE = 'Impact Category Tier One must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_TWO = 'Impact Category Tier Two must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_THREE = 'Impact Category Tier Three must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_FOUR = 'Impact Category Tier Four must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_FIVE = 'Impact Category Tier Five must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_SIX = 'Impact Category Tier Six must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN = 'Impact Category Tier Seven must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID = 'Impact Category Impact Category ID must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORING_EFID = 'Impact Category EF ID must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_ONE = 'Tier One must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_TWO = 'Tier Two must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_THREE = 'Tier Three must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_FOUR = 'Tier Four must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_FIVE = 'Tier Five must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_SIX = 'Tier Six must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN = 'Tier Seven must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID = 'Impact Category ID must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORING_EFID = 'EF ID must be supplied.';
 
  
 
@@ -374,38 +374,38 @@ const IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE = 'impact_category_score_submit_
 
 const E_IMPACT_CATEGORY_SCORE = 'Error!';
 
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID = 'Impact Category Rating must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID  = 'Impact Category RTO must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID = 'Impact Category Impact Category must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID = 'Impact Category Essential Function must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_1 = 'Impact Category Rating 1 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_1  = 'Impact Category RTO 1 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1 = 'Impact Category Impact Category 1 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_1 = 'Impact Category Essential Function 1 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_2 = 'Impact Category Rating 2 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_2  = 'Impact Category RTO 2 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2 = 'Impact Category Impact Category 2 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_2 = 'Impact Category Essential Function 2 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_3 = 'Impact Category Rating 3 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_3  = 'Impact Category RTO 3 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_3 = 'Impact Category Impact Category 3 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_3 = 'Impact Category Essential Function 3 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_4 = 'Impact Category Rating 4 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_4  = 'Impact Category RTO 4 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_4 = 'Impact Category Impact Category 4 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_4 = 'Impact Category Essential Function 4 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_5 = 'Impact Category Rating 5 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_5  = 'Impact Category RTO 5 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_5 = 'Impact Category Impact Category 5 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_5 = 'Impact Category Essential Function 5 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_6 = 'Impact Category Rating 6 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_6  = 'Impact Category RTO 6 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6 = 'Impact Category Impact Category 6 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_6 = 'Impact Category Essential Function 6 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_7 = 'Impact Category Rating 7 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_7  = 'Impact Category RTO 7 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7 = 'Impact Category Impact Category 7 must be supplied.';
-const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_7 = 'Impact Category Essential Function 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID = 'Rating must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID  = 'RTO must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID = 'Impact Category must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID = 'Essential Function must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_1 = 'Rating 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_1  = 'RTO 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_1 = 'Impact Category 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_1 = 'Essential Function 1 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_2 = 'Rating 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_2  = 'RTO 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2 =   'Impact Category 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_2 =   'Essential Function 2 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_3 =   'Rating 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_3  =   'RTO 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_3 =   'Impact Category 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_3 =   'Essential Function 3 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_4 =   'Rating 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_4  =   'RTO 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_4 =   'Impact Category 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_4 =   'Essential Function 4 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_5 =   'Rating 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_5  =   'RTO 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_5 =   'Impact Category 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_5 =   'Essential Function 5 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_6 =   'Rating 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_6  =   'RTO 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6 =   'Impact Category 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_6 =   'Essential Function 6 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_7 =   'Rating 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_7  =   'RTO 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7 =   'Impact Category 7 must be supplied.';
+const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_7 =   'Essential Function 7 must be supplied.';
 
 
 
