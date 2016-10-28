@@ -67,7 +67,7 @@ const DB_DATABASE = 'CCS_01';
 /* hostpond */
 //const DB_SERVER = 'plum.hostpond.com';
 //const DB_USER = 'lereive2_admin';
-//const DB_PASSWORD = '****';
+//const DB_PASSWORD = '*****';
 //const DB_DATABASE = 'lereive2_ccs';
 
 const USERS_TABLE = 'Users';
@@ -110,8 +110,8 @@ const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
 
 
 
-/* hostpond */
-//
+///* hostpond */
+////
 //const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
 //const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
 //const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
