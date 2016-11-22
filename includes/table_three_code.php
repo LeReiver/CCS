@@ -28,7 +28,7 @@ function show_table_three()
     }
     $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID ,rt.RtoID
 FROM EF ef, RTO rt, I_CAT ic, RATING ra, I_CAT_SCORE ics
-WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY RtoID";
+WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY RtoID, EFName";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table width='100%' style='margin-left: 200px;'>";
