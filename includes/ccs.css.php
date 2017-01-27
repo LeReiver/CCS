@@ -261,6 +261,10 @@ table th  {
     margin: 400px 0 0 300px;
     width: 500px;
 }
+#delete_row {
+    margin-left: 25px;
+    float: right;
+}
 .input_reference {
     float:left;
     clear: right;

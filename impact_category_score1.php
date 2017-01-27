@@ -105,7 +105,7 @@ include_once ('includes/nav.php');
             <tr><td></td>
                 <td hidden > <?php get_rto() ?></td>
             <tr><td></td>
-                <td><?php get_rating() ?></td>
+                <td><?php RATING::get_rating() ?></td>
             </tr>
         </table>
         <!-- Submit form-->

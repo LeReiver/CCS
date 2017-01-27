@@ -27,7 +27,7 @@ function show_table_three()
         die("Connection failed: " . $conn->connect_error);
     }
     $sql = "SELECT rt.Duration, ef.EFName, ic.CatName, ra.RatingID ,rt.RtoID
-FROM EF ef, RTO rt, I_CAT ic, RATING ra, I_CAT_SCORE ics
+FROM EF ef, RTO rt, I_CAT ic, RATINGS ra, I_CAT_SCORE ics
 WHERE ef.EFID = ics.EFID AND ic.ImpCatID = ics.ImpCatID AND ics.RtoID = rt.RtoID AND ics.RatingID = ra.RatingID AND ra.RatingID != 0 ORDER BY RtoID, EFName";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {

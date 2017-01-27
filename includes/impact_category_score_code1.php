@@ -501,7 +501,7 @@ function show_impact_scores()
 
 
     $sql ="SELECT 	EFName, CatName, Rating, Duration
-            FROM	RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
+            FROM	RATINGS ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
             WHERE	ra.RatingID = ics.RatingID
             AND		rt.RtoID = ics.RtoID
             AND		ic.ImpCatID = ics.ImpCatID

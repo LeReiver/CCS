@@ -79,6 +79,7 @@ include_once ('includes/nav.php');
                 <?php echo show_departments()?>
             </div>
             <form method="POST" action="departments.php">
+
             <!-- User form-->
             <table class="form_table" style="margin:-320px 50px 0 0;">
                 <tr><th class="form_label">Department Name: </th> <!--  Input label-->

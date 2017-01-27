@@ -23,7 +23,7 @@ class RATING {
             die("Connection failed: " . $conn->connect_error);
         }
         // SQL query
-        $sql = "SELECT Rating, RatingID FROM RATING";
+        $sql = "SELECT Rating, RatingID FROM RATINGS";
         // Create result from connection and query
         $result = $conn->query($sql);
         // User input selector
