@@ -27,6 +27,27 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 header("Pragma: no-cache");
+
+
+// Creates variables using the get_post_value function and passes in constants for each entered field
+$login_username = get_post_value(LOGIN_USERNAME_KEY);
+$login_password = get_post_value(LOGIN_PASSWORD_KEY);
+$login_pressed = get_post_value(LOGIN_BUTTON_VALUE);
+$register_username = get_post_value(REGISTER_USERNAME_KEY);
+$register_password = get_post_value(REGISTER_PASSWORD_KEY);
+$register_confirm_password = get_post_value(REGISTER_CONFIRM_PASSWORD_KEY);
+$register_pressed = get_post_value(REGISTER_BUTTON_VALUE);
+
+// Creates error message corresponding with the submit button
+$error_message = login_or_register(
+    $login_pressed,
+    $register_pressed,
+    $login_username,
+    $login_password,
+    $register_username,
+    $register_password,
+    $register_confirm_password
+);
 ?>
 
 
@@ -52,5 +73,38 @@ include_once ('includes/nav.php');
         <?php echo " <h1>Welcome " . get_session_value(SESSION_USERNAME_KEY)  . "!</h1>"; ?>
     </div>
 
+<div id="login_content">
+    <?php echo '&nbsp;<br><br>'; ?>
+<!--    <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>-->
+    <?php echo '&nbsp;<br><br>'; ?>
+    <!-- User form-->
+    <form method="POST" action="register.php">
+        <table class="login_table">
+            <tr>
+            <tr><th colspan="5"><div class="register_header">Register a New Account</div></th></tr>
+            <tr>
+                <td><input type="text" placeholder="Username" name="<?php echo REGISTER_USERNAME_KEY; ?>"
+                           value="<?php echo $register_username ?>"></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="Create Password" name="<?php echo REGISTER_PASSWORD_KEY; ?>"
+                           value="<?php echo $register_password ?>"></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="Confirm Password" name="<?php echo REGISTER_CONFIRM_PASSWORD_KEY; ?>"
+                           value="<?php echo $register_confirm_password ?>"></td>
+            </tr>
+            <tr>
+
+                <!-- Register button -->
+                <td class="login_submit"><input type="submit" value="REGISTER"
+                                                name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px; margin-right: 170px;margin-left: 250px;"></td><td></td> </tr>
+            <tr>
+                <!-- Error message -->
+                <td> <?php echo $error_message; ?></td><td> </td>
+            </tr>
+        </table>
+    </form>
+</div>
 </body>
 </html>

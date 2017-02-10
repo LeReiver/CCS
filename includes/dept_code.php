@@ -107,7 +107,7 @@ function show_departments()
             <td id='reference_table'>
                 <input type='hidden' value=" .$row["DeptID"]."  name='id'/>
                 <form action='includes/delete.php' method='GET'>
-                <button id='delete_row' name='delete' value=".$row["DeptID"].">DELETE</button></form>";
+                <button id='delete_row' name='delete_row' value=".$row["DeptID"].">DELETE</button></form>";
         echo "</td></tr>";
         }
         echo "</table>";

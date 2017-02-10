@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="260b683e-b79f-4c2f-8227-f7e1175514c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/ccs.css.php" afterPath="$PROJECT_DIR$/includes/ccs.css.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/delete.php" afterPath="$PROJECT_DIR$/includes/delete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/dept_code.php" afterPath="$PROJECT_DIR$/includes/dept_code.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
     </list>
     <ignored path="CCS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,33 +36,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dept_code.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dept_code.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/dept_code.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
+            <state relative-caret-position="1575">
+              <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
               <folding>
-                <marker date="1486749133000" expanded="true" signature="2547:2602" placeholder="SELECT Organ... DEPT" />
-                <marker date="1486749133000" expanded="true" signature="2701:2720" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3046" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3271" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3285" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3286" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3288" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3320" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3326" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3353" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="2949:3356" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3083:3113" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3083:3127" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3083:3128" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3083:3131" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3083:3153" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3083:3271" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3224:3270" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3224:3271" placeholder="..." />
-                <marker date="1486749133000" expanded="true" signature="3707:3754" placeholder="SELECT Organ... DEPT" />
-                <marker date="1486749133000" expanded="true" signature="3852:3871" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2547:2602" placeholder="SELECT Organ... DEPT" />
+                <marker date="1486754170000" expanded="true" signature="2701:2720" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3046" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3271" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3289" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3290" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3292" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3324" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3330" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3357" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="2949:3360" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3083:3113" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3083:3127" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3083:3128" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3083:3131" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3083:3153" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3083:3271" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3224:3270" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3224:3271" placeholder="..." />
+                <marker date="1486754170000" expanded="true" signature="3711:3758" placeholder="SELECT Organ... DEPT" />
+                <marker date="1486754170000" expanded="true" signature="3856:3875" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -68,24 +71,19 @@
       <file leaf-file-name="departments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/departments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="270">
+              <caret line="25" column="1" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <marker date="1486749537000" expanded="true" signature="477:505" placeholder="DELETE FROM " />
-                <marker date="1486749537000" expanded="true" signature="477:506" placeholder="DELETE FROM " />
-                <marker date="1486749537000" expanded="true" signature="477:507" placeholder="DELETE FROM " />
-                <marker date="1486749537000" expanded="true" signature="477:517" placeholder="DELETE FROM " />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/includes/text_editor.js.php" />
-        <option value="$PROJECT_DIR$/includes/table_two_code.php" />
         <option value="$PROJECT_DIR$/includes/table_four_code.php" />
         <option value="$PROJECT_DIR$/function_categories.php" />
         <option value="$PROJECT_DIR$/function_profiles.php" />
@@ -145,10 +141,12 @@
         <option value="$PROJECT_DIR$/includes/constants.php" />
         <option value="$PROJECT_DIR$/departments.php" />
         <option value="$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/constants.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/includes/ccs.css.php" />
         <option value="$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/delete.php" />
-        <option value="$PROJECT_DIR$/includes/dept_code.php" />
         <option value="$PROJECT_DIR$/includes/delete.php" />
+        <option value="$PROJECT_DIR$/includes/dept_code.php" />
       </list>
     </option>
   </component>
@@ -168,7 +166,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="44" />
-    <option name="width" value="1613" />
+    <option name="width" value="1854" />
     <option name="height" value="1149" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -395,7 +393,7 @@
       <workItem from="1480001618223" duration="99000" />
       <workItem from="1480356297025" duration="192000" />
       <workItem from="1485458381436" duration="23073000" />
-      <workItem from="1486748758022" duration="902000" />
+      <workItem from="1486748758022" duration="5373000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1475107775054</created>
@@ -628,11 +626,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485552087425</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Working on delete buttons. Still not working.">
+      <created>1486749719065</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1486749719065</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437227000" />
+    <option name="totallyTimeSpent" value="441698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,11 +649,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="44" width="1613" height="1149" extended-state="0" />
+    <frame x="65" y="44" width="1854" height="1149" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23297262" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20198676" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18543047" sideWeight="0.5031905" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975113" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19277108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -656,9 +662,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19962157" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3822138" sideWeight="0.49680948" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3822138" sideWeight="0.49680948" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -703,7 +708,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned up code, refactored&#10;- still not reading ImpCatID &#10;" />
     <MESSAGE value="Added Table Two page, Styled report tables, still not reading ImpCatID &#10;" />
     <MESSAGE value="Modified UX/UI element positioning. Added text editor for function processes. Still not reading ImpCatID &#10;" />
     <MESSAGE value="Removed text editor for function processes. Still not reading ImpCatID &#10;" />
@@ -728,39 +732,19 @@
     <MESSAGE value="Formatted form styles." />
     <MESSAGE value="changed db password" />
     <MESSAGE value="Added delete buttons for rows. Not working yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delete buttons for rows. Not working yet." />
+    <MESSAGE value="Working on delete buttons. Still not working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on delete buttons. Still not working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="32" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/table_two.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table_three.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table_four.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/utilities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -909,27 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/db_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="245" column="29" selection-start-line="245" selection-start-column="29" selection-end-line="245" selection-end-column="29" />
-          <folding>
-            <marker date="1479847596000" expanded="true" signature="536:623" placeholder="SELECT * FRO... ${USERS_TABLE}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/impact_category_score_code2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -944,13 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="129" column="42" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/departments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -979,13 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="269" column="17" selection-start-line="269" selection-start-column="17" selection-end-line="269" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1059,48 +1012,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/departments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/dept_code.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
-          <folding>
-            <marker date="1486749133000" expanded="true" signature="2547:2602" placeholder="SELECT Organ... DEPT" />
-            <marker date="1486749133000" expanded="true" signature="2701:2720" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3046" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3271" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3285" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3286" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3288" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3320" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3326" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3353" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="2949:3356" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3083:3113" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3083:3127" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3083:3128" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3083:3131" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3083:3153" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3083:3271" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3224:3270" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3224:3271" placeholder="..." />
-            <marker date="1486749133000" expanded="true" signature="3707:3754" placeholder="SELECT Organ... DEPT" />
-            <marker date="1486749133000" expanded="true" signature="3852:3871" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/dept_code.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <marker date="1485554809000" expanded="true" signature="2547:2602" placeholder="SELECT Organ... DEPT" />
             <marker date="1485554809000" expanded="true" signature="2701:2720" placeholder="..." />
@@ -1111,13 +1026,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/delete.php">
+    <entry file="file://$PROJECT_DIR$/includes/constants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="129" column="57" selection-start-line="129" selection-start-column="57" selection-end-line="129" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/db_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2924">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
-            <marker date="1486748994000" expanded="true" signature="394:427" placeholder="DELETE FROM " />
+            <marker date="1479847596000" expanded="true" signature="536:623" placeholder="SELECT * FRO... ${USERS_TABLE}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/departments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="1" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="325" column="19" selection-start-line="325" selection-start-column="19" selection-end-line="325" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/departments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,15 +1100,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../xamppfiles/htdocs/Git_htdocs/ccs_git/includes/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/dept_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
           <folding>
-            <marker date="1486749537000" expanded="true" signature="477:505" placeholder="DELETE FROM " />
-            <marker date="1486749537000" expanded="true" signature="477:506" placeholder="DELETE FROM " />
-            <marker date="1486749537000" expanded="true" signature="477:507" placeholder="DELETE FROM " />
-            <marker date="1486749537000" expanded="true" signature="477:517" placeholder="DELETE FROM " />
+            <marker date="1486754170000" expanded="true" signature="2547:2602" placeholder="SELECT Organ... DEPT" />
+            <marker date="1486754170000" expanded="true" signature="2701:2720" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3046" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3271" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3289" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3290" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3292" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3324" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3330" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3357" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="2949:3360" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3083:3113" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3083:3127" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3083:3128" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3083:3131" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3083:3153" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3083:3271" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3224:3270" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3224:3271" placeholder="..." />
+            <marker date="1486754170000" expanded="true" signature="3711:3758" placeholder="SELECT Organ... DEPT" />
+            <marker date="1486754170000" expanded="true" signature="3856:3875" placeholder="..." />
           </folding>
         </state>
       </provider>

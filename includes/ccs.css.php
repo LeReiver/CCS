@@ -312,6 +312,14 @@ table th  {
     text-align: left;
     padding-left: 15px;
 }
+.register_header {
+    text-shadow: none;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 15px;
+    color: #000;
+}
 .login_submit{
     margin: 20px 0 0 30px;
     text-align: center;

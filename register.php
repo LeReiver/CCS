@@ -20,6 +20,11 @@ require_secure();
 session_start();
 
 
+// If session not set (user not logged in) redirect to no access page
+if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
+    header('Location: ' . NO_ACCESS_PAGE);
+}
+
 // Creates variables using the get_post_value function and passes in constants for each entered field
 $login_username = get_post_value(LOGIN_USERNAME_KEY);
 $login_password = get_post_value(LOGIN_PASSWORD_KEY);
@@ -50,7 +55,7 @@ $error_message = login_or_register(
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body class="home_page tint">
+<body class="tint">
 <div >
     <div id="login_content">
         <?php echo '&nbsp;<br><br>'; ?>
@@ -62,8 +67,8 @@ $error_message = login_or_register(
                 <tr>
             <tr><th colspan="5"><div class="login_header">Register a New Account</div></th></tr>
             <tr>
-                <td><input type="text" placeholder="Username" name="<?php echo REGISTER_USERNAME_KEY; ?>" <!-- User input -->
-                           value="<?php echo $register_username ?>" autofocus ></td>
+                <td><input type="text" placeholder="Username" name="<?php echo REGISTER_USERNAME_KEY; ?>"
+                           value="<?php echo $register_username ?>"></td>
             </tr>
             <tr>
                 <td><input type="password" placeholder="Create Password" name="<?php echo REGISTER_PASSWORD_KEY; ?>"
@@ -84,8 +89,9 @@ $error_message = login_or_register(
                     <!-- Error message -->
                     <td> <?php echo $error_message; ?></td><td> </td>
                 </tr>
-        </table>
-    </form>
+            </table>
+        </form>
+    </div>
 </div>
 </body>
 </html>
