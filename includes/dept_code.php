@@ -101,12 +101,14 @@ function show_departments()
         echo "<table style='margin-top: -100px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header' colspan='2'><h4>Existing Departments</h4></th><th></th></tr>";
-
         while ($row = $result->fetch_assoc()) {
-//        $id = ["DeptID"];
-        echo "                <tr><td  id='reference_table'>" . $row["DeptName"] . ": "
-            . $row["Organization"] . "</td><td id='reference_table'><form action='includes/delete.php' method='GET'>
+        echo "<tr><td id='reference_table'>" . $row["DeptName"] . ": "
+            . $row["Organization"] . "</td>
+            <td id='reference_table'>
+                <input type='hidden' value=" .$row["DeptID"]."  name='id'/>
+                <form action='includes/delete.php' method='GET'>
                 <button id='delete_row' name='delete' value=".$row["DeptID"].">DELETE</button></form>";
+        echo "</td></tr>";
         }
         echo "</table>";
     } else {
