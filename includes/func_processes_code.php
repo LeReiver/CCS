@@ -101,16 +101,22 @@ function show_function_processes()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID ORDER BY ProcID";
+    $sql = "SELECT DEPT.Organization, DEPT.DeptName, EF.EFID, EF.EFName, p.ProcDesc, p.ProcID FROM EF_PROC as p, DEPT as DEPT, EF as EF WHERE DEPT.DeptID = EF.DeptID AND EF.EFID = p.EFID ORDER BY ProcID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table width='320px'style='margin-top: -100px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
-        echo "<tr><th id='table_header'><h4>Existing Function Processes</h4></th></tr>";
+        echo "<tr><th id='table_header' colspan='2'><h4>Existing Function Processes</h4></th><th></th></tr>";
         while ($row = $result->fetch_assoc()) {
             echo "                <tr><td  id='reference_table'>" . "<strong>" . $row ["EFName"] . "</strong>" . ": <strong><br> &nbsp;&nbsp;"
                 . $row["DeptName"] ."</strong>" . ", <strong><br>&nbsp;&nbsp;&nbsp;".  $row["Organization"] ."</strong><br>"
-                . nl2br($row["ProcDesc"]) . "</td></tr>\n";
+                . nl2br($row["ProcDesc"]) . "</td>
+                <td id='reference_table'>
+                    <input type='hidden' value=" .$row["ProcID"]."  name='id'/>
+                    <form action='includes/delete.php' method='GET'>
+                    <button id='delete_row' name='delete_ef_proc' value=".$row["ProcID"].">DELETE</button></form>";
+            echo "</td>
+                </tr>\n";
         }
         echo "</table>";
     } else {

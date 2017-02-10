@@ -111,8 +111,7 @@ const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
 
 
 
-///* hostpond */
-////
+/* hostpond */
 //const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
 //const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
 //const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
