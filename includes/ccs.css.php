@@ -10,8 +10,8 @@
  ?>
 
 body {
-    min-width: 450px;
-    padding: 0 20px;
+/*    min-width: 450px;*/
+    padding: 0 5px;
 }
 h1 {
     text-align: center;

@@ -88,36 +88,37 @@ function department_submit(
     return '';
 }
 
-function show_departments()
-{
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    $sql = "SELECT Organization, DeptName, DeptID FROM DEPT as DEPT";
-    $result = $conn->query($sql);
+//function show_departments()
+//{
+//    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+//    if ($conn->connect_error) {
+//        die("Connection failed: " . $conn->connect_error);
+//    }
+//    $sql = "SELECT Organization, DeptName, DeptID FROM DEPT as DEPT";
+//    $result = $conn->query($sql);
+//
+//    if ($result->num_rows > 0) {
+//        echo "<table style='margin-top: -100px;'>";
+//        echo "<tr><th colspan='4'><h4></h4></th></tr>";
+//        echo "<tr><th id='table_header' colspan='2'><h4>Existing Departments</h4></th><th></th></tr>";
+//        while ($row = $result->fetch_assoc()) {
+//        echo "<tr><td id='reference_table'>" . $row["DeptName"] . ": "
+//            . $row["Organization"] . "</td>
+//            <td id='reference_table'>
+//                <input type='hidden' value=" .$row["DeptID"]."  name='id'/>
+//                <form action='includes/delete.php' method='GET'>
+//                <button id='delete_row' name='delete_dept' value=".$row["DeptID"].">DELETE</button></form>";
+//        echo "</td></tr>";
+//        }
+//        echo "</table>";
+//    } else {
+//        echo " <h4>You have no existing Departments</h4>";
+//    }
+//
+//
+//    $conn->close();
+//}
 
-    if ($result->num_rows > 0) {
-        echo "<table style='margin-top: -100px;'>";
-        echo "<tr><th colspan='4'><h4></h4></th></tr>";
-        echo "<tr><th id='table_header' colspan='2'><h4>Existing Departments</h4></th><th></th></tr>";
-        while ($row = $result->fetch_assoc()) {
-        echo "<tr><td id='reference_table'>" . $row["DeptName"] . ": "
-            . $row["Organization"] . "</td>
-            <td id='reference_table'>
-                <input type='hidden' value=" .$row["DeptID"]."  name='id'/>
-                <form action='includes/delete.php' method='GET'>
-                <button id='delete_row' name='delete_dept' value=".$row["DeptID"].">DELETE</button></form>";
-        echo "</td></tr>";
-        }
-        echo "</table>";
-    } else {
-        echo " <h4>You have no existing Departments</h4>";
-    }
-
-
-    $conn->close();
-}
 
 
 /*

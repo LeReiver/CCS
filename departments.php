@@ -13,7 +13,7 @@ include_once ('includes/constants.php');
 include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
-include_once('includes/dept_code.php');
+include_once ('includes/dept_code.php');
 
 // Requires secure connection
 require_secure();
@@ -76,7 +76,7 @@ include_once ('includes/nav.php');
             <p id="submit_error"><?php echo $company_error_message ; ?></p>
             <div class="input_reference" id="reports">
                 <!-- Reference Table -->
-                <?php echo show_departments()?>
+                <button onclick="open_departments()">Show Departments</button>
             </div>
             <form method="POST" action="departments.php">
 
@@ -126,6 +126,11 @@ include_once ('includes/nav.php');
                 </div>
             </table>
         </form>
-    </div>
+    </div><script>
+    function open_departments() {
+        window.open("department_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
+
 </body>
 </html>
