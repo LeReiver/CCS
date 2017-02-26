@@ -60,6 +60,9 @@ header("Pragma: no-cache");
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -76,7 +79,8 @@ include_once ('includes/nav.php');
         <!-- Error message -->
         <p id="submit_error"><?php echo $ef_error_message ; ?></p>
         <div class="input_reference" id="reports">
-            <?php show_essential_functions()?>
+            <!-- Reference Table -->
+            <button onclick="open_essential_functions()">Show Essential Functions</button>
         </div>
         <form method="POST" action="essential_functions.php">
             <!-- User form-->
@@ -126,5 +130,10 @@ include_once ('includes/nav.php');
         </form>
         <div>
     </div>
+<script>
+    function open_essential_functions() {
+        window.open("essential_functions_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
 </body>
 </html>

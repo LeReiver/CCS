@@ -273,6 +273,7 @@ function get_essential_functions_2()
     $conn->close();
 }
 
+
 /*
     // Get connection
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);

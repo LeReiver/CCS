@@ -22,7 +22,8 @@ if (isset($_REQUEST['delete_dept'])) {
     $query .= " WHERE DeptID = '$delete_id'";
     $db->query($query);
     $db->close();
-    header('Location: ../departments.php');
+    // Redirects back to department_table page
+    header('Location: ../departments_table.php');
 }
 
 //if "delete_ef" variable is called, connect to database and delete row
@@ -100,7 +101,7 @@ if (isset($_REQUEST['delete_detail'])) {
     $query .= " WHERE DetailID = '$delete_id'";
     $db->query($query);
     $db->close();
-    // Redirects back to departments page
-    header('Location: ../function_details.php');
+    // Redirects back to details_table page
+    header('Location: ../function_details_table.php');
 }
 

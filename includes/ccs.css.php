@@ -47,6 +47,13 @@ h4  a {
 h4  a:hover {
     color: #162110;
 }
+h5  {
+     text-align: start;
+     font-family: Charcoal, Geneva, sans-serif;
+     color: #08123e;
+     font-size: 90%;
+     text-transform: uppercase;
+ }
 input {
     font-size: .75em;
     width: 90%;
@@ -246,11 +253,11 @@ table th  {
     width: 10%;
 }
 #reference_table {
-    border-bottom: solid 1px black;
+/*    border-bottom: solid 1px black;*/
     line-height: 20px;
 }
 #reference_table td {
-    border-bottom: solid 1px black;
+/*    border-bottom: solid 1px black;*/
     font-size: 12px;
     padding: 0 15px;
 }
@@ -265,6 +272,17 @@ table th  {
     margin-left: 25px;
     float: right;
 }
+#delete_row_details {
+     margin-top: -25px;
+ }
+#details_form{
+    margin-top: -45px;
+    margin-right: -45px;
+}
+#details_table tr {
+    border: solid black 1px;
+    border-collapse: collapse;
+ }
 .input_reference {
     float:left;
     clear: right;

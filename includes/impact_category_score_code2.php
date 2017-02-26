@@ -85,6 +85,7 @@ function impact_category_score_submit(
 // Fetches from database using SQL query and returns data into user input selector
 function get_essential_functions()
 {
+
     // Get connection
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     // Check connection

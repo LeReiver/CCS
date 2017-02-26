@@ -50,6 +50,9 @@ header("Pragma: no-cache");
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -65,10 +68,10 @@ include_once ('includes/nav.php');
         <h2>Impact Categories</h2>
         <!-- Error message -->
         <p id="submit_error"><?php echo $impact_category_error_message ; ?></p>
-        <div class="input_reference"  id="reports">
-            <?php show_impact_categories()?>
+        <div class="input_reference" id="reports">
+            <!-- Reference Table -->
+            <button onclick="open_impact_categories()">Show Impact Categories</button>
         </div>
-
         <form method="POST" action="impact_categories.php">
             <!-- User form-->
             <table class="form_table" style="margin:-320px 50px 0 0;">
@@ -100,6 +103,12 @@ include_once ('includes/nav.php');
             </table>
         </form>
     </div>
+<script>
+    function open_impact_categories() {
+        window.open("impact_categories_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
+
 </body>
 </html>
 

@@ -71,6 +71,9 @@ header("Pragma: no-cache");
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -86,6 +89,10 @@ include_once ('includes/nav.php');
         <h2>Essential Function Details</h2>
         <!-- Error message -->
         <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
+        <div class="input_reference" id="reports">
+            <!-- Reference Table -->
+            <button onclick="open_details()">Show Function Details</button>
+        </div>
         <form method="POST" action="function_details.php">
             <!-- User form-->
             <table class="form_table" style="margin: 0 0 0 -200px; width:1000px;">
@@ -174,5 +181,10 @@ include_once ('includes/nav.php');
         </form>
         <a href="#top" class="top">Back to top</a>
     </div>
+<script>
+    function open_details() {
+        window.open("function_details_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=530,height=400");
+    }
+</script>
 </body>
 </html>
