@@ -22,12 +22,13 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    text-align: center;
+    text-align: start;
     font-family: Hind Madurai, Geneva, sans-serif;
     color: #162110;
     font-size: 175%;
     text-transform: uppercase;
-    margin-top: 150px;
+    margin-top: 20px;
+    margin-left: 100px;
 }
 h3 {
     text-align: center;
@@ -162,8 +163,8 @@ table th  {
 */
 
 #reports {
-    margin: -30px auto 0 auto;
-    text-align: center;
+    margin: -100px 100px 0 auto;
+    text-align: end;
 }
 
 #reports table {
@@ -258,7 +259,9 @@ table th  {
     font-family:  sans-serif;
     font-size: 100%;
     color: #4f005a;
-    margin: -80px 100px 0 0;
+    margin-top: -80px;
+    margin-right: 100px;
+    float:right;
 }
 #logout {
     color: #7ea142;
@@ -442,16 +445,16 @@ border: solid black 1px;
     border-radius: 5px;
 }
 .form_table {
-    margin-left: -200px;
+    margin-left: -400px;
 }
 .cat_scoring {
     padding-left:5px;
 }
 
-@media screen and (max-width: 612px) {
+@media screen and (max-width: 600px) {
     #user_pane {
-        text-align: center;
-        margin: -30px 0 0 10px;
+        text-align: right;
+        margin: -80px 20px 0 0;
     }
 }
 
@@ -460,4 +463,5 @@ border: solid black 1px;
         text-align: center;
         margin: 0 50px 0 0;
     }
+
 }
