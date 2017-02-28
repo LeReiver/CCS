@@ -32,14 +32,8 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Table Three</title>
-    <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
-    <script src="jquery-ui/external/jquery/jquery.js"></script>
-    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <?php include_once ('includes/head_files.php'); ?>
 </head>
 
 <body>
@@ -57,6 +51,12 @@ include_once ('includes/nav.php');
             <?php show_table_three()?>
         </div>
     </div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='table_three.php']").addClass("selected");
+    });
+</script>
 </body>
 </html>
 

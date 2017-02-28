@@ -8,6 +8,7 @@
  * Various login and session functions
  */
 
+include_once ('head_files.php');
 // Session constant variables
 const SESSION_DATA_ACCOUNT_USER_FIELD = 0;
 const SESSION_DATA_ACCOUNT_SESSION_FEILD = 1;
@@ -81,9 +82,6 @@ function set_session_value($key, $value)
     $_SESSION[$key] = $value;
 }
 
-
-
-
 // Shows small logo image in top right corner
 function show_logo()
 {
@@ -107,6 +105,7 @@ function destroy_session()
     setcookie(session_name(), '',0 , $session_info['path'], $session_info['domain'], $session_info['httponly']);
     session_destroy();
 }
+
 
 /*
  * -------------  Used for testing to local csv -------------------------------

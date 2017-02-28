@@ -12,6 +12,7 @@
 body {
 /*    min-width: 450px;*/
     padding: 0 5px;
+    background-color: aliceblue;
 }
 h1 {
     text-align: center;
@@ -26,6 +27,7 @@ h2 {
     color: #162110;
     font-size: 175%;
     text-transform: uppercase;
+    margin-top: 30px;
 }
 h3 {
     text-align: center;
@@ -108,12 +110,14 @@ button:hover {
 /* -------------- Nav --------------------------------------------------------*/
 
 nav {
-/*    float: left;*/
-/*    clear: both;*/
+    float: left;
+    clear: both;
     text-align: center;
-    margin: 60px auto;
+    margin: 60px 30px 20px 60px;
 /*    display: inline;*/
 /*    position: relative;*/
+    border-bottom: 0.125px solid lightsteelblue;
+    padding-bottom: 20px;
 }
 
 ul {
@@ -125,8 +129,8 @@ ul {
     font-family: Gudea,"Trebuchet MS", sans-serif;
     font-size: 90%;
     font-weight: bolder;
-    line-height: 60%;
-    display: inline;
+    line-height: 130%;
+/*    display: inline;*/
 }
 li{
     display: inline;
@@ -140,12 +144,9 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    color: #7ea142;
+.active.selected {
+    color: #6eac2c;
 }
-
-
-
 /* -----------------------------------------------------------------------------*/
 
 /*  borders for table alignment testing  */
@@ -400,7 +401,7 @@ border: solid black 1px;
 .input_label {
     text-align: left;
     width: 100%;
-    padding-left: 15px;
+/*    padding-left: 15px;*/
     border: none;
 }
 .input_label_small {
@@ -442,7 +443,7 @@ border: solid black 1px;
     border-radius: 5px;
 }
 .form_table {
-    margin-bottom: 580px;
+    margin-right: 600px;
 }
 .cat_scoring {
     padding-left:5px;

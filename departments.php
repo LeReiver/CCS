@@ -49,20 +49,14 @@ $company_error_message = department_submit(
 header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 header("Pragma: no-cache");
+
 ?>
 
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Departments</title>
-    <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
-    <script src="jquery-ui/external/jquery/jquery.js"></script>
-    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <?php include_once ('includes/head_files.php'); ?>
 </head>
 
 <body>
@@ -132,10 +126,16 @@ include_once ('includes/nav.php');
         </form>
     </div>
 <script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='departments.php']").addClass("selected");
+    });
+    // Opens tables
     function open_departments() {
         window.open("departments_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
     }
 </script>
-
+<!-- Requires use of responsive nav script for handling responsive navigation   -->
+<?php require('includes/responsive_nav.php'); ?>
 </body>
 </html>

@@ -55,14 +55,8 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Essential Functions</title>
-    <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
-    <script src="jquery-ui/external/jquery/jquery.js"></script>
-    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <?php include_once ('includes/head_files.php'); ?>
 </head>
 
 <body>
@@ -131,6 +125,11 @@ include_once ('includes/nav.php');
         <div>
     </div>
 <script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='essential_functions.php']").addClass("selected");
+    });
+    // Opens tables
     function open_essential_functions() {
         window.open("essential_functions_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
     }

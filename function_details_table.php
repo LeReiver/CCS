@@ -23,9 +23,8 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Details Table</title>
-    <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
+    <?php include_once ('includes/head_files.php'); ?>
 </head>
 <body>
     <?php
