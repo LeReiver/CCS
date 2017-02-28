@@ -47,8 +47,8 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
-    <h1>Table Four</h1>
     <div id="form_content">
+        <h2>Table Four</h2>
         <div class="table_reference" id="reports">
             <?php show_table_four()?>
         </div>

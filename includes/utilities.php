@@ -89,11 +89,18 @@ function show_logo()
     echo '    <div id="logo_sm"><a href="home.php" ><img src="images/ccs_logo.png" width="200px" height="105" ></a></div>'; //  width="140px" height="74"
 }
 // Shows logged in user and logout button
-function show_user()
+/*function show_user()
 {
     echo '<div id="user_pane">';
     echo '    ' . "Hello ". get_session_value(SESSION_USERNAME_KEY) . ' <a id="logout" href="' . LOGOUT_PAGE .
         '">LOGOUT</a>' . "<br>\n";
+    echo '</div>' . "\n";
+}*/
+function show_user()
+{
+    echo '<div id="user_pane">';
+    echo '    ' . ' <a id="logout" href="' . LOGOUT_PAGE .
+        '">Log Out' . " " . get_session_value(SESSION_USERNAME_KEY) . "</a><br>\n";
     echo '</div>' . "\n";
 }
 

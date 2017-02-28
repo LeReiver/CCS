@@ -27,7 +27,7 @@ h2 {
     color: #162110;
     font-size: 175%;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 150px;
 }
 h3 {
     text-align: center;
@@ -36,7 +36,7 @@ h3 {
     text-transform: capitalize;
 }
 h4  {
-    text-align: center;
+    text-align: start;
     font-family: Gudea, Geneva, sans-serif;
     color: #76317f;
     font-size: 90%;
@@ -81,9 +81,8 @@ input [type=select] {
 
 
 form {
-    width: 50%;
-    float: right;
-    margin-right: 15%;
+    width: 100%;
+    margin: 20px 0 0 0;
 }
 
 select {
@@ -118,6 +117,7 @@ nav {
 /*    position: relative;*/
     border-bottom: 0.125px solid lightsteelblue;
     padding-bottom: 20px;
+    z-index: 3;
 }
 
 ul {
@@ -249,6 +249,7 @@ table th  {
 #logo_sm {
     text-align: start;
     margin: 10px 0 0 100px;
+    z-index: 0;
 }
 
 #user_pane {
@@ -310,9 +311,7 @@ table th  {
     border: solid black 1px;
     border-collapse: collapse;
  }
-/*.input_reference {*/
-/*    margin: 0 auto;*/
-/*}*/
+
 .table_reference {
     width: 900px;
     font-size: 75%;
@@ -443,8 +442,22 @@ border: solid black 1px;
     border-radius: 5px;
 }
 .form_table {
-    margin-right: 600px;
+    margin-left: -200px;
 }
 .cat_scoring {
     padding-left:5px;
+}
+
+@media screen and (max-width: 612px) {
+    #user_pane {
+        text-align: center;
+        margin: -30px 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #logo_sm {
+        text-align: center;
+        margin: 0 50px 0 0;
+    }
 }
