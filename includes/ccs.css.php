@@ -15,27 +15,27 @@ body {
 }
 h1 {
     text-align: center;
-    font-family: Charcoal, Geneva, sans-serif;
+    font-family: Hind Madurai, Geneva, sans-serif;
     color: #162110;
     font-size: 250%;
     text-transform: uppercase;
 }
 h2 {
     text-align: center;
-    font-family: Charcoal, Geneva, sans-serif;
+    font-family: Hind Madurai, Geneva, sans-serif;
     color: #162110;
     font-size: 175%;
     text-transform: uppercase;
 }
 h3 {
     text-align: center;
-    font-family: Charcoal, Geneva, sans-serif;
+    font-family: Gudea, Geneva, sans-serif;
     font-size: 100%;
     text-transform: capitalize;
 }
 h4  {
     text-align: center;
-    font-family: Charcoal, Geneva, sans-serif;
+    font-family: Gudea, Geneva, sans-serif;
     color: #76317f;
     font-size: 90%;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ h4  a:hover {
 }
 h5  {
      text-align: start;
-     font-family: Charcoal, Geneva, sans-serif;
+     font-family: Gudea, Geneva, sans-serif;
      color: #08123e;
      font-size: 90%;
      text-transform: uppercase;
@@ -89,35 +89,54 @@ select {
     font-size: 14px;
     height: 28px;
 }
+button {
+    padding: 8px;
+    border: solid black 0.5px;
+    background-color: transparent;
+    color: #7ea142;
+    font-size: 75%;
+    font-weight: 400;
+
+}
+button:hover {
+    color: #4f005a;
+    cursor: pointer;
+    background-color: rgba(110, 172, 44, 0.24);
+}
 
 
 /* -------------- Nav --------------------------------------------------------*/
 
 nav {
-    float: right;
+/*    float: left;*/
 /*    clear: both;*/
-    margin:120px 8px 0 0;
-    display: block;
-    position: relative;
+    text-align: center;
+    margin: 60px auto;
+/*    display: inline;*/
+/*    position: relative;*/
 }
 
 ul {
     list-style-type: none;
-    margin: 0 -20px;
+/*    margin: 0 -20px;*/
     padding: 0;
     overflow: hidden;
 /*    background-color: rgba(108, 131, 54, 0.38);*/
-    font-family: Charcoal,"Trebuchet MS", sans-serif;
-    font-size: 80%;
+    font-family: Gudea,"Trebuchet MS", sans-serif;
+    font-size: 90%;
     font-weight: bolder;
     line-height: 60%;
+    display: inline;
+}
+li{
+    display: inline;
 }
 
 li a {
-    display: block;
+    display: inline-block;
     color: #121c3e;
-    text-align: right;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 0 16px;
     text-decoration: none;
 }
 
@@ -142,10 +161,9 @@ table th  {
 */
 
 #reports {
-    position: relative;
-    float:left;
+    margin: -30px auto 0 auto;
+    text-align: center;
 }
-
 
 #reports table {
     border-collapse: collapse;
@@ -165,13 +183,13 @@ table th  {
 
 
 #login_content {
-    font-family: Charcoal, Geneva, sans-serif;
+    font-family: Gudea, Geneva, sans-serif;
     font-size: 125%;
     margin-top: -50px;
     font-weight: 100;
 }
 #form_content {
-    font-family: Charcoal, Geneva, sans-serif;
+    font-family: Gudea, Geneva, sans-serif;
     font-size: 125%;
     margin-top: 20px;
     font-weight: 100;
@@ -228,8 +246,8 @@ table th  {
 }
 
 #logo_sm {
-    text-align: end;
-    margin: 10px 0 0 0;
+    text-align: start;
+    margin: 10px 0 0 100px;
 }
 
 #user_pane {
@@ -237,13 +255,21 @@ table th  {
     font-weight: bold;
     font-family:  sans-serif;
     font-size: 100%;
-    color: #162110;
+    color: #4f005a;
+    margin: -80px 100px 0 0;
 }
 #logout {
     color: #7ea142;
     text-decoration: none;
     font-size: 85%;
-    padding: 0 5px;
+    padding: 8px;
+    border: solid black .5px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+#logout:hover{
+    color: #4f005a;
+    background-color: rgba(110, 172, 44, 0.24);
 }
 #user_pane :hover {
      color: #4f005a;
@@ -283,14 +309,9 @@ table th  {
     border: solid black 1px;
     border-collapse: collapse;
  }
-.input_reference {
-    float:left;
-    clear: right;
-    font-size: 75%;
-    margin-top: -200px;
-    margin-left: 80px;
-    padding-bottom: 100px;
-}
+/*.input_reference {*/
+/*    margin: 0 auto;*/
+/*}*/
 .table_reference {
     width: 900px;
     font-size: 75%;

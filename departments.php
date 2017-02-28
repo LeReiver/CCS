@@ -60,6 +60,7 @@ header("Pragma: no-cache");
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
     <script src="jquery-ui/external/jquery/jquery.js"></script>
     <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
@@ -84,7 +85,7 @@ include_once ('includes/nav.php');
             <form method="POST" action="departments.php">
 
             <!-- User form-->
-            <table class="form_table" style="margin:-320px 50px 0 0;">
+            <table class="form_table">
                 <tr><th class="form_label">Department Name: </th> <!--  Input label-->
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo DEPT_NAME_FIELD; ?>"
                                            value="<?php echo $dept_name ?>" autofocus></td> <!-- User input -->
