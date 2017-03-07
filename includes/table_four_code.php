@@ -29,21 +29,21 @@ function show_table_four()
             ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors FROM EF_DETAIL ed, EF ef WHERE ef.EFID = ed.EFID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='100%' style='margin-left: 200px;'>";
+        echo "<table width='80%' style='margin: 100px 0 0 60px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
 
             echo "<tr><th id='table_header'>" . $row['EFName'] . "</th><th id='table_header'> </th>";
-            echo "                <tr><td  id='table_reference'>" . "Description" . "</td><td> " . $row ["Responsibilities"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "Internal Dependencies" . "</td><td> " . $row ["InternalDep"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "External Dependencies" . "</td><td> " . $row ["ExternalDep"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "Peak Times" . "</td><td> " . $row ["PeakTimes"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "Peak Load Considerations" . "</td><td> " . $row ["Considerations"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "Regulatory/Legal Concerns" . "</td><td> " . $row ["RegLoss"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "How long can function continue without IT?" . "</td><td> " . $row ["Rto"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "IT Requirements" . "</td><td> " . $row ["ITSupport"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "Backup Procedures" . "</td><td> " . $row ["BackupProc"] . "</td></tr>\n";
-            echo "                <tr><td  id='table_reference'>" . "Other Factors" . "</td><td> " . $row ["Factors"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Description" . "</td><td> " . $row ["Responsibilities"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Internal Dependencies" . "</td><td> " . $row ["InternalDep"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "External Dependencies" . "</td><td> " . $row ["ExternalDep"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Peak Times" . "</td><td> " . $row ["PeakTimes"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Peak Load Considerations" . "</td><td> " . $row ["Considerations"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Regulatory/Legal Concerns" . "</td><td> " . $row ["RegLoss"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "How long can function continue without IT?" . "</td><td> " . $row ["Rto"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "IT Requirements" . "</td><td> " . $row ["ITSupport"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Backup Procedures" . "</td><td> " . $row ["BackupProc"] . "</td></tr>\n";
+            echo "<tr><td  id='table_reference'>" . "Other Factors" . "</td><td> " . $row ["Factors"] . "</td></tr>\n";
             echo "<tr style='background-color: transparent'><td><br></td></tr>";
         }
         echo "</table>";
@@ -59,7 +59,8 @@ function show_table_four()
  *SQL
 
 SELECT ef.EFName, ed.EFID, ed.Responsibilities, ed.InternalDep, ed.ExternalDep, ed.PeakTimes, ed. Considerations,
-ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors FROM EF_DETAIL ed, EF ef WHERE ef.EFID = ed.EFID
-
-
+ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors 
+FROM EF_DETAIL ed, EF ef 
+WHERE ef.EFID = ed.EFID
+;
  */

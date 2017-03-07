@@ -129,7 +129,7 @@ function get_impact_category()
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
     // User input selector
-    echo "                <select type='select' name='ImpCatID' style='font-size: .75em;width:520px; overflow=hidden;'>\n";
+    echo "                <select type='select' name='ImpCatID' style='font-size: .75em;width:610px; overflow=hidden;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row

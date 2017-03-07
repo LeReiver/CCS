@@ -12,6 +12,8 @@
 body {
     padding: 0 5px;
     background-color: aliceblue;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 h1 {
     text-align: center;
@@ -415,7 +417,7 @@ border: solid black 1px;
 .form_label {
     text-align: end;
     padding-right: 20px;
-    width: 300px;
+/*    width: 300px;*/
     font-size: 90% ;
 }
 
@@ -442,9 +444,6 @@ border: solid black 1px;
     padding-right: 20px;
     font-size: .75em;
     border-radius: 5px;
-}
-.form_table {
-    margin-left: -400px;
 }
 .cat_scoring {
     padding-left:5px;

@@ -78,8 +78,8 @@ include_once ('includes/nav.php');
         </div>
         <form method="POST" action="essential_functions.php">
             <!-- User form-->
-            <table class="form_table">
-                <tr>
+            <table class="form_table" style="margin: 20px 200px 0 0;">
+            <tr>
                   <th class="form_label">Department: </th>    <!--  Input label-->
                   <td colspan="2" class="form_input"> <?php get_departments() ?></td> <!-- User selector gets departments -->
                 </tr>

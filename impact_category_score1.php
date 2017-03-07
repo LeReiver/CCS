@@ -67,9 +67,13 @@ include_once ('includes/nav.php');
     <h2>Impact Category Score 1</h2>
     <!-- Error message -->
     <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
+    <div class="input_reference" id="reports">
+        <!-- Reference Table -->
+        <button onclick="open_scores()">Show Impact Category Scores</button>
+    </div>
     <form method="POST" action="impact_category_score1.php">
         <!-- User form-->
-        <table class="form_table" style="margin: 20px 0 0 -200px;">
+        <table class="form_table" style="margin: 20px 70px 0 60px;">
             <tr>
                 <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
@@ -83,13 +87,13 @@ include_once ('includes/nav.php');
                 <td> <?php get_essential_functions() ?></td>
             </tr>
         </table>
-        <table class="form_table" style="margin: 10px 0 0 -200px;">
+        <table class="form_table" style="margin: 10px 0 0 60px;">
             <tr>
                 <th class="form_label" style="text-align: start"> to what degree ...</th>
                 <td> <?php get_impact_category() ?></td>
             </tr>
         </table>
-        <table class="form_table" style="margin: 10px 0 0 -200px;">
+        <table class="form_table" style="margin: 10px 0 0 60px;">
             <tr><td></td>
                 <th class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
                 <th class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
@@ -106,17 +110,13 @@ include_once ('includes/nav.php');
             </tr>
         </table>
         <!-- Submit form-->
-        <div class="submit_table" style="margin-right: -100px;">
+        <div class="submit_table" style="margin-right: 100px;">
             <input class="data_submit" type="submit" value="SUBMIT"
                    name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>
             <!-- Reset button -->
             <input type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>
         </div>
     </form>
-    <div  id="reports" style="margin: 0 0 100px 100px;">
-        <?php echo show_impact_scores() ?>
-<!--        --><?php //echo show_table_three() ?>
-    </div>
 </div>
 </body>
 <script>
@@ -124,6 +124,12 @@ include_once ('includes/nav.php');
     $(document).ready(function(){
         $("[href='impact_category_scores.php']").addClass("selected");
     });
+    // Opens tables
+    function open_scores() {
+        window.open("impact_category_score_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
 </script>
+<!-- Requires use of responsive nav script for handling responsive navigation   -->
+<?php require('includes/responsive_nav.php'); ?>
 </html>
 

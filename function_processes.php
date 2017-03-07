@@ -68,7 +68,7 @@ include_once ('includes/nav.php');
         </div>
         <form method="POST" action="function_processes.php">
             <!-- User form-->
-            <table class="form_table">
+            <table class="form_table" style="margin: 20px 200px 0 0;">
                 <tr>
                     <!--  Input label -->
                     <th class="form_label">Essential Function: </th>

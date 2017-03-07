@@ -73,14 +73,16 @@ include_once ('includes/nav.php');
             <p id="submit_error"><?php echo $company_error_message ; ?></p>
             <form method="POST" action="departments.php">
 
+                <h2>Add A New Department</h2>
+                <div class="input_reference" id="reports">
+                    <!-- Reference Table -->
+                    <button onclick="open_departments()">Show Departments</button>
+                </div>
+
             <!-- User form-->
-            <table class="form_table">
-                    <h2>Add A New Dpartment</h2>
-                    <div class="input_reference" id="reports">
-                        <!-- Reference Table -->
-                        <button onclick="open_departments()">Show Departments</button>
-                    </div>
-                <tr><th class="form_label">Department Name: </th> <!--  Input label-->
+            <table class="form_table" style="margin: 20px 300px 0 0;">
+                <tr>
+                    <th class="form_label">Department Name: </th> <!--  Input label-->
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo DEPT_NAME_FIELD; ?>"
                                            value="<?php echo $dept_name ?>" autofocus></td> <!-- User input -->
                 </tr>
@@ -113,12 +115,12 @@ include_once ('includes/nav.php');
                     <td></td>
                         <!-- Submit button -->
                     <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                            name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 180px;'></div></td>
+                                            name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 150px;'></div></td>
                     </tr>
                     <tr>
                         <!-- Reset button -->
                         <td></td>
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 180px;'></div></td>
+                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 150px;'></div></td>
                     </tr>
 
                 </div>

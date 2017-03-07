@@ -106,7 +106,7 @@ include_once ('includes/nav.php');
 <script>
     // Adds selected class to current page in navigation
     $(document).ready(function(){
-        $("[href='essential_functions.php']").addClass("selected");
+        $("[href='home.php']").addClass("selected");
     });
 </script>
 </body>
