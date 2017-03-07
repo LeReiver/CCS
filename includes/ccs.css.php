@@ -10,7 +10,6 @@
  ?>
 
 body {
-/*    min-width: 450px;*/
     padding: 0 5px;
     background-color: aliceblue;
 }
@@ -25,7 +24,7 @@ h2 {
     text-align: start;
     font-family: Hind Madurai, Geneva, sans-serif;
     color: #162110;
-    font-size: 175%;
+    font-size: 100%;
     text-transform: uppercase;
     margin-top: 20px;
     margin-left: 100px;
@@ -195,7 +194,7 @@ table th  {
     font-size: 125%;
     margin-top: 20px;
     font-weight: 100;
-    
+
 }
 #error_header {
     text-align: end;
@@ -451,17 +450,31 @@ border: solid black 1px;
     padding-left:5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     #user_pane {
         text-align: right;
         margin: -80px 20px 0 0;
     }
+    #reports {
+        margin: 100px 100px 0 0;
+    }
 }
 
 @media screen and (max-width: 769px) {
+    h2 {
+        margin-left: 40px;
+    }
+    #reports {
+        margin-top: -70px;
+    }
     #logo_sm {
         text-align: center;
         margin: 0 50px 0 0;
     }
+    .form_table {
+        margin-left: 30px;
+        width: 80%;
+    }
+
 
 }

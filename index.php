@@ -44,8 +44,18 @@ $error_message = login_or_register(
 <!doctype html>
 <html lang="en">
 <head>
-    <title>CCS Login</title>
-    <?php include_once ('includes/head_files.php'); ?>
+    <title>CCS Login</title><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
+    <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- <?php // require_once ('includes/head_files.php'); ?> -->
 </head>
 <body class="home_page tint">
 <div >

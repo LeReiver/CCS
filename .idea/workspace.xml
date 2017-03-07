@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="260b683e-b79f-4c2f-8227-f7e1175514c3" name="Default" comment="">
+    <list default="true" id="260b683e-b79f-4c2f-8227-f7e1175514c3" name="Default" comment="More adjustments for mobile layouts.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/head_files.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/responsive_nav.css.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/responsive_nav.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/departments.php" afterPath="$PROJECT_DIR$/departments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/ccs.css.php" afterPath="$PROJECT_DIR$/includes/ccs.css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/constants.php" afterPath="$PROJECT_DIR$/includes/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/nav.php" afterPath="$PROJECT_DIR$/includes/nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="CCS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,41 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ccs.css.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="443" column="21" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="responsive_nav.css.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/responsive_nav.css.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/utilities.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="525">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,13 +52,9 @@
       <file leaf-file-name="impact_categories.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/impact_categories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
+            <state relative-caret-position="1320">
               <caret line="93" column="95" selection-start-line="93" selection-start-column="95" selection-end-line="93" selection-end-column="95" />
-              <folding>
-                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#0;n#div#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#1;n#div#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,9 +62,12 @@
       <file leaf-file-name="departments.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/departments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
+            <state relative-caret-position="1980">
               <caret line="139" column="7" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
-              <folding />
+              <folding>
+                <marker date="1488420220000" expanded="true" signature="2426:5022" placeholder="..." />
+                <marker date="1488420220000" expanded="true" signature="2426:5038" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,11 +133,11 @@
         <option value="$PROJECT_DIR$/table_three.php" />
         <option value="$PROJECT_DIR$/table_four.php" />
         <option value="$PROJECT_DIR$/includes/responsive_nav.php" />
-        <option value="$PROJECT_DIR$/includes/nav.php" />
         <option value="$PROJECT_DIR$/includes/head_files.php" />
         <option value="$PROJECT_DIR$/includes/utilities.php" />
         <option value="$PROJECT_DIR$/includes/responsive_nav.css.php" />
         <option value="$PROJECT_DIR$/includes/ccs.css.php" />
+        <option value="$PROJECT_DIR$/includes/nav.php" />
       </list>
     </option>
   </component>
@@ -209,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,6 +219,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -400,7 +376,8 @@
       <workItem from="1487309359634" duration="842000" />
       <workItem from="1488059200623" duration="8509000" />
       <workItem from="1488237782263" duration="4858000" />
-      <workItem from="1488300376715" duration="21104000" />
+      <workItem from="1488300376715" duration="23324000" />
+      <workItem from="1488907896549" duration="114000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1475107775054</created>
@@ -696,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488320379719</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="More adjustments for mobile layouts.">
+      <created>1488324428735</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1488324428735</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="491926000" />
+    <option name="totallyTimeSpent" value="494260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,17 +699,16 @@
     <frame x="337" y="36" width="1220" height="1044" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3132428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31833616" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18478261" sideWeight="0.5031905" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975113" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32173914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19277108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19962157" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -733,6 +716,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32173914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1821632" sideWeight="0.49680948" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -771,7 +755,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Impact Category Scoring now works. New data issues to fix. Looking at Impact Category Score&#10;" />
     <MESSAGE value="Working on data issues. Experimenting with impact_category_score.php&#10;" />
     <MESSAGE value="Still experimenting with impact_category_score.php&#10;" />
     <MESSAGE value="Cleaned up UI. Fixed table alignment. Still working with impact_category_score.php&#10;" />
@@ -796,7 +779,8 @@
     <MESSAGE value="Improving UI. Moved navigation and show table buttons." />
     <MESSAGE value="Moved navigation. Added head_files.php to hold all head files to be included." />
     <MESSAGE value="Adjusted header and navigation for mobile/ responsive layouts." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted header and navigation for mobile/ responsive layouts." />
+    <MESSAGE value="More adjustments for mobile layouts." />
+    <option name="LAST_COMMIT_MESSAGE" value="More adjustments for mobile layouts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,20 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="275" column="0" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
-          <folding>
-            <marker date="1488060424000" expanded="true" signature="313:337" placeholder="..." />
-            <marker date="1488060424000" expanded="true" signature="4667:4784" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1488060424000" expanded="true" signature="4950:5018" placeholder="..." />
-            <marker date="1488060424000" expanded="true" signature="5119:5168" placeholder="..." />
-            <marker date="1488060424000" expanded="true" signature="6098:6129" placeholder="SELECT RtoID... RTO" />
-            <marker date="1488060424000" expanded="true" signature="6295:6361" placeholder="..." />
-            <marker date="1488060424000" expanded="true" signature="6463:6480" placeholder="..." />
-            <marker date="1488060424000" expanded="true" signature="7198:7232" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1488060424000" expanded="true" signature="7849:7896" placeholder="SELECT Organ... DEPT" />
-            <marker date="1488060424000" expanded="true" signature="8343:8457" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1488060424000" expanded="true" signature="8658:8757" placeholder="..." />
-            <marker date="1488060424000" expanded="true" signature="8874:8891" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,29 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <marker date="1486947182000" expanded="true" signature="2561:2616" placeholder="SELECT Organ... DEPT" />
-            <marker date="1486947182000" expanded="true" signature="2723:2742" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3078" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3311" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3330" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3331" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3333" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3365" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3371" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3400" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="2979:3403" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3117:3149" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3117:3163" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3117:3164" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3117:3167" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3117:3189" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3117:3311" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3262:3310" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3262:3311" placeholder="..." />
-            <marker date="1486947182000" expanded="true" signature="3774:3821" placeholder="SELECT Organ... DEPT" />
-            <marker date="1486947182000" expanded="true" signature="3919:3938" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,16 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="150" selection-end-column="19" />
-          <folding>
-            <marker date="1486755836000" expanded="true" signature="2491:2538" placeholder="SELECT Organ... DEPT" />
-            <marker date="1486755836000" expanded="true" signature="2686:2740" placeholder="..." />
-            <marker date="1486755836000" expanded="true" signature="2843:2889" placeholder="..." />
-            <marker date="1486755836000" expanded="true" signature="3670:3787" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1486755836000" expanded="true" signature="3885:3904" placeholder="..." />
-            <marker date="1486755836000" expanded="true" signature="4161:4579" placeholder="..." />
-            <marker date="1486755836000" expanded="true" signature="4337:4579" placeholder="..." />
-            <marker date="1486755836000" expanded="true" signature="4476:4579" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,16 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
           <caret line="125" column="19" selection-start-line="100" selection-start-column="4" selection-end-line="125" selection-end-column="19" />
-          <folding>
-            <marker date="1486757601000" expanded="true" signature="2033:2150" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1486757601000" expanded="true" signature="2316:2383" placeholder="..." />
-            <marker date="1486757601000" expanded="true" signature="2484:2502" placeholder="..." />
-            <marker date="1486757601000" expanded="true" signature="3303:3347" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1486757601000" expanded="true" signature="3458:3477" placeholder="..." />
-            <marker date="1486757601000" expanded="true" signature="3724:4160" placeholder="..." />
-            <marker date="1486757601000" expanded="true" signature="3885:4160" placeholder="..." />
-            <marker date="1486757601000" expanded="true" signature="4036:4160" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,12 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <marker date="1488304124000" expanded="true" signature="812:867" placeholder="SELECT Organ... DEPT" />
-            <marker date="1488304124000" expanded="true" signature="1175:1543" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1307:1543" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1440:1543" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,12 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <marker date="1488304124000" expanded="true" signature="821:938" placeholder="SELECT DEPT.... DEPT" />
-            <marker date="1488304124000" expanded="true" signature="1269:1696" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1454:1696" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1593:1696" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -980,16 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <marker date="1488304124000" expanded="true" signature="831:1080" placeholder="SELECT ef.EF... EF_DETAIL" />
-            <marker date="1488304124000" expanded="true" signature="1445:1487" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1445:1764" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1493:1758" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1493:1759" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1635:1754" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="3082:3095" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="3082:3106" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,12 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <marker date="1488304124000" expanded="true" signature="820:1010" placeholder="SELECT DEPT.... EF_PROC" />
-            <marker date="1488304124000" expanded="true" signature="1340:1919" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1656:1919" placeholder="..." />
-            <marker date="1488304124000" expanded="true" signature="1805:1919" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
           <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,12 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding>
-            <marker date="1488304357000" expanded="true" signature="819:863" placeholder="SELECT CatNa... I_CAT" />
-            <marker date="1488304357000" expanded="true" signature="1184:1618" placeholder="..." />
-            <marker date="1488304357000" expanded="true" signature="1343:1618" placeholder="..." />
-            <marker date="1488304357000" expanded="true" signature="1494:1618" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="193" column="9" selection-start-line="193" selection-start-column="9" selection-end-line="193" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="123" column="9" selection-start-line="117" selection-start-column="6" selection-end-line="123" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="124" column="9" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="124" column="9" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="137" column="9" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
           <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
           <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,23 +1029,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/js_utilities.js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/js_utilities.js.php" />
     <entry file="file://$PROJECT_DIR$/essential_functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="823">
           <caret line="136" column="7" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="823">
           <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="718">
           <caret line="183" column="29" selection-start-line="183" selection-start-column="29" selection-end-line="183" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,15 +1058,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
           <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/departments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="1980">
           <caret line="139" column="7" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1488420220000" expanded="true" signature="2426:5022" placeholder="..." />
+            <marker date="1488420220000" expanded="true" signature="2426:5038" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,7 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,26 +1090,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/impact_categories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
+        <state relative-caret-position="1320">
           <caret line="93" column="95" selection-start-line="93" selection-start-column="95" selection-end-line="93" selection-end-column="95" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#0;n#div#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#1;n#div#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1251,9 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#114#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1261,6 +1112,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="446" column="24" selection-start-line="446" selection-start-column="24" selection-end-line="446" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/responsive_nav.css.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1273,18 +1139,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/responsive_nav.css.php">
+    <entry file="file://$PROJECT_DIR$/includes/nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/ccs.css.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="443" column="21" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
+        <state relative-caret-position="525">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>

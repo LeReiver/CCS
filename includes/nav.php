@@ -8,11 +8,6 @@
  *Navigation
  */
 
-//// Includes the following files
-//include_once ('head_files.php');
-//include_once('js_utilities.js.php');
-//include_once ('utilities.php');
-
 // Requires use of responsive nav script for handling responsive navigation
    require('responsive_nav.php'); 
 ?>
@@ -45,16 +40,3 @@
         </ul>
 </nav>
 
-
-<!---->
-<!---->
-<!--<!-- Nav Icons -->
-<!--<li><a href="#top"><img id="logo_nav" src="includes/images/guano_logo_white_black.png"-->
-<!--                        aria-hidden="true" alt="Guano logo navigation image"></a></li>-->
-<!--<!-- Top one hidden for spacing. Needed to use hack.-->
-<!--<li><a href="#top"><img id="logo_icon_nav" src="includes/images/guano_logo_white_black.png"-->
-<!--                        aria-hidden="true" alt="Guano logo navigation image"></a></li>-->
-<!--<li><a href="#listen"><span id="icon_nav" class="fa fa-music" aria-hidden="true"></span></a></li>-->
-<!--<li><a href="#watch"><span id="icon_nav" class="fa fa-video-camera" aria-hidden="true"></span></a></li>-->
-<!--<li><a href="#join"><span id="icon_nav" class="fa fa-ticket" aria-hidden="true"></span></a></li>-->
-<!--</ul>-->

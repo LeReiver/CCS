@@ -4,7 +4,7 @@
  * User: mike
  * Date: 3/22/16
  * Time: 3:06 PM
- * 
+ *
  * User Departments page
  */
 
@@ -69,17 +69,17 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-            <h2>DEPARTMENTS</h2>
             <!-- Error message -->
             <p id="submit_error"><?php echo $company_error_message ; ?></p>
-            <div class="input_reference" id="reports">
-                <!-- Reference Table -->
-                <button onclick="open_departments()">Show Departments</button>
-            </div>
             <form method="POST" action="departments.php">
 
             <!-- User form-->
             <table class="form_table">
+                    <h2>Add A New Dpartment</h2>
+                    <div class="input_reference" id="reports">
+                        <!-- Reference Table -->
+                        <button onclick="open_departments()">Show Departments</button>
+                    </div>
                 <tr><th class="form_label">Department Name: </th> <!--  Input label-->
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo DEPT_NAME_FIELD; ?>"
                                            value="<?php echo $dept_name ?>" autofocus></td> <!-- User input -->

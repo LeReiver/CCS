@@ -4,13 +4,13 @@
  * User: mike
  * Date: 3/21/16
  * Time: 2:03 PM
- * 
+ *
  * Constants for project
  */
 
 
 // Login field names
- 
+
 
 const LOGIN_USERNAME_KEY = 'login_username';
 const LOGIN_PASSWORD_KEY = 'login_password';
@@ -22,7 +22,7 @@ const REGISTER_BUTTON_VALUE = 'register';
 
 
 // Session keys
- 
+
 const SESSION_USERNAME_KEY = 'username';
 
 
@@ -65,10 +65,10 @@ const DB_PASSWORD = 'ccs_admin';
 const DB_DATABASE = 'CCS_01';
 
 /* hostpond */
-//const DB_SERVER = 'plum.hostpond.com';
-//const DB_USER = 'lereive2_admin';
-//const DB_PASSWORD = '*****';
-//const DB_DATABASE = 'lereive2_ccs';
+// const DB_SERVER = 'plum.hostpond.com';
+// const DB_USER = 'lereive2_admin';
+// const DB_PASSWORD = '****';
+// const DB_DATABASE = 'lereive2_ccs';
 
 const USERS_TABLE = 'Users';
 const USERS_USERNAME_FIELD = 'Username';
@@ -82,7 +82,7 @@ const ACCOUNT_DATA_SESSION_FIELD = 'session';
 // Page constants
 
 /* localhost */
-
+//
 const HOME_PAGE = '/Git_htdocs/ccs_git/home.php';
 const REGISTER_PAGE = '/Git_htdocs/ccs_git/register.php';
 const LOGIN_PAGE = '/Git_htdocs/ccs_git/index.php';
@@ -112,31 +112,31 @@ const TABLE_FOUR_PAGE = '/Git_htdocs/ccs_git/table_four.php';
 
 
 /* hostpond */
-//const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
-//const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
-//const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
-//const LOGOUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//logout.php';
-//const LOGGED_OUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/logged_out.php';
-//const NO_ACCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/no_access.php';
-//const DEPT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/departments.php';
-//const EF_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/essential_functions.php';
-//const FUNC_PROCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_processes.php';
-//const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_categories.php';
-//const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_categories.php';
-//const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_details.php';
-//const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_scoring.php';
-//const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score.php';
-//const IMPACT_CATEGORY_SCORE_ALL_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score_all.php';
-//const IMPACT_CATEGORY_SCORE_1_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score1.php';
-//const IMPACT_CATEGORY_SCORE_2_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score2.php';
-//const IMPACT_CATEGORY_SCORE_3_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score3.php';
-//const IMPACT_CATEGORY_SCORE_4_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score4.php';
-//const IMPACT_CATEGORY_SCORE_5_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score5.php';
-//const IMPACT_CATEGORY_SCORE_6_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score6.php';
-//const IMPACT_CATEGORY_SCORE_7_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score7.php';
-//const TABLE_TWO_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/table_two.php';
-//const TABLE_THREE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/table_three.php';
-//const TABLE_FOUR_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/table_four.php';
+// const HOME_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/home.php';
+// const REGISTER_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/register.php';
+// const LOGIN_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//index.php';
+// const LOGOUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs//logout.php';
+// const LOGGED_OUT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/logged_out.php';
+// const NO_ACCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/no_access.php';
+// const DEPT_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/departments.php';
+// const EF_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/essential_functions.php';
+// const FUNC_PROCESS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_processes.php';
+// const FUNC_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_categories.php';
+// const IMPACT_CATEGORY_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_categories.php';
+// const FUNC_DETAILS_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/function_details.php';
+// const IMPACT_CATEGORY_SCORING_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_scoring.php';
+// const IMPACT_CATEGORY_SCORE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score.php';
+// const IMPACT_CATEGORY_SCORE_ALL_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score_all.php';
+// const IMPACT_CATEGORY_SCORE_1_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score1.php';
+// const IMPACT_CATEGORY_SCORE_2_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score2.php';
+// const IMPACT_CATEGORY_SCORE_3_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score3.php';
+// const IMPACT_CATEGORY_SCORE_4_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score4.php';
+// const IMPACT_CATEGORY_SCORE_5_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score5.php';
+// const IMPACT_CATEGORY_SCORE_6_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score6.php';
+// const IMPACT_CATEGORY_SCORE_7_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/impact_category_score7.php';
+// const TABLE_TWO_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/table_two.php';
+// const TABLE_THREE_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/table_three.php';
+// const TABLE_FOUR_PAGE = 'https://plum.hostpond.com/~lereive2/ccs/table_four.php';
 
 
 // -----------------------------------------------------------------------------------------------------------------------
@@ -329,7 +329,7 @@ const E_NO_IMPACT_CATEGORY_SCORING_TIER_SEVEN = 'Tier Seven must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORING_IMP_CAT_ID = 'Impact Category ID must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORING_EFID = 'EF ID must be supplied.';
 
- 
+
 
 // ------------------------------------------
 
@@ -407,41 +407,3 @@ const E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_7 =   'Rating 7 must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORE_RTO_ID_7  =   'RTO 7 must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7 =   'Impact Category 7 must be supplied.';
 const E_NO_IMPACT_CATEGORY_SCORE_EF_ID_7 =   'Essential Function 7 must be supplied.';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
