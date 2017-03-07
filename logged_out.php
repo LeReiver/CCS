@@ -25,9 +25,9 @@ session_destroy();
     <?php include_once ('includes/head_files.php'); ?>
 </head>
 <body>
-<h1>&nbsp;</h1>
-<h1>GOOD BYE!</h1>
-<h2>You have successfully logged out</h2><br><h3>Please close your browser for maximum security<br>&nbsp;<br>or<br></h3>
-<h4><a href="index.php"> Return to Login page</a></h4>
+    <h1>&nbsp;</h1>
+    <h1>GOOD BYE!</h1>
+    <h2 style="margin: 0 auto; text-align: center;">You have successfully logged out</h2><br><h3>Please close your browser for maximum security<br>&nbsp;<br>or<br></h3>
+    <h4 style="margin: 0 auto; text-align: center;"><a href="index.php"> Return to Login page</a></h4>
 </body>
 </html>

@@ -29,7 +29,7 @@
             <li><a href="function_processes.php" class="active">EF Processes</a></li>
             <li><a href="impact_categories.php" class="active">Impact Categories</a></li>
             <li><a href="function_details.php" class="active">EF Details</a></li>
-    <!--        <li><a href="impact_category_scoring.php">Add Impact Category Scoring</a></li>-->
+            <li><a href="impact_category_scoring.php">Impact Category Scoring</a></li>
     <!--        <li><a href="impact_category_score.php">Add Impact Category Score</a></li>-->
     <!--        <li><a href="impact_category_score_all.php">Add Impact Category Score All</a></li>-->
             <li><a href="impact_category_score1.php" class="active">Impact Category Scores</a></li>

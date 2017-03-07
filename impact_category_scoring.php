@@ -114,20 +114,7 @@ include_once ('includes/nav.php');
                 <tr>
                    <?php score_impact_categories()?>
                 </tr>
-                    <!-- Submit form-->
-                <div class="submit_table">
-                    <tr></tr><tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td>
-                        <!-- Submit button -->
-                        <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo IMPACT_CATEGORY_SCORING_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'></div></td>
-                    </tr>
-                    <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td>
-                        <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;'></div></td>
-                    </tr>
-                </div>
+
             </table>
             <!-- Submit form-->
             <div class="submit_table" style="margin-right: 100px;">
