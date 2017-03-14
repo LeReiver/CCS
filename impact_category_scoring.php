@@ -129,7 +129,7 @@ include_once ('includes/nav.php');
 <script>
     // Adds selected class to current page in navigation
     $(document).ready(function(){
-        $("[href='impact_category_scores.php']").addClass("selected");
+        $("[href='impact_category_scoring.php']").addClass("selected");
     });
     // Opens tables
     function open_scores() {

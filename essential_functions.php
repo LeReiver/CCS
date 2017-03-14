@@ -69,7 +69,7 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <h2>Essential Functions</h2>
+        <h2>Add Essential Functions</h2>
         <!-- Error message -->
         <p id="submit_error"><?php echo $ef_error_message ; ?></p>
         <div class="input_reference" id="reports">

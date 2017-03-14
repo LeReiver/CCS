@@ -61,7 +61,7 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <h2>Function Categories</h2>
+        <h2>Add Function Categories</h2>
         <!-- Error message -->
         <p id="submit_error"><?php echo $company_error_message ; ?></p>
         <form method="POST" action="function_categories.php">

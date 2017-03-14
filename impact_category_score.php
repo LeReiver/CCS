@@ -119,7 +119,7 @@ show_user();
 include_once ('includes/nav.php');
 ?>
 <div id="form_content">
-    <h2>Impact Category Score</h2>
+    <h2>Add Impact Category Scores</h2>
     <!-- Error message -->
     <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
     <div class="input_reference" id="reports">

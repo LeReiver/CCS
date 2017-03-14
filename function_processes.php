@@ -59,7 +59,7 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-    <h2>Function Processes</h2>
+    <h2>Add Function Processes</h2>
         <!-- Error message -->
         <p id="submit_error"><?php echo $func_process_error_message ; ?></p>
         <div class="input_reference" id="reports">

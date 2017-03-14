@@ -85,7 +85,6 @@ function impact_category_score_submit(
 // Fetches from database using SQL query and returns data into user input selector
 function get_essential_functions()
 {
-
     // Get connection
     $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     // Check connection
@@ -103,8 +102,8 @@ function get_essential_functions()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
-                . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
+            echo "                <option value='" . $row["EFID"] . "' selected >" . $row ["EFName"] . ": "
+                . $row["DeptName"] . " Department, " . $row ["Organization"] . "  </option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -113,10 +112,7 @@ function get_essential_functions()
     echo "    </div>\n";
     // Close connection
     $conn->close();
-
 }
-
-
 
 function get_impact_category()
 {
@@ -137,7 +133,7 @@ function get_impact_category()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
+            echo "                <option value='" . $row["ImpCatID"] . "' selected >" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -147,7 +143,6 @@ function get_impact_category()
     // Close connection
     $conn->close();
 }
-
 
 
 // Fetches from database using SQL query and returns data into user input selector
