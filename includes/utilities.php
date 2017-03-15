@@ -8,7 +8,7 @@
  * Various login and session functions
  */
 
-include_once ('head_files.php');
+//include_once ('head_files.php');
 // Session constant variables
 const SESSION_DATA_ACCOUNT_USER_FIELD = 0;
 const SESSION_DATA_ACCOUNT_SESSION_FEILD = 1;

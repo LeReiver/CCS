@@ -26,7 +26,16 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 <html lang="en">
 <head>
     <title>Impact Category Score Table</title>
-    <?php include_once ('includes/head_files.php'); ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
+    <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 <body>
 <?php
@@ -35,8 +44,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql ="SELECT 	EFName, CatName, Rating, Duration
-            FROM	RATINGS ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
+$sql ="SELECT 	EFName, CatName, Duration, Rating
+            FROM	RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
             WHERE	ra.RatingID = ics.RatingID
             AND		rt.RtoID = ics.RtoID
             AND		ic.ImpCatID = ics.ImpCatID
