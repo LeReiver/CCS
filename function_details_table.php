@@ -50,9 +50,9 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
         while ($row = $result->fetch_assoc()) {
 
             echo "<tr><th id='table_header' colspan='2'><h4>Existing Function Details</h4></th><th></th></tr>";
-            echo " <tr><td colspan='2'><h5>" . $row['EFName'] . "</h5><input type='hidden' value=" .$row["DetailID"]."  name='id'>
+            echo " <tr><td colspan='3'><h5 style='margin-top:-10px; font-size:15px;'>" . $row['EFName'] . "</h5><input type='hidden' value=" .$row["DetailID"]."  name='id'>
                 <form id='details_form' action='includes/delete.php' method='GET'>
-                <button id='delete_row_details' name='delete_detail' value=".$row["DetailID"].">DELETE</button></form></td></tr>";
+                <td><button name='delete_detail' value=".$row["DetailID"].">DELETE</button></td></form></td></tr>";
             echo " <tr><td  id='table_reference'>" . "Description:" . "</td><td> " . $row ["Responsibilities"] . "</td></tr>\n";
             echo " <tr><td  id='table_reference'>" . "Internal Dependencies:" . "</td><td> " . $row ["InternalDep"] . "</td></tr>\n";
             echo " <tr><td  id='table_reference'>" . "External Dependencies:" . "</td><td> " . $row ["ExternalDep"] . "</td></tr>\n";

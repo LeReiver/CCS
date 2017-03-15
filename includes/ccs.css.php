@@ -239,10 +239,10 @@ table th  {
     font-size: 3em;
  }
 #logo {
-    margin: 0 auto;
-    text-align: center;
-    width: 50vw;
-    height: 100vh;
+    margin: 5%;
+/*    text-align: center;*/
+    width: 90vw;
+    max-width: 1028px;
 }
 
 #logo_sm {
@@ -304,6 +304,10 @@ table th  {
 #delete_row_details {
      margin-top: -25px;
  }
+
+#delete_row_details button {
+    margin: 25px;
+}
 #details_form{
     margin-top: -45px;
     margin-right: -45px;
@@ -334,8 +338,8 @@ table th  {
     background-color: rgba(119, 238, 170, 0.42);
 }
 .home_page {
-    background-image: url('../images/portland.jpg');
-    margin: 1em 0;
+    background-image: url('../images/header.jpg');
+    margin:  0;
     padding: 0;
     background-size: cover;
     background-color: rgba(229, 229, 229, 0.3);
@@ -351,6 +355,8 @@ table th  {
     margin-bottom: 20px;
     text-align: left;
     padding-left: 15px;
+    color: #000;
+    text-shadow: none;
 }
 .register_header {
     text-shadow: none;
@@ -360,20 +366,24 @@ table th  {
     padding-left: 15px;
     color: #000;
 }
-.login_submit{
-    margin: 20px 0 0 30px;
+#login button {
+    margin: 0 auto;
     text-align: center;
 /*    width: 25%;*/
-    height: 2em;
-    font-size: .75em;
-    width: 30vw;
+/*    height: 2em;*/
+    font-size: 15px;
+    width: 90px;
+    color: #000;
+    background-color: transparent;
+    border: solid 1.5px aliceblue;
 }
-.login_submit.button:hover {
-    background-color: aqua;
+
+#login button:hover {
+    background-color: aliceblue;
  }
 .login_table {
-    margin: 0 auto;
-    width: 40%;
+    margin: -130px auto 0 auto;
+/*    width: 40%;*/
     color: #ffffff;
     text-shadow: black 4px 2px 4px;
 }

@@ -60,7 +60,7 @@ $error_message = login_or_register(
 <div >
     <div id="login_content">
         <?php echo '&nbsp;<br><br>'; ?>
-        <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>
+        <div ><img id="logo" src="images/ccs_logo.png"  </div>
         <?php echo '&nbsp;<br><br>'; ?>
         <!-- User form-->
         <form method="POST" action="index.php">
@@ -79,8 +79,8 @@ $error_message = login_or_register(
                 <tr>
 
                     <!-- Submit button -->
-                    <td><div class="login_submit"><input type="submit" value="LOGIN"
-                       name="<?php echo LOGIN_BUTTON_VALUE ?>" style="width:80px; margin-right: 170px;margin-left: 250px;" ></div> </td><td></td>
+                    <td id="login"><button  value="LOGIN" type="submit"
+                       name="<?php echo LOGIN_BUTTON_VALUE ?>" >Login</button></td>
                 </tr>
                 <tr>
 
