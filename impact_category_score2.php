@@ -104,7 +104,7 @@ include_once ('includes/nav.php');
                 <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
             <tr><td></td><td></td>
                 <td hidden > <?php get_rto() ?></td>
-            <tr style="color: #fb543d"><td></td><td><?php echo "*" ?></td>
+            <tr ><td></td><td><?php echo '*' ?></td>
                 <td><?php RATING::get_rating() ?></td>
             </tr>
         </table>

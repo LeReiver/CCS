@@ -73,14 +73,11 @@ input [type=submit] {
     margin: 20px;
 }
 
-input [type=select] {
-/*    font-size: 2em;*/
-/*    width: 30px;*/
-/*    padding: 5px;*/
-/*    background-color: #7ea142;*/
-/*    margin: 20px;*/
+input[type=radio] {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
 }
-
 
 form {
     width: 100%;
@@ -94,7 +91,7 @@ select {
 }
 button {
     padding: 8px;
-    border: solid black 0.5px;
+    border: solid black .5px;
     background-color: transparent;
     color: #7ea142;
     font-size: 75%;

@@ -72,6 +72,7 @@ function impact_category_score_submit(
         // Stores variables as $_SESSION variables for next page
         $_SESSION[$impact_category_score_ef_id1] = $_POST[$impact_category_score_ef_id1];
         $_SESSION[$impact_category_score_imp_cat_id1] = $_POST[$impact_category_score_imp_cat_id1];
+//        $_SESSION[$impact_category_score_rating_id1] = $_POST[$impact_category_score_rating_id1];
     return impact_category_score(
         $impact_category_score_ef_id1,
         $impact_category_score_imp_cat_id1,
