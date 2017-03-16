@@ -127,10 +127,10 @@ include_once ('includes/nav.php');
             </table>
             <!-- Submit form-->
             <div class="submit_table" style="margin-right: 100px;">
-                <input class="data_submit" type="submit" value="SUBMIT"
-                       name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>
+                <button class="data_submit" type="submit" value="SUBMIT"
+                       name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button>
                 <!-- Reset button -->
-                <input type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>
+                <button type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>Clear</button>
             </div>
         </form>
     </div>

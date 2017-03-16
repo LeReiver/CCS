@@ -87,17 +87,17 @@ include_once ('includes/nav.php');
                                            value="<?php echo $func_category_name ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
                 <!-- Submit form-->
-                <div class="submit_table">
+                <button class="submit_table">
                     <tr>
                         <td></td>
                         <!-- Submit button -->
-                        <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo FUNC_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 250px;'></div></td>
+                        <td class="data_submit"> <button type="submit" value="SUBMIT"
+                                name="<?php echo FUNC_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 250px;'></div></td>
+                        <td class="data_submit"> <button type="reset" value="CLEAR" style='width: 100px;'></button></td>
                     </tr>
                 </div>
             </table>

@@ -188,6 +188,7 @@ table th  {
     margin-top: -50px;
     font-weight: 100;
 }
+
 #form_content {
     font-family: Gudea, Geneva, sans-serif;
     font-size: 125%;
@@ -331,7 +332,7 @@ table th  {
     text-decoration: none;
     font-size: 85%;
     padding: 0 25px 50px 0;
-    margin-right: 250px;
+/*    margin-right: 250px;*/
     text-align: end;
 }
 .tint {
@@ -382,8 +383,14 @@ table th  {
     background-color: aliceblue;
  }
 .login_table {
-    margin: -130px auto 0 auto;
+    margin: -160px auto 0 auto;
 /*    width: 40%;*/
+    color: #ffffff;
+    text-shadow: black 4px 2px 4px;
+}
+.register_table {
+    margin: -30px auto 0 auto;
+    /*    width: 40%;*/
     color: #ffffff;
     text-shadow: black 4px 2px 4px;
 }
@@ -481,6 +488,8 @@ border: solid black 1px;
         margin-left: 30px;
         width: 80%;
     }
-
+    .login_table {
+        margin: -100px auto 0 auto;
+    }
 
 }

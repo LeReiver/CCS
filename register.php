@@ -69,7 +69,7 @@ $error_message = login_or_register(
         <?php echo '&nbsp;<br><br>'; ?>
         <!-- User form-->
         <form method="POST" action="register.php">
-            <table class="login_table">
+            <table class="register_table">
                 <tr>
             <tr><th colspan="5"><div class="login_header">Register a New Account</div></th></tr>
             <tr>
@@ -87,8 +87,8 @@ $error_message = login_or_register(
             <tr>
 
                 <!-- Register button -->
-                <td class="login_submit"><input type="submit" value="REGISTER"
-                    name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px; margin-right: 170px;margin-left: 250px;"></td><td></td> </tr>
+                <td class="login_submit"><button type="submit" value="REGISTER"
+                    name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px; margin-right: 170px;margin-left: 250px;">Register</button></td><td></td> </tr>
 
                 <tr>
 

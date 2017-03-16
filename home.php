@@ -85,7 +85,7 @@ include_once ('includes/nav.php');
     <?php echo '&nbsp;<br><br>'; ?>
     <!-- User form-->
     <form method="POST" action="register.php">
-        <table class="login_table">
+        <table class="register_table">
             <tr>
             <tr><th colspan="5"><div class="register_header">Register a New Account</div></th></tr>
             <tr>
@@ -103,8 +103,8 @@ include_once ('includes/nav.php');
             <tr>
 
                 <!-- Register button -->
-                <td class="login_submit"><input type="submit" value="REGISTER"
-                                                name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px; margin-right: 170px;margin-left: 250px;"></td><td></td> </tr>
+                <td class="login_submit"><button type="submit" value="REGISTER"
+                                                name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td><td></td> </tr>
             <tr>
                 <!-- Error message -->
                 <td> <?php echo $error_message; ?></td><td> </td>

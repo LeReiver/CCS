@@ -120,13 +120,13 @@ include_once ('includes/nav.php');
                     <tr>
                         <td></td>
                         <!-- Submit button -->
-                        <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo EF_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 250px;'></div></td>
+                        <td class="data_submit"> <button type="submit" value="SUBMIT"
+                                name="<?php echo EF_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 250px;'></div></td>
+                        <td class="data_submit"> <button type="reset" value="CLEAR" style='width: 100px;'>Clear</button></td>
                     </tr>
                 </div>
             </table>
