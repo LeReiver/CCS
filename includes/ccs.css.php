@@ -336,6 +336,9 @@ table th  {
     padding: 0 25px 50px 0;
 /*    margin-right: 250px;*/
     text-align: end;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
 }
 .tint {
     background-color: rgba(119, 238, 170, 0.42);

@@ -66,7 +66,7 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <title>CCS | Essential Functions</title>
+    <title>CCS | Essential Function Details</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
@@ -183,8 +183,10 @@ include_once ('includes/nav.php');
                     </tr>
                 </div>
             </table>
+<!--            <div class="top">-->
+<!--                <a href="#top">Back to top</a>-->
+<!--            </div>-->
         </form>
-        <a href="#top" class="top">Back to top</a>
     </div>
 <script>
     // Adds selected class to current page in navigation

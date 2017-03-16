@@ -84,7 +84,7 @@ include_once ('includes/nav.php');
 <!--    <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>-->
     <?php echo '&nbsp;<br><br>'; ?>
     <!-- User form-->
-    <form method="POST" action="register.php">
+    <form method="POST" action="home.php">
         <table class="register_table">
             <tr>
             <tr><th colspan="5"><div class="register_header">Register a New Account</div></th></tr>
@@ -106,7 +106,7 @@ include_once ('includes/nav.php');
        
                 <!-- Register button -->
                 <td class="login_submit"><button type="submit" value="REGISTER"
-                                                name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td>
+                         name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td>
             </tr>
         </table>
     </form>
