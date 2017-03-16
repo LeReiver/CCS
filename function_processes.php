@@ -69,8 +69,6 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
     <h2>Add Function Processes</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $func_process_error_message ; ?></p>
         <div class="input_reference" id="reports">
             <!-- Reference Table -->
             <button onclick="open_processes()">Show Function Processes</button>
@@ -94,7 +92,8 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                        <td></td>
+                        <!-- Error message -->
+                        <p id="submit_error"><?php echo $func_process_error_message ; ?></p>
                         <!-- Submit button -->
                         <td class="data_submit"> <button type="submit" value="SUBMIT"
                                 name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>

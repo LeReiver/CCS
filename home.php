@@ -101,13 +101,12 @@ include_once ('includes/nav.php');
                            value="<?php echo $register_confirm_password ?>"></td>
             </tr>
             <tr>
-
+                <!-- Error message -->
+                <td> <?php echo $error_message; ?></td>
+       
                 <!-- Register button -->
                 <td class="login_submit"><button type="submit" value="REGISTER"
-                                                name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td><td></td> </tr>
-            <tr>
-                <!-- Error message -->
-                <td> <?php echo $error_message; ?></td><td> </td>
+                                                name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td>
             </tr>
         </table>
     </form>

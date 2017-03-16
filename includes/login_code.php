@@ -11,7 +11,7 @@
 // Creates error_message object of type and detail
 function error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><br><br><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Sets the session using username and redirects user to home page

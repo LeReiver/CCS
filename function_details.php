@@ -90,8 +90,6 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Add Essential Function Details</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
         <div class="input_reference" id="reports">
             <!-- Reference Table -->
             <button onclick="open_details()">Show Function Details</button>
@@ -170,7 +168,8 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                        <td></td>
+                        <!-- Error message -->
+                        <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
                         <!-- Submit button -->
                         <td class="data_submit"> <button type="submit" value="SUBMIT"
                                 name="<?php echo FUNC_DETAILS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>

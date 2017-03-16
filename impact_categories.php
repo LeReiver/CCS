@@ -69,8 +69,6 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Add Impact Categories</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $impact_category_error_message ; ?></p>
         <div class="input_reference" id="reports">
             <!-- Reference Table -->
             <button onclick="open_impact_categories()">Show Impact Categories</button>
@@ -92,7 +90,8 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                        <td></td>
+                        <!-- Error message -->
+                        <p id="submit_error"><?php echo $impact_category_error_message ; ?></p>
                         <!-- Submit button -->
                         <td class="data_submit"> <button type="submit" value="SUBMIT"
                                 name="<?php echo IMPACT_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>

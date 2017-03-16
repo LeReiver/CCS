@@ -71,8 +71,6 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Add Function Categories</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $company_error_message ; ?></p>
         <form method="POST" action="function_categories.php">
             <!-- User form-->
             <table class="form_table">
@@ -86,6 +84,9 @@ include_once ('includes/nav.php');
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_CATEGORY_NAME_FIELD; ?>"
                                            value="<?php echo $func_category_name ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
+                <tr>
+                    <!-- Error message -->
+                    <td><p id="submit_error"><?php echo $company_error_message ; ?></p></td>
                 <!-- Submit form-->
                 <button class="submit_table">
                     <tr>

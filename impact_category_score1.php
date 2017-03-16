@@ -74,8 +74,6 @@ include_once ('includes/nav.php');
 ?>
 <div id="form_content">
     <h2>Impact Category Score 1</h2>
-    <!-- Error message -->
-    <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
     <div class="input_reference" id="reports">
         <!-- Reference Table -->
         <button onclick="open_scores()">Show Impact Category Scores</button>
@@ -117,8 +115,11 @@ include_once ('includes/nav.php');
             <tr><td></td>
                 <td><?php RATING::get_rating() ?></td>
             </tr>
+
         </table>
         <!-- Submit form-->
+        <!-- Error message -->
+        <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
         <div class="submit_table" style="margin-right: 100px;">
             <button class="data_submit" type="submit" value="SUBMIT"
                    name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button>

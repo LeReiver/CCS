@@ -79,8 +79,6 @@ include_once ('includes/nav.php');
 ?>
     <div id="form_content">
         <h2>Add Essential Functions</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $ef_error_message ; ?></p>
         <div class="input_reference" id="reports">
             <!-- Reference Table -->
             <button onclick="open_essential_functions()">Show Essential Functions</button>
@@ -115,6 +113,9 @@ include_once ('includes/nav.php');
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo EF_LEAD_PHONE_FIELD; ?>"
                                            value="<?php echo $ef_lead_phone ?>"></td>
                 </tr>
+                <tr>
+                    <!-- Error message -->
+                    <td><p id="submit_error"><?php echo $ef_error_message ; ?></p></td>
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>

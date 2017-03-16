@@ -79,8 +79,6 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $company_error_message ; ?></p>
             <form method="POST" action="departments.php">
 
                 <h2>Add A New Department</h2>
@@ -122,7 +120,8 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                    <td></td>
+                        <!-- Error message -->
+                        <td><p id="submit_error"><?php echo $company_error_message ; ?></p></td>
                         <!-- Submit button -->
                     <td class="data_submit"> <button type="submit" value="SUBMIT"
                                             name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>

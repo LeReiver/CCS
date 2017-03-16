@@ -11,7 +11,7 @@
 // Creates error_message object of type and detail
 function func_detail_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail" style="margin: -25px 200px 0 0;">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail" style="margin: -25px 200px 0 0;">' . $detail . '</div>';
 }
 
 // Redirects to next page 

@@ -198,14 +198,15 @@ table th  {
 
 }
 #error_header {
-    text-align: end;
+/*    text-align: start;*/
     float: right;
     color: red;
     text-shadow:  0 0 white;
     font-weight: bold;
-    width: 300px;
+/*    width: 300px;*/
     font-size: 120%;
-    margin: -30px 770px 0 0 ;
+    margin: 0 30px 0 0;
+/*    margin: -30px 770px 0 0 ;*/
 }
 #error_detail {
     text-align: end;
@@ -213,11 +214,11 @@ table th  {
     color: red;
     text-shadow:  .5px 0 white;
     font-size: 90%;
-    width: 600px;
-    margin: -23px 370px 0 0;
+/*    width: 600px;*/
+    margin: 10px -60px 0 0;
 }
 #submit_error {
-    margin-left: 600px;
+/*    margin-left: 600px;*/
 }
 #submit_error_header {
     text-align: center;
@@ -233,8 +234,8 @@ table th  {
     color: red;
     text-shadow:  2px 0 white;
     font-size: 85%;
-    width: 400px;
-    margin: 0 auto 20px auto;
+/*    width: 400px;*/
+/*    margin: 0 auto 20px auto;*/
 }
 #select_department {
     float: right;
@@ -465,12 +466,8 @@ border: solid black 1px;
 }
 
 
+
 @media screen and (max-width: 602px) {
-/*    h2 {*/
-/*        position: relative;*/
-/*        top: -20px;*/
-/*        left: 80px;*/
-/*    }*/
     #reports.input_reference {
        float: none;
         margin-top: -25px;
@@ -541,4 +538,11 @@ border: solid black 1px;
         text-align: start;
     }
 
+}
+
+
+@media screen and (max-width: 400px) {
+    #logo_sm {
+        margin: 0 50px 80px 0;
+    }
 }
