@@ -91,7 +91,7 @@ include_once ('includes/nav.php');
         </div>
         <form method="POST" action="impact_category_scoring.php">
             <!-- User form-->
-            <table class="form_table" style="margin: 20px 70px 0 60px;">
+            <table class="form_table">
                 <tr>
                     <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                        </th>
@@ -111,7 +111,7 @@ include_once ('includes/nav.php');
                 </table>
 
             
-            <table class="form_table" style="margin: 10px 0 0 60px;">
+            <table class="form_table">
                 <tr>
                     <th  colspan=1 class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
                     <th  colspan=1 class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>

@@ -463,10 +463,25 @@ border: solid black 1px;
     padding-left:5px;
 }
 
-@media screen and (max-width: 510px) {
+
+@media screen and (max-width: 602px) {
+/*    h2 {*/
+/*        position: relative;*/
+/*        top: -20px;*/
+/*        left: 80px;*/
+/*    }*/
     #reports.input_reference {
-        margin: -35px 250px 0 0;
+       float: none;
+        margin-top: -25px;
     }
+}
+
+@media screen and (max-width: 610px) {
+/*    #reports.input_reference {*/
+/*        float: right;*/
+/*        margin-right: 2px;*/
+/*        margin-*/
+/*    }*/
 }
 
 @media screen and (max-width: 690px) {
@@ -477,12 +492,18 @@ border: solid black 1px;
         text-align: end;
         margin: -80px 20px 0 0;
     }
+    #reports.input_reference {
+        float: right;
+        margin-right: 2px;
+        margin-
+    }
 }
 
 @media screen and (max-width: 769px) {
     h2 {
         position: relative;
-        left: -100px;
+/*        left: 4px;*/
+        top: -20px;
     }
     #form_content {
         margin-left: -100px;

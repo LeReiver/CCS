@@ -131,7 +131,7 @@ include_once ('includes/nav.php');
     </div>
     <form method="POST" action="impact_category_score_all.php">
         <!-- User form-->
-        <table class="form_table" style="margin: 20px 70px 0 60px; width: 800px;">
+        <table class="form_table">
             <tr>
                 <th  class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
@@ -141,7 +141,7 @@ include_once ('includes/nav.php');
                 </th>
             </tr>
             </table>
-        <table class="form_table" style="margin: 0 0 0 60px;">
+        <table class="form_table" style="margin: 0 ;">
             <?php score_all_impact_categories() ?>
         </table>
         <!-- Submit form-->

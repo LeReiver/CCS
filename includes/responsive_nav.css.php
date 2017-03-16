@@ -59,6 +59,16 @@
     transform: rotate(135deg) translate(-7px, 1px);
     width: 40px;
 }
+#panel {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: .7;
+    padding: 0;
+    z-index: 200;
+}
 
 /* -------------------Collapsing Responsive Navigation -----------------------  */
 
