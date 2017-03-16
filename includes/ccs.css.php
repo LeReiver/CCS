@@ -116,7 +116,7 @@ nav {
 /*    position: relative;*/
     border-bottom: 0.125px solid lightsteelblue;
     padding-bottom: 20px;
-    z-index: 3;
+    z-index: 100;
 }
 
 ul {
@@ -406,7 +406,7 @@ border: solid black 1px;
     margin: 20px;
 }
 .login_label {
-    text-align: left;
+    text-align: start;
     padding-left: 15px;
 }
 .dept_select {
@@ -416,7 +416,7 @@ border: solid black 1px;
     font-size: 1em;
 }
 .input_label {
-    text-align: left;
+    text-align: start;
     width: 100%;
 /*    padding-left: 15px;*/
     border: none;
@@ -431,7 +431,7 @@ border: solid black 1px;
 .form_label {
     text-align: end;
     padding-right: 20px;
-/*    width: 300px;*/
+    width: 40%;
     font-size: 90% ;
 }
 
@@ -463,33 +463,60 @@ border: solid black 1px;
     padding-left:5px;
 }
 
-@media screen and (max-width: 650px) {
-    #user_pane {
-        text-align: right;
-        margin: -80px 20px 0 0;
+@media screen and (max-width: 510px) {
+    #reports.input_reference {
+        margin: -35px 250px 0 0;
     }
-    #reports {
-        margin: 100px 100px 0 0;
+}
+
+@media screen and (max-width: 690px) {
+    h2 {
+        margin-left: -50px;
+    }
+    #user_pane {
+        text-align: end;
+        margin: -80px 20px 0 0;
     }
 }
 
 @media screen and (max-width: 769px) {
     h2 {
-        margin-left: 40px;
+        position: relative;
+        left: -100px;
+    }
+    #form_content {
+        margin-left: -100px;
     }
     #reports {
-        margin-top: -70px;
+        margin: -60px 60px 0 0;
     }
+
     #logo_sm {
         text-align: center;
         margin: 0 50px 0 0;
     }
     .form_table {
-        margin-left: 30px;
         width: 80%;
+        float:left;
     }
     .login_table {
         margin: -100px auto 0 auto;
+    }
+    .form_input {
+        text-align: start;
+        padding-right: 0;
+        width: 80%;
+        font-size: 1.25em;
+    }
+
+}
+
+@media screen and (max-width: 967px) {
+    #form_content {
+        margin-left: 20px;
+    }
+    .form_label {
+        text-align: start;
     }
 
 }

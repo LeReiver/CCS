@@ -22,7 +22,7 @@
 }
 
 .bar1, .bar3 {
-    width: 30px;
+    width: 40px;
     height: 4px;
     background-color: #6eac2c;
     margin: 6px 0;
@@ -30,7 +30,7 @@
 }
 
 .bar2 {
-    width: 30px;
+    width: 40px;
     height: 4px;
     background-color: #6eac2c;
     margin: 6px 0;
@@ -38,8 +38,9 @@
 }
 
 .container.change {
-    right: 60px;
+    left: 60px;
     top: 100px;
+    margin: 0 0 0 -20px;
 }
 
 .change .bar1 {
@@ -50,6 +51,7 @@
 
 .change .bar2 {
     opacity: 0;
+    transition: 1.08s;
 }
 
 .change .bar3 {
@@ -64,11 +66,12 @@
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
-    margin: -160px 0 0 -20px;
+    margin: -160px 0 0 -30px;
     padding: 0;
     overflow: hidden;
-/*    background-color: rgba(50, 60, 68, 0.55);*/
     width: 100%;
+    z-index: 100;
+
 }
 
 /* Float the list items side by side */
@@ -78,13 +81,12 @@ ul.topnav li {
 
 /* Style the links inside the list items */
 ul.topnav li a {
-    margin: 0;
+    left: 1em;
     text-decoration: none;
-    transition: 0.8s;
+    transition: 0.3s;
     display: inline-block;
     color: #121c3e;
-    text-align: left;
-/*    padding: 0 16px;*/
+    text-align: start;
 }
 
 /* Change background color of links on hover */
@@ -137,6 +139,7 @@ ul.topnav li.icon {
         display: block;
         clear:both;
         text-align: start;
+        z-index: 100;
     }
 
     ul.topnav.responsive li a {
@@ -144,10 +147,11 @@ ul.topnav li.icon {
         text-align: left;
         margin-bottom: 5px;
         padding: 0;
+        z-index: 200;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
     ul.topnav {
         margin: -50px 0 0 30px;
     }
