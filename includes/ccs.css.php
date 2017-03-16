@@ -14,6 +14,7 @@ body {
     background-color: aliceblue;
     max-width: 1200px;
     margin: 0 auto;
+    background-attachment: fixed;
 }
 h1 {
     text-align: center;

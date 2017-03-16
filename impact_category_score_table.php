@@ -44,7 +44,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql ="SELECT 	EFName, CatName, Duration, Rating
+$sql ="SELECT 	EFName, CatName, Duration, Rating, ScoreID
             FROM	RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
             WHERE	ra.RatingID = ics.RatingID
             AND		rt.RtoID = ics.RtoID
@@ -59,7 +59,12 @@ if ($result->num_rows > 0) {
     echo "                  <tr><th id='table_header'>Essential Function</th><th id='table_header'>Category</th><th id='table_header'>Rating</th><th id='table_header'>Duration</th>\n";
     while ($row = $result->fetch_assoc()) {
         echo "                <tr id='reference_table'><td> <strong>"  . $row ["EFName"] . "</strong></td><td> <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["Rating"] . "</td>
-            <td>" . $row["Duration"] . "</td></tr>\n";
+            <td>" . $row["Duration"] . "</td>
+        <td id='reference_table'>
+            <input type='hidden' value=" .$row["ScoreID"]."  name='id'\>
+            <form action='includes/delete.php' method='GET'>
+            <button id='delete_row' name='delete_score' value=".$row["ScoreID"].">DELETE</button></form>";
+        echo "</td></tr>\n";
     }
     echo "</table>";
 } else {

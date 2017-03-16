@@ -105,3 +105,24 @@ if (isset($_REQUEST['delete_detail'])) {
     header('Location: ../function_details_table.php');
 }
 
+
+
+//if "delete_score" variable is called, connect to database and delete row
+if (isset($_REQUEST['delete_score'])) {
+
+    // Gets id of row to be deleted
+    $delete_id = $_REQUEST['delete_score'];
+
+    $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
+    if ($db->connect_error) {
+        die("Connection failed: " . $db->connect_error);
+    }
+    $query = "DELETE FROM";
+    $query .= " " . IMPACT_CATEGORY_SCORE_TABLE;
+    $query .= " WHERE ScoreID = '$delete_id'";
+    $db->query($query);
+    $db->close();
+    // Redirects back to details_table page
+    header('Location: ../impact_category_score_table.php');
+}
+
