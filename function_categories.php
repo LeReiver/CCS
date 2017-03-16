@@ -88,7 +88,7 @@ include_once ('includes/nav.php');
                     <!-- Error message -->
                     <td><p id="submit_error"><?php echo $company_error_message ; ?></p></td>
                 <!-- Submit form-->
-                <button class="submit_table">
+                <div class="submit_table">
                     <tr>
                         <td></td>
                         <!-- Submit button -->

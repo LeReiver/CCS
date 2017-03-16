@@ -169,7 +169,9 @@ include_once ('includes/nav.php');
                 <div class="submit_table">
                     <tr>
                         <!-- Error message -->
-                        <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
+                        <td>
+                            <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
+                        </td>
                         <!-- Submit button -->
                         <td class="data_submit"> <button type="submit" value="SUBMIT"
                                 name="<?php echo FUNC_DETAILS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>

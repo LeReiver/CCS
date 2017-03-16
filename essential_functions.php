@@ -113,13 +113,11 @@ include_once ('includes/nav.php');
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo EF_LEAD_PHONE_FIELD; ?>"
                                            value="<?php echo $ef_lead_phone ?>"></td>
                 </tr>
-                <tr>
-                    <!-- Error message -->
-                    <td><p id="submit_error"><?php echo $ef_error_message ; ?></p></td>
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                        <td></td>
+                        <!-- Error message -->
+                        <td><p id="submit_error"><?php echo $ef_error_message ; ?></p></td>
                         <!-- Submit button -->
                         <td class="data_submit"> <button type="submit" value="SUBMIT"
                                 name="<?php echo EF_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
