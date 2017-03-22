@@ -31,7 +31,7 @@ function login($username, $password)
         return error_message(E_LOGIN, E_NO_PASSWORD);
     }
     //  Looks up username
-    $user = lookup_user($username);
+    $user = lookup_user($username); 
     // If not exists throws error
     if (!$user) {
         return error_message(E_LOGIN, E_USERNAME_NOT_FOUND);
