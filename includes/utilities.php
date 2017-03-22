@@ -98,7 +98,7 @@ function show_logo()
 }*/
 function show_user()
 {
-    echo '<div id="user_pane">';
+    echo '<div id="user_pane"><span class="user">Welcome ' . get_session_value(SESSION_USERNAME_KEY)  . '!</span>';
     echo '    ' . ' <a id="logout" href="' . LOGOUT_PAGE .
         '">Log Out' . " " . get_session_value(SESSION_USERNAME_KEY) . "</a><br>\n";
     echo '</div>' . "\n";

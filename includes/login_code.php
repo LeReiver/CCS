@@ -14,10 +14,10 @@ function error_message($type, $detail)
     return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
-// Sets the session using username and redirects user to home page
+// Sets the session using username and redirects user to Departments page
 function set_user($username) {
     $_SESSION[SESSION_USERNAME_KEY] = $username;
-    header('Location: ' . HOME_PAGE);
+    header('Location: ' . DEPT_PAGE);
 }
 
 // Login function for login button

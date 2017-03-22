@@ -21,6 +21,6 @@ include_once('includes/constants.php');
 <body>
 <h1>&nbsp;</h1>
 <h1 style="color: red">No Access!</h1>
-<h3>You must be logged in to access this page</h3><br><h4><a href="index.php"> Return to Login page</a></h4>
+<h3>You must be logged in to access this page</h3><br><h4 class="return"><a href="index.php"> Return to Login page</a></h4>
 </body>
 </html>

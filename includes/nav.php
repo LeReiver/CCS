@@ -37,6 +37,7 @@
             <li><a href="table_two.php" class="active">Table Two</a></li>
             <li><a href="table_three.php" class="active">Table Three</a></li>
             <li><a href="table_four.php" class="active">Table Four</a></li>
+            <li><a href="register.php" class="active">Register</a></li>
         </ul>
 </nav>
 

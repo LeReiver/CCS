@@ -21,7 +21,7 @@ h1 {
     font-family: Hind Madurai, Geneva, sans-serif;
     color: #162110;
     font-size: 250%;
-    text-transform: uppercase;
+    margin: 0 auto;
 }
 h2 {
     text-align: start;
@@ -44,6 +44,10 @@ h4  {
     color: #76317f;
     font-size: 90%;
     text-transform: uppercase;
+}
+
+h4.return {
+    text-align: center;
 }
 h4  a {
     text-decoration: none;
@@ -186,7 +190,7 @@ table th  {
 #login_content {
     font-family: Gudea, Geneva, sans-serif;
     font-size: 125%;
-    margin-top: -50px;
+/*    margin-top: -50px;*/
     font-weight: 100;
 }
 
@@ -256,10 +260,10 @@ table th  {
 
 #user_pane {
     text-align: right;
-    font-weight: bold;
-    font-family:  sans-serif;
+    font-weight: bolder;
+    font-family:   Gudea, sans-serif;
     font-size: 100%;
-    color: #4f005a;
+    color: #450053;
     margin-top: -80px;
     margin-right: 100px;
     float:right;
@@ -319,6 +323,7 @@ table th  {
     border: solid black 1px;
     border-collapse: collapse;
  }
+
 
 .table_reference {
     width: 900px;
@@ -482,6 +487,9 @@ border: solid black 1px;
 }
 
 @media screen and (max-width: 690px) {
+    h1 {
+        margin-left: -20px;
+    }
     h2 {
         margin-left: -50px;
     }
@@ -529,6 +537,9 @@ border: solid black 1px;
     .table_reference_page {
         width: 100%;
         margin-left: -20px;
+    }
+    .user {
+        display: none;
     }
 
 

@@ -78,6 +78,7 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
+
     <div id="form_content">
             <form method="POST" action="departments.php">
 

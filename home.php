@@ -75,41 +75,18 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
+
+<div id="login_content">
     <div id="welcome">
         <?php echo " <h1>Welcome " . get_session_value(SESSION_USERNAME_KEY)  . "!</h1>"; ?>
     </div>
 
-<div id="login_content">
     <?php echo '&nbsp;<br><br>'; ?>
 <!--    <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>-->
     <?php echo '&nbsp;<br><br>'; ?>
-    <!-- User form-->
-    <form method="POST" action="home.php">
         <table class="register_table">
-            <tr>
-            <tr><th colspan="5"><div class="register_header">Register a New Account</div></th></tr>
-            <tr>
-                <td><input type="text" placeholder="Username" name="<?php echo REGISTER_USERNAME_KEY; ?>"
-                           value="<?php echo $register_username ?>"></td>
-            </tr>
-            <tr>
-                <td><input type="password" placeholder="Create Password" name="<?php echo REGISTER_PASSWORD_KEY; ?>"
-                           value="<?php echo $register_password ?>"></td>
-            </tr>
-            <tr>
-                <td><input type="password" placeholder="Confirm Password" name="<?php echo REGISTER_CONFIRM_PASSWORD_KEY; ?>"
-                           value="<?php echo $register_confirm_password ?>"></td>
-            </tr>
-            <tr>
-                <!-- Error message -->
-                <td> <?php echo $error_message; ?></td>
-       
-                <!-- Register button -->
-                <td class="login_submit"><button type="submit" value="REGISTER"
-                         name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td>
-            </tr>
+            <tr><th colspan="5"><div class="register_header">Start By Entering A New Department</div></th></tr>
         </table>
-    </form>
 </div>
 <script>
     // Adds selected class to current page in navigation

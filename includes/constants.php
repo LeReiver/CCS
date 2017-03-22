@@ -84,7 +84,7 @@ const ACCOUNT_DATA_SESSION_FIELD = 'session';
 /* localhost */
 //
 const HOME_PAGE = '/Git_htdocs/ccs_git/home.php';
-const REGISTER_PAGE = '/Git_htdocs/ccs_git/register.php';
+const REGISTER_PAGE = '/Git_htdocs/ccs_git/register_old.php';
 const LOGIN_PAGE = '/Git_htdocs/ccs_git/index.php';
 const LOGOUT_PAGE = '/Git_htdocs/ccs_git/logout.php';
 const LOGGED_OUT_PAGE = '/Git_htdocs/ccs_git/logged_out.php';
