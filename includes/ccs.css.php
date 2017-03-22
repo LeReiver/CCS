@@ -25,7 +25,7 @@ h1 {
 }
 h2 {
     text-align: start;
-    font-family: Hind Madurai, Geneva, sans-serif;
+    font-family: Rosario, Geneva, sans-serif;
     color: #162110;
     font-size: 100%;
     text-transform: uppercase;
@@ -195,8 +195,8 @@ table th  {
     font-size: 125%;
     margin-top: 20px;
     font-weight: 100;
-
 }
+
 #error_header {
 /*    text-align: start;*/
     float: right;
@@ -326,6 +326,13 @@ table th  {
     margin: 50px auto;
     padding-bottom: 100px;
 }
+.table_reference_page {
+    width: 900px;
+    font-size: 75%;
+    margin: 50px auto;
+    padding-bottom: 100px;
+}
+
 .table_reference td {
     padding: 10px 20px;
 }
@@ -375,8 +382,6 @@ table th  {
 #login button {
     margin: 0 auto;
     text-align: center;
-/*    width: 25%;*/
-/*    height: 2em;*/
     font-size: 15px;
     width: 90px;
     color: #000;
@@ -389,7 +394,6 @@ table th  {
  }
 .login_table {
     margin: -160px auto 0 auto;
-/*    width: 40%;*/
     color: #ffffff;
     text-shadow: black 4px 2px 4px;
 }
@@ -477,14 +481,6 @@ border: solid black 1px;
     }
 }
 
-@media screen and (max-width: 610px) {
-/*    #reports.input_reference {*/
-/*        float: right;*/
-/*        margin-right: 2px;*/
-/*        margin-*/
-/*    }*/
-}
-
 @media screen and (max-width: 690px) {
     h2 {
         margin-left: -50px;
@@ -530,6 +526,11 @@ border: solid black 1px;
         width: 80%;
         font-size: 1.25em;
     }
+    .table_reference_page {
+        width: 100%;
+        margin-left: -20px;
+    }
+
 
 }
 
@@ -539,6 +540,9 @@ border: solid black 1px;
     }
     .form_label {
         text-align: start;
+    }
+    .table_reference_page {
+        width: 100%;
     }
 
 }

@@ -28,7 +28,7 @@ function show_table_two()
     $sql = "SELECT e.EFName, ep.ProcDesc, d.DeptName, d.Organization FROM EF e, EF_PROC ep, DEPT d WHERE e.EFID = ep.EFID AND e.DeptID = d.DeptID ORDER BY d.DeptID LIMIT 0, 30 ";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        echo "<table width='80%' style='margin: 100px 0 0 60px;'>";
+        echo "<table width='80%' style='margin: 100px 0 0 60px; text-align: start;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
         echo "<tr><th id='table_header'>Organization</th><th id='table_header'>Department</th><th id='table_header'>Essential Function Name</th><th id='table_header'>Processes</th></tr>";
         while ($row = $result->fetch_assoc()) {

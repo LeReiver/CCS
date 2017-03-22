@@ -56,8 +56,8 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <h2>Table Two</h2>
-        <div class="table_reference" id="reports">
+        <h2 style="top: 20px;">Table Two</h2>
+        <div class="table_reference_page" id="reports">
             <?php show_table_two()?>
         </div>
     </div>
