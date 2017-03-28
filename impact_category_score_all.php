@@ -53,7 +53,7 @@ $impact_category_score_rating_id7 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_
 $impact_category_score_rto_id7  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_7);
 $impact_category_score_imp_cat_id7 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7);
 $impact_category_score_ef_id7 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_7);
-    
+
 $impact_category_score_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
@@ -133,11 +133,11 @@ include_once ('includes/nav.php');
         <!-- User form-->
         <table class="form_table">
             <tr>
-                <th  class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
+                <th  class="form_label-icat_score" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
+                <th class="form_label-icat_score" style="text-align: start"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
                 </th>
             </tr>
             </table>

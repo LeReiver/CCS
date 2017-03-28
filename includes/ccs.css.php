@@ -31,6 +31,7 @@ h2 {
     text-transform: uppercase;
     margin-top: 20px;
     margin-left: 100px;
+    display: inline-block;
 }
 h3 {
     text-align: center;
@@ -170,7 +171,7 @@ table th  {
     text-align: end;
 }
 
-#reports table {
+#reports table {}
     border-collapse: collapse;
 }
 
@@ -205,7 +206,7 @@ table th  {
 /*    text-align: start;*/
     float: right;
     color: red;
-    text-shadow:  0 0 white;
+    <!-- text-shadow:  0 0 white; -->
     font-weight: bold;
 /*    width: 300px;*/
     font-size: 120%;
@@ -216,10 +217,10 @@ table th  {
     text-align: end;
     float: right;
     color: red;
-    text-shadow:  .5px 0 white;
+    <!-- text-shadow:  .5px 0 white; -->
     font-size: 90%;
 /*    width: 600px;*/
-    margin: 10px -60px 0 0;
+    margin: 10px -45px 0 0;
 }
 #submit_error {
 /*    margin-left: 600px;*/
@@ -227,7 +228,7 @@ table th  {
 #submit_error_header {
     text-align: center;
     color: red;
-    text-shadow:  2px 0 white;
+    <!-- text-shadow:  2px 0 white; -->
     font-weight: bold;
     width: 400px;
     margin: 0 auto;
@@ -236,7 +237,7 @@ table th  {
 #submit_error_detail {
     text-align: center;
     color: red;
-    text-shadow:  2px 0 white;
+    <!-- text-shadow:  2px 0 white; -->
     font-size: 85%;
 /*    width: 400px;*/
 /*    margin: 0 auto 20px auto;*/
@@ -398,15 +399,15 @@ table th  {
     background-color: aliceblue;
  }
 .login_table {
-    margin: -160px auto 0 auto;
+    margin: -320px auto 0 auto;
     color: #ffffff;
-    text-shadow: black 4px 2px 4px;
+    <!-- text-shadow: black 4px 2px 4px; -->
 }
 .register_table {
     margin: -30px auto 0 auto;
     /*    width: 40%;*/
     color: #ffffff;
-    text-shadow: black 4px 2px 4px;
+    <!-- text-shadow: black 4px 2px 4px; -->
 }
 .submit_table {
     margin: 0 auto;
@@ -448,7 +449,11 @@ border: solid black 1px;
     width: 40%;
     font-size: 90% ;
 }
-
+.form_label-icat_score {
+    text-align: start;
+    padding-right: 20px;
+    font-size: 90% ;
+}
 .form_label.details {
     text-align: justify;
     padding-right: 20px;
@@ -525,9 +530,6 @@ border: solid black 1px;
         width: 80%;
         float:left;
     }
-    .login_table {
-        margin: -100px auto 0 auto;
-    }
     .form_input {
         text-align: start;
         padding-right: 0;
@@ -545,6 +547,7 @@ border: solid black 1px;
 
 }
 
+
 @media screen and (max-width: 967px) {
     #form_content {
         margin-left: 20px;
@@ -555,7 +558,16 @@ border: solid black 1px;
     .table_reference_page {
         width: 100%;
     }
+    .login_table {
+        margin: -300px auto 0 auto;
+    }
 
+}
+@media screen and (max-width: 860px) {
+    .login_table {
+        margin: -100px auto 0 auto;
+        position: relative;
+    }
 }
 
 

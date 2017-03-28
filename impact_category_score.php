@@ -27,7 +27,7 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 
 //$impact_category_score_rating_id = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID);
 //$impact_category_score_rto_id = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID);
-//$impact_category_score_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID); 
+//$impact_category_score_imp_cat_id = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID);
 //$impact_category_score_ef_id = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID);
 //$impact_category_score_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE);
 
@@ -59,7 +59,7 @@ $impact_category_score_rating_id7 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_
 $impact_category_score_rto_id7  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_7);
 $impact_category_score_imp_cat_id7 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7);
 $impact_category_score_ef_id7 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_7);
-    
+
 $impact_category_score_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
@@ -137,42 +137,42 @@ include_once ('includes/nav.php');
         <!-- User form-->
         <table class="form_table">
             <tr>
-                <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
+                <th colspan="5" class="form_label-icat_score" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
+                <th class="form_label-icat_score" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
+                <th class="form_label-icat_score" style="text-align: start">If this function were disrupted,</th>
                 <td> <?php get_essential_functions() ?></td>
 
         </table>
 
         <table class="form_table">
             <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
+                <th class="form_label-icat_score" style="text-align: start"> to what degree ...</th>
                 <td> <?php get_impact_category() ?></td>
             </tr>
         </table>
 
 <!--        <table class="form_table" style="margin: 10px 0 0 -200px;">-->
 <!--            <tr>-->
-<!--                <th class="form_label" style="text-align: start">Choose RTO</th>-->
+<!--                <th class="form_label-icat_score" style="text-align: start">Choose RTO</th>-->
 <!--                <td> --><?php //get_rto() ?><!--</td>-->
 <!--            </tr>-->
 <!--        </table>-->
 
         <table class="form_table" style="margin: 10px 0 0 60px;">
             <tr>
-                <th class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
-                <th class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
-                <th class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
-                <th class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>
-                <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
-                <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
-                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
+                <th class="form_label-icat_score" style="text-align: center">1 Hour<br>Tier 1</th>
+                <th class="form_label-icat_score" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
+                <th class="form_label-icat_score" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
+                <th class="form_label-icat_score" style="text-align: center">1 to 3 Days<br>Tier 4</th>
+                <th class="form_label-icat_score" style="text-align: center">4 to 7 Days<br>Tier 5</th>
+                <th class="form_label-icat_score" style="text-align: center">8 to 15 Days<br>Tier 6</th>
+                <th class="form_label-icat_score" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
             <tr>
                 <?php score_all_impact_categories() ?>
             </tr>

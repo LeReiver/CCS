@@ -4,7 +4,7 @@
  * User: mike
  * Date: 4/4/16
  * Time: 11:12 PM
- * 
+ *
  * Destroys current session and redirects to logged out page
  */
 
@@ -36,7 +36,7 @@ session_destroy();
 <body>
     <h1>&nbsp;</h1>
     <h1>GOOD BYE!</h1>
-    <h2 style="margin: 0 auto; text-align: center;">You have successfully logged out</h2><br><h3>Please close your browser for maximum security<br>&nbsp;<br>or<br></h3>
+    <h4 style="margin: 0 auto; font-size: 120%; text-align: center;">You have successfully logged out</h4><br><h3>Please close your browser for maximum security<br>&nbsp;<br>or<br></h3>
     <h4 style="margin: 0 auto; text-align: center;"><a href="index.php"> Return to Login page</a></h4>
 </body>
 </html>

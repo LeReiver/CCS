@@ -82,33 +82,33 @@ include_once ('includes/nav.php');
         <!-- User form-->
         <table class="form_table"">
             <tr>
-                <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
+                <th colspan="5" class="form_label-icat_score" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
+                <th class="form_label-icat_score" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
+                <th class="form_label-icat_score" style="text-align: start">If this function were disrupted,</th>
                 <td> <?php get_essential_functions() ?></td>
             </tr>
         </table>
         <table class="form_table">
             <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
+                <th class="form_label-icat_score" style="text-align: start"> to what degree ...</th>
                 <td> <?php get_impact_category() ?></td>
             </tr>
         </table>
         <table class="form_table">
             <tr><td></td>
-                <th class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
-                <th class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
-                <th class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
-                <th class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>
-                <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
-                <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
-                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
+                <th class="form_label-icat_score" style="text-align: center">1 Hour<br>Tier 1</th>
+                <th class="form_label-icat_score" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
+                <th class="form_label-icat_score" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
+                <th class="form_label-icat_score" style="text-align: center">1 to 3 Days<br>Tier 4</th>
+                <th class="form_label-icat_score" style="text-align: center">4 to 7 Days<br>Tier 5</th>
+                <th class="form_label-icat_score" style="text-align: center">8 to 15 Days<br>Tier 6</th>
+                <th class="form_label-icat_score" style="text-align: center">16 to 30 Days<br>Tier 7</th>  </tr>
             <tr><td></td><td></td>
                 <td hidden > <?php get_rto() ?></td>
             <tr ><td></td><td><?php echo '*' ?></td>
@@ -140,4 +140,3 @@ include_once ('includes/nav.php');
 <!-- Requires use of responsive nav script for handling responsive navigation   -->
 <?php require('includes/responsive_nav.php'); ?>
 </html>
-
