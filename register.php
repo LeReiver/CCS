@@ -3,21 +3,30 @@
  * Created by PhpStorm.
  * User: mike
  * Date: 3/21/16
- * Time: 6:35 PM
- * 
- * User register page
+ * Time: 9:11 PM
  */
 
 // Includes the following files
-require_once('includes/utilities.php');
-require_once('includes/login_code.php');
-require_once('includes/db_code.php');
-require_once('includes/constants.php');
+include_once ('includes/constants.php');
+include_once ('includes/login_code.php');
+include_once ('includes/db_code.php');
+include_once ('includes/utilities.php');
+
 
 // Requires secure connection
 require_secure();
 // Starts session
 session_start();
+
+// If session not set (user not logged in) redirect to no access page
+if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
+    header('Location: ' . NO_ACCESS_PAGE);
+}
+
+// Disables Cache-Control for browsers
+header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
+header("Pragma: no-cache");
 
 
 // Creates variables using the get_post_value function and passes in constants for each entered field
@@ -39,31 +48,44 @@ $error_message = login_or_register(
     $register_password,
     $register_confirm_password
 );
-
 ?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Register</title>
     <meta charset="UTF-8">
-    <title>CCS Register</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
-<body class="home_page tint">
-<div >
-    <div id="login_content">
-        <?php echo '&nbsp;<br><br>'; ?>
-        <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>
-        <?php echo '&nbsp;<br><br>'; ?>
-        <!-- User form-->
-        <form method="POST" action="register.php">
-            <table class="login_table">
-                <tr>
-            <tr><th colspan="5"><div class="login_header">Register a New Account</div></th></tr>
+<body>
+<?php
+// Shows logo
+show_logo();
+// Shows logged in user
+show_user();
+// Includes navigation file
+include_once ('includes/nav.php');
+?>
+<div id="login_content">
+    <?php echo '&nbsp;<br><br>'; ?>
+<!--    <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>-->
+    <?php echo '&nbsp;<br><br>'; ?>
+    <!-- User form-->
+    <form method="POST" action="home.php">
+        <table class="register_table">
+            <tr><th colspan="5"><div class="register_header">Register a New Account</div></th></tr>
             <tr>
-                <td><input type="text" placeholder="Username" name="<?php echo REGISTER_USERNAME_KEY; ?>" <!-- User input -->
-                           value="<?php echo $register_username ?>" autofocus ></td>
+                <td><input type="text" placeholder="Username" name="<?php echo REGISTER_USERNAME_KEY; ?>"
+                           value="<?php echo $register_username ?>"></td>
             </tr>
             <tr>
                 <td><input type="password" placeholder="Create Password" name="<?php echo REGISTER_PASSWORD_KEY; ?>"
@@ -74,18 +96,21 @@ $error_message = login_or_register(
                            value="<?php echo $register_confirm_password ?>"></td>
             </tr>
             <tr>
-
+                <!-- Error message -->
+                <td> <?php echo $error_message; ?></td>
+       
                 <!-- Register button -->
-                <td class="login_submit"><input type="submit" value="REGISTER"
-                    name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px; margin-right: 170px;margin-left: 250px;"></td><td></td> </tr>
-
-                <tr>
-
-                    <!-- Error message -->
-                    <td> <?php echo $error_message; ?></td><td> </td>
-                </tr>
+                <td class="login_submit"><button type="submit" value="REGISTER"
+                         name="<?php echo REGISTER_BUTTON_VALUE ?>" style="width: 80px;">Register</button></td>
+            </tr>
         </table>
     </form>
 </div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='home.php']").addClass("selected");
+    });
+</script>
 </body>
 </html>

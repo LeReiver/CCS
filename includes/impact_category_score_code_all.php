@@ -16,7 +16,7 @@ require_once ('constants.php');
 // Creates error_message object of type and detail
 function impact_category_score_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
@@ -375,7 +375,7 @@ function get_rating()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql = "SELECT Rating, RatingID FROM RATING";
+    $sql = "SELECT Rating, RatingID FROM RATINGS";
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
@@ -408,7 +408,7 @@ function score_impact_categories()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql2 = "SELECT Rating, RatingID FROM RATING ";
+    $sql2 = "SELECT Rating, RatingID FROM RATINGS ";
     // Create result from connection and query
     $result2 = $conn->query($sql2);
 
@@ -470,13 +470,13 @@ function score_all_impact_categories()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql_rating1 = "SELECT Rating, RatingID FROM RATING ";
-    $sql_rating2 = "SELECT Rating, RatingID FROM RATING ";
-    $sql_rating3 = "SELECT Rating, RatingID FROM RATING ";
-    $sql_rating4 = "SELECT Rating, RatingID FROM RATING ";
-    $sql_rating5 = "SELECT Rating, RatingID FROM RATING ";
-    $sql_rating6 = "SELECT Rating, RatingID FROM RATING ";
-    $sql_rating7 = "SELECT Rating, RatingID FROM RATING ";
+    $sql_rating1 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql_rating2 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql_rating3 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql_rating4 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql_rating5 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql_rating6 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql_rating7 = "SELECT Rating, RatingID FROM RATINGS ";
 
     $sql_rto1 = "SELECT RtoID, Duration FROM RTO WHERE RtoID = 1";
     $sql_rto2 = "SELECT RtoID, Duration FROM RTO WHERE RtoID = 2";
@@ -539,7 +539,7 @@ function score_all_impact_categories()
     $rs_rating7 = $conn->query($sql_rating7);
 
 
-    echo "        <tr><th class='form_label' style='text-align: start' colspan='2'>If this function were disrupted,</th>";
+    echo "        <tr><th class='form_label' style='text-align: start' margin: colspan='2'>If this function were disrupted,</th>";
     echo "                <td class='styled-select slate'><select  type='select' name='EFID' style='font-size: .75em;'>\n";
     // While loop to retrieve essential function id
     if ($rs_ef1->num_rows > 0) {

@@ -45,11 +45,17 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Function Processes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -62,16 +68,14 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-    <h2>Function Processes</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $func_process_error_message ; ?></p>
-    <div class="input_reference" id="reports">
-        <?php show_function_processes()?>
-    </div>
-
+    <h2>Add Function Processes</h2>
+        <div class="input_reference" id="reports">
+            <!-- Reference Table -->
+            <button onclick="open_processes()">Show Function Processes</button>
+        </div>
         <form method="POST" action="function_processes.php">
             <!-- User form-->
-            <table class="form_table" style="margin:-320px 50px 0 0;">
+            <table class="form_table" style="margin: 20px 200px 0 0;">
                 <tr>
                     <!--  Input label -->
                     <th class="form_label">Essential Function: </th>
@@ -88,20 +92,32 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                        <td></td>
+                        <td>
+                        <!-- Error message -->
+                        <p id="submit_error"><?php echo $func_process_error_message ; ?></p></td>
                         <!-- Submit button -->
-                        <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px; margin-left: 360px;'></div></td>
+                        <td class="data_submit"> <button type="submit" value="SUBMIT"
+                                name="<?php echo FUNC_PROCESS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px; margin-left: 360px;'></div></td>
+                        <td class="data_submit"> <button type="reset" value="CLEAR" style='width: 100px;'>Clear</button></td>
                     </tr>
                 </div>
             </table>
         </form>
     </div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='function_processes.php']").addClass("selected");
+    });
+    // Opens tables
+    function open_processes() {
+        window.open("function_processes_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
 </body>
 </html>
 

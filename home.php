@@ -27,17 +27,44 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
 header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 header("Pragma: no-cache");
+
+
+// Creates variables using the get_post_value function and passes in constants for each entered field
+$login_username = get_post_value(LOGIN_USERNAME_KEY);
+$login_password = get_post_value(LOGIN_PASSWORD_KEY);
+$login_pressed = get_post_value(LOGIN_BUTTON_VALUE);
+$register_username = get_post_value(REGISTER_USERNAME_KEY);
+$register_password = get_post_value(REGISTER_PASSWORD_KEY);
+$register_confirm_password = get_post_value(REGISTER_CONFIRM_PASSWORD_KEY);
+$register_pressed = get_post_value(REGISTER_BUTTON_VALUE);
+
+// Creates error message corresponding with the submit button
+$error_message = login_or_register(
+    $login_pressed,
+    $register_pressed,
+    $login_username,
+    $login_password,
+    $register_username,
+    $register_password,
+    $register_confirm_password
+);
 ?>
 
 
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Welcome</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Welcome</title>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 <body>
 <?php
@@ -48,9 +75,24 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
+
+<div id="login_content">
     <div id="welcome">
         <?php echo " <h1>Welcome " . get_session_value(SESSION_USERNAME_KEY)  . "!</h1>"; ?>
     </div>
 
+    <?php echo '&nbsp;<br><br>'; ?>
+<!--    <div id="logo"><img src="images/ccs_logo.png" width="600" height="327" </div>-->
+    <?php echo '&nbsp;<br><br>'; ?>
+        <table class="register_table">
+            <tr><th colspan="5"><div class="register_header">Start By Entering A New Department</div></th></tr>
+        </table>
+</div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='home.php']").addClass("selected");
+    });
+</script>
 </body>
 </html>

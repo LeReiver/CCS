@@ -4,7 +4,7 @@
  * User: mike
  * Date: 3/22/16
  * Time: 3:06 PM
- * 
+ *
  * User Departments page
  */
 
@@ -13,7 +13,7 @@ include_once ('includes/constants.php');
 include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
-include_once('includes/dept_code.php');
+include_once ('includes/dept_code.php');
 
 // Requires secure connection
 require_secure();
@@ -49,16 +49,24 @@ $company_error_message = department_submit(
 header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
 header("Pragma: no-cache");
+
 ?>
 
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Departments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+
 </head>
 
 <body>
@@ -70,18 +78,20 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
+
     <div id="form_content">
-            <h2>DEPARTMENTS</h2>
-            <!-- Error message -->
-            <p id="submit_error"><?php echo $company_error_message ; ?></p>
-            <div class="input_reference" id="reports">
-                <!-- Reference Table -->
-                <?php echo show_departments()?>
-            </div>
             <form method="POST" action="departments.php">
+
+                <h2>Add A New Department</h2>
+                <div class="input_reference" id="reports">
+                    <!-- Reference Table -->
+                    <button onclick="open_departments()">Show Departments</button>
+                </div>
+
             <!-- User form-->
-            <table class="form_table" style="margin:-320px 50px 0 0;">
-                <tr><th class="form_label">Department Name: </th> <!--  Input label-->
+            <table class="form_table" style="margin: 20px 300px 0 0;">
+                <tr>
+                    <th class="form_label">Department Name: </th> <!--  Input label-->
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo DEPT_NAME_FIELD; ?>"
                                            value="<?php echo $dept_name ?>" autofocus></td> <!-- User input -->
                 </tr>
@@ -111,20 +121,33 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                    <td></td>
+                        <!-- Error message -->
+                        <td><p id="submit_error"><?php echo $company_error_message ; ?></p></td>
                         <!-- Submit button -->
-                    <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                            name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 180px;'></div></td>
+                    <td class="data_submit"> <button type="submit" value="SUBMIT"
+                                            name="<?php echo COMPANY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
                     </tr>
                     <tr>
                         <!-- Reset button -->
                         <td></td>
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 180px;'></div></td>
+                        <td class="data_submit"><button type="reset" value="CLEAR" style='width: 100px;'>Clear</button></td>
                     </tr>
 
                 </div>
             </table>
         </form>
     </div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='departments.php']").addClass("selected");
+    });
+    // Opens tables
+    function open_departments() {
+        window.open("departments_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
+<!-- Requires use of responsive nav script for handling responsive navigation   -->
+<?php require('includes/responsive_nav.php'); ?>
 </body>
 </html>

@@ -11,7 +11,7 @@
 // Creates error_message object of type and detail
 function ef_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
@@ -134,10 +134,15 @@ function show_essential_functions()
     if ($result->num_rows > 0) {
         echo "<table style='margin-top: -100px;'>";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
-        echo "<tr><th id='table_header'><h4>Existing Essential Functions</h4></th></tr>";
+        echo "<tr><th id='table_header' colspan='2'><h4>Existing Essential Functions</h4></th><th></th></tr>";
         while ($row = $result->fetch_assoc()) {
             echo "                <tr><td  id='reference_table'>" . $row ["EFName"] . ": "
-                . $row["DeptName"] . "<br>-  " . $row ["Organization"] . "</td></tr>\n";
+                . $row["DeptName"] . "<br>-  " . $row ["Organization"] . "</td>  
+                <td id='reference_table'>
+                <input type='hidden' value=" .$row["EFID"]."  name='id'/>
+                <form action='includes/delete.php' method='GET'>
+                <button id='delete_row' name='delete_ef' value=".$row["EFID"].">DELETE</button></form>";
+        echo "</td></tr>\n";
         }
         echo "</table>";
     } else {

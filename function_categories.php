@@ -47,11 +47,17 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Function Categories</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -64,9 +70,7 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <h2>Function Categories</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $company_error_message ; ?></p>
+        <h2>Add Function Categories</h2>
         <form method="POST" action="function_categories.php">
             <!-- User form-->
             <table class="form_table">
@@ -80,23 +84,33 @@ include_once ('includes/nav.php');
                     <td colspan="2" class="form_input"><textarea name="<?php echo FUNC_CATEGORY_NAME_FIELD; ?>"
                                            value="<?php echo $func_category_name ?>" rows="3" cols="42" class="form_label_textarea"></textarea></td>
                 </tr>
+                <tr>
+                    <!-- Error message -->
+                    <td><p id="submit_error"><?php echo $company_error_message ; ?></p></td>
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
                         <td></td>
                         <!-- Submit button -->
-                        <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo FUNC_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 250px;'></div></td>
+                        <td class="data_submit"> <button type="submit" value="SUBMIT"
+                                name="<?php echo FUNC_CATEGORY_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 250px;'></div></td>
+                        <td class="data_submit"> <button type="reset" value="CLEAR" style='width: 100px;'></button></td>
                     </tr>
                 </div>
             </table>
         </form>
     </div>
+
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='impact_category_score.php']").addClass("selected");
+    });
+</script>
 </body>
 </html>
 

@@ -66,11 +66,17 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
+    <title>CCS | Essential Function Details</title>
     <meta charset="UTF-8">
-    <title>CCS | Essential Functions</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -83,12 +89,15 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <h2>Essential Function Details</h2>
-        <!-- Error message -->
-        <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
+        <h2>Add Essential Function Details</h2>
+        <div class="input_reference" id="reports">
+            <!-- Reference Table -->
+            <button onclick="open_details()">Show Function Details</button>
+        </div>
         <form method="POST" action="function_details.php">
             <!-- User form-->
-            <table class="form_table" style="margin: 0 0 0 -200px; width:1000px;">
+
+            <table class="form_table" style="margin: 20px 70px 0 20px;">
                 <tr>
                     <th class="form_label">Interviewer Name: </th>
                     <td colspan="2" class="form_input"><input type="text" name="<?php echo FUNC_DETAILS_INTERVIEWER_FIELD; ?>"
@@ -159,20 +168,35 @@ include_once ('includes/nav.php');
                 <!-- Submit form-->
                 <div class="submit_table">
                     <tr>
-                        <td></td>
+                        <!-- Error message -->
+                        <td>
+                            <p id="submit_error"><?php echo $func_detail_error_message ; ?></p>
+                        </td>
                         <!-- Submit button -->
-                        <td class="data_submit"> <div><input type="submit" value="SUBMIT"
-                                name="<?php echo FUNC_DETAILS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;margin-left: 350px;'></div></td>
+                        <td class="data_submit"> <button type="submit" value="SUBMIT"
+                                name="<?php echo FUNC_DETAILS_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <!-- Reset button -->
-                        <td class="data_submit"> <div><input type="reset" value="CLEAR" style='width: 100px;margin-left: 350px;'></div></td>
+                        <td class="data_submit"> <button type="reset" value="CLEAR" style='width: 100px;'>Clear</button></td>
                     </tr>
                 </div>
             </table>
+<!--            <div class="top">-->
+<!--                <a href="#top">Back to top</a>-->
+<!--            </div>-->
         </form>
-        <a href="#top" class="top">Back to top</a>
     </div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='function_details.php']").addClass("selected");
+    });
+    // Opens tables
+    function open_details() {
+        window.open("function_details_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=530,height=400");
+    }
+</script>
 </body>
 </html>

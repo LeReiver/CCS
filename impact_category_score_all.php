@@ -53,7 +53,7 @@ $impact_category_score_rating_id7 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_
 $impact_category_score_rto_id7  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_7);
 $impact_category_score_imp_cat_id7 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7);
 $impact_category_score_ef_id7 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_7);
-    
+
 $impact_category_score_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
@@ -99,11 +99,17 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Impact Category Score</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -119,35 +125,45 @@ include_once ('includes/nav.php');
     <h2>Impact Category Score All</h2>
         <!-- Error message -->
     <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
+    <div class="input_reference" id="reports">
+        <!-- Reference Table -->
+        <button onclick="open_scores()">Show Impact Category Scores</button>
+    </div>
     <form method="POST" action="impact_category_score_all.php">
         <!-- User form-->
-        <table class="form_table" style="margin: 20px 0 0 -200px; width: 800px;">
+        <table class="form_table">
             <tr>
-                <th  class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
+                <th  class="form_label-icat_score" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
+                <th class="form_label-icat_score" style="text-align: start"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
                 </th>
             </tr>
             </table>
-        <table class="form_table" style="margin: 0 0 0 -200px;">
+        <table class="form_table" style="margin: 0 ;">
             <?php score_all_impact_categories() ?>
         </table>
-            <!-- Submit form-->
-            <div class="submit_table" style="margin-right: -100px;">
-                    <input class="data_submit" type="submit" value="SUBMIT"
-                                                         name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>
-                    <!-- Reset button -->
-                    <input type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>
-            </div>
+        <!-- Submit form-->
+        <div class="submit_table" style="margin-right: 100px;">
+            <button class="data_submit" type="submit" value="SUBMIT"
+                   name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button>
+            <!-- Reset button -->
+            <button type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>Clear</button>
+        </div>
     </form>
-
-    <div  id="reports" style="margin: 0 0 100px -425px; width: 800px">
-        <?php show_table_three()?>
-    </div>
-
 </div>
 </body>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='impact_category_scores.php']").addClass("selected");
+    });
+    // Opens tables
+    function open_scores() {
+        window.open("impact_category_score_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
+<!-- Requires use of responsive nav script for handling responsive navigation   -->
+<?php require('includes/responsive_nav.php'); ?>
 </html>
-

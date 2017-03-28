@@ -34,11 +34,17 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Table Four</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -50,12 +56,18 @@ show_user();
 // Includes navigation file
 include_once ('includes/nav.php');
 ?>
-    <h1>Table Four</h1>
     <div id="form_content">
-        <div class="table_reference" id="reports">
+        <h2 style="top: 20px;">Table Four</h2>
+        <div class="table_reference_page" id="reports">
             <?php show_table_four()?>
         </div>
     </div>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='table_four.php']").addClass("selected");
+    });
+</script>
 </body>
 </html>
 

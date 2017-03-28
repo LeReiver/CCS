@@ -11,12 +11,12 @@
 // Creates error_message object of type and detail
 function func_detail_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail" style="margin: -25px 200px 0 0;">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail" style="margin: -25px 200px 0 0;">' . $detail . '</div>';
 }
 
 // Redirects to next page 
 function next_page() {
-    header('Location: ' . TABLE_FOUR_PAGE);
+    header('Location: ' . IMPACT_CATEGORY_SCORE_1_PAGE);
 }
 
 // Creates function_detail object with supplied parameters
@@ -272,6 +272,7 @@ function get_essential_functions_2()
     }
     $conn->close();
 }
+
 
 /*
     // Get connection

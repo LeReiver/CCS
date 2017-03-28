@@ -16,7 +16,7 @@ require_once ('constants.php');
 // Creates error_message object of type and detail
 function impact_category_score_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page
@@ -69,14 +69,20 @@ function impact_category_score_submit(
     )
 {
     if (!empty($impact_category_score_submit_pressed)) {
-        return impact_category_score(
-            $impact_category_score_ef_id1,
-            $impact_category_score_imp_cat_id1,
-            $impact_category_score_rto_id1,
-            $impact_category_score_rating_id1
-        );
-    }
-    // Clear user fields
+        // Stores variables as $_SESSION variables for next page
+        $_SESSION[$impact_category_score_ef_id1] = $_POST[$impact_category_score_ef_id1];
+        $_SESSION[$impact_category_score_imp_cat_id1] = $_POST[$impact_category_score_imp_cat_id1];
+//        $_SESSION[$impact_category_score_rating_id1] = $_POST[$impact_category_score_rating_id1];
+    return impact_category_score(
+        $impact_category_score_ef_id1,
+        $impact_category_score_imp_cat_id1,
+        $impact_category_score_rto_id1,
+        $impact_category_score_rating_id1
+    );
+}
+    
+
+// Clear user fields
     return '';
 }
 
@@ -129,7 +135,7 @@ function get_impact_category()
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
     // User input selector
-    echo "                <select type='select' name='ImpCatID' style='font-size: .75em;width:520px; overflow=hidden;'>\n";
+    echo "                <select type='select' name='ImpCatID' style='font-size: .75em;width:610px; overflow=hidden;'>\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row
@@ -501,7 +507,7 @@ function show_impact_scores()
 
 
     $sql ="SELECT 	EFName, CatName, Rating, Duration
-            FROM	RATING ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
+            FROM	RATINGS ra, RTO rt, I_CAT_SCORE ics, I_CAT ic, EF ef
             WHERE	ra.RatingID = ics.RatingID
             AND		rt.RtoID = ics.RtoID
             AND		ic.ImpCatID = ics.ImpCatID

@@ -11,7 +11,7 @@
 // Creates error_message object of type and detail
 function impact_category_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
@@ -102,15 +102,22 @@ function show_impact_categories()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT CatName, CatDesc FROM I_CAT";
+    $sql = "SELECT CatName, CatDesc, ImpCatID FROM I_CAT";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table width='350px'style='margin-top: -100px;' >";
         echo "<tr><th colspan='4'><h4></h4></th></tr>";
-        echo "<tr><th id='table_header'><h4>Impact Categories</h4></th></tr>";
+        echo "<tr><th id='table_header' colspan='2'><h4>Impact Categories</h4></th><th></th></tr>";
         while ($row = $result->fetch_assoc()) {
             echo "                <tr><td  id='reference_table'>" . $row ["CatDesc"] . " ("
-                . $row["CatName"] .") " . "</td></tr>\n";
+                . $row["CatName"] .") " . "</td>
+                
+                <td id='reference_table'>
+                    <input type='hidden' value=" .$row["ImpCatID"]."  name='id'/>
+                    <form action='includes/delete.php' method='GET'>
+                    <button id='delete_row' name='delete_impact_category' value=".$row["ImpCatID"].">DELETE</button></form>";
+            echo "</td>
+                </tr>\n";
         }
         echo "</table>";
     } else {

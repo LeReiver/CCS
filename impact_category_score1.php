@@ -50,11 +50,17 @@ header("Pragma: no-cache");
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>CCS | Impact Category Score</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">  <!-- Enables mobile auto-resize -->
     <link rel="stylesheet" href="includes/ccs.css.php" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Gudea|Hind+Madurai|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="includes/responsive_nav.css.php"> <!-- Hamburger Menu for Responsive Navigation -->
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -68,59 +74,71 @@ include_once ('includes/nav.php');
 ?>
 <div id="form_content">
     <h2>Impact Category Score 1</h2>
-    <!-- Error message -->
-    <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
+    <div class="input_reference" id="reports">
+        <!-- Reference Table -->
+        <button onclick="open_scores()">Show Impact Category Scores</button>
+    </div>
     <form method="POST" action="impact_category_score1.php">
         <!-- User form-->
-        <table class="form_table" style="margin: 20px 0 0 -200px;">
+        <table class="form_table"">
             <tr>
-                <th colspan="5" class="form_label" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
+                <th colspan="5" class="form_label-icat_score" style="text-align: start">The chart below will assist in rating the actual impact of the loss of the function.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
+                <th class="form_label-icat_score" style="text-align: start" colspan="5"> For each criteria listed, ask yourself the question below and rate the impact of the loss across each of the time frames.<br><br>
                 </th>
             </tr>
             <tr>
-                <th class="form_label" style="text-align: start">If this function were disrupted,</th>
+                <th class="form_label-icat_score" style="text-align: start">If this function were disrupted,</th>
                 <td> <?php get_essential_functions() ?></td>
             </tr>
         </table>
-        <table class="form_table" style="margin: 10px 0 0 -200px;">
+        <table class="form_table"">
             <tr>
-                <th class="form_label" style="text-align: start"> to what degree ...</th>
+                <th class="form_label-icat_score" style="text-align: start"> to what degree ...</th>
                 <td> <?php get_impact_category() ?></td>
             </tr>
         </table>
-        <table class="form_table" style="margin: 10px 0 0 -200px;">
+        <table class="form_table"">
             <tr><td></td>
-                <th class="form_label" style="text-align: center">1 Hour<br>Tier 1</th>
-                <th class="form_label" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
-                <th class="form_label" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
-                <th class="form_label" style="text-align: center">1 to 3 Days<br>Tier 4</th>
-                <th class="form_label" style="text-align: center">4 to 7 Days<br>Tier 5</th>
-                <th class="form_label" style="text-align: center">8 to 15 Days<br>Tier 6</th>
-                <th class="form_label" style="text-align: center">16 to 30 Days<br>Tier 7</th>
+                    <th class="form_label-icat_score" style="text-align: center">1 Hour<br>Tier 1</th>
+                <th class="form_label-icat_score" style="text-align: center">2 to 8 Hours<br>Tier 2</th>
+                <th class="form_label-icat_score" style="text-align: center">9 to 24 Hours<br>Tier 3</th>
+                <th class="form_label-icat_score" style="text-align: center">1 to 3 Days<br>Tier 4</th>
+                <th class="form_label-icat_score" style="text-align: center">4 to 7 Days<br>Tier 5</th>
+                <th class="form_label-icat_score" style="text-align: center">8 to 15 Days<br>Tier 6</th>
+                <th class="form_label-icat_score" style="text-align: center">16 to 30 Days<br>Tier 7</th>
             </tr>
             <tr><td></td>
                 <td hidden > <?php get_rto() ?></td>
             <tr><td></td>
-                <td><?php get_rating() ?></td>
+                <td><?php RATING::get_rating() ?></td>
             </tr>
+
         </table>
         <!-- Submit form-->
-        <div class="submit_table" style="margin-right: -100px;">
-            <input class="data_submit" type="submit" value="SUBMIT"
-                   name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>
+        <!-- Error message -->
+        <p id="submit_error"><?php echo $impact_category_score_error_message ; ?></p>
+        <div class="submit_table" style="margin-right: 100px;">
+            <button class="data_submit" type="submit" value="SUBMIT"
+                   name="<?php echo IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE ?>" style='width: 100px;'>Submit</button>
             <!-- Reset button -->
-            <input type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>
+            <button type="reset"  class="data_submit" value="CLEAR" style='width: 100px;'>Clear</button>
         </div>
     </form>
-    <div  id="reports" style="margin: 0 0 100px 100px;">
-        <?php echo show_impact_scores() ?>
-<!--        --><?php //echo show_table_three() ?>
-    </div>
 </div>
 </body>
+<script>
+    // Adds selected class to current page in navigation
+    $(document).ready(function(){
+        $("[href='impact_category_score1.php']").addClass("selected");
+    });
+    // Opens tables
+    function open_scores() {
+        window.open("impact_category_score_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=430,height=400");
+    }
+</script>
+<!-- Requires use of responsive nav script for handling responsive navigation   -->
+<?php require('includes/responsive_nav.php'); ?>
 </html>
-

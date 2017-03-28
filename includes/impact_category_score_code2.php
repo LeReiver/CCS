@@ -16,7 +16,7 @@ require_once ('constants.php');
 // Creates error_message object of type and detail
 function impact_category_score_error_message($type, $detail)
 {
-    return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
+    return '<div id="error_header">' . $type . '</div><br><div id ="error_detail">' . $detail . '</div>';
 }
 
 // Redirects to next page 
@@ -69,6 +69,10 @@ function impact_category_score_submit(
     )
 {
     if (!empty($impact_category_score_submit_pressed)) {
+        // Stores variables as $_SESSION variables for next page
+        $_SESSION[$impact_category_score_ef_id1] = $_POST[$impact_category_score_ef_id1];
+        $_SESSION[$impact_category_score_imp_cat_id1] = $_POST[$impact_category_score_imp_cat_id1];
+//        $_SESSION[$impact_category_score_rating_id1] = $_POST[$impact_category_score_rating_id1];
         return impact_category_score(
             $impact_category_score_ef_id1,
             $impact_category_score_imp_cat_id1,
@@ -102,8 +106,8 @@ function get_essential_functions()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["EFID"] . "'>" . $row ["EFName"] . ": "
-                . $row["DeptName"] . " Department, " . $row ["Organization"] . "</option>\n";
+            echo "                <option value='" . $row["EFID"] . "' selected >" . $row ["EFName"] . ": "
+                . $row["DeptName"] . " Department, " . $row ["Organization"] . "  </option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -112,10 +116,7 @@ function get_essential_functions()
     echo "    </div>\n";
     // Close connection
     $conn->close();
-
 }
-
-
 
 function get_impact_category()
 {
@@ -136,7 +137,7 @@ function get_impact_category()
     if ($result->num_rows > 0) {
         // output data of each row
         while ($row = $result->fetch_assoc()) {
-            echo "                <option value='" . $row["ImpCatID"] . "'>" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
+            echo "                <option value='" . $row["ImpCatID"] . "' selected >" . $row ["CatDesc"] . " (" . $row ["CatName"] . ")" . "</option>\n";
         }
         echo "                </select>\n";
     } else {
@@ -146,7 +147,6 @@ function get_impact_category()
     // Close connection
     $conn->close();
 }
-
 
 
 // Fetches from database using SQL query and returns data into user input selector

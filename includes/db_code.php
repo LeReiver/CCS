@@ -60,14 +60,14 @@ function add_session($username, $session)
 }
 
 // Adds Department
-function add_department($dept_name, $dept_contact, $deptContact_title, 
+function add_department($dept_name, $dept_contact, $deptContact_title,
                         $deptContact_email, $deptContact_phone, $organization_name)
 {
     $db = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
     $query = "INSERT INTO";
     $query .= " " . DEPARTMENT_TABLE . " (" . DEPT_NAME_FIELD . ", " . DEPT_CONTACT_FIELD . " , " . DEPT_CONTACT_TITLE_FIELD . " , "
                 . DEPT_CONTACT_EMAIL_FIELD . " , " . DEPT_CONTACT_PHONE_FIELD . " , " . ORGANIZATION_NAME_FIELD . ")";
-    $query .= " VALUES ('$dept_name','$dept_contact', '$deptContact_title', 
+    $query .= " VALUES ('$dept_name','$dept_contact', '$deptContact_title',
                 '$deptContact_email', '$deptContact_phone', '$organization_name');";
     $db->query($query);
 }
@@ -80,7 +80,7 @@ function add_essential_function($ef_name, $ef_lead_name, $ef_lead__title, $ef_le
     $query = "INSERT INTO";
     $query .= " " . EF_TABLE . " (" . EF_NAME_FIELD . ", " . EF_LEAD_FIELD . " , " . EF_LEAD_TITLE_FIELD . " , "
         . EF_LEAD_EMAIL_FIELD . " , " . EF_LEAD_PHONE_FIELD . " , " . DEPARTMENT_ID_FIELD . ")";
-    $query .= " VALUES ('$ef_name','$ef_lead_name', '$ef_lead__title', 
+    $query .= " VALUES ('$ef_name','$ef_lead_name', '$ef_lead__title',
                 '$ef_lead_email', '$ef_lead_phone', '$dept_id');";
     $db->query($query);
 }
@@ -145,7 +145,7 @@ function add_impact_category_scoring($impact_category_scoring_tier_1, $impact_ca
     $query .= " " . IMPACT_CATEGORY_SCORING_TABLE . " (" . IMPACT_CATEGORY_SCORING_TIER_1_FIELD . ", " . IMPACT_CATEGORY_SCORING_TIER_2_FIELD . " , " . IMPACT_CATEGORY_SCORING_TIER_3_FIELD . " , "
         . IMPACT_CATEGORY_SCORING_TIER_4_FIELD . " , " . IMPACT_CATEGORY_SCORING_TIER_5_FIELD . " , " . IMPACT_CATEGORY_SCORING_TIER_6_FIELD . ", " . IMPACT_CATEGORY_SCORING_TIER_7_FIELD . ", "
         . IMPACT_CATEGORY_SCORING_IMP_CAT_ID . ", " . IMPACT_CATEGORY_SCORING_EFID . ")";
-    $query .= " VALUES ('$impact_category_scoring_tier_1', '$impact_category_scoring_tier_2', '$impact_category_scoring_tier_3', 
+    $query .= " VALUES ('$impact_category_scoring_tier_1', '$impact_category_scoring_tier_2', '$impact_category_scoring_tier_3',
                 '$impact_category_scoring_tier_4', '$impact_category_scoring_tier_5', '$impact_category_scoring_tier_6', '$impact_category_scoring_tier_7',
                  '$impact_category_scoring_imp_cat_id', '$impact_category_scoring_efid');";
     $db->query($query);
@@ -186,7 +186,7 @@ function add_impact_category_score_tier2( $impact_category_scoring_ef_id2, $impa
     $query = "INSERT INTO";
     $query .= " " . IMPACT_CATEGORY_SCORE_TABLE . " (". IMPACT_CATEGORY_SCORE_EF_ID_2 . ", "
         . IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2 . ", " . IMPACT_CATEGORY_SCORE_RTO_ID_2 . ", " . IMPACT_CATEGORY_SCORE_RATING_ID_2 . ")";
-    $query .= " VALUES ('$impact_category_scoring_ef_id2', '$impact_category_scoring_imp_cat_id2',' $impact_category_scoring_rto_id2' , 
+    $query .= " VALUES ('$impact_category_scoring_ef_id2', '$impact_category_scoring_imp_cat_id2',' $impact_category_scoring_rto_id2' ,
      '$impact_category_scoring_rating_id2');";
     $db->query($query);
 }

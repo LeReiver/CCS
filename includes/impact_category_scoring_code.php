@@ -194,7 +194,7 @@ function get_rating()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql = "SELECT Rating, RatingID FROM RATING";
+    $sql = "SELECT Rating, RatingID FROM RATINGS";
     // Create result from connection and query
     $result = $conn->query($sql);
     echo "    <div id='select_dept'  >\n";
@@ -229,13 +229,13 @@ function score_impact_categories()
         die("Connection failed: " . $conn->connect_error);
     }
     // SQL query
-    $sql2 = "SELECT Rating, RatingID FROM RATING ";
-    $sql3 = "SELECT Rating, RatingID FROM RATING ";
-    $sql4 = "SELECT Rating, RatingID FROM RATING ";
-    $sql5 = "SELECT Rating, RatingID FROM RATING ";
-    $sql6 = "SELECT Rating, RatingID FROM RATING ";
-    $sql7 = "SELECT Rating, RatingID FROM RATING ";
-    $sql8 = "SELECT Rating, RatingID FROM RATING ";
+    $sql2 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql3 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql4 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql5 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql6 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql7 = "SELECT Rating, RatingID FROM RATINGS ";
+    $sql8 = "SELECT Rating, RatingID FROM RATINGS ";
 
     // Create result from connection and query
     $result2 = $conn->query($sql2);
