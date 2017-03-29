@@ -54,13 +54,13 @@ $sql ="SELECT 	EFName, CatName, Duration, Rating, ScoreID
             ORDER BY EFName, CatName, rt.RtoID, Duration";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-    echo "<table>";
+    echo "<table id='score_table'>";
     echo "<td colspan='9' style='line-height: .1; background: none;'><h4>Existing Impact Category Scores</h4></td>";
     echo "                  <tr><th id='table_header'>Essential Function</th><th id='table_header'>Category</th><th id='table_header'>Rating</th><th id='table_header'>Duration</th>\n";
     while ($row = $result->fetch_assoc()) {
-        echo "                <tr id='reference_table'><td> <strong>"  . $row ["EFName"] . "</strong></td><td> <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["Rating"] . "</td>
-            <td>" . $row["Duration"] . "</td>
-        <td id='reference_table'>
+        echo "                <tr id='reference_table'><td> <strong>"  . $row ["EFName"] . "</strong></td><td> <strong>"  . $row ["CatName"] . "</strong></td><td>" . $row["Duration"] . "</td>
+            <td>" . $row["Rating"] . "</td>
+        <td id='reference_table'  style='border:none;'>
             <input type='hidden' value=" .$row["ScoreID"]."  name='id'\>
             <form action='includes/delete.php' method='GET'>
             <button id='delete_row' name='delete_score' value=".$row["ScoreID"].">DELETE</button></form>";

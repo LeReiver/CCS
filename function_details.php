@@ -195,7 +195,7 @@ include_once ('includes/nav.php');
     });
     // Opens tables
     function open_details() {
-        window.open("function_details_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=530,height=400");
+        window.open("function_details_table.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=650,height=400");
     }
 </script>
 </body>

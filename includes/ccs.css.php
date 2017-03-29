@@ -290,7 +290,7 @@ table th  {
     width: 10%;
 }
 #reference_table {
-/*    border-bottom: solid 1px black;*/
+    border-bottom: solid 1px black;
     line-height: 20px;
 }
 #reference_table td {
@@ -320,10 +320,13 @@ table th  {
     margin-top: -45px;
     margin-right: -45px;
 }
-#details_table tr {
-    border: solid black 1px;
+#details_table {
+    border-bottom: solid black 1px;
     border-collapse: collapse;
  }
+#score_table tr:nth-of-type(6n+0) {
+    border-bottom: solid black 1px;
+}
 
 
 .table_reference {

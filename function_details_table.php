@@ -44,12 +44,11 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
     $sql = "SELECT ef.EFName, ed.EFID, ed.Responsibilities, ed.InternalDep, ed.ExternalDep, ed.PeakTimes, ed. Considerations, 
             ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors, ed.DetailID FROM EF_DETAIL ed, EF ef WHERE ef.EFID = ed.EFID";
     $result = $conn->query($sql);
+    echo "<table width='100%' id='details_table'><tr><th id='table_header' colspan='2'><h4>Existing Function Details</h4></th><th></th></tr></table>";
     if ($result->num_rows > 0) {
-        echo "<table width='100%' id='details_table'>";
-        echo "<tr><th colspan='4'><h4></h4></th></tr>";
-        echo "<tr><th id='table_header' colspan='2'><h4>Existing Function Details</h4></th><th></th></tr>";
         while ($row = $result->fetch_assoc()) {
-
+            echo "<table width='100%' id='details_table'>";
+            echo "<tr><th colspan='4'><h4></h4></th></tr>";
             echo " <tr><td colspan='3'><h5 style='margin-top:-10px; font-size:15px;'>" . $row['EFName'] . "</h5><input type='hidden' value=" .$row["DetailID"]."  name='id'>
                 <form id='details_form' action='includes/delete.php' method='GET'>
                 <td><button name='delete_detail' value=".$row["DetailID"].">DELETE</button></td></form></td></tr>";
@@ -63,7 +62,6 @@ if (!isset($_SESSION[SESSION_USERNAME_KEY])) {
             echo " <tr><td  id='table_reference'>" . "IT Requirements:" . "</td><td> " . $row ["ITSupport"] . "</td></tr>\n";
             echo " <tr><td  id='table_reference'>" . "Backup Procedures:" . "</td><td> " . $row ["BackupProc"] . "</td></tr>\n";
             echo " <tr><td  id='table_reference'>" . "Other Factors:" . "</td><td> " . $row ["Factors"] . "</td></tr>\n";
-        echo "</td></tr>";
         }
         echo "</table>";
     } else {
