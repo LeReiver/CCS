@@ -4,7 +4,7 @@
  * User: mike
  * Date: 10/18/16
  * Time: 3:16 PM
- * 
+ *
  * Holds form function for table_four
  */
 
@@ -14,7 +14,7 @@ function func_process_error_message($type, $detail)
     return '<div id="error_header">' . $type . '</div><div id ="error_detail">' . $detail . '</div>';
 }
 
-// Redirects to next page 
+// Redirects to next page
 function next_page() {
     header('Location: ' . FUNC_PROCESS_PAGE);
 }
@@ -25,12 +25,11 @@ function show_table_four()
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT ef.EFName, ed.EFID, ed.Responsibilities, ed.InternalDep, ed.ExternalDep, ed.PeakTimes, ed. Considerations, 
-            ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors FROM EF_DETAIL ed, EF ef WHERE ef.EFID = ed.EFID";
+    $sql = "SELECT ef.EFName, ed.EFID, ed.Responsibilities, ed.InternalDep, ed.ExternalDep, ed.PeakTimes, ed.Considerations,
+            ed.RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors FROM EF_DETAIL ed, EF ef WHERE ef.EFID = ed.EFID";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         echo "<table width='80%' style='margin: 100px 0 0 60px;  text-align: start;'>";
-        echo "<tr><th colspan='4'><h4></h4></th></tr>";
         while ($row = $result->fetch_assoc()) {
 
             echo "<tr><th id='table_header'>" . $row['EFName'] . "</th><th id='table_header'> </th>";
@@ -59,8 +58,8 @@ function show_table_four()
  *SQL
 
 SELECT ef.EFName, ed.EFID, ed.Responsibilities, ed.InternalDep, ed.ExternalDep, ed.PeakTimes, ed. Considerations,
-ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors 
-FROM EF_DETAIL ed, EF ef 
+ed. RegLoss, ed.Rto, ed.ITSupport, ed.BackupProc, ed.Factors
+FROM EF_DETAIL ed, EF ef
 WHERE ef.EFID = ed.EFID
 ;
  */

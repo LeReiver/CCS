@@ -4,8 +4,8 @@
  * User: mike
  * Date: 3/22/16
  * Time: 3:06 PM
- * 
- * 
+ *
+ *
  */
 
 // Includes the following files
@@ -57,7 +57,11 @@ show_user();
 include_once ('includes/nav.php');
 ?>
     <div id="form_content">
-        <h2 style="top: 20px;">Table Four</h2>
+        <h2 class="table_h2">Table Four</h2>
+        <div class="input_reference" id="reports">
+            <!-- Reference Table -->
+            <button class="toDoc" onclick='window.location.href="table_four_toDoc.php"'>Save as Word File</button>
+        </div>
         <div class="table_reference_page" id="reports">
             <?php show_table_four()?>
         </div>
@@ -70,4 +74,3 @@ include_once ('includes/nav.php');
 </script>
 </body>
 </html>
-

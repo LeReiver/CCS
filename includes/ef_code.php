@@ -103,7 +103,7 @@ function get_departments()
     echo "    <div >\n";
     echo "                <form style='font-size: 1.75em; font-weight: bold; margin-top: 1em;'>\n";
     // User input selector
-    echo "                <select type='select' name='DeptID' style='font-size: .75em;width:320px; overflow=hidden;' >\n";
+    echo "                <select type='select' name='DeptID' style='font-size: .75em;width:360px; overflow=hidden;' >\n";
     // While loop to retrieve every row in table that matches query
     if ($result->num_rows > 0) {
         // output data of each row
