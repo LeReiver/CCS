@@ -11,7 +11,7 @@ include_once ('includes/constants.php');
 include_once ('includes/login_code.php');
 include_once ('includes/db_code.php');
 include_once ('includes/utilities.php');
-include_once('includes/impact_category_score_code.php');
+include_once('includes/impact_category_score_code-b.php');
 
 // Requires secure connection
 require_secure();
@@ -37,60 +37,60 @@ $impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CA
 $impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_1);
 $impact_category_score_rating_id2 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_2);
 $impact_category_score_rto_id2  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_2);
-$impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2);
-$impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_2);
+$impact_category_score_imp_cat_id2 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_2);
+$impact_category_score_ef_id2 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_2);
 $impact_category_score_rating_id3 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_3);
 $impact_category_score_rto_id3  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_3);
-$impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_3);
-$impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_3);
+$impact_category_score_imp_cat_id3 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_3);
+$impact_category_score_ef_id3 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_3);
 $impact_category_score_rating_id4 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_4);
 $impact_category_score_rto_id4  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_4);
-$impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_4);
-$impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_4);
+$impact_category_score_imp_cat_id4 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_4);
+$impact_category_score_ef_id4 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_4);
 $impact_category_score_rating_id5 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_5);
 $impact_category_score_rto_id5  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_5);
-$impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_5);
-$impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_5);
+$impact_category_score_imp_cat_id5 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_5);
+$impact_category_score_ef_id5 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_5);
 $impact_category_score_rating_id6 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_6);
 $impact_category_score_rto_id6  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_6);
-$impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6);
-$impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_6);
+$impact_category_score_imp_cat_id6 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_6);
+$impact_category_score_ef_id6 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_6);
 $impact_category_score_rating_id7 = get_post_value(IMPACT_CATEGORY_SCORE_RATING_ID_7);
 $impact_category_score_rto_id7  = get_post_value(IMPACT_CATEGORY_SCORE_RTO_ID_7);
-$impact_category_score_imp_cat_id1 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7);
-$impact_category_score_ef_id1 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_7);
+$impact_category_score_imp_cat_id7 = get_post_value(IMPACT_CATEGORY_SCORE_IMP_CAT_ID_7);
+$impact_category_score_ef_id7 = get_post_value(IMPACT_CATEGORY_SCORE_EF_ID_7);
 
 $impact_category_score_submit_pressed = get_post_value(IMPACT_CATEGORY_SCORE_SUBMIT_BUTTON_VALUE);
 
 // Creates error message corresponding with the submit button
 $impact_category_score_error_message = impact_category_score_submit(
+    $impact_category_score_rto_id1,
     $impact_category_score_ef_id1,
     $impact_category_score_imp_cat_id1,
-    $impact_category_score_rto_id1,
     $impact_category_score_rating_id1,
     $impact_category_score_rto_id2,
-//    $impact_category_score_ef_id2,
-//    $impact_category_score_imp_cat_id2,
+    $impact_category_score_ef_id2,
+    $impact_category_score_imp_cat_id2,
     $impact_category_score_rating_id2,
     $impact_category_score_rto_id3,
-//    $impact_category_score_ef_id3,
-//    $impact_category_score_imp_cat_id3,
+    $impact_category_score_ef_id3,
+    $impact_category_score_imp_cat_id3,
     $impact_category_score_rating_id3,
     $impact_category_score_rto_id4,
-//    $impact_category_score_ef_id4,
+    $impact_category_score_ef_id4,
     $impact_category_score_rating_id4,
-//    $impact_category_score_imp_cat_id4,
+    $impact_category_score_imp_cat_id4,
     $impact_category_score_rto_id5,
-//    $impact_category_score_ef_id5,
-//    $impact_category_score_imp_cat_id5,
+    $impact_category_score_ef_id5,
+    $impact_category_score_imp_cat_id5,
     $impact_category_score_rating_id5,
     $impact_category_score_rto_id6,
-//    $impact_category_score_ef_id6,
-//    $impact_category_score_imp_cat_id6,
+    $impact_category_score_ef_id6,
+    $impact_category_score_imp_cat_id6,
     $impact_category_score_rating_id6,
     $impact_category_score_rto_id7,
-//    $impact_category_score_ef_id7,
-//    $impact_category_score_imp_cat_id7,
+    $impact_category_score_ef_id7,
+    $impact_category_score_imp_cat_id7,
     $impact_category_score_rating_id7,
     $impact_category_score_submit_pressed
 );
