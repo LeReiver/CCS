@@ -61,7 +61,7 @@ const E_WRONG_DATA_TYPE = 'Data!';
 /* localhost */
 const DB_SERVER = '127.0.0.1';
 const DB_USER = 'ccs_admin';
-const DB_PASSWORD = 'ccs_admin';
+const DB_PASSWORD = '****';
 const DB_DATABASE = 'ccs_02';
 
 /* hostpond */

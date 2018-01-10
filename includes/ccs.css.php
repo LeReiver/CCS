@@ -11,7 +11,7 @@
 
 body {
     padding: 0 5px;
-    background-color: aliceblue;
+    background-color: rgba(233, 233, 233, 0.55);
     max-width: 1200px;
     margin: 0 auto;
     background-attachment: fixed;

@@ -48,7 +48,7 @@ function impact_category_score(
         return impact_category_score_error_message(E_IMPACT_CATEGORY_SCORE, E_NO_IMPACT_CATEGORY_SCORE_RATING_ID_1);
     }
     // Calls add_impact_category and passes in user defined parameters to be uploaded to database
-    add_impact_category_score(
+    add_impact_category_score_tier1(
         $impact_category_score_ef_id1,
         $impact_category_score_imp_cat_id1,
         $impact_category_score_rto_id1,
@@ -70,9 +70,8 @@ function impact_category_score_submit(
 {
     if (!empty($impact_category_score_submit_pressed)) {
         // Stores variables as $_SESSION variables for next page
-        $_SESSION[$impact_category_score_ef_id1] = $_POST[$impact_category_score_ef_id1];
-        $_SESSION[$impact_category_score_imp_cat_id1] = $_POST[$impact_category_score_imp_cat_id1];
-//        $_SESSION[$impact_category_score_rating_id1] = $_POST[$impact_category_score_rating_id1];
+//        $_SESSION[$impact_category_score_ef_id1] = $_POST[$impact_category_score_ef_id1];
+//        $_SESSION[$impact_category_score_imp_cat_id1] = $_POST[$impact_category_score_imp_cat_id1];
         return impact_category_score(
             $impact_category_score_ef_id1,
             $impact_category_score_imp_cat_id1,
