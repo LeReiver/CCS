@@ -76,7 +76,7 @@
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
-    margin: -160px 0 0 -30px;
+    margin: -160px 0 0 -10px;
     padding: 0;
     overflow: hidden;
     width: 100%;
@@ -163,7 +163,7 @@ ul.topnav li.icon {
 
 @media screen and (min-width: 770px) {
     ul.topnav {
-        margin: -50px 0 0 30px;
+        margin: -50px 0 0 10px;
     }
 }
 

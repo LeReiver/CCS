@@ -11,7 +11,7 @@
 
 body {
     padding: 0 5px;
-    background-color: aliceblue;
+    background-color: rgba(233, 233, 233, 0.55);
     max-width: 1200px;
     margin: 0 auto;
     background-attachment: fixed;
@@ -30,8 +30,11 @@ h2 {
     font-size: 100%;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 30px;
     display: inline-block;
+}
+h2.table_h2 {
+    margin-top: -20px;
 }
 h3 {
     text-align: center;
@@ -110,24 +113,28 @@ button:hover {
     background-color: rgba(110, 172, 44, 0.24);
 }
 
+button.toDoc {
+    margin: 0;
+}
+
 
 /* -------------- Nav --------------------------------------------------------*/
 
 nav {
     float: left;
     clear: both;
-    text-align: center;
+    text-align: start;
     margin: 60px 30px 20px 60px;
 /*    display: inline;*/
 /*    position: relative;*/
     border-bottom: 0.125px solid lightsteelblue;
-    padding-bottom: 20px;
+/*    padding-bottom: 10px;*/
     z-index: 100;
 }
 
 ul {
     list-style-type: none;
-/*    margin: 0 -20px;*/
+    margin-left: -20px;
     padding: 0;
     overflow: hidden;
 /*    background-color: rgba(108, 131, 54, 0.38);*/
@@ -145,7 +152,7 @@ li a {
     display: inline-block;
     color: #121c3e;
     text-align: left;
-    padding: 0 16px;
+    padding: 0 12px;
     text-decoration: none;
 }
 
@@ -171,8 +178,8 @@ table th  {
     text-align: end;
 }
 
-#reports table {}
-    border-collapse: collapse;
+#reports table {
+/*    border-collapse: collapse;*/
 }
 
 #reports th {
@@ -290,7 +297,7 @@ table th  {
     width: 10%;
 }
 #reference_table {
-/*    border-bottom: solid 1px black;*/
+    border-bottom: solid 1px black;
     line-height: 20px;
 }
 #reference_table td {
@@ -320,10 +327,13 @@ table th  {
     margin-top: -45px;
     margin-right: -45px;
 }
-#details_table tr {
-    border: solid black 1px;
+#details_table {
+    border-bottom: solid black 1px;
     border-collapse: collapse;
  }
+#score_table tr:nth-of-type(6n+0) {
+    border-bottom: solid black 1px;
+}
 
 
 .table_reference {
@@ -489,6 +499,9 @@ border: solid black 1px;
        float: none;
         margin-top: -25px;
     }
+    button.toDoc {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -496,7 +509,7 @@ border: solid black 1px;
         margin-left: -20px;
     }
     h2 {
-        margin-left: -50px;
+        margin-left: -40px;
     }
     #user_pane {
         text-align: end;
@@ -514,6 +527,7 @@ border: solid black 1px;
         position: relative;
 /*        left: 4px;*/
         top: -20px;
+        margin-left: -20px;
     }
     #form_content {
         margin-left: -100px;
@@ -561,6 +575,9 @@ border: solid black 1px;
     .login_table {
         margin: -300px auto 0 auto;
     }
+    button.toDoc {
+        margin: 100px 0 0 0;
+    }
 
 }
 @media screen and (max-width: 860px) {
@@ -573,6 +590,9 @@ border: solid black 1px;
 
 @media screen and (max-width: 400px) {
     #logo_sm {
-        margin: 0 50px 80px 0;
+        margin: 0 60px 80px 0;
     }
+    button.toDoc {
+            margin: 60px 0 0 0;
+        }
 }
